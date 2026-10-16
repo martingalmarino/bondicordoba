@@ -1,0 +1,292 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import AdSense from '../../components/AdSense.astro';
+
+const breadcrumbs = [
+  { label: 'Inicio', href: '/' },
+  { label: 'Guías', href: '/guias' },
+  { label: 'Tarjeta Red Bus' }
+];
+---
+
+<BaseLayout 
+  title="Tarjeta Red Bus Córdoba: cómo cargar y usar - BondiCórdoba"
+  description="Guía completa sobre la tarjeta Red Bus en Córdoba. Aprende cómo obtenerla, cargarla, usarla y aprovechar los descuentos en colectivos."
+>
+  <div class="container">
+    <Breadcrumbs items={breadcrumbs} />
+    
+    <h1>💳 Tarjeta Red Bus</h1>
+    <p class="subtitle">Sistema de pago electrónico para colectivos de Córdoba</p>
+    
+    <div class="alert alert-info">
+      <strong>ℹ️ Información general:</strong> Esta es una guía básica. Para información oficial y actualizada, 
+      consulte <a href="https://tamse.gob.ar" target="_blank" rel="noopener">TAMSE</a> o los puntos de venta autorizados.
+    </div>
+    
+    <section class="section">
+      <h2>¿Qué es la tarjeta Red Bus?</h2>
+      <p>La tarjeta Red Bus es el sistema de pago electrónico utilizado en los colectivos de Córdoba Capital. Permite viajar sin necesidad de efectivo y acceder a descuentos en las tarifas.</p>
+    </section>
+    
+    <AdSense />
+    
+    <section class="section">
+      <h2>Ventajas de usar Red Bus</h2>
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <span class="icon">💰</span>
+          <h3>Descuentos</h3>
+          <p>Tarifas más económicas que pagar en efectivo</p>
+        </div>
+        <div class="benefit-card">
+          <span class="icon">⚡</span>
+          <h3>Rapidez</h3>
+          <p>Acceso más rápido al colectivo</p>
+        </div>
+        <div class="benefit-card">
+          <span class="icon">🔒</span>
+          <h3>Seguridad</h3>
+          <p>No necesitas llevar efectivo</p>
+        </div>
+        <div class="benefit-card">
+          <span class="icon">📊</span>
+          <h3>Control</h3>
+          <p>Consulta tus viajes y saldo</p>
+        </div>
+      </div>
+    </section>
+    
+    <section class="section">
+      <h2>Cómo obtener tu tarjeta</h2>
+      <ol class="steps-list">
+        <li>
+          <strong>Dónde comprar:</strong> Puedes adquirir tu tarjeta en kioscos, comercios autorizados y puntos de venta oficiales.
+        </li>
+        <li>
+          <strong>Costo:</strong> Consulta el precio actual de la tarjeta en puntos de venta autorizados.
+        </li>
+        <li>
+          <strong>Activación:</strong> La tarjeta suele venir activada y lista para cargar saldo.
+        </li>
+      </ol>
+    </section>
+    
+    <AdSense />
+    
+    <section class="section">
+      <h2>Cómo cargar saldo</h2>
+      <div class="info-box">
+        <h3>Puntos de carga:</h3>
+        <ul>
+          <li>Kioscos y comercios adheridos (buscá el logo de Red Bus)</li>
+          <li>Terminales automáticas en puntos estratégicos</li>
+          <li>Aplicación móvil (según disponibilidad)</li>
+          <li>Sitio web oficial</li>
+        </ul>
+      </div>
+      
+      <p class="mt-2"><strong>Importante:</strong> Algunos puntos de carga pueden tener un monto mínimo de recarga.</p>
+    </section>
+    
+    <section class="section">
+      <h2>Cómo usar la tarjeta</h2>
+      <ol class="steps-list">
+        <li>Al subir al colectivo, acerca tu tarjeta al lector electrónico (validador)</li>
+        <li>Espera el sonido de confirmación y verifica el saldo en la pantalla</li>
+        <li>Si tenés saldo insuficiente, deberás pagar en efectivo</li>
+      </ol>
+      
+      <div class="alert alert-warning">
+        <strong>⚠️ Importante:</strong> Asegúrate de tener saldo suficiente antes de viajar. 
+        No todos los colectivos aceptan efectivo si tenés la tarjeta sin saldo.
+      </div>
+    </section>
+    
+    <section class="section">
+      <h2>Tipos de tarjetas</h2>
+      <div class="card-types">
+        <div class="card-type">
+          <h3>🎫 Tarjeta Común</h3>
+          <p>Tarifa estándar para usuarios generales</p>
+        </div>
+        <div class="card-type">
+          <h3>🎓 Tarjeta Estudiante</h3>
+          <p>Descuentos especiales para estudiantes acreditados</p>
+        </div>
+        <div class="card-type">
+          <h3>👴 Tarjeta Jubilados</h3>
+          <p>Beneficios para jubilados y pensionados</p>
+        </div>
+      </div>
+      
+      <p class="note">Consulta los requisitos y documentación necesaria para cada tipo de tarjeta en TAMSE.</p>
+    </section>
+    
+    <AdSense />
+    
+    <section class="section">
+      <h2>Preguntas frecuentes</h2>
+      
+      <div class="faq">
+        <div class="faq-item">
+          <h3>¿Qué hago si pierdo mi tarjeta?</h3>
+          <p>Debes reportar la pérdida en TAMSE lo antes posible. Según el tipo de tarjeta, podrías recuperar el saldo restante.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3>¿Puedo prestar mi tarjeta?</h3>
+          <p>Las tarjetas con beneficios especiales (estudiantes, jubilados) son personales e intransferibles. Las tarjetas comunes pueden ser usadas por cualquier persona.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3>¿Cómo consulto mi saldo?</h3>
+          <p>Puedes consultar tu saldo en el validador al subir al colectivo, en terminales de consulta, o a través de la app/web oficial.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3>¿El saldo vence?</h3>
+          <p>Consulta las condiciones de vencimiento del saldo en TAMSE o en el sitio oficial de Red Bus.</p>
+        </div>
+      </div>
+    </section>
+    
+    <section class="section">
+      <h2>Más información</h2>
+      <div class="info-box">
+        <p>Para información oficial, horarios de atención y puntos de venta:</p>
+        <ul>
+          <li><strong>TAMSE:</strong> <a href="https://tamse.gob.ar" target="_blank" rel="noopener">tamse.gob.ar</a></li>
+          <li><strong>Municipalidad de Córdoba:</strong> <a href="https://www.cordoba.gob.ar" target="_blank" rel="noopener">cordoba.gob.ar</a></li>
+        </ul>
+      </div>
+    </section>
+    
+    <section class="section">
+      <h2>Ver más guías</h2>
+      <div class="related-links">
+        <a href="/guias/tarifas" class="btn">Tarifas</a>
+        <a href="/guias" class="btn">Todas las guías</a>
+        <a href="/lineas" class="btn">Ver líneas</a>
+      </div>
+    </section>
+  </div>
+</BaseLayout>
+
+<style>
+  .subtitle {
+    color: var(--color-text-light);
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+  }
+  
+  .section {
+    margin: 3rem 0;
+  }
+  
+  .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  .benefit-card {
+    background: var(--color-bg-light);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    text-align: center;
+  }
+  
+  .benefit-card .icon {
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .benefit-card h3 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .benefit-card p {
+    font-size: 0.875rem;
+    color: var(--color-text-light);
+  }
+  
+  .steps-list {
+    list-style-position: outside;
+    margin-left: 1.5rem;
+  }
+  
+  .steps-list li {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+  
+  .info-box {
+    background: var(--color-bg-light);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+  }
+  
+  .info-box ul {
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+  }
+  
+  .info-box li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .mt-2 {
+    margin-top: 1rem;
+  }
+  
+  .card-types {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  .card-type {
+    background: white;
+    border: 1px solid var(--color-border);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+  }
+  
+  .card-type h3 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .note {
+    margin-top: 1rem;
+    font-size: 0.875rem;
+    color: var(--color-text-light);
+  }
+  
+  .faq {
+    margin-top: 1.5rem;
+  }
+  
+  .faq-item {
+    background: var(--color-bg-light);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .faq-item h3 {
+    margin-bottom: 0.75rem;
+    color: var(--color-primary);
+  }
+  
+  .related-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+</style>

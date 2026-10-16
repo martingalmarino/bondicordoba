@@ -1,0 +1,122 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+
+const breadcrumbs = [
+  { label: 'Inicio', href: '/' },
+  { label: 'Contacto' }
+];
+---
+
+<BaseLayout 
+  title="Contacto - BondiCórdoba"
+  description="Contacta con BondiCórdoba para consultas, sugerencias o reportar información desactualizada."
+>
+  <div class="container">
+    <Breadcrumbs items={breadcrumbs} />
+    
+    <h1>Contacto</h1>
+    
+    <div class="alert alert-info">
+      <strong>ℹ️ Importante:</strong> BondiCórdoba no es un sitio oficial. Para consultas sobre el servicio de transporte público, 
+      horarios oficiales o reclamos, contacte directamente con 
+      <a href="https://www.cordoba.gob.ar" target="_blank" rel="noopener">Municipalidad de Córdoba</a> o 
+      <a href="https://tamse.gob.ar" target="_blank" rel="noopener">TAMSE</a>.
+    </div>
+    
+    <section class="section">
+      <h2>¿En qué podemos ayudarte?</h2>
+      <p>Puedes contactarnos para:</p>
+      <ul>
+        <li>Reportar información desactualizada o incorrecta</li>
+        <li>Sugerir mejoras para el sitio</li>
+        <li>Consultas generales sobre el uso del portal</li>
+        <li>Proponer colaboraciones</li>
+      </ul>
+    </section>
+    
+    <section class="section">
+      <h2>Formulario de contacto</h2>
+      <div class="contact-form">
+        <p class="form-note">
+          <strong>Nota:</strong> Actualmente el formulario de contacto está en desarrollo. 
+          Por favor, vuelve a consultar próximamente.
+        </p>
+      </div>
+    </section>
+    
+    <section class="section">
+      <h2>Para consultas sobre el servicio de transporte</h2>
+      <p>Si tienes consultas sobre:</p>
+      <ul>
+        <li>Horarios y frecuencias exactas</li>
+        <li>Tarifas actualizadas</li>
+        <li>Trámites de tarjeta Red Bus</li>
+        <li>Reclamos sobre el servicio</li>
+        <li>Información oficial sobre cambios de recorrido o paros</li>
+      </ul>
+      <p>Contacta directamente con:</p>
+      
+      <div class="official-contacts">
+        <div class="contact-card">
+          <h3>🏛️ Municipalidad de Córdoba</h3>
+          <p>Sitio web: <a href="https://www.cordoba.gob.ar" target="_blank" rel="noopener">cordoba.gob.ar</a></p>
+          <p>Para información oficial sobre transporte público</p>
+        </div>
+        
+        <div class="contact-card">
+          <h3>🚌 TAMSE</h3>
+          <p>Sitio web: <a href="https://tamse.gob.ar" target="_blank" rel="noopener">tamse.gob.ar</a></p>
+          <p>Transporte Automotor Municipal Sociedad del Estado</p>
+        </div>
+      </div>
+    </section>
+  </div>
+</BaseLayout>
+
+<style>
+  .section {
+    margin: 2.5rem 0;
+  }
+  
+  .section ul {
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+  }
+  
+  .section li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .contact-form {
+    background: var(--color-bg-light);
+    padding: 2rem;
+    border-radius: 0.5rem;
+  }
+  
+  .form-note {
+    color: var(--color-text-light);
+    text-align: center;
+  }
+  
+  .official-contacts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  
+  .contact-card {
+    background: var(--color-bg-light);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+  }
+  
+  .contact-card h3 {
+    margin-bottom: 1rem;
+  }
+  
+  .contact-card p {
+    margin-bottom: 0.5rem;
+  }
+</style>

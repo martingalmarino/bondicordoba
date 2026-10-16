@@ -1,0 +1,68 @@
+{
+  "numero": "10",
+  "nombre": "Línea 10 - Ejemplo",
+  "esEjemplo": true,
+  "empresa": "Colectivos Córdoba S.A. (Ejemplo)",
+  "descripcionCorta": "Villa El Libertador - Centro - Arguello (DATOS DE EJEMPLO)",
+  "recorrido": {
+    "ida": {
+      "descripcion": "Desde Villa El Libertador hasta Arguello",
+      "calles": [
+        "Villa El Libertador",
+        "Av. Circunvalación",
+        "Av. Cruz Roja",
+        "Av. Colón",
+        "Av. Rafael Núñez",
+        "Av. Richieri",
+        "Destino: Arguello"
+      ]
+    },
+    "vuelta": {
+      "descripcion": "Desde Arguello hasta Villa El Libertador",
+      "calles": [
+        "Arguello",
+        "Av. Richieri",
+        "Av. Rafael Núñez",
+        "Av. Colón",
+        "Av. Cruz Roja",
+        "Av. Circunvalación",
+        "Destino: Villa El Libertador"
+      ]
+    }
+  },
+  "paradasPrincipales": [
+    "Villa El Libertador - Terminal",
+    "Av. Colón y Cruz Roja",
+    "Centro - Av. Colón",
+    "Av. Rafael Núñez y Recta Martinoli",
+    "Arguello - Terminal"
+  ],
+  "horarios": {
+    "lunesAViernes": {
+      "tipo": "frecuencia",
+      "descripcion": "Cada 12-18 minutos",
+      "horarioInicio": "05:30",
+      "horarioFin": "23:30"
+    },
+    "sabados": {
+      "tipo": "frecuencia",
+      "descripcion": "Cada 18-25 minutos",
+      "horarioInicio": "06:00",
+      "horarioFin": "23:00"
+    },
+    "domingosYFeriados": {
+      "tipo": "frecuencia",
+      "descripcion": "Cada 25-35 minutos",
+      "horarioInicio": "07:00",
+      "horarioFin": "22:00"
+    }
+  },
+  "tarifas": {
+    "efectivo": "Ver tarifas vigentes en TAMSE",
+    "redBus": "Ver descuentos con tarjeta Red Bus"
+  },
+  "mapsEmbedUrl": "",
+  "ultimaActualizacion": "2026-10-16",
+  "fuente": "Datos de ejemplo para demostración",
+  "notas": "⚠️ ATENCIÓN: Estos son datos de ejemplo ficticios. No utilice esta información para planificar viajes reales."
+}

@@ -1,0 +1,69 @@
+{
+  "numero": "1",
+  "nombre": "Línea 1 - Ejemplo",
+  "esEjemplo": true,
+  "empresa": "Empresa Ejemplo S.A.",
+  "descripcionCorta": "Centro - Barrio Norte (DATOS DE EJEMPLO)",
+  "recorrido": {
+    "ida": {
+      "descripcion": "Desde Terminal de Ómnibus hasta Barrio Norte",
+      "calles": [
+        "Terminal de Ómnibus",
+        "Bv. Perón",
+        "Av. Colón",
+        "Deán Funes",
+        "Av. Vélez Sarsfield",
+        "Bv. San Juan",
+        "Av. Hipólito Yrigoyen",
+        "Destino: Plaza San Martín"
+      ]
+    },
+    "vuelta": {
+      "descripcion": "Desde Barrio Norte hasta Terminal de Ómnibus",
+      "calles": [
+        "Plaza San Martín",
+        "Av. Hipólito Yrigoyen",
+        "27 de Abril",
+        "Bv. Illia",
+        "Av. Colón",
+        "Bv. Perón",
+        "Destino: Terminal de Ómnibus"
+      ]
+    }
+  },
+  "paradasPrincipales": [
+    "Terminal de Ómnibus",
+    "Av. Colón y Deán Funes",
+    "Cañada y San Juan",
+    "Plaza San Martín",
+    "Barrio Norte - Av. Yrigoyen"
+  ],
+  "horarios": {
+    "lunesAViernes": {
+      "tipo": "frecuencia",
+      "descripcion": "Cada 10-15 minutos",
+      "horarioInicio": "05:30",
+      "horarioFin": "23:00"
+    },
+    "sabados": {
+      "tipo": "frecuencia",
+      "descripcion": "Cada 15-20 minutos",
+      "horarioInicio": "06:00",
+      "horarioFin": "23:00"
+    },
+    "domingosYFeriados": {
+      "tipo": "frecuencia",
+      "descripcion": "Cada 20-30 minutos",
+      "horarioInicio": "07:00",
+      "horarioFin": "22:00"
+    }
+  },
+  "tarifas": {
+    "efectivo": "Ver tarifas vigentes en TAMSE",
+    "redBus": "Ver descuentos con tarjeta Red Bus"
+  },
+  "mapsEmbedUrl": "",
+  "ultimaActualizacion": "2026-10-16",
+  "fuente": "Datos de ejemplo para demostración",
+  "notas": "⚠️ ATENCIÓN: Estos son datos de ejemplo ficticios. No utilice esta información para planificar viajes reales."
+}

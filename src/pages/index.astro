@@ -1,0 +1,254 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import LineCard from '../components/LineCard.astro';
+import AdSense from '../components/AdSense.astro';
+import { getAllLineas } from '../utils/lineas';
+
+const lineas = getAllLineas();
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "BondiCórdoba",
+  "url": "https://bondicordoba.com.ar",
+  "description": "Información completa sobre líneas de colectivos en Córdoba Capital, Argentina. Recorridos, horarios y guías útiles.",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://bondicordoba.com.ar/lineas?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+};
+---
+
+<BaseLayout 
+  title="BondiCórdoba - Líneas de colectivos de Córdoba Capital 2026"
+  description="Información completa sobre líneas de colectivos en Córdoba Capital, Argentina. Consulta recorridos, horarios, paradas y cómo llegar a los principales destinos de la ciudad."
+  structuredData={structuredData}
+>
+  <div class="container">
+    <section class="hero">
+      <h1>🚌 BondiCórdoba</h1>
+      <p class="hero-subtitle">Tu guía completa de líneas de colectivos en Córdoba Capital</p>
+      
+      <div class="alert alert-warning">
+        <strong>⚠️ Atención:</strong> Este sitio contiene actualmente datos de ejemplo para demostración. 
+        No utilice esta información para planificar viajes reales. Consulte fuentes oficiales como 
+        <a href="https://www.cordoba.gob.ar" target="_blank" rel="noopener">Municipalidad de Córdoba</a> o 
+        <a href="https://tamse.gob.ar" target="_blank" rel="noopener">TAMSE</a>.
+      </div>
+      
+      <div class="search-box">
+        <input 
+          type="text" 
+          id="search-input"
+          placeholder="Buscar línea por número o destino..."
+          class="search-input"
+        >
+      </div>
+    </section>
+
+    <AdSense />
+
+    <section class="quick-links">
+      <h2>Accesos rápidos</h2>
+      <div class="quick-links-grid">
+        <a href="/lineas" class="quick-link-card">
+          <span class="icon">🚍</span>
+          <h3>Todas las líneas</h3>
+          <p>Ver listado completo</p>
+        </a>
+        <a href="/como-llegar/aeropuerto" class="quick-link-card">
+          <span class="icon">✈️</span>
+          <h3>Al Aeropuerto</h3>
+          <p>Cómo llegar en colectivo</p>
+        </a>
+        <a href="/como-llegar/terminal" class="quick-link-card">
+          <span class="icon">🚏</span>
+          <h3>A la Terminal</h3>
+          <p>Líneas que pasan</p>
+        </a>
+        <a href="/como-llegar/ciudad-universitaria" class="quick-link-card">
+          <span class="icon">🎓</span>
+          <h3>Ciudad Universitaria</h3>
+          <p>Líneas disponibles</p>
+        </a>
+        <a href="/guias/red-bus" class="quick-link-card">
+          <span class="icon">💳</span>
+          <h3>Tarjeta Red Bus</h3>
+          <p>Cómo cargar y usar</p>
+        </a>
+        <a href="/guias/tarifas" class="quick-link-card">
+          <span class="icon">💰</span>
+          <h3>Tarifas</h3>
+          <p>Precios actualizados</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="lines-section">
+      <h2>Líneas de colectivos</h2>
+      <div id="lines-container" class="lines-grid">
+        {lineas.map(linea => (
+          <LineCard linea={linea} />
+        ))}
+      </div>
+    </section>
+
+    <AdSense />
+
+    <section class="info-section">
+      <h2>Información útil</h2>
+      <div class="info-grid">
+        <div class="card">
+          <h3>🕐 Horarios</h3>
+          <p>Consulta los horarios de cada línea de lunes a viernes, sábados y domingos/feriados.</p>
+        </div>
+        <div class="card">
+          <h3>🗺️ Recorridos</h3>
+          <p>Encuentra el recorrido completo de ida y vuelta de cada línea con todas las paradas principales.</p>
+        </div>
+        <div class="card">
+          <h3>📱 Tarjeta Red Bus</h3>
+          <p>Aprende a cargar tu tarjeta Red Bus y aprovecha los descuentos en cada viaje.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+</BaseLayout>
+
+<style>
+  .hero {
+    text-align: center;
+    padding: 3rem 0;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.25rem;
+    color: var(--color-text-light);
+    margin-bottom: 2rem;
+  }
+  
+  .search-box {
+    max-width: 600px;
+    margin: 2rem auto 0;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    border: 2px solid var(--color-border);
+    border-radius: 0.5rem;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  
+  .search-input:focus {
+    border-color: var(--color-primary);
+  }
+  
+  .quick-links {
+    margin: 3rem 0;
+  }
+  
+  .quick-links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  .quick-link-card {
+    display: block;
+    padding: 1.5rem;
+    background: white;
+    border: 1px solid var(--color-border);
+    border-radius: 0.5rem;
+    text-align: center;
+    transition: all 0.2s;
+  }
+  
+  .quick-link-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  
+  .quick-link-card .icon {
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .quick-link-card h3 {
+    color: var(--color-text);
+    margin-bottom: 0.25rem;
+  }
+  
+  .quick-link-card p {
+    font-size: 0.875rem;
+    color: var(--color-text-light);
+  }
+  
+  .lines-section {
+    margin: 3rem 0;
+  }
+  
+  .lines-grid {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  .info-section {
+    margin: 3rem 0;
+  }
+  
+  .info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+      font-size: 1rem;
+    }
+    
+    .quick-links-grid {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+  }
+</style>
+
+<script>
+  const searchInput = document.getElementById('search-input') as HTMLInputElement;
+  const linesContainer = document.getElementById('lines-container');
+  
+  if (searchInput && linesContainer) {
+    const lineCards = Array.from(linesContainer.children);
+    
+    searchInput.addEventListener('input', (e) => {
+      const query = (e.target as HTMLInputElement).value.toLowerCase();
+      
+      lineCards.forEach(card => {
+        const text = card.textContent?.toLowerCase() || '';
+        if (text.includes(query)) {
+          (card as HTMLElement).style.display = '';
+        } else {
+          (card as HTMLElement).style.display = 'none';
+        }
+      });
+    });
+  }
+</script>

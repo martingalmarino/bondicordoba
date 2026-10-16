@@ -1,0 +1,76 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+
+const breadcrumbs = [
+  { label: 'Inicio', href: '/' },
+  { label: 'Sobre nosotros' }
+];
+---
+
+<BaseLayout 
+  title="Sobre nosotros - BondiCórdoba"
+  description="Conoce más sobre BondiCórdoba, tu guía de líneas de colectivos en Córdoba Capital, Argentina."
+>
+  <div class="container">
+    <Breadcrumbs items={breadcrumbs} />
+    
+    <h1>Sobre nosotros</h1>
+    
+    <section class="section">
+      <h2>¿Qué es BondiCórdoba?</h2>
+      <p>BondiCórdoba es un portal informativo dedicado a facilitar el acceso a información sobre las líneas de colectivos en Córdoba Capital, Argentina.</p>
+      
+      <p>Nuestro objetivo es ayudar a los usuarios del transporte público a encontrar fácilmente:</p>
+      <ul>
+        <li>Recorridos detallados de cada línea</li>
+        <li>Horarios y frecuencias</li>
+        <li>Paradas principales</li>
+        <li>Guías útiles sobre tarifas y tarjeta Red Bus</li>
+        <li>Información sobre cómo llegar a destinos populares</li>
+      </ul>
+    </section>
+    
+    <div class="alert alert-warning">
+      <strong>⚠️ Sitio no oficial:</strong> BondiCórdoba no es un sitio oficial de la Municipalidad de Córdoba ni de TAMSE. 
+      Somos un portal informativo independiente. Para información oficial, consulte 
+      <a href="https://www.cordoba.gob.ar" target="_blank" rel="noopener">Municipalidad de Córdoba</a> o 
+      <a href="https://tamse.gob.ar" target="_blank" rel="noopener">TAMSE</a>.
+    </div>
+    
+    <section class="section">
+      <h2>Nuestro compromiso</h2>
+      <p>Nos esforzamos por mantener la información lo más actualizada y precisa posible. Sin embargo, los horarios, recorridos y tarifas pueden cambiar sin previo aviso. Siempre recomendamos verificar la información con fuentes oficiales antes de planificar un viaje.</p>
+    </section>
+    
+    <section class="section">
+      <h2>Fuentes de información</h2>
+      <p>La información publicada en este sitio se recopila de:</p>
+      <ul>
+        <li>Sitios web oficiales de organismos de transporte</li>
+        <li>Información pública disponible</li>
+        <li>Contribuciones de usuarios (cuando estén disponibles)</li>
+      </ul>
+    </section>
+    
+    <section class="section">
+      <h2>Contacto</h2>
+      <p>Si tienes preguntas, sugerencias o detectas información desactualizada, puedes contactarnos a través de nuestra <a href="/contacto">página de contacto</a>.</p>
+    </section>
+  </div>
+</BaseLayout>
+
+<style>
+  .section {
+    margin: 2.5rem 0;
+  }
+  
+  .section ul {
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+  }
+  
+  .section li {
+    margin-bottom: 0.5rem;
+  }
+</style>
