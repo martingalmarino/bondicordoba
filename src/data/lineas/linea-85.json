@@ -6,23 +6,83 @@
   "descripcionCorta": "Línea 85 - SiBus",
   "recorrido": {
     "ida": {
-      "descripcion": "Datos del scraper Tu Bondi 2026",
-      "calles": []
+      "descripcion": "Por AV, Av.11 de septiembre, Av Munecas, Munecas, Av Munecas...",
+      "calles": [
+        "AV",
+        "Av.11 de septiembre",
+        "Av Munecas",
+        "Munecas",
+        "Av Munecas",
+        "Munecas",
+        "Av Munecas",
+        "Carlos Forest",
+        "Av. Quebracho",
+        "11 de Septiembre",
+        "De las Leyes Agrarias S/N",
+        "11 de Septiembre",
+        "juan jufre s/n",
+        "iglesia jesus cristo",
+        "11 de Septiembre",
+        "Av Pilar",
+        "Tandil",
+        "Moron",
+        "Av Revolucion de Mayo",
+        "Av Madrid",
+        "Av Dr Ricardo Luti",
+        "AV SABATTINI Y BAJADA PUCARA",
+        "Estación ACA",
+        "Bv. A. Illia",
+        "BV. CHACABUCO",
+        "Av Maipu y Sarmiento"
+      ]
     },
     "vuelta": {
-      "descripcion": "Datos del scraper Tu Bondi 2026",
-      "calles": []
+      "descripcion": "Por Av Maipu y Sarmiento, Sarmiento, Humberto Primo, H. PRIMO, Humberto Primo...",
+      "calles": [
+        "Av Maipu y Sarmiento",
+        "Sarmiento",
+        "Humberto Primo",
+        "H. PRIMO",
+        "Humberto Primo",
+        "Av Colon",
+        "COLON",
+        "Av Olmos",
+        "Salta",
+        "Obispo Salguero",
+        "Bv Illia",
+        "Av. Gdor Amadeo Sabattini",
+        "Av Revolucion de Mayo",
+        "Huascha",
+        "Tapalque",
+        "Av Pilar",
+        "Malagueno",
+        "11 de Septiembre",
+        "iglesia jesus cristo",
+        "juan jufre s/n",
+        "11 de Septiembre",
+        "De las Leyes Agrarias",
+        "De las Leyes Agrarias S/N",
+        "11 de Septiembre",
+        "Av.El Quebracho",
+        "Av. Quebracho",
+        "Carlos Forest",
+        "ANGEL SALVADORES Y MUNECAS",
+        "Munecas",
+        "Av Munecas",
+        "Av.11 de septiembre",
+        "AV"
+      ]
     }
   },
   "paradasPrincipales": [
     "AV 11 DE SEPTIEMBRE KM 4",
-    "Av. Quebracho 4095",
-    "11 de Septiembre 3479",
-    "Moron 2740",
     "Av Maipu y Sarmiento",
-    "Obispo Salguero 296",
-    "Tapalque 3294",
-    "Av Munecas 3840"
+    "Munecas 4305",
+    "COLON 151/53",
+    "Av. Quebracho 4235",
+    "Av. Gdor Amadeo Sabattini 500",
+    "11 de Septiembre 5000",
+    "Huascha 2658"
   ],
   "horarios": {
     "lunesAViernes": {

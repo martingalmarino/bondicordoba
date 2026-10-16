@@ -6,23 +6,51 @@
   "descripcionCorta": "Línea B - TAMSE",
   "recorrido": {
     "ida": {
-      "descripcion": "Datos del scraper Tu Bondi 2026",
-      "calles": []
+      "descripcion": "Por Av Colon y Domingo Zipoli, Av Colon, COLON, Av Colon, COLON...",
+      "calles": [
+        "Av Colon y Domingo Zipoli",
+        "Av Colon",
+        "COLON",
+        "Av Colon",
+        "COLON",
+        "Av Colon",
+        "Av Olmos",
+        "Av",
+        "24 de Setiembre",
+        "Av",
+        "Av Patria y Lima",
+        "Av Patria",
+        "AV. PATRIA",
+        "Av Patria",
+        "Av Patria y Padre Luis Monti"
+      ]
     },
     "vuelta": {
-      "descripcion": "Datos del scraper Tu Bondi 2026",
-      "calles": []
+      "descripcion": "Por Av Patria y Padre Luis Monti, Av Patria, Av Sarmiento, Hospital Italiano, Sarmiento...",
+      "calles": [
+        "Av Patria y Padre Luis Monti",
+        "Av Patria",
+        "Av Sarmiento",
+        "Hospital Italiano",
+        "Sarmiento",
+        "Bv Guzman",
+        "Lima",
+        "Santa Rosa",
+        "Avellaneda",
+        "Av Colon",
+        "Av Colon y Domingo Zipoli"
+      ]
     }
   },
   "paradasPrincipales": [
     "Av Colon y Domingo Zipoli",
-    "Av Colon 1649",
-    "Av Olmos 450-458",
-    "Av Patria 438",
+    "Av Patria y Padre Luis Monti",
+    "Av Colon 2738 (Plaza J del Barco)",
     "Av Patria 933",
-    "Sarmiento 829",
-    "Avellaneda 250-253",
-    "Av Colon 3268"
+    "Av Colon 1955",
+    "Av Sarmiento 1757",
+    "Av Colon 1037",
+    "Sarmiento 1175"
   ],
   "horarios": {
     "lunesAViernes": {

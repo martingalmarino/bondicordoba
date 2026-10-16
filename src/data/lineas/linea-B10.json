@@ -6,23 +6,66 @@
   "descripcionCorta": "Línea B10 - Coniferal",
   "recorrido": {
     "ida": {
-      "descripcion": "Datos del scraper Tu Bondi 2026",
-      "calles": []
+      "descripcion": "Por Antonio Soto s/n, A. Soto y Cap. de los Remedios, Schrodinger s/n, Schrodinger y Vucetich, Av Vucetich...",
+      "calles": [
+        "Antonio Soto s/n",
+        "A. Soto y Cap. de los Remedios",
+        "Schrodinger s/n",
+        "Schrodinger y Vucetich",
+        "Av Vucetich",
+        "Vucetich",
+        "Av Vucetich y Gutemberg",
+        "Vucetich",
+        "vucetich",
+        "Vucetich",
+        "vucetich",
+        "Av Sabattini",
+        "Sabattini",
+        "Av Sabattini",
+        "Sabattini",
+        "Av Sabattini y Cargo",
+        "Av Sabattini",
+        "Fiambala",
+        "Calingasta",
+        "Calingasta s/n",
+        "Calle Pública s/n"
+      ]
     },
     "vuelta": {
-      "descripcion": "Datos del scraper Tu Bondi 2026",
-      "calles": []
+      "descripcion": "Por Calle Pública s/n, Calingasta s/n, Calingasta, Ramos Mejia, Tinogasta...",
+      "calles": [
+        "Calle Pública s/n",
+        "Calingasta s/n",
+        "Calingasta",
+        "Ramos Mejia",
+        "Tinogasta",
+        "Av. Sabattini",
+        "Av Sabattini",
+        "Av. Sabattini y Huergo",
+        "Av Sabattini",
+        "Av Vucetich",
+        "Vucetich",
+        "Av Vucetich",
+        "Vucetich",
+        "Av Vucetich",
+        "Vucetich",
+        "Av Vucetich",
+        "Vucetich",
+        "Schrodinger s/n",
+        "Antonio Soto y C. Capilla de los Remedios",
+        "Antonio Soto s/n"
+      ]
     }
   },
   "paradasPrincipales": [
     "Antonio Soto s/n 1",
-    "Vucetich 6900",
-    "Av Sabattini 5700",
-    "Av Sabattini 4600 (Arco Cba)",
+    "Calle Pública s/n 6",
+    "Schrodinger y Vucetich",
     "Calingasta s/n 4",
-    "Av. Sabattini y Huergo",
-    "Vucetich 7192",
-    "Antonio Soto s/n"
+    "Vucetich 6900",
+    "Tinogasta 4577",
+    "Vucetich 6011",
+    "Av Sabattini 5311 (Fiat Chrysl"
   ],
   "horarios": {
     "lunesAViernes": {

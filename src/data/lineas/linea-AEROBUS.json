@@ -10,8 +10,24 @@
       "calles": []
     },
     "vuelta": {
-      "descripcion": "Datos del scraper Tu Bondi 2026",
-      "calles": []
+      "descripcion": "Por AEROPUERTO, Colectora Externa E53, Av. La Voz del Interior, AV. MONSEÑOR PABLO CABRERA Y CPC, Av.Monseñor Pablo Cabrera...",
+      "calles": [
+        "AEROPUERTO",
+        "Colectora Externa E53",
+        "Av. La Voz del Interior",
+        "AV. MONSEÑOR PABLO CABRERA Y CPC",
+        "Av.Monseñor Pablo Cabrera",
+        "Monseñor Pablo Cabrera",
+        "Hospital Pediátrico",
+        "Santa Fe",
+        "Av Colon",
+        "San José de Calasanz",
+        "Bv. San Juan",
+        "BV SAN JUAN",
+        "Bv Illia",
+        "TERMINAL DE OMNIBUS",
+        "TERMINAL NVA PLATAFORMA AEROBUS"
+      ]
     }
   },
   "paradasPrincipales": [
@@ -22,7 +38,7 @@
     "Monseñor Pablo Cabrera 2648",
     "Monseñor Pablo Cabrera 1837",
     "Santa Fe 425-434",
-    "TERMINAL NVA PLATAFORMA AEROBUS"
+    "San José de Calasanz 130"
   ],
   "horarios": {
     "lunesAViernes": {

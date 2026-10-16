@@ -6,23 +6,71 @@
   "descripcionCorta": "Línea 50 - SiBus",
   "recorrido": {
     "ida": {
-      "descripcion": "Datos del scraper Tu Bondi 2026",
-      "calles": []
+      "descripcion": "Por MOSCONI (SALE), Av. Leandro N. Alem, AV. LEANDRO N. ALEM, BV. EDUARDO BULNES, FELIX FRIAS...",
+      "calles": [
+        "MOSCONI (SALE)",
+        "Av. Leandro N. Alem",
+        "AV. LEANDRO N. ALEM",
+        "BV. EDUARDO BULNES",
+        "FELIX FRIAS",
+        "COCHABAMBA",
+        "FAUSTINO ALLENDE",
+        "AV. ROQUE SAENZ PEÑA",
+        "Puente Centenario",
+        "Av. Gral. Paz",
+        "AV. GRAL. PAZ",
+        "AV. VELEZ SARSFIELD",
+        "Av. Velez Sarsfield",
+        "AV. VELEZ SARSFIELD",
+        "AV. VELEZ  SARSFIELD",
+        "AV. VELEZ SARSFIELD",
+        "LABOULAYE",
+        "Laboulaye",
+        "La Falda",
+        "LA FALDA",
+        "LA FALDA Y GOBERNACION"
+      ]
     },
     "vuelta": {
-      "descripcion": "Datos del scraper Tu Bondi 2026",
-      "calles": []
+      "descripcion": "Por LA FALDA Y GOBERNACION, Gobernacion, GOBERNACION, Gobernacion, GOBERNACION...",
+      "calles": [
+        "LA FALDA Y GOBERNACION",
+        "Gobernacion",
+        "GOBERNACION",
+        "Gobernacion",
+        "GOBERNACION",
+        "AV. DE MAYO",
+        "LA FALDA",
+        "La Falda",
+        "LABOULAYE",
+        "AV. VELEZ SARSFIELD",
+        "Av Velez Sarsfield",
+        "AV. VELEZ SARSFIELD",
+        "Av Velez Sarsfield",
+        "AV. VELEZ SARSFIELD",
+        "Av. Velez Sarsfield S/N",
+        "Belgrano",
+        "Tucuman",
+        "COLON",
+        "Av Olmos",
+        "Maipu",
+        "Av. Maipu",
+        "BUCHARDO",
+        "JACINTO RIOS",
+        "AV. LEANDRO N. ALEM",
+        "MOSCONI (SALE)"
+      ]
     }
   },
   "paradasPrincipales": [
     "MOSCONI (SALE)",
-    "AV. LEANDRO N. ALEM 667 ",
-    "AV. VELEZ SARSFIELD 2150",
-    "LABOULAYE 238 ",
-    "LA FALDA 5682",
-    "AV. VELEZ SARSFIELD 3635 ",
-    "Maipu 380",
-    "AV. LEANDRO N. ALEM 3740 "
+    "LA FALDA Y GOBERNACION",
+    "AV. LEANDRO N. ALEM 2815 ",
+    "AV. DE MAYO 950",
+    "AV. LEANDRO N. ALEM 1415",
+    "LABOULAYE 101",
+    "AV. LEANDRO N. ALEM  200",
+    "AV. VELEZ SARSFIELD 4337 "
   ],
   "horarios": {
     "lunesAViernes": {

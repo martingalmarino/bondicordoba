@@ -6,23 +6,70 @@
   "descripcionCorta": "Línea C - TAMSE",
   "recorrido": {
     "ida": {
-      "descripcion": "Datos del scraper Tu Bondi 2026",
-      "calles": []
+      "descripcion": "Por Predio Ameghino, Aviador Zanni, Fueza Aerea, Av Fuerza Aerea, Fuerza Aerea...",
+      "calles": [
+        "Predio Ameghino",
+        "Aviador Zanni",
+        "Fueza Aerea",
+        "Av Fuerza Aerea",
+        "Fuerza Aerea",
+        "Julio A Roca",
+        "Julio Roca",
+        "Belgrano",
+        "Tucuman",
+        "Av Colon",
+        "Av Olmos",
+        "OLMOS",
+        "Av",
+        "24 de Setiembre",
+        "Viamonte",
+        "Juan Larrea",
+        "Larrea",
+        "Alejandro Carbo",
+        "Obispo Maldonado",
+        "Carlos Pellegrini",
+        "San Jeronimo",
+        "Obispo Castellanos",
+        "San Jeronimo"
+      ]
     },
     "vuelta": {
-      "descripcion": "Datos del scraper Tu Bondi 2026",
-      "calles": []
+      "descripcion": "Por San Jeronimo, Obispo Maldonado, Juan Larrea, Roma, Sarmiento...",
+      "calles": [
+        "San Jeronimo",
+        "Obispo Maldonado",
+        "Juan Larrea",
+        "Roma",
+        "Sarmiento",
+        "Bv Guzman",
+        "Lima",
+        "G. PAZ",
+        "Patio Olmos",
+        "Av Velez Sarsfield",
+        "M.T. de Alvear",
+        "M T de Alvear",
+        "Julio Roca",
+        "Julio A Roca",
+        "Av Fuerza Aerea",
+        "Fuerza Aerea",
+        "Av Fuerza Aerea",
+        "Av. Fuerza Aerea",
+        "Fuerza Aerea",
+        "Av Fuerza Aerea",
+        "Diaz de la Fuente",
+        "Predio Ameghino"
+      ]
     }
   },
   "paradasPrincipales": [
     "Predio Ameghino",
+    "San Jeronimo 3262",
+    "Av Fuerza Aerea 2831",
+    "San Jeronimo 2467-2491",
     "Fuerza Aerea 1842",
-    "Belgrano 557",
-    "Viamonte 111",
-    "San Jeronimo 2716-2724",
-    "Sarmiento 1385",
-    "M.T. de Alvear 846",
-    "Diaz de la Fuente 1857"
+    "Roma 180",
+    "Julio A Roca 739",
+    "Lima 347"
   ],
   "horarios": {
     "lunesAViernes": {

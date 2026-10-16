@@ -6,23 +6,71 @@
   "descripcionCorta": "Línea 51 - SiBus",
   "recorrido": {
     "ida": {
-      "descripcion": "Datos del scraper Tu Bondi 2026",
-      "calles": []
+      "descripcion": "Por Casilla Hogar III, CALLE PRINCIPAL  S/N, CALLE PRINCIPAL OBISPO ANGELLELI, CALLE PRINCIPAL  S/N, CALLE PRINCIPAL OBISPO ANGELLELI...",
+      "calles": [
+        "Casilla Hogar III",
+        "CALLE PRINCIPAL  S/N",
+        "CALLE PRINCIPAL OBISPO ANGELLELI",
+        "CALLE PRINCIPAL  S/N",
+        "CALLE PRINCIPAL OBISPO ANGELLELI",
+        "CALLE PUBLICA S/N",
+        "CALLE PRINCIPAL OBISPO ANGELLELI",
+        "CALLE PUBLICA S/N",
+        "CALLE PRINCIPAL S/N",
+        "PRINCIPAL S/N",
+        "CALLE PRINCIPAL S/N",
+        "PRINCIPAL S/N",
+        "CALLE PRINCIPAL S/N",
+        "HOGAR III PRINCIPAL ESQ PUBLICA",
+        "CALLE PRINCIPAL S/N",
+        "INGRESO RUTA",
+        "HOGAR III PRINCIPAL ESQ PUBLICA",
+        "AU CORDOBA RIO IV",
+        "AV. VELEZ SARSFIELD",
+        "AV. VELEZ SASRFIELD",
+        "AV. VELEZ SARSFIELD",
+        "Av Velez Sarsfield",
+        "AV. VELEZ SARSFIELD",
+        "Av Velez Sarsfield",
+        "AV. VELEZ SARSFIELD",
+        "Av. Velez Sarsfield S/N",
+        "Belgrano",
+        "Tucuman",
+        "LA TABLADA Y GENERAL PAZ",
+        "Tablada S/N"
+      ]
     },
     "vuelta": {
-      "descripcion": "Datos del scraper Tu Bondi 2026",
-      "calles": []
+      "descripcion": "Por Tablada S/N, Gral Paz, AV. VELEZ SARSFIELD, Av. Velez Sarsfield, AV. VELEZ SARSFIELD...",
+      "calles": [
+        "Tablada S/N",
+        "Gral Paz",
+        "AV. VELEZ SARSFIELD",
+        "Av. Velez Sarsfield",
+        "AV. VELEZ SARSFIELD",
+        "Av Velez Sarsfield",
+        "AV. VELEZ SARSFIELD",
+        "AV. VELEZ  SARSFIELD",
+        "AV. VELEZ SARSFIELD",
+        "RUTA",
+        "CALLE PRINCIPAL S/N",
+        "COLEGIO ALBERT LUTZ SAVIR",
+        "CALLE PRINCIPAL S/N",
+        "CALLE PUBLICA S/N",
+        "CALLE PRINCIPAL S/N",
+        "VILLA ANGELLELI (LLEGA)",
+        "Casilla Hogar III"
+      ]
     }
   },
   "paradasPrincipales": [
     "Casilla Hogar III",
-    "AV. VELEZ SARSFIELD 6400",
-    "AV. VELEZ SARSFIELD 4337 ",
-    "Av. Velez Sarsfield S/N",
-    "Tucuman 573",
+    "Tablada S/N",
+    "CALLE PRINCIPAL S/N",
     "Av. Velez Sarsfield 1498",
-    "AV. VELEZ SARSFIELD 4150 ",
-    "VILLA ANGELLELI (LLEGA)"
+    "Av Velez Sarsfield 3620",
+    "HOGAR III PRINCIPAL ESQ PUBLICA",
+    "AV. VELEZ SARSFIELD 4600"
   ],
   "horarios": {
     "lunesAViernes": {

@@ -6,23 +6,49 @@
   "descripcionCorta": "Línea A - TAMSE",
   "recorrido": {
     "ida": {
-      "descripcion": "Datos del scraper Tu Bondi 2026",
-      "calles": []
+      "descripcion": "Por Carlos de Los Santos, Carlos de los Santos, Mariano Fragueiro, Urquiza, Del Campillo...",
+      "calles": [
+        "Carlos de Los Santos",
+        "Carlos de los Santos",
+        "Mariano Fragueiro",
+        "Urquiza",
+        "Del Campillo",
+        "Roque Saenz Pena",
+        "Puente Centenario",
+        "G. PAZ",
+        "Av General Paz",
+        "G. PAZ",
+        "Patio Olmos",
+        "Av Velez Sarsfield",
+        "Belgrano"
+      ]
     },
     "vuelta": {
-      "descripcion": "Datos del scraper Tu Bondi 2026",
-      "calles": []
+      "descripcion": "Por Belgrano, Belgrano y Brasil, Belgrano, Tucuman, Tablada...",
+      "calles": [
+        "Belgrano",
+        "Belgrano y Brasil",
+        "Belgrano",
+        "Tucuman",
+        "Tablada",
+        "Lavalleja",
+        "Bedoya",
+        "Urquiza",
+        "Mariano Fragueiro",
+        "Juan Escolar",
+        "Carlos de Los Santos"
+      ]
     }
   },
   "paradasPrincipales": [
     "Carlos de Los Santos 887",
-    "Urquiza 3015",
-    "Del Campillo 713",
-    "Patio Olmos",
-    "Belgrano 905-911",
-    "Lavalleja 950",
-    "Urquiza 3078",
-    "Juan Escolar 890"
+    "Belgrano 1447-1437",
+    "Mariano Fragueiro 4049",
+    "Belgrano 557",
+    "Mariano Fragueiro 3259",
+    "Tucuman 270",
+    "Urquiza 2605",
+    "Lavalleja 950"
   ],
   "horarios": {
     "lunesAViernes": {

@@ -10,19 +10,58 @@
       "calles": []
     },
     "vuelta": {
-      "descripcion": "Datos del scraper Tu Bondi 2026",
-      "calles": []
+      "descripcion": "Por Cno. San Carlos, Mauricio Revigliono S/N, Calle Publica, Calle Principal Quintas de Flores S/N, Cno. San Carlos...",
+      "calles": [
+        "Cno. San Carlos",
+        "Mauricio Revigliono S/N",
+        "Calle Publica",
+        "Calle Principal Quintas de Flores S/N",
+        "Cno. San Carlos",
+        "Bernando OHiggins",
+        "Cno. San Carlos",
+        "Bernardo O´Higgins",
+        "AV. GRAL. O HIGGINS Y CNEL. JOSE JAVIER DIAZ",
+        "Bernardo O´Higgins",
+        "Av. Madrid",
+        "Av Madrid",
+        "Av Dr Ricardo Luti",
+        "AV SABATTINI Y BAJADA PUCARA",
+        "Av Sabattini (Colegio Taborin)",
+        "Bv. Arturo Umberto Illia",
+        "Bv. San Juan",
+        "Mariano Moreno",
+        "Santa Fe",
+        "Av. Santa Fé",
+        "Palestina",
+        "Bv. Los Andes",
+        "Soldado Ruiz",
+        "Av. Cornelio Saavedra",
+        "Agustin Zarate",
+        "Monseñor Pablo Cabrera",
+        "Av. Monseñor Pablo Cabrera",
+        "AV. MONSEÑOR PABLO CABRERA Y CPC",
+        "Av. Monseñor Pablo Cabrera",
+        "Av. La Voz del Interior",
+        "Bv. De los Alemanes",
+        "Bv. Rivadavia",
+        "Av. La Voz del Interior",
+        "AEROPUERTO",
+        "Parque empresarial",
+        "UES21",
+        "UES SIGLO XXI",
+        "UNIVERSIDAD SIGLO"
+      ]
     }
   },
   "paradasPrincipales": [
     "Cno. San Carlos 5635",
-    "Bernardo O´Higgins 4484",
-    "Av Madrid 2227",
-    "Palestina 236",
-    "Agustin Zarate 1874",
-    "Av. La Voz del Interior 5548",
-    "Bv. Rivadavia 3075",
-    "UNIVERSIDAD SIGLO 21"
+    "Cno. San Carlos 5494",
+    "Bernardo O´Higgins 3140-3141",
+    "Av Sabattini (Colegio Taborin)",
+    "Bv. Los Andes 1507",
+    "Agustin Zarate 1688",
+    "AV. MONSEÑOR PABLO CABRERA Y CPC",
+    "Bv. De los Alemanes 4170"
   ],
   "horarios": {
     "lunesAViernes": {
@@ -51,5 +90,5 @@
   "mapsEmbedUrl": "",
   "ultimaActualizacion": "2026-08-07",
   "fuente": "Tu Bondi (Municipalidad de Córdoba) via scraper lineas_transporte_cba (MIT) - Agosto 2026",
-  "notas": "Datos obtenidos del scraper Tu Bondi/Micronauta agosto 2026."
+  "notas": "Datos obtenidos del scraper Tu Bondi/Micronauta agosto 2026. Tu Bondi lista Coniferal; Municipalidad indica corredor 2 (Tamsau). Dato de Tu Bondi."
 }

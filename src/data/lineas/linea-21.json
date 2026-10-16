@@ -6,23 +6,95 @@
   "descripcionCorta": "Línea 21 - Coniferal",
   "recorrido": {
     "ida": {
-      "descripcion": "Datos del scraper Tu Bondi 2026",
-      "calles": []
+      "descripcion": "Por UNIVERSIDAD SIGLO, UES21 IDA, Los Latinos S/N, Colectora Externa E53, Av. La Voz del Interior...",
+      "calles": [
+        "UNIVERSIDAD SIGLO",
+        "UES21 IDA",
+        "Los Latinos S/N",
+        "Colectora Externa E53",
+        "Av. La Voz del Interior",
+        "Av La Voz del interior",
+        "Av. La Voz del Interior",
+        "Bv. Buenos Aires",
+        "Los Latinos",
+        "Bv. De los Alemanes",
+        "Av. La Voz del Interior",
+        "Av. Monseñor Pablo Cabrera",
+        "Monseñor Pablo Cabrera",
+        "Av. Monseñor Pablo Cabrera",
+        "Monseñor Pablo Cabrera",
+        "Av.Monseñor Pablo Cabrera",
+        "Monseñor Pablo Cabrera",
+        "Av. Monseñor Pablo Cabrera",
+        "Monseñor Pablo Cabrera",
+        "Av. Monseñor Pablo Cabrera",
+        "Av. Castro Barros",
+        "Av Castro Barros",
+        "Santa Fé",
+        "Av. Santa Fe",
+        "Av Colon",
+        "Av. Colon",
+        "Av. Velez Sarsfield",
+        "Av. Hipolito Yrigoyen",
+        "Av Hipolito Irigoyen",
+        "Los Nogales S/N",
+        "E. BARROS (FUC)",
+        "Bv. De la Reforma S/N",
+        "HAYA DE LA TORRE S/N",
+        "Av H de la Torre y Av Ing M Al",
+        "Maestro Lopez (Inst H Keller)",
+        "M. LOPEZ S/N"
+      ]
     },
     "vuelta": {
-      "descripcion": "Datos del scraper Tu Bondi 2026",
-      "calles": []
+      "descripcion": "Por M. LOPEZ S/N, Maestro Lopez (UTN), Maestro Lopez (Inst H Keller), Av M Allende y Av H de la Torr, DE LA REFORMA...",
+      "calles": [
+        "M. LOPEZ S/N",
+        "Maestro Lopez (UTN)",
+        "Maestro Lopez (Inst H Keller)",
+        "Av M Allende y Av H de la Torr",
+        "DE LA REFORMA",
+        "Av. Enrique Barros S/N",
+        "Los Nogales",
+        "H Irigoyen (Parque Las Tejas)",
+        "Bv. Chacabuco",
+        "Bv San Juan",
+        "Bv. San Juan",
+        "Mariano Moreno",
+        "Santa Fe",
+        "Av. Santa Fé",
+        "Av. Castro Barros",
+        "Monseñor Pablo Cabrera",
+        "Av. Monseñor Pablo Cabrera",
+        "Monseñor Pablo Cabrera",
+        "Av. Monseñor Pablo Cabrera",
+        "Av.Monseñor Pablo Cabrera",
+        "Av. Monseñor Pablo Cabrera",
+        "Av. La Voz del Interior",
+        "Bv. De los Alemanes",
+        "De los Latinos",
+        "Los Latinos",
+        "Bv Rivadavia",
+        "Bv. Rivadavia",
+        "Av. La Voz del Interior",
+        "Av La Voz del interior",
+        "Av. La voz del Interior",
+        "Colectora Ing. Aeropuerto S/N",
+        "UES21",
+        "UES SIGLO XXI",
+        "UNIVERSIDAD SIGLO"
+      ]
     }
   },
   "paradasPrincipales": [
     "UNIVERSIDAD SIGLO 21",
-    "Bv. De los Alemanes 3446",
-    "Monseñor Pablo Cabrera 2653",
-    "Av. Colon 351\t",
     "M. LOPEZ S/N",
-    "Av. Santa Fé 852",
-    "Av.Monseñor Pablo Cabrera 4226",
-    "UES SIGLO XXI"
+    "Av. La Voz del Interior 7259",
+    "Los Nogales 9999",
+    "Bv. De los Alemanes 3446",
+    "Santa Fe 340",
+    "Av. Monseñor Pablo Cabrera 4700",
+    "Monseñor Pablo Cabrera 1832"
   ],
   "horarios": {
     "lunesAViernes": {
@@ -51,5 +123,5 @@
   "mapsEmbedUrl": "",
   "ultimaActualizacion": "2026-08-07",
   "fuente": "Tu Bondi (Municipalidad de Córdoba) via scraper lineas_transporte_cba (MIT) - Agosto 2026",
-  "notas": "Datos obtenidos del scraper Tu Bondi/Micronauta agosto 2026."
+  "notas": "Datos obtenidos del scraper Tu Bondi/Micronauta agosto 2026. Tu Bondi lista Coniferal; Municipalidad indica corredor 2 (Tamsau). Dato de Tu Bondi."
 }
