@@ -3,7 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Button from '../components/Button.astro';
 import LineCard from '../components/LineCard.astro';
 import { Icon } from 'astro-icon/components';
-import { getLineas } from '../data/lineas';
+import { getLineas, getRecorridoSummary } from '../data/lineas';
 
 const lineas = await getLineas();
 const lineasDestacadas = lineas.slice(0, 6);
@@ -41,7 +41,7 @@ const lineasDestacadas = lineas.slice(0, 6);
             <LineCard
               numero={linea.numero}
               nombre={linea.nombre}
-              recorrido={linea.recorrido}
+              recorrido={getRecorridoSummary(linea)}
               empresa={linea.empresa}
               href={`/lineas/${linea.numero}`}
             />

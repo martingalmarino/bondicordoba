@@ -1,0 +1,87 @@
+{
+  "numero": "80",
+  "nombre": "80 por IPEF",
+  "esEjemplo": false,
+  "empresa": "TAMSE",
+  "descripcionCorta": "Línea 80 - TAMSE",
+  "recorrido": {
+    "ida": {
+      "descripcion": "AV 11 DE SEPTIEMBRE KM 4 - Pasarela Ipef",
+      "calles": [
+        "AV 11 DE SEPTIEMBRE KM 4",
+        "Av.11 de septiembre 7000",
+        "Av Munecas 3887",
+        "Avenida Idelfonso Muñecas 4165",
+        "Avenida Idelfonso Muñecas 4285",
+        "Munecas 4410",
+        "Avenida Idelfonso Muñecas 4594",
+        "Avenida El Quebracho 4385",
+        "Avenida El Quebracho 4013",
+        "Avenida El Quebracho 3919",
+        "Avenida 11 de Septiembre 5396",
+        "Avenida 11 de Septiembre 5214",
+        "11 de Septiembre 5000",
+        "carcano de horizonte",
+        "jeronimo helguera 4683 4601"
+      ]
+    },
+    "vuelta": {
+      "descripcion": "Pasarela Ipef - AV 11 DE SEPTIEMBRE KM 4",
+      "calles": [
+        "Pasarela Ipef",
+        "Carcano 3590",
+        "Rotonda puente 15",
+        "Carlos tagle 4673",
+        "Mansilla 1286",
+        "J.C.Lafinur 4547",
+        "J.C.Lafinur 4350",
+        "José Roque Funes 1286",
+        "Obispo Luque 1195",
+        "Avenida Menéndez Pidal 4115",
+        "Av Menendez Pidal 4011",
+        "Avenida Menéndez Pidal 3901",
+        "Avenida Menéndez Pidal 3761",
+        "Avenida Menéndez Pidal 3661",
+        "Avenida Menéndez Pidal 3561"
+      ]
+    }
+  },
+  "paradasPrincipales": [
+    "Pasarela Ipef",
+    "Avenida Menéndez Pidal 3901",
+    "Avenida Octavio Pinto 2470",
+    "Avenida Colón 1223",
+    "Avenida Madrid 2186",
+    "Avenida Pilar 2765",
+    "De Las Leyes Agrarias 3987",
+    "AV 11 DE SEPTIEMBRE KM 4"
+  ],
+  "horarios": {
+    "lunesAViernes": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "sabados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "domingosYFeriados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    }
+  },
+  "tarifas": {
+    "efectivo": "Consultá la tarifa vigente en el sitio de la Municipalidad de Córdoba",
+    "redBus": "Consultá descuentos disponibles con tarjeta Red Bus"
+  },
+  "mapsEmbedUrl": "",
+  "ultimaActualizacion": "2023-03-16",
+  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
+}

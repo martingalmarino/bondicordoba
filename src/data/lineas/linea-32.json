@@ -1,0 +1,87 @@
+{
+  "numero": "32",
+  "nombre": "Línea 32",
+  "esEjemplo": false,
+  "empresa": "TAMSE",
+  "descripcionCorta": "Línea 32 - TAMSE",
+  "recorrido": {
+    "ida": {
+      "descripcion": "Avenida Renault 2297 - De La Huella 301",
+      "calles": [
+        "Avenida Renault 2297",
+        "Avenida Renault 2252",
+        "Colorado 5208",
+        "Mayor Fernando Juan Casado 1957",
+        "Michigan 1900",
+        "Nueva Jersey 4816",
+        "Lago Argentino 1973",
+        "Cacheuta 4273",
+        "Cacheuta 4135",
+        "Cacheuta 3849",
+        "Manuel Baigorria 1143",
+        "Manuel Baigorria 902",
+        "Pedro de Mendoza 2830",
+        "Lord Baden Powell 2710",
+        "Avenida Naciones Unidas 621"
+      ]
+    },
+    "vuelta": {
+      "descripcion": "De Los Valsecitos 814 - Avenida Renault 2224",
+      "calles": [
+        "De Los Valsecitos 814",
+        "De Los Valsecitos 673",
+        "De Los Valsecitos 477",
+        "Del Bailecito 502",
+        "Del Chamamé 9860",
+        "Del Cultrún 79",
+        "Avenida Juan B. Justo 9729",
+        "Avenida Juan B. Justo RUTA 9",
+        "Avenida Juan B. Justo 8834",
+        "Avenida Juan B. Justo 8599",
+        "Avenida Juan B. Justo 8530",
+        "Avenida Juan B. Justo S/N",
+        "Avenida Juan B. Justo 7751",
+        "Avenida Juan B. Justo 7089",
+        "Avenida Japón 60"
+      ]
+    }
+  },
+  "paradasPrincipales": [
+    "Avenida Renault 2297",
+    "Pedro de Mendoza 2830",
+    "Bulevar Chacabuco 750",
+    "Rodriguez Peña 1954",
+    "Mariano Fragueíro 4208",
+    "Jorge Eduardo Newbery 151",
+    "Avenida Juan B. Justo 7970",
+    "De La Huella 301"
+  ],
+  "horarios": {
+    "lunesAViernes": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "sabados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "domingosYFeriados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    }
+  },
+  "tarifas": {
+    "efectivo": "Consultá la tarifa vigente en el sitio de la Municipalidad de Córdoba",
+    "redBus": "Consultá descuentos disponibles con tarjeta Red Bus"
+  },
+  "mapsEmbedUrl": "",
+  "ultimaActualizacion": "2023-03-16",
+  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
+}

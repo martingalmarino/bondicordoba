@@ -1,0 +1,87 @@
+{
+  "numero": "30",
+  "nombre": "Línea 30",
+  "esEjemplo": false,
+  "empresa": "Coniferal",
+  "descripcionCorta": "Línea 30 - Coniferal",
+  "recorrido": {
+    "ida": {
+      "descripcion": "Avenida Armada Argentina S/N - Mariano Fragueíro 4666",
+      "calles": [
+        "Avenida Armada Argentina S/N",
+        "Bonaire S/N",
+        "Aruba S/N",
+        "Guanasacate 2845",
+        "Guadalupe 2899",
+        "Isabela 2199",
+        "Atlántida 2199",
+        "América Central 2199",
+        "Luis Orione 2199",
+        "Avenida Curazao 2337",
+        "Avenida Renault 2252",
+        "Colorado 5208",
+        "Mayor Fernando Juan Casado 1957",
+        "Nueva Jersey 4816",
+        "Mayor Fernando Juan Casado 1604"
+      ]
+    },
+    "vuelta": {
+      "descripcion": "Sabino O'Donell 514 - Avenida Armada Argentina S/N",
+      "calles": [
+        "Sabino O'Donell 514",
+        "Dirección desconocida",
+        "Mariano Fragueíro 4841",
+        "Mackay Gordon S/N",
+        "Mariano Fragueíro 4641",
+        "Mariano Fragueíro 4540",
+        "Mariano Fragueíro 4401",
+        "Mariano Fragueíro 4026",
+        "Mariano Fragueíro 3668",
+        "Mariano Fragueíro 3481",
+        "Mariano Fragueíro 3241",
+        "Mariano Fragueíro 3040",
+        "Mariano Fragueíro 2777",
+        "Mariano Fragueíro 2631",
+        "Mariano Fragueíro 2449"
+      ]
+    }
+  },
+  "paradasPrincipales": [
+    "Sabino O'Donell 514",
+    "Mariano Fragueíro 4026",
+    "Mariano Fragueíro 2243",
+    "Avenida General Paz 241",
+    "Avenida Vélez Sarsfield 3178",
+    "Avenida Armada Argentina 1100",
+    "Luis Orione 2200",
+    "Avenida Armada Argentina S/N"
+  ],
+  "horarios": {
+    "lunesAViernes": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "sabados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "domingosYFeriados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    }
+  },
+  "tarifas": {
+    "efectivo": "Consultá la tarifa vigente en el sitio de la Municipalidad de Córdoba",
+    "redBus": "Consultá descuentos disponibles con tarjeta Red Bus"
+  },
+  "mapsEmbedUrl": "",
+  "ultimaActualizacion": "2023-03-16",
+  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
+}

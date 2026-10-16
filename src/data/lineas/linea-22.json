@@ -1,0 +1,87 @@
+{
+  "numero": "22",
+  "nombre": "Línea 22",
+  "esEjemplo": false,
+  "empresa": "ERSA",
+  "descripcionCorta": "Línea 22 - ERSA",
+  "recorrido": {
+    "ida": {
+      "descripcion": "Avenida Tomás de Irobi 995 - Leonismo Argentino 502",
+      "calles": [
+        "Avenida Tomás de Irobi 995",
+        "Avenida Tomás de Irobi 839",
+        "Avenida Tomás de Irobi 709",
+        "Avenida Tomás de Irobi 601",
+        "Avenida Tomás de Irobi 503",
+        "Avenida Tomás de Irobi 317",
+        "Avenida Tomás de Irobi 207",
+        "Gaspar de Medina 511",
+        "Suárez de Figueroa 111",
+        "Monseñor Pablo Cabrera 3903",
+        "Cristóbal Hicken 2499",
+        "Las Vertientes 2580",
+        "Talavera de Madrid 3101",
+        "Bulevar Los Granaderos 2385",
+        "Bulevar Los Granaderos 2221"
+      ]
+    },
+    "vuelta": {
+      "descripcion": "Leonismo Argentino 692 - Suárez de Figueroa 1000",
+      "calles": [
+        "Leonismo Argentino 692",
+        "Avenida Ciudad de Valparaíso 3808",
+        "Avenida Ciudad de Valparaíso 3986",
+        "Tiziano Vecellio S/N",
+        "Benjamín Dávalos S/N",
+        "J. Benati S/N",
+        "Leonismo Argentino 582",
+        "Leonismo Argentino 502",
+        "José María Eguiluz 501",
+        "Luis María Drago 500",
+        "Carlos O. Bunge 3213",
+        "Carlos O. Bunge 3015",
+        "Coronel José Javier Diaz 415",
+        "Concejal Felipe Belardinelli 2801",
+        "Avenida Cruz Roja Argentina 321"
+      ]
+    }
+  },
+  "paradasPrincipales": [
+    "Leonismo Argentino 692",
+    "Leonismo Argentino 502",
+    "Avenida Cruz Roja Argentina 321",
+    "Bulevar Chacabuco 646",
+    "Avenida Santa Fe 354",
+    "Paso de Uspallata 1514",
+    "Bv. Los Granaderos 2459",
+    "Suárez de Figueroa 1000"
+  ],
+  "horarios": {
+    "lunesAViernes": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "sabados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "domingosYFeriados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    }
+  },
+  "tarifas": {
+    "efectivo": "Consultá la tarifa vigente en el sitio de la Municipalidad de Córdoba",
+    "redBus": "Consultá descuentos disponibles con tarjeta Red Bus"
+  },
+  "mapsEmbedUrl": "",
+  "ultimaActualizacion": "2023-03-16",
+  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
+}

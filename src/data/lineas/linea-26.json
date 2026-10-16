@@ -1,0 +1,71 @@
+{
+  "numero": "26",
+  "nombre": "26 por b los Cortaderos",
+  "esEjemplo": false,
+  "empresa": "ERSA",
+  "descripcionCorta": "Línea 26 - ERSA",
+  "recorrido": {
+    "ida": {
+      "descripcion": "Viña Del Mar 4736 - LA VOZ DEL INTERIOR Y RIVADAVIA",
+      "calles": [
+        "Viña Del Mar 4736",
+        "Dr. Pedro Minuzzi 128",
+        "Minuzzi S/N",
+        "Concejal Felipe Belardinelli S/N",
+        "Wenceslao Escalante 300",
+        "Concejal Felipe Belardinelli 4000",
+        "Concejal Felipe Belardinelli 3968",
+        "Leonismo Argentino S/N",
+        "Av. Cjal. Felipe Belardinelli 3427",
+        "Av. Cjal. Felipe Belardinelli 3277",
+        "Concejal Felipe Belardinelli 3109",
+        "Concejal Felipe Belardinelli 2971",
+        "Concejal Felipe Belardinelli 2801",
+        "Avenida Cruz Roja Argentina 349",
+        "Maestro Marcelo López S/N"
+      ]
+    },
+    "vuelta": {
+      "descripcion": "",
+      "calles": []
+    }
+  },
+  "paradasPrincipales": [
+    "Viña Del Mar 4736",
+    "Concejal Felipe Belardinelli 2801",
+    "Bulevar San Juan 15",
+    "Julián Paz 2056",
+    "Rodríguez del Busto 3402",
+    "Avenida Padre Claret 5678",
+    "Calle Publica Los Cortaderos",
+    "LA VOZ DEL INTERIOR Y RIVADAVIA"
+  ],
+  "horarios": {
+    "lunesAViernes": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "sabados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "domingosYFeriados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    }
+  },
+  "tarifas": {
+    "efectivo": "Consultá la tarifa vigente en el sitio de la Municipalidad de Córdoba",
+    "redBus": "Consultá descuentos disponibles con tarjeta Red Bus"
+  },
+  "mapsEmbedUrl": "",
+  "ultimaActualizacion": "2023-03-16",
+  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
+}

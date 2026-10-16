@@ -1,0 +1,87 @@
+{
+  "numero": "23",
+  "nombre": "Línea 23",
+  "esEjemplo": false,
+  "empresa": "ERSA",
+  "descripcionCorta": "Línea 23 - ERSA",
+  "recorrido": {
+    "ida": {
+      "descripcion": "Celso Barrios 3102 - Dirección desconocida",
+      "calles": [
+        "Celso Barrios 3102",
+        "Celso Barrios 2917",
+        "Agua De Oro S/N",
+        "Agua de Oro 3483",
+        "Huerta Grande 3317",
+        "Huerta Grande 3217",
+        "Huerta Grande 3119",
+        "Matanza 3063",
+        "Quilmes 3260",
+        "Luján 2975",
+        "Avenida Pilar 2849",
+        "Tandil 3553",
+        "Tandil 3424",
+        "Tandil 3124",
+        "Tandil 2878"
+      ]
+    },
+    "vuelta": {
+      "descripcion": "De Los Rusos 3894 - Celso Barrios 3064",
+      "calles": [
+        "De Los Rusos 3894",
+        "De Los Rusos 4140",
+        "De Los Rusos 4307",
+        "Dirección desconocida",
+        "Lino Spilimbergo S/N",
+        "Colectora S/N",
+        "José Betinotti 3356",
+        "Santiago Baravino 4979",
+        "Azor Grimaut 3099",
+        "Roberto Cayol 3101",
+        "Santiago Baravino 4323",
+        "Santiago Baravino 4211",
+        "Fray Luis Beltrán 3299",
+        "Esteban Piacenza 4001",
+        "Los Cebiles 3062"
+      ]
+    }
+  },
+  "paradasPrincipales": [
+    "De Los Rusos 3894",
+    "Santiago Baravino 4323",
+    "Avenida Virgen de La Merced 2207",
+    "12 de Octubre 1413",
+    "Avenida Concepción Arenal 924",
+    "Avenida Baradero 1779",
+    "Luján 2920",
+    "Celso Barrios 3064"
+  ],
+  "horarios": {
+    "lunesAViernes": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "sabados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "domingosYFeriados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    }
+  },
+  "tarifas": {
+    "efectivo": "Consultá la tarifa vigente en el sitio de la Municipalidad de Córdoba",
+    "redBus": "Consultá descuentos disponibles con tarjeta Red Bus"
+  },
+  "mapsEmbedUrl": "",
+  "ultimaActualizacion": "2023-03-16",
+  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
+}

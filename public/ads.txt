@@ -1,0 +1,8 @@
+# ads.txt para BondiCórdoba
+# Reemplazar con tu información de Google AdSense cuando estés listo para monetizar
+
+# Formato: google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+# Reemplaza pub-XXXXXXXXXXXXXXXX con tu ID de editor de AdSense
+
+# Ejemplo (descomentá y completá con tus datos):
+# google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0

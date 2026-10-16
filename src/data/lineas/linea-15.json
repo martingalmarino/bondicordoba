@@ -1,0 +1,87 @@
+{
+  "numero": "15",
+  "nombre": "Línea 15",
+  "esEjemplo": false,
+  "empresa": "Coniferal",
+  "descripcionCorta": "Línea 15 - Coniferal",
+  "recorrido": {
+    "ida": {
+      "descripcion": "Antucura 10090 - Cipriano Perelló 5316",
+      "calles": [
+        "Antucura 10090",
+        "Antucura 9901",
+        "Lancun 8532",
+        "Linco 9522",
+        "Cruz Alta 8315",
+        "Cruz Alta 8189",
+        "Cruz Alta 8008",
+        "Avenida Donato Álvarez 9411",
+        "Quilloamira 7914",
+        "Pehuanches 9335",
+        "Pehuanches 9108",
+        "Molleyaco 8099",
+        "Molleyaco 8172",
+        "Piedra Labrada 8400",
+        "Piedra Labrada 8353"
+      ]
+    },
+    "vuelta": {
+      "descripcion": "Juan Ramón Rojas 5301 - Presidente Perón 8598",
+      "calles": [
+        "Juan Ramón Rojas 5301",
+        "Cipriano Perelló 5114",
+        "Cipriano Perelló 4930",
+        "Cipriano Perelló 4706",
+        "Agustín Gamarra 5729",
+        "Avenida General Manuel Savio 6338",
+        "Avenida General Manuel Savio 6402",
+        "Sánchez De Loria 5082",
+        "Avenida Amadeo Sabattini 5514",
+        "Avenida Amadeo Sabattini 5427",
+        "Avenida Amadeo Sabattini 5377",
+        "Avenida Amadeo Sabattini 5351",
+        "Avenida Amadeo Sabattini 5319",
+        "Avenida Amadeo Sabattini 5195",
+        "Avenida Amadeo Sabattini 5023"
+      ]
+    }
+  },
+  "paradasPrincipales": [
+    "Juan Ramón Rojas 5301",
+    "Avenida Amadeo Sabattini 5319",
+    "Avenida Sabattini 1673",
+    "Avenida Castro Barros 664",
+    "Avenida Rafael Núñez 3535",
+    "Avenida Rafael Núñez 5476",
+    "Piedra Labrada 7779",
+    "Presidente Perón 8598"
+  ],
+  "horarios": {
+    "lunesAViernes": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "sabados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "domingosYFeriados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    }
+  },
+  "tarifas": {
+    "efectivo": "Consultá la tarifa vigente en el sitio de la Municipalidad de Córdoba",
+    "redBus": "Consultá descuentos disponibles con tarjeta Red Bus"
+  },
+  "mapsEmbedUrl": "",
+  "ultimaActualizacion": "2023-03-16",
+  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
+}

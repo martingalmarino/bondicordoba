@@ -1,0 +1,87 @@
+{
+  "numero": "70",
+  "nombre": "Línea 70",
+  "esEjemplo": false,
+  "empresa": "ERSA",
+  "descripcionCorta": "Línea 70 - ERSA",
+  "recorrido": {
+    "ida": {
+      "descripcion": "Lola Mora 1605 - República Popular China S/N",
+      "calles": [
+        "Lola Mora 1605",
+        "Alejo Bruix 5646",
+        "Alejo Bruix 5758",
+        "Tulumba 1273",
+        "Estados Unidos 5651",
+        "Estados Unidos 5213",
+        "Estados Unidos 5001",
+        "San Jerónimo 4958",
+        "San Jerónimo 4741",
+        "San Jerónimo 4435",
+        "Río de la Plata 1207",
+        "López y Planes 4351",
+        "López y Planes 4149",
+        "López y Planes 3901",
+        "López y Planes 3747"
+      ]
+    },
+    "vuelta": {
+      "descripcion": "República Popular China S/N - Lola Mora 1586",
+      "calles": [
+        "República Popular China S/N",
+        "Av. República de China",
+        "Soldado Ramón A. Cabrera 7070",
+        "Soldado Ramón A. Cabrera 6925",
+        "Avenida Mahatma Ghandi 865",
+        "Avenida Mahatma Ghandi 603",
+        "Avenida Mahatma Ghandi 405",
+        "Avenida Mahatma Ghandi 321",
+        "Avenida Santiago Costamagna 6896",
+        "Avenida Santiago Costamagna 6998",
+        "Nicolás Mascardi 253",
+        "Esteban Pagliere 6925",
+        "Avenida Mahatma Ghandi 67",
+        "Avenida Ejército Argentino 6871",
+        "Avenida Colón 6325"
+      ]
+    }
+  },
+  "paradasPrincipales": [
+    "República Popular China S/N",
+    "Avenida Mahatma Ghandi 603",
+    "Avenida Colón 6325",
+    "Avenida Colón 4147",
+    "Avenida Colón 1027",
+    "Agustín Garzón 1294",
+    "José M. Solares 1363",
+    "Lola Mora 1586"
+  ],
+  "horarios": {
+    "lunesAViernes": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "sabados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "domingosYFeriados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    }
+  },
+  "tarifas": {
+    "efectivo": "Consultá la tarifa vigente en el sitio de la Municipalidad de Córdoba",
+    "redBus": "Consultá descuentos disponibles con tarjeta Red Bus"
+  },
+  "mapsEmbedUrl": "",
+  "ultimaActualizacion": "2023-03-16",
+  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
+}

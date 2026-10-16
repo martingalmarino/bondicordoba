@@ -1,0 +1,87 @@
+{
+  "numero": "33",
+  "nombre": "Línea 33",
+  "esEjemplo": false,
+  "empresa": "TAMSE",
+  "descripcionCorta": "Línea 33 - TAMSE",
+  "recorrido": {
+    "ida": {
+      "descripcion": "Avenida Renault 2299 - Avenida General Paz 601",
+      "calles": [
+        "Avenida Renault 2299",
+        "Luis Orione 2200",
+        "El Salvador 2200",
+        "América Central 2200",
+        "Barbados 2780",
+        "Camilo Henríquez 2695",
+        "Camilo Henríquez 2790",
+        "Camilo Henríquez 2870",
+        "Cacheuta 4499",
+        "Avignon S/N",
+        "Nantes S/N",
+        "Avenida Central S/N",
+        "Atlántida 2085",
+        "Atlántida 1901",
+        "Ushuaia 2477"
+      ]
+    },
+    "vuelta": {
+      "descripcion": "Avenida General Paz 205 - Avenida Renault 2300",
+      "calles": [
+        "Avenida General Paz 205",
+        "Avenida Vélez Sarsfield 155",
+        "Avenida Vélez Sarsfield 433",
+        "Avenida Vélez Sarsfield 866",
+        "Avenida Vélez Sarsfield 1198",
+        "Avenida Vélez Sarsfield 1498",
+        "Avenida Vélez Sarsfield 1954",
+        "Avenida Vélez Sarsfield 2340",
+        "Avenida Vélez Sarsfield 3386",
+        "Avenida Armada Argentina 54",
+        "Avenida Armada Argentina 190",
+        "Avenida Armada Argentina 412",
+        "Avenida Armada Argentina 570",
+        "Avenida Armada Argentina 816",
+        "Avenida Armada Argentina 970"
+      ]
+    }
+  },
+  "paradasPrincipales": [
+    "Avenida General Paz 205",
+    "Avenida Vélez Sarsfield 1954",
+    "Avenida Armada Argentina 570",
+    "Arroyo De La Reducción 1330",
+    "Gobernación 1350",
+    "Colorado 6063",
+    "Avenida Central S/N",
+    "Avenida Renault 2300"
+  ],
+  "horarios": {
+    "lunesAViernes": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "sabados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "domingosYFeriados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    }
+  },
+  "tarifas": {
+    "efectivo": "Consultá la tarifa vigente en el sitio de la Municipalidad de Córdoba",
+    "redBus": "Consultá descuentos disponibles con tarjeta Red Bus"
+  },
+  "mapsEmbedUrl": "",
+  "ultimaActualizacion": "2023-03-16",
+  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
+}

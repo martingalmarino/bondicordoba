@@ -1,0 +1,87 @@
+{
+  "numero": "62",
+  "nombre": "Línea 62",
+  "esEjemplo": false,
+  "empresa": "Coniferal",
+  "descripcionCorta": "Línea 62 - Coniferal",
+  "recorrido": {
+    "ida": {
+      "descripcion": "Rafael Feliciano Alcaraz 6391 - Aviador Abel 1429",
+      "calles": [
+        "Rafael Feliciano Alcaraz 6391",
+        "Rafael Feliciano Alcaraz 6009",
+        "Rafael Feliciano Alcaraz 5822",
+        "Antonio Machoni 1809",
+        "Avenida Malvinas Argentinas 4375",
+        "Piero Astori 1677",
+        "Piero Astori 1547",
+        "José María Urien 1623",
+        "José María Urien 1751",
+        "Avenida Malvinas Argentinas 3783",
+        "Avenida Malvinas Argentinas 3519",
+        "Avenida Bulnes 4788",
+        "Avenida Bulnes 5016",
+        "Martin Allende 1543",
+        "Martin Allende 1415"
+      ]
+    },
+    "vuelta": {
+      "descripcion": "Aviador Kingsley 1351 - Rafael Feliciano Alcaraz 6910",
+      "calles": [
+        "Aviador Kingsley 1351",
+        "Aviador Kingsley 1450",
+        "Aviador Kingsley 1495",
+        "Aviador Kingsley 1599",
+        "Alberto Williams 4454",
+        "Alberto Williams 4313",
+        "Alberto Williams 4238",
+        "Alberto Williams 4051",
+        "Alberto Williams 3865",
+        "Graham Bell 1616",
+        "Alcorta 3773",
+        "José Iseas 1500",
+        "José Iseas 1429",
+        "Luis Agote 3637",
+        "Luis Agote 3457"
+      ]
+    }
+  },
+  "paradasPrincipales": [
+    "Aviador Kingsley 1351",
+    "José Iseas 1500",
+    "Luis Agote 2201",
+    "Rodriguez Peña 160",
+    "Roma 636",
+    "Padre Luis Monti 3062",
+    "Padre Luis Monti 5081",
+    "Rafael Feliciano Alcaraz 6910"
+  ],
+  "horarios": {
+    "lunesAViernes": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "sabados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "domingosYFeriados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    }
+  },
+  "tarifas": {
+    "efectivo": "Consultá la tarifa vigente en el sitio de la Municipalidad de Córdoba",
+    "redBus": "Consultá descuentos disponibles con tarjeta Red Bus"
+  },
+  "mapsEmbedUrl": "",
+  "ultimaActualizacion": "2023-03-16",
+  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
+}

@@ -1,0 +1,87 @@
+{
+  "numero": "60",
+  "nombre": "Línea 60",
+  "esEjemplo": false,
+  "empresa": "Coniferal",
+  "descripcionCorta": "Línea 60 - Coniferal",
+  "recorrido": {
+    "ida": {
+      "descripcion": "Julio de Vedia 3865 - Pública 18 S/N",
+      "calles": [
+        "Julio de Vedia 3865",
+        "Julio de Vedia 3779",
+        "Julio de Vedia 3685",
+        "Julio de Vedia 3577",
+        "Tomás de Rocamora 2299",
+        "Celestino Vidal 3157",
+        "Celestino Vidal 3015",
+        "Celestino Vidal 2865",
+        "Celestino Vidal 2713",
+        "Avenida Capdevila 2520",
+        "Avenida Capdevila 2647",
+        "Jacinto de Altoaguirre 2525",
+        "Jacinto de Altoaguirre 2305",
+        "Jacinto de Altoaguirre 2013",
+        "Jacinto de Altoaguirre 1709"
+      ]
+    },
+    "vuelta": {
+      "descripcion": "Aviador Silvio Pettirossi 3431 - Julio de Vedia 3876",
+      "calles": [
+        "Aviador Silvio Pettirossi 3431",
+        "Aviador Silvio Pettirossi 3229",
+        "Aviador Silvio Pettirossi 3053",
+        "Aviador Silvio Pettirossi 2855",
+        "Aviador Silvio Pettirossi 2623",
+        "Aviador Silvio Pettirossi 2416",
+        "Aviador Silvio Pettirossi 2295",
+        "Aviador Silvio Pettirossi 2033",
+        "Avenida Fuerza Aérea 4599",
+        "Avenida Fuerza Aérea Argentina 4311",
+        "Avenida Fuerza Aérea 4017",
+        "Avenida Fuerza Aérea 3773",
+        "Avenida Fuerza Aérea 3535",
+        "Avenida Fuerza Aérea 3039",
+        "Avenida Fuerza Aérea 2817"
+      ]
+    }
+  },
+  "paradasPrincipales": [
+    "Aviador Silvio Pettirossi 3431",
+    "Avenida Fuerza Aérea 4017",
+    "Río Negro 1377",
+    "Avenida Colón 764",
+    "Roma 636",
+    "Puerto de Palos 2700",
+    "Alsina 2578",
+    "Julio de Vedia 3876"
+  ],
+  "horarios": {
+    "lunesAViernes": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "sabados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "domingosYFeriados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    }
+  },
+  "tarifas": {
+    "efectivo": "Consultá la tarifa vigente en el sitio de la Municipalidad de Córdoba",
+    "redBus": "Consultá descuentos disponibles con tarjeta Red Bus"
+  },
+  "mapsEmbedUrl": "",
+  "ultimaActualizacion": "2023-03-16",
+  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
+}

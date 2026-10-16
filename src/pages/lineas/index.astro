@@ -5,14 +5,15 @@ import LineCard from '../../components/LineCard.astro';
 import EmptyState from '../../components/EmptyState.astro';
 import Button from '../../components/Button.astro';
 import { Icon } from 'astro-icon/components';
-import { getLineas } from '../../data/lineas';
+import { getLineas, getRecorridoSummary } from '../../data/lineas';
 
 const searchQuery = Astro.url.searchParams.get('q')?.toLowerCase() || '';
 const lineas = await getLineas();
 
 const lineasFiltradas = searchQuery
   ? lineas.filter((linea) => {
-      const searchIn = `${linea.numero} ${linea.nombre || ''} ${linea.recorrido || ''}`.toLowerCase();
+      const recorrido = getRecorridoSummary(linea);
+      const searchIn = `${linea.numero} ${linea.nombre || ''} ${recorrido}`.toLowerCase();
       return searchIn.includes(searchQuery);
     })
   : lineas;
@@ -72,7 +73,7 @@ const breadcrumbs = [
           <LineCard
             numero={linea.numero}
             nombre={linea.nombre}
-            recorrido={linea.recorrido}
+            recorrido={getRecorridoSummary(linea)}
             empresa={linea.empresa}
             href={`/lineas/${linea.numero}`}
           />

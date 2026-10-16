@@ -1,0 +1,143 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+
+const breadcrumbs = [
+  { label: 'Inicio', href: '/' },
+  { label: 'Términos y condiciones' }
+];
+---
+
+<BaseLayout 
+  title="Términos y condiciones - BondiCórdoba"
+  description="Términos y condiciones de uso del sitio web BondiCórdoba."
+  noindex={true}
+>
+  <div class="container">
+    <Breadcrumbs items={breadcrumbs} />
+    
+    <h1>Términos y condiciones</h1>
+    <p class="last-updated">Última actualización: 16 de octubre de 2026</p>
+    
+    <section class="section">
+      <h2>1. Aceptación de los términos</h2>
+      <p>Al acceder y utilizar BondiCórdoba ("el sitio"), aceptas estar sujeto a estos términos y condiciones de uso. Si no estás de acuerdo con alguna parte de estos términos, no debes utilizar este sitio.</p>
+    </section>
+    
+    <section class="section">
+      <h2>2. Descripción del servicio</h2>
+      <p>BondiCórdoba es un portal informativo que proporciona información sobre líneas de colectivos en Córdoba Capital, Argentina. El sitio incluye:</p>
+      <ul>
+        <li>Recorridos de líneas de colectivos</li>
+        <li>Horarios y frecuencias</li>
+        <li>Guías sobre tarifas y tarjeta Red Bus</li>
+        <li>Información sobre destinos populares</li>
+      </ul>
+    </section>
+    
+    <div class="alert alert-warning">
+      <strong>⚠️ Sitio no oficial:</strong> BondiCórdoba NO es un sitio oficial de la Municipalidad de Córdoba, TAMSE, ni de ninguna empresa de transporte. Somos un portal informativo independiente.
+    </div>
+    
+    <section class="section">
+      <h2>3. Exactitud de la información</h2>
+      <p>Nos esforzamos por mantener la información actualizada y precisa. Sin embargo:</p>
+      <ul>
+        <li>La información puede cambiar sin previo aviso</li>
+        <li>No garantizamos la exactitud, completitud o actualidad de la información</li>
+        <li>Los horarios, recorridos y tarifas son referenciales</li>
+        <li>Recomendamos verificar la información con fuentes oficiales antes de planificar un viaje</li>
+      </ul>
+    </section>
+    
+    <section class="section">
+      <h2>4. Limitación de responsabilidad</h2>
+      <p>BondiCórdoba y sus operadores no serán responsables por:</p>
+      <ul>
+        <li>Pérdidas o daños derivados del uso de la información del sitio</li>
+        <li>Interrupciones del servicio</li>
+        <li>Errores u omisiones en la información</li>
+        <li>Problemas técnicos o fallas del sitio</li>
+        <li>Pérdida de tiempo, viajes perdidos o cualquier otro daño derivado del uso de este sitio</li>
+      </ul>
+      <p>El uso de este sitio es bajo tu propio riesgo.</p>
+    </section>
+    
+    <section class="section">
+      <h2>5. Uso del sitio</h2>
+      <p>Al utilizar este sitio, aceptas:</p>
+      <ul>
+        <li>Utilizarlo solo para fines legales</li>
+        <li>No intentar acceder a áreas restringidas del sitio</li>
+        <li>No utilizar el sitio de manera que pueda dañarlo o afectar su disponibilidad</li>
+        <li>No copiar, reproducir o redistribuir el contenido sin autorización</li>
+      </ul>
+    </section>
+    
+    <section class="section">
+      <h2>6. Propiedad intelectual</h2>
+      <p>El contenido de este sitio, incluyendo textos, gráficos, logotipos y diseño, está protegido por derechos de autor. La información sobre horarios y recorridos proviene de fuentes públicas.</p>
+    </section>
+    
+    <section class="section">
+      <h2>7. Enlaces a sitios externos</h2>
+      <p>Este sitio puede contener enlaces a sitios web de terceros. No somos responsables del contenido o las prácticas de estos sitios. El acceso a sitios externos es bajo tu propia responsabilidad.</p>
+    </section>
+    
+    <section class="section">
+      <h2>8. Publicidad</h2>
+      <p>Este sitio puede mostrar publicidad mediante Google AdSense. Los anunciantes son responsables de sus propios anuncios y ofertas. BondiCórdoba no respalda ni garantiza los productos o servicios anunciados.</p>
+    </section>
+    
+    <section class="section">
+      <h2>9. Modificaciones</h2>
+      <p>Nos reservamos el derecho de:</p>
+      <ul>
+        <li>Modificar estos términos en cualquier momento</li>
+        <li>Suspender o discontinuar el sitio sin previo aviso</li>
+        <li>Cambiar o eliminar contenido del sitio</li>
+      </ul>
+      <p>Es tu responsabilidad revisar estos términos periódicamente.</p>
+    </section>
+    
+    <section class="section">
+      <h2>10. Fuentes oficiales</h2>
+      <p>Para información oficial y actualizada sobre el transporte público en Córdoba, consulta:</p>
+      <ul>
+        <li><strong>Municipalidad de Córdoba:</strong> <a href="https://www.cordoba.gob.ar" target="_blank" rel="noopener">cordoba.gob.ar</a></li>
+        <li><strong>TAMSE:</strong> <a href="https://tamse.gob.ar" target="_blank" rel="noopener">tamse.gob.ar</a></li>
+      </ul>
+    </section>
+    
+    <section class="section">
+      <h2>11. Ley aplicable</h2>
+      <p>Estos términos se rigen por las leyes de la República Argentina. Cualquier disputa se resolverá en los tribunales competentes de la ciudad de Córdoba, Argentina.</p>
+    </section>
+    
+    <section class="section">
+      <h2>12. Contacto</h2>
+      <p>Para preguntas sobre estos términos, puedes contactarnos a través de nuestra <a href="/contacto">página de contacto</a>.</p>
+    </section>
+  </div>
+</BaseLayout>
+
+<style>
+  .last-updated {
+    color: var(--color-text-light);
+    font-style: italic;
+    margin-bottom: 2rem;
+  }
+  
+  .section {
+    margin: 2.5rem 0;
+  }
+  
+  .section ul {
+    margin-top: 0.5rem;
+    margin-left: 1.5rem;
+  }
+  
+  .section li {
+    margin-bottom: 0.5rem;
+  }
+</style>

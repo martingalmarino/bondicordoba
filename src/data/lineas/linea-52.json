@@ -1,0 +1,87 @@
+{
+  "numero": "52",
+  "nombre": "Línea 52",
+  "esEjemplo": false,
+  "empresa": "ERSA",
+  "descripcionCorta": "Línea 52 - ERSA",
+  "recorrido": {
+    "ida": {
+      "descripcion": "Dirección desconocida - Colorado 6194",
+      "calles": [
+        "Dirección desconocida",
+        "Germán Berdiales 1202",
+        "Florentino Ameghino 4709",
+        "José Santos Chocano 4502",
+        "Juan L. Orrego 4379",
+        "Bartolomé Hidalgo 1637",
+        "Bartolomé Hidalgo 1769",
+        "Pedro Naon 1358",
+        "Pedro Naon 1207",
+        "Pedro Naon 1024",
+        "Pedro Naon 1000",
+        "Enrique Banchs 3834",
+        "Amalia Sánchez Ariño 3565",
+        "Carlos Giménez 199",
+        "Carlos Giménez 116"
+      ]
+    },
+    "vuelta": {
+      "descripcion": "Mascachín 2193 - Dirección desconocida",
+      "calles": [
+        "Mascachín 2193",
+        "Colorado 6385",
+        "Colorado 6225",
+        "Colorado 6062",
+        "Colorado 5958",
+        "Colorado 5904",
+        "Colorado 5809",
+        "Cajamarca 2079",
+        "Alto del Tala 5771",
+        "Cajamarca 1617",
+        "Cajamarca 1405",
+        "Forestieri 5743",
+        "Río Negro 5508",
+        "Bogotá 1349",
+        "Río Negro 5233"
+      ]
+    }
+  },
+  "paradasPrincipales": [
+    "Mascachín 2193",
+    "Bogotá 1349",
+    "Avenida Vélez Sarsfield 3895",
+    "Bv. Enrique Barros S/N",
+    "Jacinto Ríos 1292",
+    "NUEVO MUNDO 850",
+    "Amalia Sánchez Ariño 3481",
+    "Dirección desconocida"
+  ],
+  "horarios": {
+    "lunesAViernes": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "sabados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "domingosYFeriados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    }
+  },
+  "tarifas": {
+    "efectivo": "Consultá la tarifa vigente en el sitio de la Municipalidad de Córdoba",
+    "redBus": "Consultá descuentos disponibles con tarjeta Red Bus"
+  },
+  "mapsEmbedUrl": "",
+  "ultimaActualizacion": "2023-03-16",
+  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
+}

@@ -1,0 +1,87 @@
+{
+  "numero": "64",
+  "nombre": "Línea 64",
+  "esEjemplo": false,
+  "empresa": "Coniferal",
+  "descripcionCorta": "Línea 64 - Coniferal",
+  "recorrido": {
+    "ida": {
+      "descripcion": "San Marino 4678 - Panamá 2999",
+      "calles": [
+        "San Marino 4678",
+        "Estocolmo 4328",
+        "Avenida Agustín Roque Arias 3252",
+        "Avenida Agustín Roque Arias 3062",
+        "Avenida Agustín Roque Arias 2830",
+        "Fournier 2740",
+        "Reconquista 3845",
+        "Reconquista 3609",
+        "Lagunilla 3463",
+        "Lagunilla 3147",
+        "La Paz 2501",
+        "Avenida Antártida 2902",
+        "Avenida Antártida 2652",
+        "Padre Lozano 2465",
+        "Lagunilla 2508"
+      ]
+    },
+    "vuelta": {
+      "descripcion": "Costa Rica 2964 - Berna 3523",
+      "calles": [
+        "Costa Rica 2964",
+        "Los Mártires 23",
+        "24 de Septiembre 2701",
+        "Bajada de Piedra 2603",
+        "Sarmiento 2599",
+        "Libertad 2328",
+        "Sarmiento 2095",
+        "Eufrasio Loza 223",
+        "25 de Mayo 2031",
+        "25 de Mayo 1803",
+        "25 de Mayo 1516",
+        "25 de Mayo 1317",
+        "David Luque 278",
+        "Sarmiento 973",
+        "Sarmiento 333"
+      ]
+    }
+  },
+  "paradasPrincipales": [
+    "Costa Rica 2964",
+    "Eufrasio Loza 223",
+    "Sarmiento 333",
+    "Avenida Pueyrredón 964",
+    "Avenida Fuerza Aérea 1848",
+    "Lagunilla 2494",
+    "Lagunilla 3338",
+    "Berna 3523"
+  ],
+  "horarios": {
+    "lunesAViernes": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "sabados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "domingosYFeriados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    }
+  },
+  "tarifas": {
+    "efectivo": "Consultá la tarifa vigente en el sitio de la Municipalidad de Córdoba",
+    "redBus": "Consultá descuentos disponibles con tarjeta Red Bus"
+  },
+  "mapsEmbedUrl": "",
+  "ultimaActualizacion": "2023-03-16",
+  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
+}
