@@ -1,0 +1,65 @@
+{
+  "numero": "11",
+  "nombre": "Línea 11",
+  "empresa": "Coniferal",
+  "descripcionCorta": "Línea 11 - Coniferal",
+  "recorrido": {
+    "vuelta": {
+      "descripcion": "Calingasta 5414 - Presidente Perón 8600",
+      "calles": [
+        "Calingasta 5414",
+        "Calingasta 5772",
+        "Ancastí 5808",
+        "Tinogasta 5802",
+        "Tinogasta 5709",
+        "Tinogasta 5561",
+        "Tinogasta 5405",
+        "Ancastí 5399",
+        "Calingasta 5331",
+        "Calingasta 5263",
+        "Fiambala 4899",
+        "Ramos Mejia 2315",
+        "Pedro Medrano 4916",
+        "Pedro Medrano 5082",
+        "Cangallo 1928"
+      ]
+    },
+    "ida": {
+      "descripcion": "Antucura 10090 - Calingasta 5324",
+      "calles": [
+        "Antucura 10090",
+        "Presidente Perón 8559",
+        "Presidente Perón 8479",
+        "Avenida Donato Álvarez 10099",
+        "Avenida Donato Álvarez 9801",
+        "Avenida Donato Álvarez 9689",
+        "Avenida Donato Álvarez 9557",
+        "Avenida Donato Álvarez 9241",
+        "Arrayan 9133",
+        "Cauque 7548",
+        "Cauque 7271",
+        "Tabacué 9176",
+        "Tabacué 8937",
+        "Chaquira 7200",
+        "Tipayante 7297"
+      ]
+    }
+  },
+  "paradasPrincipales": [
+    "Calingasta 5414",
+    "Pedro Medrano 5082",
+    "Avenida Sabattini 3199",
+    "Avenida Castro Barros 26",
+    "Avenida Octavio Pinto 3340",
+    "Avenida Rafael Núñez 5476",
+    "Chaquira 7205",
+    "Presidente Perón 8600"
+  ],
+  "horarios": [],
+  "tarifas": [],
+  "mapsEmbedUrl": "https://www.google.com/maps/embed/v1/directions?key=YOUR_API_KEY&origin=-31.441163,-64.114317&destination=-31.30737,-64.28648&waypoints=-31.43093,-64.13208|-31.3905,-64.20425|-31.34784,-64.24951&mode=transit",
+  "ultimaActualizacion": "2023-03-16",
+  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023); el recorrido puede haber cambiado. Verificá en la app Tu Bondi.",
+  "esEjemplo": false
+}

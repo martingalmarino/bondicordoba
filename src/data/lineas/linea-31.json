@@ -1,0 +1,65 @@
+{
+  "numero": "31",
+  "nombre": "Línea 31",
+  "empresa": "TAMSE",
+  "descripcionCorta": "Línea 31 - TAMSE",
+  "recorrido": {
+    "vuelta": {
+      "descripcion": "Bajada del Pucará S/N - Dirección desconocida",
+      "calles": [
+        "Bajada del Pucará S/N",
+        "Corrientes S/N",
+        "Agustín Garzón S/N",
+        "Bulevar Juan Domingo Perón 653",
+        "Bulevar Juan Domingo Perón 339",
+        "Bulevar Juan Domingo Perón 34",
+        "Santiago del Estero 226",
+        "Lima 333",
+        "Sarmiento 151",
+        "Avenida General Paz 241",
+        "Avenida Vélez Sarsfield 85",
+        "Avenida Vélez Sarsfield 209",
+        "Avenida Vélez Sarsfield 401",
+        "Avenida Vélez Sarsfield 866",
+        "Avenida Vélez Sarsfield 1198"
+      ]
+    },
+    "ida": {
+      "descripcion": "Pública 4 S/N - Dirección desconocida",
+      "calles": [
+        "Pública 4 S/N",
+        "Pública 5 S/N",
+        "Impira S/N",
+        "2 De Septiembre 4636",
+        "2 de Septiembre S/N",
+        "Rosario Del Dorado 2285",
+        "Ralico 1751",
+        "Soldado Eduardo Sosa 2185",
+        "Nueva Jersey 4816",
+        "Lago Argentino 2087",
+        "Lago Argentino S/N",
+        "Avenida Armada Argentina 1100",
+        "Verona 4399",
+        "Piamonte 1358",
+        "Piamonte 1454"
+      ]
+    }
+  },
+  "paradasPrincipales": [
+    "Bajada del Pucará S/N",
+    "Lima 333",
+    "Avenida Vélez Sarsfield 1198",
+    "Arq. Ernesto La Padula 603",
+    "Huiliches 1259",
+    "Avenida Armada Argentina 1572",
+    "Rosario Del Dorado 2259",
+    "Dirección desconocida"
+  ],
+  "horarios": [],
+  "tarifas": [],
+  "mapsEmbedUrl": "https://www.google.com/maps/embed/v1/directions?key=YOUR_API_KEY&origin=-31.428022278536663,-64.16949033737184&destination=-31.462831789929787,-64.25976276397706&waypoints=-31.42536732818619,-64.1910767555237|-31.455537783366967,-64.21257734298707|-31.468112,-64.230945&mode=transit",
+  "ultimaActualizacion": "2023-03-16",
+  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023); el recorrido puede haber cambiado. Verificá en la app Tu Bondi.",
+  "esEjemplo": false
+}

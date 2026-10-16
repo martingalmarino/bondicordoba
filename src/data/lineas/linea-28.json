@@ -1,0 +1,65 @@
+{
+  "numero": "28",
+  "nombre": "Línea 28",
+  "empresa": "ERSA",
+  "descripcionCorta": "Línea 28 - ERSA",
+  "recorrido": {
+    "vuelta": {
+      "descripcion": "Celso Barrios 3102 - Suárez de Figueroa 977",
+      "calles": [
+        "Celso Barrios 3102",
+        "Celso Barrios 2917",
+        "Agua De Oro S/N",
+        "Agua de Oro 3483",
+        "Huerta Grande 3317",
+        "Huerta Grande 3217",
+        "Pampayasta 2924",
+        "Pampayasta 2817",
+        "Huascha 3056",
+        "Baradero 2657",
+        "Baradero 2211",
+        "Baradero 1938",
+        "Avenida Bernardo O'Higgins 2701",
+        "Avenida Cruz Roja Argentina 1899",
+        "Avenida Madrid 2459"
+      ]
+    },
+    "ida": {
+      "descripcion": "Suárez de Figueroa 943 - Celso Barrios 3002",
+      "calles": [
+        "Suárez de Figueroa 943",
+        "Rodríguez de Ruesca 590",
+        "Rodríguez de Ruesca 698",
+        "Lasso de La Vega 809",
+        "Juan B. Noble 697",
+        "Tristán de Tejeda 838",
+        "Tristán de Tejeda 990",
+        "Juan de Constans 1000",
+        "De Las Fuentes 4147",
+        "Florencio Sánchez 4102",
+        "De los Regidores 1647",
+        "F. de Toledo Pimentel 1764",
+        "Gaspar de Medina 857",
+        "Francisco López Correa 2002",
+        "Avenida Vives 3539"
+      ]
+    }
+  },
+  "paradasPrincipales": [
+    "Celso Barrios 3102",
+    "Huascha 3056",
+    "Avenida Madrid 2208",
+    "Bulevar San Juan 33",
+    "Soldado Ruiz 854",
+    "Huarte 2787",
+    "Blas de Peralta 3801",
+    "Suárez de Figueroa 977"
+  ],
+  "horarios": [],
+  "tarifas": [],
+  "mapsEmbedUrl": "https://www.google.com/maps/embed/v1/directions?key=YOUR_API_KEY&origin=-31.458778,-64.156041&destination=-31.357444,-64.189591&waypoints=-31.435396237611076,-64.16875004768373|-31.399304,-64.194102|-31.373906,-64.196774&mode=transit",
+  "ultimaActualizacion": "2023-03-16",
+  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023); el recorrido puede haber cambiado. Verificá en la app Tu Bondi.",
+  "esEjemplo": false
+}

@@ -1,0 +1,65 @@
+{
+  "numero": "10",
+  "nombre": "Línea 10",
+  "empresa": "Coniferal",
+  "descripcionCorta": "Línea 10 - Coniferal",
+  "recorrido": {
+    "ida": {
+      "descripcion": "Av. Vucetich 8010 - Viracocha 6601",
+      "calles": [
+        "Av. Vucetich 8010",
+        "Av. Vucetich 7706-7764",
+        "Av. Vucetich 7677-7601",
+        "Vucetich 7450-7455",
+        "Av. Vucetich 7331-7311",
+        "Av. Vucetich 7194-7248",
+        "Av. Vucetich 7123",
+        "Av. Vucetich 6900-7038",
+        "Av. Vucetich 6743-6659",
+        "Av. Vucetich 6504-6542",
+        "Av. Vucetich 6300-6348",
+        "Avenida Amadeo Sabattini 6119",
+        "Avenida Amadeo Sabattini 5993",
+        "Avenida Amadeo Sabattini 5811",
+        "Sánchez De Loria 5082"
+      ]
+    },
+    "vuelta": {
+      "descripcion": "Viracocha 6530 - Juan Vucetich 7899",
+      "calles": [
+        "Viracocha 6530",
+        "Viracocha 6799",
+        "Viracocha 6962",
+        "Bartolomé Salom 6971",
+        "Manuel Montt 7802",
+        "José María Morelos 7599",
+        "José María Morelos 7487",
+        "Heriberto Martínez 6791",
+        "Heriberto Martínez 7046",
+        "Heriberto Martínez 7272",
+        "Francisco Vidal 7299",
+        "Avenida Ricardo Rojas 7009",
+        "Avenida Ricardo Rojas 6819",
+        "Avenida Rafael Núñez 6305",
+        "Avenida Rafael Núñez 6015"
+      ]
+    }
+  },
+  "paradasPrincipales": [
+    "Av. Vucetich 8010",
+    "Avenida Amadeo Sabattini 5993",
+    "Avenida Amadeo Sabattini 4319",
+    "Bulevar Arturo Illia 23",
+    "Avenida Caraffa 2064",
+    "Avenida Rafael Núñez 4072",
+    "Avenida Ricardo Rojas 6698",
+    "Viracocha 6601"
+  ],
+  "horarios": [],
+  "tarifas": [],
+  "mapsEmbedUrl": "https://www.google.com/maps/embed/v1/directions?key=YOUR_API_KEY&origin=-31.465001,-64.078242&destination=-31.343563,-64.273839&waypoints=-31.44669,-64.12165|-31.39925,-64.19779|-31.363,-64.23692&mode=transit",
+  "ultimaActualizacion": "2023-03-16",
+  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023); el recorrido puede haber cambiado. Verificá en la app Tu Bondi.",
+  "esEjemplo": false
+}

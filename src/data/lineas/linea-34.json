@@ -1,0 +1,65 @@
+{
+  "numero": "34",
+  "nombre": "Línea 34",
+  "empresa": "Coniferal",
+  "descripcionCorta": "Línea 34 - Coniferal",
+  "recorrido": {
+    "ida": {
+      "descripcion": "Dirección desconocida - Tucumán 633",
+      "calles": [
+        "Dirección desconocida",
+        "Avenida Armada Argentina S/N",
+        "Avenida Armada Argentina 3391",
+        "Avenida Armada Argentina 3043",
+        "Avenida Armada Argentina 2911",
+        "Avenida Armada Argentina 2731",
+        "Avenida Armada Argentina 2379",
+        "Avenida Armada Argentina 2111",
+        "Avenida Armada Argentina 1979",
+        "Avenida Armada Argentina 1837",
+        "Avenida Armada Argentina 1585",
+        "Avenida Armada Argentina 1100",
+        "Barda Del Medio 1038",
+        "Hipólito Bernardino Cejas S/N",
+        "Avenida Circunvalación 4311"
+      ]
+    },
+    "vuelta": {
+      "descripcion": "La Tablada 201 - Dirección desconocida",
+      "calles": [
+        "La Tablada 201",
+        "Avenida General Paz 205",
+        "Avenida Vélez Sarsfield 155",
+        "Avenida Hipólito Yrigoyen 30",
+        "Buenos Aires 724",
+        "Avenida Ambrosio Olmos 657",
+        "Avenida Ambrosio Olmos 1048",
+        "Avenida Vélez Sarsfield 1954",
+        "Avenida Vélez Sarsfield 2340",
+        "Avenida Vélez Sarsfield 3008",
+        "Avenida Vélez Sarsfield 3386",
+        "Avenida Vélez Sarsfield 3650",
+        "Viña del Mar 3792",
+        "El Tirol 202",
+        "Viña del Mar 4100"
+      ]
+    }
+  },
+  "paradasPrincipales": [
+    "Dirección desconocida",
+    "Avenida Armada Argentina 3043",
+    "Avenida Armada Argentina 1979",
+    "Hipólito Bernardino Cejas S/N",
+    "Bermudas 238",
+    "Viña del Mar 3721",
+    "Avenida Vélez Sarsfield 2619",
+    "Tucumán 633"
+  ],
+  "horarios": [],
+  "tarifas": [],
+  "mapsEmbedUrl": "https://www.google.com/maps/embed/v1/directions?key=YOUR_API_KEY&origin=-31.4955746014195,-64.2662698030472&destination=-31.40853,-64.185551&waypoints=-31.471516,-64.229325|-31.4622094878242,-64.20522809028627|-31.442508743479728,-64.19726192951204&mode=transit",
+  "ultimaActualizacion": "2023-03-16",
+  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023); el recorrido puede haber cambiado. Verificá en la app Tu Bondi.",
+  "esEjemplo": false
+}

@@ -1,0 +1,65 @@
+{
+  "numero": "53",
+  "nombre": "Línea 53",
+  "empresa": "TAMSE",
+  "descripcionCorta": "Línea 53 - TAMSE",
+  "recorrido": {
+    "vuelta": {
+      "descripcion": "Mascachín 2052 - Ramón Farrate S/N",
+      "calles": [
+        "Mascachín 2052",
+        "Colorado 6385",
+        "Colorado 6210",
+        "Colorado 6062",
+        "Colorado 5958",
+        "Colorado 5904",
+        "Ushuaia 1901",
+        "Alto del Tala 5771",
+        "Cajamarca 1609",
+        "Forestieri 5743",
+        "Río Negro 5620",
+        "Río Negro 5508",
+        "Caracas 5424",
+        "Bogotá 1349",
+        "Río Negro 5233"
+      ]
+    },
+    "ida": {
+      "descripcion": "Ramón Farrate S/N - Colorado 6194",
+      "calles": [
+        "Ramón Farrate S/N",
+        "Avenida Juan B. Justo S/N",
+        "Avenida Juan B. Justo 7057",
+        "Amalia Celia Figueredo de Pietra S/N",
+        "Avenida Japón km 7.5",
+        "Avenida Rancagua S/N",
+        "Germán Berdiales 1767",
+        "Germán Berdiales 1603",
+        "Belisario Roldán 1544",
+        "Dardo Cuneo 1545",
+        "Zorrilla de San Martín 1545",
+        "Juan L. Orrego 4379",
+        "Bartolomé Hidalgo 1637",
+        "Bartolomé Hidalgo 1769",
+        "Howard 1399"
+      ]
+    }
+  },
+  "paradasPrincipales": [
+    "Mascachín 2052",
+    "Bogotá 1349",
+    "Avenida Vélez Sarsfield 4899",
+    "Avenida Ambrosio Olmos 657",
+    "Juan del Campillo 414",
+    "Obispo Malvar y Pinto 1988",
+    "Francisco de Alarcón 1879",
+    "Ramón Farrate S/N"
+  ],
+  "horarios": [],
+  "tarifas": [],
+  "mapsEmbedUrl": "https://www.google.com/maps/embed/v1/directions?key=YOUR_API_KEY&origin=-31.489065381157054,-64.23386871814729&destination=-31.32464350483718,-64.17607784271242&waypoints=-31.469663113911647,-64.21325862407686|-31.411061345277684,-64.18655455112459|-31.374469309485992,-64.14655745029451&mode=transit",
+  "ultimaActualizacion": "2023-03-16",
+  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023); el recorrido puede haber cambiado. Verificá en la app Tu Bondi.",
+  "esEjemplo": false
+}

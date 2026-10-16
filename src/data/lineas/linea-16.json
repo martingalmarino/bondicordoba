@@ -1,0 +1,65 @@
+{
+  "numero": "16",
+  "nombre": "Línea 16",
+  "empresa": "Coniferal",
+  "descripcionCorta": "Línea 16 - Coniferal",
+  "recorrido": {
+    "vuelta": {
+      "descripcion": "Córdoba S/N - Avenida Cruz Roja Argentina 522",
+      "calles": [
+        "Córdoba S/N",
+        "Avenida Gdor. Amadeo Sabattini S/N",
+        "Ruta Nacional 1V09 S/N",
+        "Dirección desconocida",
+        "Ciudad De Mis Suenos S/N",
+        "Avenida Amadeo Sabattini 6963",
+        "Avenida Amadeo Sabattini 6122",
+        "Avenida Amadeo Sabattini 5993",
+        "Avenida Amadeo Sabattini 5827",
+        "Avenida Amadeo Sabattini 5351",
+        "Avenida Amadeo Sabattini 5195",
+        "Avenida Amadeo Sabattini 5068",
+        "Avenida Gobernador Amadeo Sabattini 4818",
+        "Carnerillo 2199",
+        "Avenida Amadeo Sabattini 4289"
+      ]
+    },
+    "ida": {
+      "descripcion": "Lisardo Novillo Saravia 692 - Cumbres de Gaspar",
+      "calles": [
+        "Lisardo Novillo Saravia 692",
+        "De la Industria 896",
+        "Avenida Cruz Roja Argentina 518",
+        "Avenida Cruz Roja Argentina 337",
+        "Maestro Marcelo López S/N",
+        "Maestro Marcelo López 3512",
+        "Avenida Ingeniero Medina Allende S/N",
+        "Bv. Enrique Barros S/N",
+        "Buenos Aires 1415",
+        "Avenida Ambrosio Olmos 1040",
+        "Belgrano 1415",
+        "Belgrano 1168",
+        "Belgrano 655",
+        "Belgrano 471",
+        "Belgrano 170"
+      ]
+    }
+  },
+  "paradasPrincipales": [
+    "Córdoba S/N",
+    "Ruta Nacional 1V09 S/N",
+    "Avenida Amadeo Sabattini 6963",
+    "Avenida Amadeo Sabattini 5195",
+    "Avenida Amadeo Sabattini S/N",
+    "Avenida Sabattini 2193",
+    "Bulevar Arturo Illia 23",
+    "Avenida Cruz Roja Argentina 522"
+  ],
+  "horarios": [],
+  "tarifas": [],
+  "mapsEmbedUrl": "https://www.google.com/maps/embed/v1/directions?key=YOUR_API_KEY&origin=-31.4899,-64.08625&destination=-31.44288403445959,-64.18962299823762&waypoints=-31.47712072159061,-64.09004867076875|-31.432750650483978,-64.1348308324814|-31.42084429839096,-64.1857187077403&mode=transit",
+  "ultimaActualizacion": "2023-03-16",
+  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023); el recorrido puede haber cambiado. Verificá en la app Tu Bondi.",
+  "esEjemplo": false
+}

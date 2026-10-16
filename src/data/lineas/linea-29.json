@@ -1,0 +1,65 @@
+{
+  "numero": "29",
+  "nombre": "Línea 29",
+  "empresa": "ERSA",
+  "descripcionCorta": "Línea 29 - ERSA",
+  "recorrido": {
+    "vuelta": {
+      "descripcion": "Amancay S/N - Avenida Libertador San Martín 29",
+      "calles": [
+        "Amancay S/N",
+        "Incayuyo S/N",
+        "Caraguatá S/N",
+        "Ciudad De Valparaíso 8500",
+        "Ciudad De Valparaíso 7938",
+        "Dirección desconocida",
+        "Córdoba S/N",
+        "Ciudad De Valparaíso S/N",
+        "Camino a San Antonio 6879",
+        "Camino a San Antonio 6517",
+        "Camino a San Antonio 6359",
+        "Camino a San Antonio 6103",
+        "Camino a San Antonio 5899",
+        "Camino a San Antonio 5577",
+        "Camino a San Antonio 5301"
+      ]
+    },
+    "ida": {
+      "descripcion": "Avenida Libertador San Martín 136 - Ciudad De Valparaíso 8438",
+      "calles": [
+        "Avenida Libertador San Martín 136",
+        "Avenida Libertador San Martín 500",
+        "Avenida Libertador San Martín S/N",
+        "A189 S/N",
+        "Avenida Bernardo O'higgins S/N",
+        "Avenida Bernardo O'higgins 10000",
+        "Avenida Bernardo O'higgins 9932",
+        "Avenida Bernardo O'higgins 9869",
+        "Avenida Bernardo O'higgins 9770",
+        "Avenida Bernardo O'higgins 9588",
+        "Avenida Bernardo O'higgins 9281",
+        "Avenida Bernardo O'higgins 8966",
+        "Avenida Bernardo O'higgins 8682",
+        "Avenida Bernardo O'higgins 8421",
+        "Avenida Bernardo O'higgins 8035"
+      ]
+    }
+  },
+  "paradasPrincipales": [
+    "Amancay S/N",
+    "Córdoba S/N",
+    "Avenida Ciudad de Valparaíso 4843",
+    "Avenida Rogelio Nores Martínez 2717",
+    "Avenida Colón 19",
+    "Avenida Bernardo O'Higgins 3588",
+    "Camino a San Carlos 6786",
+    "Avenida Libertador San Martín 29"
+  ],
+  "horarios": [],
+  "tarifas": [],
+  "mapsEmbedUrl": "https://www.google.com/maps/embed/v1/directions?key=YOUR_API_KEY&origin=-31.511971,-64.191855&destination=-31.557784990530692,-64.19486403465272&waypoints=-31.475346,-64.188443|-31.416775,-64.18892|-31.477487,-64.1689&mode=transit",
+  "ultimaActualizacion": "2023-03-16",
+  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023); el recorrido puede haber cambiado. Verificá en la app Tu Bondi.",
+  "esEjemplo": false
+}

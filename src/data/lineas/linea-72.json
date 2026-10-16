@@ -1,0 +1,49 @@
+{
+  "numero": "",
+  "nombre": "72 por La Reserva",
+  "empresa": "ERSA",
+  "descripcionCorta": "Línea  - ERSA",
+  "recorrido": {
+    "vuelta": {
+      "descripcion": "COLECTORA Y TROPEZON - AGUSTIN GARZON Y LOLA MORA",
+      "calles": [
+        "COLECTORA Y TROPEZON",
+        "Carcano 13",
+        "Hornero 296",
+        "Hornero 576",
+        "Hornero 674",
+        "Ramón Cárcano 921",
+        "Roberto Boyle 5642",
+        "Carcano ---",
+        "Carcano 3590",
+        "Carcano S/N",
+        "AV. DEL PIAMONTE S/N",
+        "Carcano 1050",
+        "Carcano 251",
+        "Carcano 75",
+        "COLECTORA OESTE Y MAHATMA GHANDI"
+      ]
+    },
+    "ida": {
+      "descripcion": "",
+      "calles": []
+    }
+  },
+  "paradasPrincipales": [
+    "COLECTORA Y TROPEZON",
+    "Carcano 1050",
+    "Pagliere 7008",
+    "Avenida Duarte Quirós 4298",
+    "Avenida Colón 1309",
+    "Obispo Maldonado 2058",
+    "Pasaje Sáenz Peña 4346",
+    "AGUSTIN GARZON Y LOLA MORA"
+  ],
+  "horarios": [],
+  "tarifas": [],
+  "mapsEmbedUrl": "https://www.google.com/maps/embed/v1/directions?key=YOUR_API_KEY&origin=-31.394553,-64.262592&destination=-31.427358,-64.114605&waypoints=-31.386432,-64.275607|-31.405273096964176,-64.21175792813301|-31.423559,-64.134166&mode=transit",
+  "ultimaActualizacion": "2023-03-16",
+  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023); el recorrido puede haber cambiado. Verificá en la app Tu Bondi.",
+  "esEjemplo": false
+}

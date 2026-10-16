@@ -1,0 +1,65 @@
+{
+  "numero": "B",
+  "nombre": "Línea B",
+  "empresa": "TAMSE",
+  "descripcionCorta": "Línea B - TAMSE",
+  "recorrido": {
+    "ida": {
+      "descripcion": "Avenida Colón 3337 - Avenida Patria 1356",
+      "calles": [
+        "Avenida Colón 3337",
+        "Avenida Colón 3069",
+        "Avenida Colón 2715",
+        "Avenida Colón 2215",
+        "Avenida Colón 1935",
+        "Avenida Colón 1663",
+        "Avenida Colón 1363",
+        "Avenida Colón 1027",
+        "Avenida Colón 785",
+        "Avenida Colón 247",
+        "Avenida Emilio Olmos 126",
+        "Avenida Emilio Olmos 434",
+        "Avenida 24 de Septiembre 828",
+        "Avenida 24 de Septiembre 1068",
+        "Avenida 24 de Septiembre 1236"
+      ]
+    },
+    "vuelta": {
+      "descripcion": "Avenida Patria 1325 - Domingo Zípoli 233",
+      "calles": [
+        "Avenida Patria 1325",
+        "Avenida Patria 923",
+        "Avenida Patria 737",
+        "Sarmiento 1541",
+        "Sarmiento 819",
+        "Santiago del Estero 344",
+        "Santa Rosa 42",
+        "Santa Rosa 252",
+        "Santa Rosa 557",
+        "Santa Rosa 788",
+        "Avellaneda 253",
+        "Avenida Colón 1482",
+        "Avenida Colón 1900",
+        "Avenida Colón 2152",
+        "Avenida Colón 2742"
+      ]
+    }
+  },
+  "paradasPrincipales": [
+    "Avenida Colón 3337",
+    "Avenida Colón 2215",
+    "Avenida Colón 1363",
+    "Avenida Colón 247",
+    "Avenida 24 de Septiembre 828",
+    "Avenida 24 de Septiembre 1488",
+    "Avenida Patria 428",
+    "Avenida Patria 1356"
+  ],
+  "horarios": [],
+  "tarifas": [],
+  "mapsEmbedUrl": "https://www.google.com/maps/embed/v1/directions?key=YOUR_API_KEY&origin=-31.401255,-64.224461&destination=-31.399185,-64.161458&waypoints=-31.407163,-64.205489|-31.415496,-64.177364|-31.410489,-64.157326&mode=transit",
+  "ultimaActualizacion": "2023-03-16",
+  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023); el recorrido puede haber cambiado. Verificá en la app Tu Bondi.",
+  "esEjemplo": false
+}

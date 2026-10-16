@@ -1,0 +1,65 @@
+{
+  "numero": "83",
+  "nombre": "Línea 83",
+  "empresa": "TAMSE",
+  "descripcionCorta": "Línea 83 - TAMSE",
+  "recorrido": {
+    "vuelta": {
+      "descripcion": "Doctor Ángel Roffo 2613 - Avenida General Manuel Savio 5440",
+      "calles": [
+        "Doctor Ángel Roffo 2613",
+        "Doctor Ángel Roffo 2413",
+        "Doctor Ángel Roffo 2127",
+        "Doctor Ángel Roffo 1931",
+        "Doctor Faustino Tronge 1025",
+        "Pasaje Benjamín Cruz 1099",
+        "Pasaje Benjamín Cruz 1009",
+        "Carlos Casaffousth 1621",
+        "Avenida Castro Barros 417",
+        "Avenida Castro Barros 75",
+        "Avellaneda 387",
+        "Avenida Colón 878",
+        "Avenida Colón 529",
+        "Avenida Colón 227",
+        "Avenida Vélez Sarsfield 134"
+      ]
+    },
+    "ida": {
+      "descripcion": "Avenida General Manuel Savio 5438 - Monseñor Miguel de Andrea 1172",
+      "calles": [
+        "Avenida General Manuel Savio 5438",
+        "Avenida General Manuel Savio 5277",
+        "Juan del Risco y Alvarado 3915",
+        "Juan del Risco y Alvarado 3843",
+        "Juan del Risco y Alvarado 3685",
+        "Juan del Risco y Alvarado 3511",
+        "Chirinos de Posadas 5042",
+        "Juan de la Guardia 4653",
+        "Escalante 3180",
+        "Chirinos de Posadas 4361",
+        "Chirinos de Posadas 4187",
+        "Diego de Torres 2699",
+        "Diego de Torres 2557",
+        "Miguel de Mármol 3347",
+        "Lucio Mansilla 3473"
+      ]
+    }
+  },
+  "paradasPrincipales": [
+    "Doctor Ángel Roffo 2613",
+    "Avenida Castro Barros 417",
+    "Buenos Aires 724",
+    "Avenida Cruz Roja Argentina 1889",
+    "Bilbao 2599",
+    "Enrique Berduc 2412",
+    "Chirinos de Posadas 4276",
+    "Avenida General Manuel Savio 5440"
+  ],
+  "horarios": [],
+  "tarifas": [],
+  "mapsEmbedUrl": "https://www.google.com/maps/embed/v1/directions?key=YOUR_API_KEY&origin=-31.39489,-64.212416&destination=-31.460882506287035,-64.12739038467409&waypoints=-31.420870620657855,-64.18861381709576|-31.434311,-64.160065|-31.44070091831187,-64.14422392845155&mode=transit",
+  "ultimaActualizacion": "2023-03-16",
+  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023); el recorrido puede haber cambiado. Verificá en la app Tu Bondi.",
+  "esEjemplo": false
+}

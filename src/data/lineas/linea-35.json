@@ -1,0 +1,65 @@
+{
+  "numero": "35",
+  "nombre": "Línea 35",
+  "empresa": "TAMSE",
+  "descripcionCorta": "Línea 35 - TAMSE",
+  "recorrido": {
+    "vuelta": {
+      "descripcion": "Colorado 6385 - Sabino O'Donell 784",
+      "calles": [
+        "Colorado 6385",
+        "Colorado 6225",
+        "Colorado 6063",
+        "Colorado 5961",
+        "Colorado 5903",
+        "Cajamarca 2079",
+        "Cajamarca 1882",
+        "Cajamarca 1617",
+        "El Arañado 1545",
+        "Cachi Yaco 1601",
+        "Cachi Yaco 1763",
+        "Alto del Tala 5213",
+        "Avenida Armada Argentina 1837",
+        "Avenida Armada Argentina 1585",
+        "Avenida Armada Argentina 1100"
+      ]
+    },
+    "ida": {
+      "descripcion": "Bartolomé Jaime 747 - Mascachín 2030",
+      "calles": [
+        "Bartolomé Jaime 747",
+        "Bartolomé Jaime 613",
+        "Bartolomé Jaime 523",
+        "Avenida Cornelio Saavedra 4233",
+        "Avenida Cornelio Saavedra 4039",
+        "Avenida Cornelio Saavedra 3871",
+        "Avenida Cornelio Saavedra 3674",
+        "Avenida Cornelio Saavedra 3313",
+        "Avenida Cornelio Saavedra 3131",
+        "Avenida Cornelio Saavedra 3017",
+        "Anacreonte 1576",
+        "Anacreonte 1375",
+        "Luis de Góngora 1158",
+        "Francisco de Quevedo 846",
+        "Mariano Fragueíro 2631"
+      ]
+    }
+  },
+  "paradasPrincipales": [
+    "Colorado 6385",
+    "Cachi Yaco 1601",
+    "Cacheuta 3809",
+    "Avenida Elpidio González 2003",
+    "27 de Abril 529",
+    "Nicolás Avellaneda 1488",
+    "Luis de Góngora 1324",
+    "Sabino O'Donell 784"
+  ],
+  "horarios": [],
+  "tarifas": [],
+  "mapsEmbedUrl": "https://www.google.com/maps/embed/v1/directions?key=YOUR_API_KEY&origin=-31.48824655046693,-64.23454999923707&destination=-31.362084042960152,-64.18509006500246&waypoints=-31.456471,-64.214455|-31.425532120396063,-64.19276118278505|-31.390424842434758,-64.18253660202028&mode=transit",
+  "ultimaActualizacion": "2023-03-16",
+  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023); el recorrido puede haber cambiado. Verificá en la app Tu Bondi.",
+  "esEjemplo": false
+}

@@ -1,0 +1,65 @@
+{
+  "numero": "82",
+  "nombre": "Línea 82",
+  "empresa": "TAMSE",
+  "descripcionCorta": "Línea 82 - TAMSE",
+  "recorrido": {
+    "vuelta": {
+      "descripcion": "Viracocha 6788 - General Manuel Savio 5615",
+      "calles": [
+        "Viracocha 6788",
+        "Pablo Buitrago 7042",
+        "Pablo Buitrago 7184",
+        "Pablo Buitrago 7372",
+        "Avenida Ricardo Rojas 8238",
+        "Avenida Ricardo Rojas 8358",
+        "Avenida Ricardo Rojas 8536",
+        "Avenida Ricardo Rojas 8782",
+        "Avenida Ricardo Rojas 8952",
+        "Manuel de Falla 7349",
+        "Manuel de Falla 7003",
+        "Avenida Recta Martinoli 8945",
+        "Avenida Recta Martinoli 8855",
+        "Avenida Recta Martinoli 8778",
+        "Avenida Recta Martinoli 8580"
+      ]
+    },
+    "ida": {
+      "descripcion": "Avenida General Manuel Savio 5570 - Avenida Recta Martinoli 7900",
+      "calles": [
+        "Avenida General Manuel Savio 5570",
+        "Avenida General Manuel Savio 6113",
+        "Cipriano Perelló 4822",
+        "Juan Ramón Rojas 5277",
+        "Cipriano Perelló 5006",
+        "Agustín Gamarra 5751",
+        "Agustín Gamarra 5613",
+        "Avenida General Manuel Savio 5457",
+        "Avenida General Manuel Savio 5277",
+        "Juan del Risco y Alvarado 3915",
+        "Juan del Risco y Alvarado 3843",
+        "Juan del Risco y Alvarado 3685",
+        "Juan del Risco y Alvarado 3511",
+        "Chirinos de Posadas 5042",
+        "Chirinos de Posadas 4799"
+      ]
+    }
+  },
+  "paradasPrincipales": [
+    "Viracocha 6788",
+    "Avenida Recta Martinoli 8580",
+    "José Echenique 1952",
+    "Avenida Octavio Pinto 2413",
+    "Avenida Colón 529",
+    "León 1829",
+    "Francisco de la Retana 4991",
+    "General Manuel Savio 5615"
+  ],
+  "horarios": [],
+  "tarifas": [],
+  "mapsEmbedUrl": "https://www.google.com/maps/embed/v1/directions?key=YOUR_API_KEY&origin=-31.34221107537277,-64.27339911460878&destination=-31.460187,-64.123743&waypoints=-31.35588,-64.24259|-31.40645092054237,-64.20790493488313|-31.439108172558107,-64.14911627769472&mode=transit",
+  "ultimaActualizacion": "2023-03-16",
+  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023); el recorrido puede haber cambiado. Verificá en la app Tu Bondi.",
+  "esEjemplo": false
+}

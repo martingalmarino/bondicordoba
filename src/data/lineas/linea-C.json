@@ -1,0 +1,65 @@
+{
+  "numero": "C",
+  "nombre": "Línea C",
+  "empresa": "TAMSE",
+  "descripcionCorta": "Línea C - TAMSE",
+  "recorrido": {
+    "vuelta": {
+      "descripcion": "San Jerónimo 3209 - Avenida Fuerza Aérea 3684",
+      "calles": [
+        "San Jerónimo 3209",
+        "San Jeronimo 2716-2724",
+        "Carlos Tejedor 1299",
+        "Bernardo de Irigoyen 1277",
+        "Bernardo de Irigoyen 1257",
+        "Obispo Maldonado 2111",
+        "Alejandro Carbó 1853",
+        "Juan Larrea 1527",
+        "Roma 388",
+        "Sarmiento 1323",
+        "Sarmiento 819",
+        "Santiago del Estero 344",
+        "Lima 13",
+        "Avenida General Paz 185",
+        "Avenida Vélez Sarsfield 352"
+      ]
+    },
+    "ida": {
+      "descripcion": "Avenida Fuerza Aérea 3039 - Entre Ríos 3320",
+      "calles": [
+        "Avenida Fuerza Aérea 3039",
+        "Avenida Fuerza Aérea 2817",
+        "Avenida Fuerza Aérea 2607",
+        "Avenida Fuerza Aérea 2449",
+        "Avenida Fuerza Aérea 2097",
+        "Avenida Fuerza Aérea 1781",
+        "Avenida Julio A. Roca 1399",
+        "Avenida Julio A. Roca 865",
+        "Avenida Julio A. Roca 579",
+        "Avenida Julio A. Roca 453",
+        "Belgrano 874",
+        "Belgrano 724",
+        "Belgrano 551",
+        "Belgrano 305",
+        "Belgrano 67"
+      ]
+    }
+  },
+  "paradasPrincipales": [
+    "San Jerónimo 3209",
+    "Bernardo de Irigoyen 1257",
+    "Roma 388",
+    "Lima 13",
+    "Avenida Marcelo T. de Alvear 876",
+    "Avenida Julio A. Roca 1700",
+    "Avenida Fuerza Aérea 2950",
+    "Avenida Fuerza Aérea 3684"
+  ],
+  "horarios": [],
+  "tarifas": [],
+  "mapsEmbedUrl": "https://www.google.com/maps/embed/v1/directions?key=YOUR_API_KEY&origin=-31.423837,-64.142792&destination=-31.431888,-64.236799&waypoints=-31.415774,-64.162535|-31.419434615762544,-64.18865203857423|-31.43038,-64.21456&mode=transit",
+  "ultimaActualizacion": "2023-03-16",
+  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023); el recorrido puede haber cambiado. Verificá en la app Tu Bondi.",
+  "esEjemplo": false
+}

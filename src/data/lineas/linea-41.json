@@ -1,0 +1,65 @@
+{
+  "numero": "",
+  "nombre": "41 por Recreo",
+  "empresa": "ERSA",
+  "descripcionCorta": "Línea  - ERSA",
+  "recorrido": {
+    "vuelta": {
+      "descripcion": "MARCELO LOPEZ Y CRUZ ROJA - GUINAZU",
+      "calles": [
+        "MARCELO LOPEZ Y CRUZ ROJA",
+        "Maestro Marcelo López S/N",
+        "Maestro Lopez (Inst H Keller)",
+        "Av. Medina Allende S/N",
+        "Bv. Enrique Barros S/N",
+        "Bv. Enrique Barros 2228",
+        "Avenida Concepción Arenal 799",
+        "PLAZA ESPANA",
+        "Bulevar Chacabuco 647",
+        "Bv. Chacabuco 470",
+        "Bulevar Chacabuco 235",
+        "Bulevar Chacabuco 57",
+        "Av. Maipu",
+        "Avenida Maipú 468",
+        "Avenida Maipú 640"
+      ]
+    },
+    "ida": {
+      "descripcion": "GUINAZU - MARCELO LOPEZ Y CRUZ ROJA",
+      "calles": [
+        "GUINAZU",
+        "Del Cultrún 79",
+        "Avenida Juan B. Justo 9729",
+        "Avenida Juan B. Justo 9489",
+        "Avenida Juan B. Justo RUTA 9",
+        "Avenida Juan B. Justo 8899",
+        "Avenida Juan B. Justo 8599",
+        "Avenida Juan B. Justo 8512",
+        "AV. JUAN B. JUSTO 7900",
+        "Avenida Juan B. Justo 7970",
+        "Avenida Juan B. Justo 7751",
+        "Av Juan B Justo 7200-7209",
+        "JUAN B JUSTO Y AV. JAPON",
+        "AV. JUAN B. JUSTO 6579",
+        "Avenida Juan B. Justo 6695"
+      ]
+    }
+  },
+  "paradasPrincipales": [
+    "MARCELO LOPEZ Y CRUZ ROJA",
+    "Avenida Concepción Arenal 799",
+    "Avenida Maipú 468",
+    "Avenida Juan B. Justo 2908",
+    "AV. JUAN B. JUSTO 4350",
+    "Avenida Juan B. Justo 6138",
+    "Avenida Juan B. Justo 7751",
+    "GUINAZU"
+  ],
+  "horarios": [],
+  "tarifas": [],
+  "mapsEmbedUrl": "https://www.google.com/maps/embed/v1/directions?key=YOUR_API_KEY&origin=-31.443328,-64.19443&destination=-31.307143,-64.175468&waypoints=-31.417823,-64.180214|-31.379974,-64.175949|-31.34031,-64.176196&mode=transit",
+  "ultimaActualizacion": "2023-03-16",
+  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023); el recorrido puede haber cambiado. Verificá en la app Tu Bondi.",
+  "esEjemplo": false
+}

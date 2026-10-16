@@ -1,0 +1,65 @@
+{
+  "numero": "24",
+  "nombre": "Línea 24",
+  "empresa": "ERSA",
+  "descripcionCorta": "Línea 24 - ERSA",
+  "recorrido": {
+    "vuelta": {
+      "descripcion": "Eugenio De Igarzabal S/N - Suárez de Figueroa 977",
+      "calles": [
+        "Eugenio De Igarzabal S/N",
+        "Ramón Barrena 4995",
+        "Soldado Nestor Osvaldo Pizarro S/N",
+        "Soldado Pizarro 5598",
+        "Capitán Castillo 512",
+        "Capitán Gastagnari 5704",
+        "Capitán Gastagnari 5796",
+        "Julio Cesar Meisner S/N",
+        "Matanza 3026",
+        "Andrada 99",
+        "Capitán Fiorito 5695",
+        "Teniente Nivoli 81",
+        "Camino a San Antonio 5308",
+        "Avenida Ciudad de Valparaíso 5073",
+        "Avenida Ciudad de Valparaíso 4951"
+      ]
+    },
+    "ida": {
+      "descripcion": "Suárez de Figueroa 963 - Avenida Ciudad de Valparaíso 4840",
+      "calles": [
+        "Suárez de Figueroa 963",
+        "Avenida Luciano Figueroa 879",
+        "Tristán de Tejeda 286",
+        "Diego Díaz 603",
+        "Diego Díaz 507",
+        "Diego Díaz 411",
+        "Diego Díaz 311",
+        "Avenida Juan Espinosa Negrete 236",
+        "Javier Lascano Colodrero 2519",
+        "Javier Lascano Colodrero 2687",
+        "Pedro Feliciano Cavia 4301",
+        "Pedro Feliciano Cavia 4207",
+        "Fray Luis Beltrán 2677",
+        "Fray Luis Beltrán 2575",
+        "Monseñor Pablo Cabrera 3903"
+      ]
+    }
+  },
+  "paradasPrincipales": [
+    "Eugenio De Igarzabal S/N",
+    "Julio Cesar Meisner S/N",
+    "Avenida Ciudad de Valparaíso 4399",
+    "Avenida Rogelio Nores Martínez 2857",
+    "Bulevar San Juan 33",
+    "Avenida Monseñor Pablo Cabrera 1958",
+    "Fray Luis Beltrán 2661",
+    "Suárez de Figueroa 977"
+  ],
+  "horarios": [],
+  "tarifas": [],
+  "mapsEmbedUrl": "https://www.google.com/maps/embed/v1/directions?key=YOUR_API_KEY&origin=-31.472271,-64.191978&destination=-31.357444,-64.189591&waypoints=-31.465037,-64.186646|-31.42486366660706,-64.18314963609775|-31.372761,-64.205996&mode=transit",
+  "ultimaActualizacion": "2023-03-16",
+  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023); el recorrido puede haber cambiado. Verificá en la app Tu Bondi.",
+  "esEjemplo": false
+}

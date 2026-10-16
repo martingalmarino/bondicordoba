@@ -1,0 +1,65 @@
+{
+  "numero": "54",
+  "nombre": "Línea 54",
+  "empresa": "TAMSE",
+  "descripcionCorta": "Línea 54 - TAMSE",
+  "recorrido": {
+    "vuelta": {
+      "descripcion": "Bajada del Pucará S/N - Ramón Farrate S/N",
+      "calles": [
+        "Bajada del Pucará S/N",
+        "Avenida Gobernador Amadeo Sabattini S/N",
+        "Bulevar Arturo Illia 532",
+        "Illia 323",
+        "Bulevar San Juan 15",
+        "Belgrano 51",
+        "Tucumán 199-99",
+        "Tucumán 323",
+        "La Rioja 143",
+        "Catamarca 110",
+        "Avenida Maipú 434",
+        "Avenida Maipú 668",
+        "Fray Mamerto Esquiú 1194",
+        "Avenida Juan B. Justo 2238",
+        "Avenida Juan B. Justo 2378"
+      ]
+    },
+    "ida": {
+      "descripcion": "Ramón Farrate S/N - Avenida Gobernador Amadeo Sabattini S/N",
+      "calles": [
+        "Ramón Farrate S/N",
+        "Avenida Juan B. Justo S/N",
+        "Avenida Juan B. Justo 7057",
+        "Amalia Celia Figueredo de Pietra S/N",
+        "Avenida Japón km 7.5",
+        "Avenida Rancagua S/N",
+        "Rancagua S/N",
+        "Calle 6 S/N",
+        "Avenida Rancagua 4394",
+        "Rancagua 4783",
+        "Gustavo A. Marambio 861",
+        "La Cabaña S/N",
+        "Manzana 42 lote 1",
+        "Tucumán 198",
+        "Chachapoyas S/N"
+      ]
+    }
+  },
+  "paradasPrincipales": [
+    "Bajada del Pucará S/N",
+    "Tucumán 323",
+    "República de Siria 334",
+    "Cayena 601",
+    "Gustavo A. Marambio 897",
+    "Gustavo A. Marambio 861",
+    "Avenida Rancagua 4394",
+    "Ramón Farrate S/N"
+  ],
+  "horarios": [],
+  "tarifas": [],
+  "mapsEmbedUrl": "https://www.google.com/maps/embed/v1/directions?key=YOUR_API_KEY&origin=-31.429249023305704,-64.16998386383058&destination=-31.32464350483718,-64.17607784271242&waypoints=-31.397935,-64.175756|-31.374620450956034,-64.15722191333772|-31.362102,-64.133098&mode=transit",
+  "ultimaActualizacion": "2023-03-16",
+  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023); el recorrido puede haber cambiado. Verificá en la app Tu Bondi.",
+  "esEjemplo": false
+}

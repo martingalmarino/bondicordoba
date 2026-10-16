@@ -1,0 +1,65 @@
+{
+  "numero": "63",
+  "nombre": "Línea 63",
+  "empresa": "Coniferal",
+  "descripcionCorta": "Línea 63 - Coniferal",
+  "recorrido": {
+    "vuelta": {
+      "descripcion": "Alexander Fleming 3499 - Julio de Vedia 3876",
+      "calles": [
+        "Alexander Fleming 3499",
+        "Rufino Varela Ortiz 3301",
+        "Frontera 3833",
+        "Luis Pasteur 3169",
+        "Luis Pasteur 3019",
+        "Los Pinos 3757",
+        "Díaz de La Fuente 2413",
+        "Díaz de La Fuente 2315",
+        "Díaz de La Fuente 2007",
+        "Avenida Fuerza Aérea 3535",
+        "Maestro Vidal 1787",
+        "Maestro Vidal 1647",
+        "Maestro Vidal 1405",
+        "José Verdi 3079",
+        "Enrique Granados 1203"
+      ]
+    },
+    "ida": {
+      "descripcion": "Julio de Vedia 3865 - Alexander Fleming 3316",
+      "calles": [
+        "Julio de Vedia 3865",
+        "Julio de Vedia 3779",
+        "Julio de Vedia 3685",
+        "José Villegas 2305",
+        "José Villegas 2163",
+        "José Villegas 2020",
+        "Díaz Colodrero 3420",
+        "Díaz Colodrero 3260",
+        "Díaz Colodrero 3134",
+        "Díaz Colodrero 2912",
+        "Díaz Colodrero 2750",
+        "Avenida Capdevila 2052",
+        "Avenida Capdevila 2232",
+        "Avenida Capdevila 2300",
+        "Ramón García De León Y Pizarro 2331"
+      ]
+    }
+  },
+  "paradasPrincipales": [
+    "Alexander Fleming 3499",
+    "Avenida Fuerza Aérea 3535",
+    "Avenida Pueyrredón 1449",
+    "Avenida Colón 72",
+    "Pringles 1260",
+    "Tarija 2362",
+    "Avenida Capdevila 2007",
+    "Julio de Vedia 3876"
+  ],
+  "horarios": [],
+  "tarifas": [],
+  "mapsEmbedUrl": "https://www.google.com/maps/embed/v1/directions?key=YOUR_API_KEY&origin=-31.448624,-64.235822&destination=-31.36488,-64.13815&waypoints=-31.420299,-64.214912|-31.41383,-64.16855|-31.38567,-64.1453&mode=transit",
+  "ultimaActualizacion": "2023-03-16",
+  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023); el recorrido puede haber cambiado. Verificá en la app Tu Bondi.",
+  "esEjemplo": false
+}

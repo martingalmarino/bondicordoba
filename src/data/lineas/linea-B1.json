@@ -1,0 +1,65 @@
+{
+  "numero": "B1",
+  "nombre": "Línea B1",
+  "empresa": "TAMSE",
+  "descripcionCorta": "Línea B1 - TAMSE",
+  "recorrido": {
+    "vuelta": {
+      "descripcion": "Juan Manuel Fangio 7959 - Avenida Patria 1356",
+      "calles": [
+        "Juan Manuel Fangio 7959",
+        "José Massetti 8087",
+        "Ángel Meunier 7019",
+        "Oscar Cabalén 6894",
+        "Oscar Cabalén 6718",
+        "Manuel Calviño S/N",
+        "Carlos Zatuszeck S/N",
+        "Juan Masramón S/N",
+        "Avenida Ricardo Rojas 6700",
+        "Avenida Rafael Núñez 6313",
+        "Avenida Rafael Núñez 5955",
+        "Avenida Rafael Núñez 5493",
+        "Avenida Rafael Núñez 5147",
+        "Avenida Rafael Núñez 4727",
+        "Luis José de Tejeda 4629"
+      ]
+    },
+    "ida": {
+      "descripcion": "Avenida Patria 1325 - Avenida Donato Álvarez 7644",
+      "calles": [
+        "Avenida Patria 1325",
+        "Avenida Patria 1131",
+        "Avenida Patria 923",
+        "Avenida Patria 737",
+        "Avenida Patria 521",
+        "Sarmiento 1756",
+        "Sarmiento 1541",
+        "Sarmiento 1385",
+        "Sarmiento 1174",
+        "Sarmiento 819",
+        "Santiago del Estero 344",
+        "Lima 313",
+        "Santa Rosa 42",
+        "Santa Rosa 252",
+        "Santa Rosa 557"
+      ]
+    }
+  },
+  "paradasPrincipales": [
+    "Juan Manuel Fangio 7959",
+    "Carlos Zatuszeck S/N",
+    "Avenida Rafael Núñez 5493",
+    "Fernando Fader 3763",
+    "Avenida Colón 3591",
+    "Avenida Colón 1663",
+    "Avenida Emilio Olmos 434",
+    "Avenida Patria 1356"
+  ],
+  "horarios": [],
+  "tarifas": [],
+  "mapsEmbedUrl": "https://www.google.com/maps/embed/v1/directions?key=YOUR_API_KEY&origin=-31.330614280727712,-64.26234841346742&destination=-31.399185,-64.161458&waypoints=-31.34827773366709,-64.249384539032|-31.398383276923223,-64.23334300518037|-31.414263,-64.181374&mode=transit",
+  "ultimaActualizacion": "2023-03-16",
+  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023); el recorrido puede haber cambiado. Verificá en la app Tu Bondi.",
+  "esEjemplo": false
+}

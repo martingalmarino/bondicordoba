@@ -1,0 +1,65 @@
+{
+  "numero": "600",
+  "nombre": "Línea 600",
+  "empresa": "TAMSE",
+  "descripcionCorta": "Línea 600 - TAMSE",
+  "recorrido": {
+    "vuelta": {
+      "descripcion": "LAS JUNTURAS Y GONGORA - Av. Pablo Richieri 3950",
+      "calles": [
+        "LAS JUNTURAS Y GONGORA",
+        "GONGORA 1265",
+        "GONGORA 849",
+        "GONGORA 721",
+        "GONGORA 550-565",
+        "GONGORA 337",
+        "AV. DR. ARTURO CAPDEVILA 68",
+        "AV. DR. ARTURO CAPDEVILA 238",
+        "AV. DR. ARTURO CAPDEVILA 484",
+        "HULLUMAN Y CAPDEVILLA",
+        "HULLUMAN 1629",
+        "NUEVO MUNDO 774",
+        "NUEVO MUNDO 850",
+        "NUEVO MUNDO 986",
+        "NUEVO MUNDO 1154"
+      ]
+    },
+    "ida": {
+      "descripcion": "Bernardo O´Higgins 4725 - LAS JUNTURAS Y GONGORA",
+      "calles": [
+        "Bernardo O´Higgins 4725",
+        "Bernardo O´Higgins 4484",
+        "Bernardo O´Higgins 4336",
+        "Bernardo O´Higgins 4106",
+        "Av. Pablo Richieri 3839",
+        "Av. Pablo Ricchieri 3668",
+        "Av. Pablo Richieri 3533",
+        "Av. Pablo Richieri 3414-3417",
+        "Av. Pablo Richieri 3349",
+        "Av. Pablo Richieri 3100",
+        "Av. Pablo Ricchieri 3011",
+        "Av. Pablo Richieri 2828",
+        "Av. Pablo Richieri 2681",
+        "Av. Pablo Richieri 2405",
+        "Av. Pablo Richieri 2183"
+      ]
+    }
+  },
+  "paradasPrincipales": [
+    "LAS JUNTURAS Y GONGORA",
+    "HULLUMAN 1629",
+    "PUNTA DEL SAUCE Y SANTISO Y MOSCOSO",
+    "AV. PATRIA 139",
+    "CASTILLA 2281",
+    "Javier Diaz 563",
+    "Av. Concepcion Arenales 1215",
+    "Av. Pablo Richieri 3950"
+  ],
+  "horarios": [],
+  "tarifas": [],
+  "mapsEmbedUrl": "https://www.google.com/maps/embed/v1/directions?key=YOUR_API_KEY&origin=-31.380548,-64.191572&destination=-31.458077,-64.169168&waypoints=-31.389335,-64.153097|-31.421848,-64.150422|-31.44372,-64.19346&mode=transit",
+  "ultimaActualizacion": "2023-03-16",
+  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023); el recorrido puede haber cambiado. Verificá en la app Tu Bondi.",
+  "esEjemplo": false
+}

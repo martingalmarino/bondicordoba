@@ -1,0 +1,65 @@
+{
+  "numero": "68",
+  "nombre": "Línea 68",
+  "empresa": "Coniferal",
+  "descripcionCorta": "Línea 68 - Coniferal",
+  "recorrido": {
+    "vuelta": {
+      "descripcion": "Avenida Colón 165 - Av. San Martín 1400-1498",
+      "calles": [
+        "Avenida Colón 165",
+        "Avenida Emilio Olmos 241",
+        "Avenida Emilio Olmos 471",
+        "Avenida 24 de Septiembre 743",
+        "Avenida 24 de Septiembre 956",
+        "Avenida 24 de Septiembre 1118",
+        "25 de Mayo 1359",
+        "Avenida 24 de Septiembre 1560",
+        "Avenida 24 de Septiembre 1762",
+        "Avenida 24 de Septiembre 2084",
+        "Camacuá 199",
+        "Gavilán 615",
+        "Bajada de Piedra 3402",
+        "Bajada de Piedra 3596",
+        "Bajada de Piedra 3817"
+      ]
+    },
+    "ida": {
+      "descripcion": "Avenida San Martín S/N - Humberto Primo 286",
+      "calles": [
+        "Avenida San Martín S/N",
+        "Corrientes S/N",
+        "Córdoba S/N",
+        "A Chacra De La Merced S/N",
+        "A Chacra De La Merced 6994",
+        "A Chacra De La Merced 6314",
+        "Camino a Chacra de la Merced 5565",
+        "Camino a Chacra de la Merced 5111",
+        "Bajada de Piedra 4319",
+        "Bajada de Piedra 4011",
+        "Bajada de Piedra 3828",
+        "Bajada de Piedra 3600",
+        "Bajada de Piedra 2519",
+        "Gavilán 382",
+        "Bajada de Piedra 2667"
+      ]
+    }
+  },
+  "paradasPrincipales": [
+    "Avenida Colón 165",
+    "Avenida 24 de Septiembre 956",
+    "Avenida 24 de Septiembre 1762",
+    "Bajada de Piedra 3402",
+    "Bajada de Piedra 4310",
+    "Camino a Chacra de la Merced",
+    "Av. San Martín 2200-2298",
+    "Av. San Martín 1400-1498"
+  ],
+  "horarios": [],
+  "tarifas": [],
+  "mapsEmbedUrl": "https://www.google.com/maps/embed/v1/directions?key=YOUR_API_KEY&origin=-31.41321,-64.18497&destination=-31.39061910108295,-64.05792185957208&waypoints=-31.41294,-64.16294|-31.403131101082952,-64.1379258511561|-31.418682,-64.05942&mode=transit",
+  "ultimaActualizacion": "2023-03-16",
+  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023); el recorrido puede haber cambiado. Verificá en la app Tu Bondi.",
+  "esEjemplo": false
+}

@@ -1,0 +1,65 @@
+{
+  "numero": "A1",
+  "nombre": "Línea A1",
+  "empresa": "TAMSE",
+  "descripcionCorta": "Línea A1 - TAMSE",
+  "recorrido": {
+    "vuelta": {
+      "descripcion": "Montana 1900 - Mariano Fragueíro 4586",
+      "calles": [
+        "Montana 1900",
+        "Nueva Jersey 4808",
+        "Lago Argentino 1999",
+        "Avenida Armada Argentina 1571",
+        "Avenida Armada Argentina 1088",
+        "Esquel 4202",
+        "Avenida Armada Argentina 435",
+        "Avenida Armada Argentina 227",
+        "Avenida Armada Argentina 25",
+        "Avenida Vélez Sarsfield 3328",
+        "Avenida Vélez Sarsfield 3057",
+        "Avenida Vélez Sarsfield 2343",
+        "Avenida Vélez Sarsfield 1923",
+        "Belgrano 1451",
+        "Belgrano 1168"
+      ]
+    },
+    "ida": {
+      "descripcion": "Nicolás Avellaneda 4532 - Río Pinto 1643",
+      "calles": [
+        "Nicolás Avellaneda 4532",
+        "De Los Santos 779",
+        "Mariano Fragueíro 4421",
+        "Mariano Fragueíro 4035",
+        "Mariano Fragueíro 3633",
+        "Mariano Fragueíro 3259",
+        "Urquiza 3007",
+        "Urquiza 2605",
+        "Urquiza 2329",
+        "General Justo José de Urquiza 2047",
+        "Urquiza 1529",
+        "Juan del Campillo 723",
+        "Juan del Campillo 432",
+        "Avenida Roque Sáenz Peña 1184",
+        "Avenida General Paz 651"
+      ]
+    }
+  },
+  "paradasPrincipales": [
+    "Montana 1900",
+    "Avenida Armada Argentina 1088",
+    "Avenida Armada Argentina 25",
+    "Avenida Vélez Sarsfield 1923",
+    "Belgrano 551",
+    "La Tablada 377",
+    "General Justo José de Urquiza 1875",
+    "Mariano Fragueíro 4586"
+  ],
+  "horarios": [],
+  "tarifas": [],
+  "mapsEmbedUrl": "https://www.google.com/maps/embed/v1/directions?key=YOUR_API_KEY&origin=-31.46850553012298,-64.23189997673036&destination=-31.36377886886273,-64.18384552001955&waypoints=-31.450952426971426,-64.20114040374757|-31.421491,-64.190468|-31.39341047920465,-64.18631315231325&mode=transit",
+  "ultimaActualizacion": "2023-03-16",
+  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023); el recorrido puede haber cambiado. Verificá en la app Tu Bondi.",
+  "esEjemplo": false
+}

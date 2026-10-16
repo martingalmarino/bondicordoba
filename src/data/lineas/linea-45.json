@@ -1,0 +1,65 @@
+{
+  "numero": "45",
+  "nombre": "Línea 45",
+  "empresa": "ERSA",
+  "descripcionCorta": "Línea 45 - ERSA",
+  "recorrido": {
+    "vuelta": {
+      "descripcion": "Avenida Cruz Roja Argentina 321 - Doctor José A. Ceballos 405",
+      "calles": [
+        "Avenida Cruz Roja Argentina 321",
+        "Maestro Marcelo López 3520",
+        "Avenida Ingeniero Medina Allende S/N",
+        "Bv. Enrique Barros S/N",
+        "Avenida Enrique Barros S/N",
+        "Avenida Los Nogales S/N",
+        "Bulevar Chacabuco 518",
+        "Bulevar San Juan 33",
+        "Bulevar San Juan 540",
+        "Rodriguez Peña 124",
+        "Avenida Colón 1184",
+        "Avenida Colón 1390",
+        "Avenida Colón 1590",
+        "Avenida Colón 1886",
+        "Avenida Colón 2042"
+      ]
+    },
+    "ida": {
+      "descripcion": "Doctor José A. Ceballos 404 - Maestro Marcelo López 3442",
+      "calles": [
+        "Doctor José A. Ceballos 404",
+        "José Cortes Funes 6600",
+        "Cleto Aguirre 6600",
+        "Avenida Santa Ana 6269",
+        "Avenida Santa Ana 6003",
+        "Avenida Santa Ana 5801",
+        "Avenida Santa Ana 5601",
+        "Curunao 802",
+        "Cleto Aguirre 5600",
+        "Cleto Aguirre 5798",
+        "Cleto Aguirre 5994",
+        "Alto Alegre 673",
+        "Luz Vieyra Méndez 645",
+        "Luz Vieyra Méndez 519",
+        "Luz Vieyra Méndez 368"
+      ]
+    }
+  },
+  "paradasPrincipales": [
+    "Avenida Cruz Roja Argentina 321",
+    "Bulevar San Juan 33",
+    "Avenida Colón 2042",
+    "Avenida Colón 4340",
+    "Pasco 219",
+    "Alto Alegre 744",
+    "Avenida Santa Ana 5999",
+    "Doctor José A. Ceballos 405"
+  ],
+  "horarios": [],
+  "tarifas": [],
+  "mapsEmbedUrl": "https://www.google.com/maps/embed/v1/directions?key=YOUR_API_KEY&origin=-31.442239,-64.193764&destination=-31.404093,-64.269082&waypoints=-31.407269,-64.204406|-31.396066,-64.246995|-31.409175,-64.263014&mode=transit",
+  "ultimaActualizacion": "2023-03-16",
+  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023); el recorrido puede haber cambiado. Verificá en la app Tu Bondi.",
+  "esEjemplo": false
+}

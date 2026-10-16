@@ -1,0 +1,65 @@
+{
+  "numero": "66",
+  "nombre": "Línea 66",
+  "empresa": "Coniferal",
+  "descripcionCorta": "Línea 66 - Coniferal",
+  "recorrido": {
+    "vuelta": {
+      "descripcion": "El Cardenal 3988 - Avenida Cruz Roja Argentina 658",
+      "calles": [
+        "El Cardenal 3988",
+        "El Pardal 9705",
+        "El Benteveo 3838",
+        "El Benteveo 3702",
+        "Avenida Las Malvinas 9474",
+        "Avenida Las Malvinas 9328",
+        "Avenida Las Malvinas 7772",
+        "Avenida Las Malvinas 6966",
+        "Avenida Las Malvinas 6516",
+        "Avenida Las Malvinas 6234",
+        "Avenida Las Malvinas 5744",
+        "Avenida Malvinas Argentinas 5825",
+        "Avenida Malvinas Argentinas 5443",
+        "Avenida Malvinas Argentinas 4809",
+        "Avenida Malvinas Argentinas 4199"
+      ]
+    },
+    "ida": {
+      "descripcion": "Avenida Cruz Roja Argentina 664 - Avenida Las Malvinas 9599",
+      "calles": [
+        "Avenida Cruz Roja Argentina 664",
+        "De la Industria 896",
+        "Avenida Cruz Roja Argentina 518",
+        "Avenida Cruz Roja Argentina 337",
+        "Maestro Marcelo López 3512",
+        "Avenida Ingeniero Medina Allende S/N",
+        "Bv. Enrique Barros S/N",
+        "Buenos Aires 1415",
+        "Avenida Ambrosio Olmos 1040",
+        "Belgrano 1451",
+        "Belgrano 1168",
+        "Belgrano 655",
+        "Belgrano 471",
+        "Belgrano 170",
+        "Tucumán 34"
+      ]
+    }
+  },
+  "paradasPrincipales": [
+    "El Cardenal 3988",
+    "Avenida Las Malvinas 6516",
+    "Avenida Malvinas Argentinas 3405",
+    "Avenida Malvinas Argentinas 1995",
+    "Avenida Patria 527",
+    "Sarmiento 111",
+    "Bulevar Chacabuco 1469",
+    "Avenida Cruz Roja Argentina 658"
+  ],
+  "horarios": [],
+  "tarifas": [],
+  "mapsEmbedUrl": "https://www.google.com/maps/embed/v1/directions?key=YOUR_API_KEY&origin=-31.36616,-64.05805&destination=-31.44265,-64.18759&waypoints=-31.38668,-64.12465|-31.39726,-64.16194|-31.417647,-64.187763&mode=transit",
+  "ultimaActualizacion": "2023-03-16",
+  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023); el recorrido puede haber cambiado. Verificá en la app Tu Bondi.",
+  "esEjemplo": false
+}

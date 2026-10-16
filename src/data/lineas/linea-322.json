@@ -1,0 +1,61 @@
+{
+  "numero": "",
+  "nombre": "AEROBUS",
+  "empresa": "TAMSE",
+  "descripcionCorta": "Línea  - TAMSE",
+  "recorrido": {
+    "vuelta": {
+      "descripcion": "Dirección desconocida - Avenida Amadeo Sabattini 359",
+      "calles": [
+        "Dirección desconocida",
+        "Avenida La Voz Del Interior 7671",
+        "Avenida La Voz del Interior S/N",
+        "Avenida Monseñor Pablo Cabrera 4719",
+        "Avenida Monseñor Pablo Cabrera 4253",
+        "Avenida Castro Barros 652",
+        "Avenida Santa Fe 317",
+        "Avenida Colón 1027",
+        "Bulevar San Juan 107",
+        "Bulevar Arturo Illia 390",
+        "Bulevar Juan Domingo Perón 349",
+        "Avenida Amadeo Sabattini 359"
+      ]
+    },
+    "ida": {
+      "descripcion": "Avenida Amadeo Sabattini 359 - Dirección desconocida",
+      "calles": [
+        "Avenida Amadeo Sabattini 359",
+        "Bulevar Arturo Illia 532",
+        "Bulevar Arturo Illia 105",
+        "Bulevar San Juan 626",
+        "Corro 145",
+        "Mariano Moreno 48",
+        "Avenida Santa Fe 354",
+        "Avenida Castro Barros 560",
+        "Avenida Castro Barros 1504",
+        "Avenida Monseñor Pablo Cabrera 2228",
+        "Sebastián Gaboto 2500",
+        "Avenida Monseñor Pablo Cabrera 4719",
+        "Avenida La Voz del Interior S/N",
+        "Dirección desconocida"
+      ]
+    }
+  },
+  "paradasPrincipales": [
+    "Dirección desconocida",
+    "Avenida La Voz Del Interior 7671",
+    "Avenida La Voz del Interior S/N",
+    "Avenida Monseñor Pablo Cabrera 4719",
+    "Avenida Monseñor Pablo Cabrera 4253",
+    "Avenida Castro Barros 652",
+    "Avenida Santa Fe 317",
+    "Avenida Amadeo Sabattini 359"
+  ],
+  "horarios": [],
+  "tarifas": [],
+  "mapsEmbedUrl": "https://www.google.com/maps/embed/v1/directions?key=YOUR_API_KEY&origin=-31.31494648788554,-64.21397209167482&destination=-31.425678602117298,-64.17129278182985&waypoints=-31.36136,-64.204161|-31.407046,-64.200277|-31.422277420630266,-64.18094873428346&mode=transit",
+  "ultimaActualizacion": "2023-03-16",
+  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023); el recorrido puede haber cambiado. Verificá en la app Tu Bondi.",
+  "esEjemplo": false
+}
