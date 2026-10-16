@@ -1,0 +1,66 @@
+{
+  "numero": "5",
+  "nombre": "Línea 5 - Ejemplo",
+  "esEjemplo": true,
+  "empresa": "Transporte Ejemplo SACIF",
+  "descripcionCorta": "Centro - Ciudad Universitaria (DATOS DE EJEMPLO)",
+  "recorrido": {
+    "ida": {
+      "descripcion": "Desde Centro hasta Ciudad Universitaria",
+      "calles": [
+        "Av. Colón",
+        "Av. Vélez Sarsfield",
+        "Av. Marcelo T. de Alvear",
+        "Av. Valparaíso",
+        "Av. Poeta Lugones",
+        "Destino: Ciudad Universitaria"
+      ]
+    },
+    "vuelta": {
+      "descripcion": "Desde Ciudad Universitaria hasta Centro",
+      "calles": [
+        "Ciudad Universitaria",
+        "Av. Poeta Lugones",
+        "Av. Valparaíso",
+        "Av. Marcelo T. de Alvear",
+        "Av. Vélez Sarsfield",
+        "Destino: Centro - Av. Colón"
+      ]
+    }
+  },
+  "paradasPrincipales": [
+    "Terminal de Ómnibus",
+    "Nueva Córdoba - Av. Vélez Sarsfield",
+    "Av. Marcelo T. de Alvear y Valparaíso",
+    "Cerro de las Rosas",
+    "Ciudad Universitaria"
+  ],
+  "horarios": {
+    "lunesAViernes": {
+      "tipo": "frecuencia",
+      "descripcion": "Cada 8-12 minutos (horario lectivo)",
+      "horarioInicio": "05:00",
+      "horarioFin": "00:00"
+    },
+    "sabados": {
+      "tipo": "frecuencia",
+      "descripcion": "Cada 15-20 minutos",
+      "horarioInicio": "06:00",
+      "horarioFin": "23:00"
+    },
+    "domingosYFeriados": {
+      "tipo": "frecuencia",
+      "descripcion": "Cada 25-35 minutos",
+      "horarioInicio": "07:00",
+      "horarioFin": "22:00"
+    }
+  },
+  "tarifas": {
+    "efectivo": "Ver tarifas vigentes en TAMSE",
+    "redBus": "Ver descuentos con tarjeta Red Bus"
+  },
+  "mapsEmbedUrl": "",
+  "ultimaActualizacion": "2026-10-16",
+  "fuente": "Datos de ejemplo para demostración",
+  "notas": "⚠️ ATENCIÓN: Estos son datos de ejemplo ficticios. No utilice esta información para planificar viajes reales."
+}
