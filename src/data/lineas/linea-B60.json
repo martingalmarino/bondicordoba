@@ -6,59 +6,83 @@
   "descripcionCorta": "Línea B60 - Coniferal",
   "recorrido": {
     "ida": {
-      "descripcion": "Nicolás Isasmendi 2929 - Camino Sta. Rosa",
+      "descripcion": "Por Adolfo Alsina, Adolfo alsina, Capdevila Fte, Av Arturo Capdevilla, Camino Al Gateado...",
       "calles": [
-        "Nicolás Isasmendi 2929",
-        "Thomas Edison 2338",
-        "Avenida Doctor Arturo Capdevila 2705",
-        "Avenida Capdevila 3640",
-        "Camino Al Gateado 3081",
-        "Calle de las Cortaderas 318-320",
-        "Calle de las Cortaderas 894",
-        "IPEM RAMON IBAÑEZ",
-        "Calle de la Pulperia 296",
-        "Calle de la Pulperia 224-280",
-        "Camino Sta. Rosa"
+        "Adolfo Alsina",
+        "Adolfo alsina",
+        "Capdevila Fte",
+        "Av Arturo Capdevilla",
+        "Camino Al Gateado",
+        "Calle de las Cortaderas",
+        "Las Toscas",
+        "Calle de la Pulperia",
+        "Cno Santa Rosa",
+        "Cno Santa Rosa (Special Gas)",
+        "Cno Santa Rosa",
+        "Cno Santa Rosa (predio gas)",
+        "Cno a Santa Rosa (Planta Shell",
+        "Cno Santa Rosa (predio garrafa",
+        "Cno a Santa Rosa (Planta de ga",
+        "Las Comunidades y Cno Santa Ro",
+        "Villa Esquiu (fin asfalto)",
+        "Cno a Sta Rosa",
+        "Calle Publica S/N",
+        "Cno a Sta Rosa",
+        "Escuela Eduardo Wilde"
       ]
     },
     "vuelta": {
-      "descripcion": "Santa Rosa S/N - Chachapoyas 2145",
+      "descripcion": "Por Calle Cno. a Sta Rosa, Cno a Sta Rosa, Calle Publica S/N, Villa Esquiu (fin asfalto), Las Comunidades y Cno Santa Ro...",
       "calles": [
-        "Santa Rosa S/N",
-        "Santa Rosa 12987",
-        "Santa Rosa 12769",
-        "Santa Rosa 12599",
-        "De La Pulpería S/N",
-        "Avenida Capdevila 2893",
-        "Palencia 3099",
-        "Chachapoyas 2145"
+        "Calle Cno. a Sta Rosa",
+        "Cno a Sta Rosa",
+        "Calle Publica S/N",
+        "Villa Esquiu (fin asfalto)",
+        "Las Comunidades y Cno Santa Ro",
+        "Cno a Santa Rosa (Planta de ga",
+        "Cno Santa Rosa (predio garrafa",
+        "Cno a Santa Rosa (Planta Shell",
+        "Cno Santa Rosa (predio gas)",
+        "Cno Santa Rosa",
+        "Cno Santa Rosa (Special Gas)",
+        "Cno Santa Rosa",
+        "Calle de la Pulperia",
+        "Las Toscas",
+        "Calle de las Cortaderas",
+        "Camino Al Gateado",
+        "Av Arturo Capdevilla",
+        "Capdevila",
+        "Chachapoyas",
+        "Adolfo Alsina"
       ]
     }
   },
   "paradasPrincipales": [
-    "Santa Rosa S/N",
-    "Santa Rosa 12987",
-    "Santa Rosa 12769",
-    "Santa Rosa 12599",
-    "De La Pulpería S/N",
-    "Chachapoyas 2145"
+    "Adolfo Alsina 2032",
+    "Calle Cno. a Sta Rosa",
+    "Adolfo alsina 2584",
+    "Calle Publica S/N",
+    "Camino Al Gateado 3081",
+    "Cno a Santa Rosa (Planta de ga",
+    "Las Toscas 3700",
+    "Cno Santa Rosa (predio gas)"
   ],
   "horarios": {
     "lunesAViernes": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     },
     "sabados": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     },
     "domingosYFeriados": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     }
@@ -68,7 +92,7 @@
     "redBus": "Consultá descuentos disponibles con tarjeta Red Bus"
   },
   "mapsEmbedUrl": "",
-  "ultimaActualizacion": "2023-03-16",
-  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
-  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
+  "ultimaActualizacion": "2026-08-07",
+  "fuente": "Tu Bondi (Municipalidad de Córdoba) via scraper lineas_transporte_cba (MIT) - Agosto 2026",
+  "notas": "Datos obtenidos del scraper Tu Bondi/Micronauta agosto 2026."
 }

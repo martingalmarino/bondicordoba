@@ -1,0 +1,119 @@
+{
+  "numero": "36A",
+  "nombre": "Línea 36A",
+  "esEjemplo": false,
+  "empresa": "SiBus",
+  "descripcionCorta": "Línea 36A - SiBus",
+  "recorrido": {
+    "ida": {
+      "descripcion": "Por Av Renault Argentina S/N, ROTONDA RENAULT, Av. Renault Argentina, Fernando Casado, Rio Pinto...",
+      "calles": [
+        "Av Renault Argentina S/N",
+        "ROTONDA RENAULT",
+        "Av. Renault Argentina",
+        "Fernando Casado",
+        "Rio Pinto",
+        "Ralico",
+        "Fernando Casado",
+        "Lago Argentino",
+        "Defensa",
+        "Congreso",
+        "CONGRESO",
+        "Av de Mayo",
+        "RIO NEGRO",
+        "Río Negro",
+        "Rio Negro",
+        "Defensa",
+        "Rio Quilpo",
+        "Arroyo de la Reduccion",
+        "Rio Negro",
+        "Defensa",
+        "Av Armada Argentina",
+        "Av. Armada Argentina",
+        "Av Armada Argentina",
+        "Av. Armada Argentina",
+        "Av Armada Argentina",
+        "Av Velez Sarsfield",
+        "V.SARSFIELD",
+        "Belgrano",
+        "Belgrano y Brasil",
+        "Belgrano",
+        "Tucuman",
+        "Tablada",
+        "Lavalleja",
+        "Bedoya",
+        "Urquiza",
+        "Mariano Fragueiro",
+        "Juan Escolar"
+      ]
+    },
+    "vuelta": {
+      "descripcion": "Por Juan Escolar, Sabino ODonells, Mariano Fragueiro y ODonell, Mariano Fragueiro, Urquiza...",
+      "calles": [
+        "Juan Escolar",
+        "Sabino ODonells",
+        "Mariano Fragueiro y ODonell",
+        "Mariano Fragueiro",
+        "Urquiza",
+        "Del Campillo",
+        "Roque Saenz Pena",
+        "Puente Centenario",
+        "G. PAZ",
+        "Av General Paz",
+        "G. PAZ",
+        "Patio Olmos",
+        "Av Velez Sarsfield",
+        "Plaza America",
+        "Av Velez Sarsfield",
+        "AV. VELEZ SARSFIELD",
+        "Av Armada Argentina",
+        "Ar.Argentina",
+        "Av. Armada Argentina",
+        "Av Armada Argentina",
+        "Lago Argentino",
+        "Fernando Casado",
+        "Rio Pinto",
+        "Av. Renault Argentina",
+        "Av Renault Argentina S/N"
+      ]
+    }
+  },
+  "paradasPrincipales": [
+    "Av Renault Argentina S/N",
+    "Juan Escolar 716",
+    "Ralico 2231",
+    "Mariano Fragueiro 3669",
+    "Congreso 5088",
+    "Urquiza 2605",
+    "Rio Negro 4992",
+    "Del Campillo 713"
+  ],
+  "horarios": {
+    "lunesAViernes": {
+      "tipo": "frecuencia",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "sabados": {
+      "tipo": "frecuencia",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "domingosYFeriados": {
+      "tipo": "frecuencia",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
+      "horarioInicio": "",
+      "horarioFin": ""
+    }
+  },
+  "tarifas": {
+    "efectivo": "Consultá la tarifa vigente en el sitio de la Municipalidad de Córdoba",
+    "redBus": "Consultá descuentos disponibles con tarjeta Red Bus"
+  },
+  "mapsEmbedUrl": "",
+  "ultimaActualizacion": "2026-08-07",
+  "fuente": "Tu Bondi (Municipalidad de Córdoba) via scraper lineas_transporte_cba (MIT) - Agosto 2026",
+  "notas": "Datos obtenidos del scraper Tu Bondi/Micronauta agosto 2026. Renombrada de A1 a 36A"
+}
