@@ -190,8 +190,8 @@ def parse_route(route: Dict, agencies: List[Dict], trips: List[Dict],
             }
         },
         "tarifas": {
-            "efectivo": "Consultá las tarifas vigentes con tu tarjeta SUBE",
-            "redBus": "Consultá descuentos disponibles con Red Bus"
+            "efectivo": "Consultá la tarifa vigente en el sitio de la Municipalidad de Córdoba",
+            "redBus": "Consultá descuentos disponibles con tarjeta Red Bus"
         },
         "mapsEmbedUrl": "",
         "ultimaActualizacion": "2023-03-16",
