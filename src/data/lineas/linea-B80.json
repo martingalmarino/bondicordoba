@@ -1,0 +1,86 @@
+{
+  "numero": "B80",
+  "nombre": "Línea B80",
+  "esEjemplo": false,
+  "empresa": "TAMSE",
+  "descripcionCorta": "Línea B80 - TAMSE",
+  "recorrido": {
+    "ida": {
+      "descripcion": "Av.muñecas 4982 - Jerónimo Helguera 4478",
+      "calles": [
+        "Av.muñecas 4982",
+        "Calle 26 5794",
+        "Av. Adolfo Muñecas 4805",
+        "Avenida Idelfonso Muñecas 4594",
+        "Avenida Idelfonso Muñecas 4285",
+        "Avenida Idelfonso Muñecas 4165",
+        "Avenida Idelfonso Muñecas 3826",
+        "11 de Septiembre 5600",
+        "Avenida 11 de Septiembre 5396",
+        "Avenida 11 de Septiembre 5214",
+        "11 de Septiembre 4755",
+        "De Las Leyes Agrarias 3839",
+        "De Las Leyes Agrarias 3987",
+        "Jerónimo Helguera 4478"
+      ]
+    },
+    "vuelta": {
+      "descripcion": "Jerónimo Helguera 4478 - Av.muñecas 4982",
+      "calles": [
+        "Jerónimo Helguera 4478",
+        "De Las Leyes Agrarias 3987",
+        "De las Leyes Agrarias 3850",
+        "11 de Septiembre 4755",
+        "11 de Septiembre 5100",
+        "Avenida 11 de Septiembre 5214",
+        "Avenida 11 de Septiembre 5396",
+        "11 de Septiembre 5600",
+        "Avenida Idelfonso Muñecas 3826",
+        "Avenida Idelfonso Muñecas 3993",
+        "Avenida Idelfonso Muñecas 4165",
+        "Munecas 4410",
+        "Avenida Idelfonso Muñecas 4594",
+        "Av. Adolfo Muñecas 4804",
+        "Av.muñecas 4982"
+      ]
+    }
+  },
+  "paradasPrincipales": [
+    "Av.muñecas 4982",
+    "Av. Adolfo Muñecas 4805",
+    "Avenida Idelfonso Muñecas 4285",
+    "Avenida Idelfonso Muñecas 3826",
+    "Avenida 11 de Septiembre 5396",
+    "11 de Septiembre 4755",
+    "De Las Leyes Agrarias 3987",
+    "Jerónimo Helguera 4478"
+  ],
+  "horarios": {
+    "lunesAViernes": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "sabados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "domingosYFeriados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    }
+  },
+  "tarifas": {
+    "efectivo": "Consultá la tarifa vigente en el sitio de la Municipalidad de Córdoba",
+    "redBus": "Consultá descuentos disponibles con tarjeta Red Bus"
+  },
+  "mapsEmbedUrl": "",
+  "ultimaActualizacion": "2023-03-16",
+  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
+}

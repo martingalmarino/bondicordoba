@@ -22,3 +22,14 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# GTFS raw data (procesado, no commitear)
+*.gtfs
+*.gtfs.zip
+/tmp/
+gtfs-cordoba/
+
+# Next.js (no usado, Astro solamente)
+.next/
+next-env.d.ts
+next.config.js

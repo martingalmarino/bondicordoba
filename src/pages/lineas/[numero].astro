@@ -74,25 +74,33 @@ const structuredData = {
       <h2>📍 Recorrido</h2>
       
       <div class="route-grid">
-        <div class="route-card">
-          <h3>Ida</h3>
-          <p class="route-description">{linea.recorrido.ida.descripcion}</p>
-          <ol class="route-list">
-            {linea.recorrido.ida.calles.map(calle => (
-              <li>{calle}</li>
-            ))}
-          </ol>
-        </div>
+        {linea.recorrido.ida.descripcion && (
+          <div class="route-card">
+            <h3>Ida</h3>
+            <p class="route-description">{linea.recorrido.ida.descripcion}</p>
+            {linea.recorrido.ida.calles.length > 0 && (
+              <ol class="route-list">
+                {linea.recorrido.ida.calles.map(calle => (
+                  <li>{calle}</li>
+                ))}
+              </ol>
+            )}
+          </div>
+        )}
         
-        <div class="route-card">
-          <h3>Vuelta</h3>
-          <p class="route-description">{linea.recorrido.vuelta.descripcion}</p>
-          <ol class="route-list">
-            {linea.recorrido.vuelta.calles.map(calle => (
-              <li>{calle}</li>
-            ))}
-          </ol>
-        </div>
+        {linea.recorrido.vuelta.descripcion && (
+          <div class="route-card">
+            <h3>Vuelta</h3>
+            <p class="route-description">{linea.recorrido.vuelta.descripcion}</p>
+            {linea.recorrido.vuelta.calles.length > 0 && (
+              <ol class="route-list">
+                {linea.recorrido.vuelta.calles.map(calle => (
+                  <li>{calle}</li>
+                ))}
+              </ol>
+            )}
+          </div>
+        )}
       </div>
     </section>
     
@@ -114,31 +122,37 @@ const structuredData = {
         <div class="schedule-card">
           <h3>Lunes a Viernes</h3>
           <p class="schedule-freq">{linea.horarios.lunesAViernes.descripcion}</p>
-          <p class="schedule-hours">
-            De {linea.horarios.lunesAViernes.horarioInicio} a {linea.horarios.lunesAViernes.horarioFin}
-          </p>
+          {linea.horarios.lunesAViernes.horarioInicio && linea.horarios.lunesAViernes.horarioFin && (
+            <p class="schedule-hours">
+              De {linea.horarios.lunesAViernes.horarioInicio} a {linea.horarios.lunesAViernes.horarioFin}
+            </p>
+          )}
         </div>
         
         <div class="schedule-card">
           <h3>Sábados</h3>
           <p class="schedule-freq">{linea.horarios.sabados.descripcion}</p>
-          <p class="schedule-hours">
-            De {linea.horarios.sabados.horarioInicio} a {linea.horarios.sabados.horarioFin}
-          </p>
+          {linea.horarios.sabados.horarioInicio && linea.horarios.sabados.horarioFin && (
+            <p class="schedule-hours">
+              De {linea.horarios.sabados.horarioInicio} a {linea.horarios.sabados.horarioFin}
+            </p>
+          )}
         </div>
         
         <div class="schedule-card">
           <h3>Domingos y Feriados</h3>
           <p class="schedule-freq">{linea.horarios.domingosYFeriados.descripcion}</p>
-          <p class="schedule-hours">
-            De {linea.horarios.domingosYFeriados.horarioInicio} a {linea.horarios.domingosYFeriados.horarioFin}
-          </p>
+          {linea.horarios.domingosYFeriados.horarioInicio && linea.horarios.domingosYFeriados.horarioFin && (
+            <p class="schedule-hours">
+              De {linea.horarios.domingosYFeriados.horarioInicio} a {linea.horarios.domingosYFeriados.horarioFin}
+            </p>
+          )}
         </div>
       </div>
       
       <div class="alert alert-info">
         <strong>Nota:</strong> Los horarios pueden variar según condiciones climáticas, tráfico o eventos especiales. 
-        Se recomienda llegar con anticipación a la parada.
+        Consultá los horarios en la app Tu Bondi o en las paradas.
       </div>
     </section>
     

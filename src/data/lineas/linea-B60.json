@@ -1,0 +1,74 @@
+{
+  "numero": "B60",
+  "nombre": "Línea B60",
+  "esEjemplo": false,
+  "empresa": "Coniferal",
+  "descripcionCorta": "Línea B60 - Coniferal",
+  "recorrido": {
+    "ida": {
+      "descripcion": "Nicolás Isasmendi 2929 - Camino Sta. Rosa",
+      "calles": [
+        "Nicolás Isasmendi 2929",
+        "Thomas Edison 2338",
+        "Avenida Doctor Arturo Capdevila 2705",
+        "Avenida Capdevila 3640",
+        "Camino Al Gateado 3081",
+        "Calle de las Cortaderas 318-320",
+        "Calle de las Cortaderas 894",
+        "IPEM RAMON IBAÑEZ",
+        "Calle de la Pulperia 296",
+        "Calle de la Pulperia 224-280",
+        "Camino Sta. Rosa"
+      ]
+    },
+    "vuelta": {
+      "descripcion": "Santa Rosa S/N - Chachapoyas 2145",
+      "calles": [
+        "Santa Rosa S/N",
+        "Santa Rosa 12987",
+        "Santa Rosa 12769",
+        "Santa Rosa 12599",
+        "De La Pulpería S/N",
+        "Avenida Capdevila 2893",
+        "Palencia 3099",
+        "Chachapoyas 2145"
+      ]
+    }
+  },
+  "paradasPrincipales": [
+    "Santa Rosa S/N",
+    "Santa Rosa 12987",
+    "Santa Rosa 12769",
+    "Santa Rosa 12599",
+    "De La Pulpería S/N",
+    "Chachapoyas 2145"
+  ],
+  "horarios": {
+    "lunesAViernes": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "sabados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "domingosYFeriados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    }
+  },
+  "tarifas": {
+    "efectivo": "Consultá la tarifa vigente en el sitio de la Municipalidad de Córdoba",
+    "redBus": "Consultá descuentos disponibles con tarjeta Red Bus"
+  },
+  "mapsEmbedUrl": "",
+  "ultimaActualizacion": "2023-03-16",
+  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
+}

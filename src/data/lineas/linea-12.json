@@ -1,0 +1,87 @@
+{
+  "numero": "12",
+  "nombre": "Línea 12",
+  "esEjemplo": false,
+  "empresa": "Coniferal",
+  "descripcionCorta": "Línea 12 - Coniferal",
+  "recorrido": {
+    "ida": {
+      "descripcion": "Av. Vucetich 8010 - Guillermo Furlong 8772",
+      "calles": [
+        "Av. Vucetich 8010",
+        "Av. Vucetich 7706-7764",
+        "Av. Vucetich 7677-7601",
+        "Vucetich 7450-7455",
+        "Av. Vucetich 7331-7311",
+        "Av. Vucetich 7194-7248",
+        "Av. Vucetich 7123",
+        "Av. Vucetich 6900-7038",
+        "Av. Vucetich 6743-6659",
+        "Av. Vucetich 6504-6542",
+        "Avenida Los Chañares 5339",
+        "A Capilla De Los Remedios 6235",
+        "Pedro Vargas S/N",
+        "Sánchez De Loria 5082",
+        "Avenida Amadeo Sabattini 5514"
+      ]
+    },
+    "vuelta": {
+      "descripcion": "José María Rosa S/N - Juan Vucetich 7899",
+      "calles": [
+        "José María Rosa S/N",
+        "Onofre Marimón 6850",
+        "Gabriel Ortega 8589",
+        "Eugenio Pizzolatto 7006",
+        "Eugenio Pizzolatto 7120",
+        "Eugenio Pizzolatto 7199",
+        "Malalco 7146",
+        "Malalco 7317",
+        "Malalco 7459",
+        "Malalco 7501",
+        "Valerio Beta 7421",
+        "Valerio Beta 7135",
+        "Italo Bizio 7252",
+        "José Massetti 8164",
+        "José Massetti 8065"
+      ]
+    }
+  },
+  "paradasPrincipales": [
+    "José María Rosa S/N",
+    "Italo Bizio 7252",
+    "Avenida Rafael Núñez 5499",
+    "Avenida Caraffa 2965",
+    "Avellaneda 361",
+    "Avenida Sabattini 3058",
+    "Avenida Amadeo Sabattini 5642",
+    "Juan Vucetich 7899"
+  ],
+  "horarios": {
+    "lunesAViernes": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "sabados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "domingosYFeriados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    }
+  },
+  "tarifas": {
+    "efectivo": "Consultá la tarifa vigente en el sitio de la Municipalidad de Córdoba",
+    "redBus": "Consultá descuentos disponibles con tarjeta Red Bus"
+  },
+  "mapsEmbedUrl": "",
+  "ultimaActualizacion": "2023-03-16",
+  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
+}

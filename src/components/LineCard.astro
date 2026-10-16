@@ -23,11 +23,13 @@ const { linea } = Astro.props;
     <div class="line-meta">
       <span class="company">{linea.empresa}</span>
     </div>
-    <div class="line-route">
-      <div class="route-section">
-        <strong>Ida:</strong> {linea.recorrido.ida.calles[0]} → {linea.recorrido.ida.calles[linea.recorrido.ida.calles.length - 1]}
+    {linea.recorrido.ida.calles.length > 0 && (
+      <div class="line-route">
+        <div class="route-section">
+          <strong>Ida:</strong> {linea.recorrido.ida.calles[0]} → {linea.recorrido.ida.calles[linea.recorrido.ida.calles.length - 1]}
+        </div>
       </div>
-    </div>
+    )}
   </div>
 </article>
 

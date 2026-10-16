@@ -1,0 +1,87 @@
+{
+  "numero": "43",
+  "nombre": "43 por Maipu",
+  "esEjemplo": false,
+  "empresa": "ERSA",
+  "descripcionCorta": "Línea 43 - ERSA",
+  "recorrido": {
+    "ida": {
+      "descripcion": "Doctor José A. Ceballos 404 - Av Sabattini 1350",
+      "calles": [
+        "Doctor José A. Ceballos 404",
+        "DR. JOSE CEBALLOS 505",
+        "José Cortes Funes 6600",
+        "Cleto Aguirre 6600",
+        "Cleto Aguirre 6315",
+        "Cleto Aguirre 6035",
+        "Alto Alegre 850",
+        "Alto Alegre 922",
+        "Alto Alegre 1048",
+        "ALTO ALEGRE Y MANUEL NAMUNCURA",
+        "MANUEL NAMUNCURA 5870",
+        "Coronel Manuel Namuncurá 5528",
+        "Paine 5365",
+        "Paine 5236",
+        "Avenida Santa Ana 5068"
+      ]
+    },
+    "vuelta": {
+      "descripcion": "Av Sabattini 1350 - Doctor José A. Ceballos 404",
+      "calles": [
+        "Av Sabattini 1350",
+        "Bajada del Pucará S/N",
+        "Avenida Gobernador Amadeo Sabattini S/N",
+        "Av. Amadeo Sabattini 645-359",
+        "Bulevar Arturo Illia 437",
+        "Bulevar San Juan 15",
+        "Bv San Juan y M T de Alvear",
+        "Belgrano 175",
+        "27 de Abril 529",
+        "27 de Abril 754",
+        "Monte Carmelo 1101",
+        "Bulevar San Juan 1251",
+        "Bulevar San Juan 1488",
+        "RIO NEGRO Y SANTA ANA",
+        "Avenida Santa Ana 1700"
+      ]
+    }
+  },
+  "paradasPrincipales": [
+    "Av Sabattini 1350",
+    "Bv San Juan y M T de Alvear",
+    "Bulevar San Juan 1488",
+    "AV. SANATA ANA Y ATTE GUILLERMO BROWN",
+    "Avenida Santa Ana 4064",
+    "AV. SANTA ANA 5072",
+    "ALTO ALEGRE Y MANUEL NAMUNCURA",
+    "Doctor José A. Ceballos 404"
+  ],
+  "horarios": {
+    "lunesAViernes": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "sabados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "domingosYFeriados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    }
+  },
+  "tarifas": {
+    "efectivo": "Consultá la tarifa vigente en el sitio de la Municipalidad de Córdoba",
+    "redBus": "Consultá descuentos disponibles con tarjeta Red Bus"
+  },
+  "mapsEmbedUrl": "",
+  "ultimaActualizacion": "2023-03-16",
+  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
+}

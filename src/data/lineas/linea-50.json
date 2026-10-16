@@ -1,0 +1,87 @@
+{
+  "numero": "50",
+  "nombre": "Línea 50",
+  "esEjemplo": false,
+  "empresa": "ERSA",
+  "descripcionCorta": "Línea 50 - ERSA",
+  "recorrido": {
+    "ida": {
+      "descripcion": "Martiniano Chilavert 3850 - Gobernación 1332",
+      "calles": [
+        "Martiniano Chilavert 3850",
+        "Howard 1391",
+        "Avenida Alem 3613",
+        "Avenida Leandro N. Alem 3339",
+        "Avenida Alem 3201",
+        "Avenida Alem 3005",
+        "Avenida Alem 2808",
+        "Avenida Alem 2615",
+        "Avenida Alem 2178",
+        "Avenida Alem 2018",
+        "Avenida Alem 1729",
+        "Avenida Alem 1620",
+        "Avenida Alem 1418",
+        "Avenida Alem 1209",
+        "Avenida Alem 1027"
+      ]
+    },
+    "vuelta": {
+      "descripcion": "Gobernación 1350 - Martiniano Chilavert 3899",
+      "calles": [
+        "Gobernación 1350",
+        "Avenida de Mayo 1217",
+        "Avenida de Mayo 823",
+        "Avenida de Mayo 655",
+        "La Falda 5892",
+        "La Falda 6000",
+        "Laboulaye 431",
+        "Laboulaye 315",
+        "Laboulaye 189",
+        "Laboulaye 11",
+        "Avenida Vélez Sarsfield 5935",
+        "Avenida Vélez Sarsfield 5593",
+        "Avenida Vélez Sarsfield 5339",
+        "Avenida Vélez Sarsfield 5133",
+        "Avenida Vélez Sarsfield 4899"
+      ]
+    }
+  },
+  "paradasPrincipales": [
+    "Gobernación 1350",
+    "Laboulaye 189",
+    "Avenida Vélez Sarsfield 4033",
+    "Avenida Vélez Sarsfield 1919",
+    "Avenida Emilio Olmos 96",
+    "Avenida Leandro N. Alem 575",
+    "Avenida Alem 2756",
+    "Martiniano Chilavert 3899"
+  ],
+  "horarios": {
+    "lunesAViernes": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "sabados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "domingosYFeriados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    }
+  },
+  "tarifas": {
+    "efectivo": "Consultá la tarifa vigente en el sitio de la Municipalidad de Córdoba",
+    "redBus": "Consultá descuentos disponibles con tarjeta Red Bus"
+  },
+  "mapsEmbedUrl": "",
+  "ultimaActualizacion": "2023-03-16",
+  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
+}

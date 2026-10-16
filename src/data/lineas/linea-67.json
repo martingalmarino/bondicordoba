@@ -1,0 +1,87 @@
+{
+  "numero": "67",
+  "nombre": "Línea 67",
+  "esEjemplo": false,
+  "empresa": "Coniferal",
+  "descripcionCorta": "Línea 67 - Coniferal",
+  "recorrido": {
+    "ida": {
+      "descripcion": "Avenida Cruz Roja Argentina 664 - Quincho Casino de Oficiales Escuela de Aviación Militar",
+      "calles": [
+        "Avenida Cruz Roja Argentina 664",
+        "De la Industria 896",
+        "Bv. Enrique Barros S/N",
+        "Avenida Cruz Roja Argentina 518",
+        "Avenida Cruz Roja Argentina 337",
+        "Maestro Marcelo López 3512",
+        "Avenida Ciudad De Valparaíso S/N",
+        "Avenida Hipólito Yrigoyen 681",
+        "Bulevar Chacabuco 830",
+        "Bulevar Chacabuco 560",
+        "Bulevar Arturo Illia 23",
+        "Avenida Marcelo T. de Alvear 203",
+        "27 de Abril 504",
+        "27 de Abril 956",
+        "Monte Carmelo 1101"
+      ]
+    },
+    "vuelta": {
+      "descripcion": "Avenida Fuerza Aérea 4725 - Avenida Cruz Roja Argentina 658",
+      "calles": [
+        "Avenida Fuerza Aérea 4725",
+        "Dirección desconocida",
+        "Sargento Romero S/N",
+        "Alto Alegre 1693",
+        "Viedma Recalde 6460",
+        "Alto Alegre 1620",
+        "Avenida Fuerza Aérea Argentina 6000",
+        "Avenida Fuerza Aérea Argentina 5389",
+        "Avenida Fuerza Aérea 4941",
+        "Avenida Fuerza Aérea 4599",
+        "Avenida Fuerza Aérea Argentina 4311",
+        "Avenida Agustín Roque Arias 1823",
+        "Avenida Agustín Roque Arias 1717",
+        "Avenida Agustín Roque Arias 1646",
+        "Alberto Williams 4051"
+      ]
+    }
+  },
+  "paradasPrincipales": [
+    "Avenida Fuerza Aérea 4725",
+    "Avenida Fuerza Aérea Argentina 5389",
+    "Alberto Williams 4051",
+    "Isaac Albéniz 3340",
+    "Ángelo de Peredo 2601",
+    "Avenida Pueyrredón 1019",
+    "Avenida Vélez Sarsfield 271",
+    "Avenida Cruz Roja Argentina 658"
+  ],
+  "horarios": {
+    "lunesAViernes": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "sabados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "domingosYFeriados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    }
+  },
+  "tarifas": {
+    "efectivo": "Consultá la tarifa vigente en el sitio de la Municipalidad de Córdoba",
+    "redBus": "Consultá descuentos disponibles con tarjeta Red Bus"
+  },
+  "mapsEmbedUrl": "",
+  "ultimaActualizacion": "2023-03-16",
+  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
+}

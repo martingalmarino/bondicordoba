@@ -1,0 +1,87 @@
+{
+  "numero": "42",
+  "nombre": "Línea 42",
+  "esEjemplo": false,
+  "empresa": "ERSA",
+  "descripcionCorta": "Línea 42 - ERSA",
+  "recorrido": {
+    "ida": {
+      "descripcion": "Granadero Toba 3900 - Avenida Santa Ana 4988",
+      "calles": [
+        "Granadero Toba 3900",
+        "Howard 1357",
+        "Pasaje Puch 3699",
+        "José Luis Pons 1101",
+        "Florencio Parravicini 3715",
+        "Florencio Parravicini 3509",
+        "Carlos Giménez 199",
+        "Carlos Giménez 116",
+        "Carlos Giménez 21",
+        "Rafael Pombo 800",
+        "José Podestá 3672",
+        "Conrado Nale Roxlo 1000",
+        "Conrado Nale Roxlo 745",
+        "Conrado Nale Roxlo 630",
+        "Conrado Nale Roxlo 509"
+      ]
+    },
+    "vuelta": {
+      "descripcion": "Avenida Santa Ana 5161 - Martiniano Chilavert 3891",
+      "calles": [
+        "Avenida Santa Ana 5161",
+        "Avenida Santa Ana 5389",
+        "Avenida Santa Ana 5600",
+        "Avenida Santa Ana 5846",
+        "Avenida Santa Ana 5999",
+        "Alto Alegre 922",
+        "Alto Alegre 1048",
+        "Coronel Manuel Namuncurá 5807",
+        "Coronel Manuel Namuncurá 5503",
+        "Paine 5365",
+        "Chocorí 902",
+        "Avenida Santa Ana 4783",
+        "Avenida Santa Ana 4535",
+        "Pasaje Mariano Cordero 601",
+        "Avenida Don Bosco 4499"
+      ]
+    }
+  },
+  "paradasPrincipales": [
+    "Avenida Santa Ana 5161",
+    "Chocorí 902",
+    "Avenida Duarte Quirós 3851",
+    "Avenida Duarte Quirós 1727",
+    "Avenida Juan B. Justo 2238",
+    "Avenida Juan B. Justo 4620",
+    "Conrado Nale Roxlo 910",
+    "Martiniano Chilavert 3891"
+  ],
+  "horarios": {
+    "lunesAViernes": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "sabados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "domingosYFeriados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    }
+  },
+  "tarifas": {
+    "efectivo": "Consultá la tarifa vigente en el sitio de la Municipalidad de Córdoba",
+    "redBus": "Consultá descuentos disponibles con tarjeta Red Bus"
+  },
+  "mapsEmbedUrl": "",
+  "ultimaActualizacion": "2023-03-16",
+  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
+}

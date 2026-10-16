@@ -1,0 +1,87 @@
+{
+  "numero": "36",
+  "nombre": "Línea 36",
+  "esEjemplo": false,
+  "empresa": "TAMSE",
+  "descripcionCorta": "Línea 36 - TAMSE",
+  "recorrido": {
+    "ida": {
+      "descripcion": "Avenida Juan B. Justo S/N - De Mauro 99",
+      "calles": [
+        "Avenida Juan B. Justo S/N",
+        "Avenida Juan B. Justo 6996",
+        "Córdoba S/N",
+        "Avenida Juan B. Justo 6381",
+        "Avenida Juan B. Justo 6309",
+        "Avenida Juan B. Justo 6118",
+        "Aarón de Anchorena 5523",
+        "Jorge Eduardo Newbery 123",
+        "Jorge Eduardo Newbery 559",
+        "Jorge Eduardo Newbery 784",
+        "Felipe Beltrame 5412",
+        "Carola Lorenzini 850",
+        "Urquiza 4999",
+        "Mariano Fragueíro 4840",
+        "Mariano Fragueíro 4670"
+      ]
+    },
+    "vuelta": {
+      "descripcion": "Icho Cruz 100 - Avenida Juan B. Justo S/N",
+      "calles": [
+        "Icho Cruz 100",
+        "Las Peñas 5869",
+        "Laboulaye 199",
+        "Laboulaye 323",
+        "Laboulaye 452",
+        "Laboulaye 580",
+        "La Falda 5813",
+        "La Falda 5529",
+        "Gobernación 774",
+        "Gobernación 982",
+        "Gobernación 1172",
+        "Gobernación 1332",
+        "Río Negro 5220",
+        "Río Negro 5108",
+        "Río Negro 4979"
+      ]
+    }
+  },
+  "paradasPrincipales": [
+    "Icho Cruz 100",
+    "Río Negro 5220",
+    "Avenida Vélez Sarsfield 3077",
+    "27 de Abril 754",
+    "Isabel la Católica 600",
+    "Mariano Fragueíro 4208",
+    "Horacio Anasagasti 125",
+    "Avenida Juan B. Justo S/N"
+  ],
+  "horarios": {
+    "lunesAViernes": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "sabados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "domingosYFeriados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    }
+  },
+  "tarifas": {
+    "efectivo": "Consultá la tarifa vigente en el sitio de la Municipalidad de Córdoba",
+    "redBus": "Consultá descuentos disponibles con tarjeta Red Bus"
+  },
+  "mapsEmbedUrl": "",
+  "ultimaActualizacion": "2023-03-16",
+  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
+}

@@ -1,0 +1,87 @@
+{
+  "numero": "82",
+  "nombre": "Línea 82",
+  "esEjemplo": false,
+  "empresa": "TAMSE",
+  "descripcionCorta": "Línea 82 - TAMSE",
+  "recorrido": {
+    "ida": {
+      "descripcion": "Avenida General Manuel Savio 5570 - Avenida Recta Martinoli 7900",
+      "calles": [
+        "Avenida General Manuel Savio 5570",
+        "Avenida General Manuel Savio 6113",
+        "Cipriano Perelló 4822",
+        "Juan Ramón Rojas 5277",
+        "Cipriano Perelló 5006",
+        "Agustín Gamarra 5751",
+        "Agustín Gamarra 5613",
+        "Avenida General Manuel Savio 5457",
+        "Avenida General Manuel Savio 5277",
+        "Juan del Risco y Alvarado 3915",
+        "Juan del Risco y Alvarado 3843",
+        "Juan del Risco y Alvarado 3685",
+        "Juan del Risco y Alvarado 3511",
+        "Chirinos de Posadas 5042",
+        "Chirinos de Posadas 4799"
+      ]
+    },
+    "vuelta": {
+      "descripcion": "Viracocha 6788 - General Manuel Savio 5615",
+      "calles": [
+        "Viracocha 6788",
+        "Pablo Buitrago 7042",
+        "Pablo Buitrago 7184",
+        "Pablo Buitrago 7372",
+        "Avenida Ricardo Rojas 8238",
+        "Avenida Ricardo Rojas 8358",
+        "Avenida Ricardo Rojas 8536",
+        "Avenida Ricardo Rojas 8782",
+        "Avenida Ricardo Rojas 8952",
+        "Manuel de Falla 7349",
+        "Manuel de Falla 7003",
+        "Avenida Recta Martinoli 8945",
+        "Avenida Recta Martinoli 8855",
+        "Avenida Recta Martinoli 8778",
+        "Avenida Recta Martinoli 8580"
+      ]
+    }
+  },
+  "paradasPrincipales": [
+    "Viracocha 6788",
+    "Avenida Recta Martinoli 8580",
+    "José Echenique 1952",
+    "Avenida Octavio Pinto 2413",
+    "Avenida Colón 529",
+    "León 1829",
+    "Francisco de la Retana 4991",
+    "General Manuel Savio 5615"
+  ],
+  "horarios": {
+    "lunesAViernes": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "sabados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "domingosYFeriados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    }
+  },
+  "tarifas": {
+    "efectivo": "Consultá la tarifa vigente en el sitio de la Municipalidad de Córdoba",
+    "redBus": "Consultá descuentos disponibles con tarjeta Red Bus"
+  },
+  "mapsEmbedUrl": "",
+  "ultimaActualizacion": "2023-03-16",
+  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
+}

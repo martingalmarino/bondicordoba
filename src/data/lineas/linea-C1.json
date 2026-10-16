@@ -1,0 +1,87 @@
+{
+  "numero": "C1",
+  "nombre": "Línea C1",
+  "esEjemplo": false,
+  "empresa": "TAMSE",
+  "descripcionCorta": "Línea C1 - TAMSE",
+  "recorrido": {
+    "ida": {
+      "descripcion": "Aviador Pedro Zanni 3639 - Av. Vucetich 7800-7892",
+      "calles": [
+        "Aviador Pedro Zanni 3639",
+        "Avenida Fuerza Aérea 3039",
+        "Avenida Fuerza Aérea 2817",
+        "Avenida Fuerza Aérea 2607",
+        "Avenida Fuerza Aérea 2097",
+        "Avenida Fuerza Aérea 1781",
+        "Avenida Julio A. Roca 1399",
+        "Avenida Julio A. Roca 865",
+        "Avenida Julio A. Roca 579",
+        "Avenida Julio A. Roca 453",
+        "Belgrano 874",
+        "Belgrano 554",
+        "Belgrano 305",
+        "Belgrano 67",
+        "Tucumán 34"
+      ]
+    },
+    "vuelta": {
+      "descripcion": "Juan Vucetich 7671 - Avenida Fuerza Aérea 3684",
+      "calles": [
+        "Juan Vucetich 7671",
+        "Av. Vucetich 7331-7311",
+        "Juan Vucetich 6945",
+        "Juan Vucetich 6301",
+        "Juan Vucetich 6220",
+        "Avenida Amadeo Sabattini 5879",
+        "Avenida Gobernador Amadeo Sabattini 5652",
+        "Avenida Amadeo Sabattini 5427",
+        "Avenida Amadeo Sabattini 5315",
+        "Avenida Amadeo Sabattini 5189",
+        "Avenida Amadeo Sabattini 5013",
+        "Carnerillo 2200",
+        "Centeno 3802",
+        "Leonardo Rosales 3324",
+        "San Jerónimo 3209"
+      ]
+    }
+  },
+  "paradasPrincipales": [
+    "Juan Vucetich 7671",
+    "Avenida Amadeo Sabattini 5879",
+    "Avenida Amadeo Sabattini 5013",
+    "San Jeronimo 2716-2724",
+    "Juan Larrea 1527",
+    "Santiago del Estero 344",
+    "Avenida Marcelo T. de Alvear 876",
+    "Avenida Fuerza Aérea 3684"
+  ],
+  "horarios": {
+    "lunesAViernes": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "sabados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "domingosYFeriados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    }
+  },
+  "tarifas": {
+    "efectivo": "Consultá la tarifa vigente en el sitio de la Municipalidad de Córdoba",
+    "redBus": "Consultá descuentos disponibles con tarjeta Red Bus"
+  },
+  "mapsEmbedUrl": "",
+  "ultimaActualizacion": "2023-03-16",
+  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
+}

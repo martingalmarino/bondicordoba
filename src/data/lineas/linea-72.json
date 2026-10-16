@@ -1,0 +1,71 @@
+{
+  "numero": "72",
+  "nombre": "72 por La Reserva",
+  "esEjemplo": false,
+  "empresa": "ERSA",
+  "descripcionCorta": "Línea 72 - ERSA",
+  "recorrido": {
+    "ida": {
+      "descripcion": "",
+      "calles": []
+    },
+    "vuelta": {
+      "descripcion": "COLECTORA Y TROPEZON - AGUSTIN GARZON Y LOLA MORA",
+      "calles": [
+        "COLECTORA Y TROPEZON",
+        "Carcano 13",
+        "Hornero 296",
+        "Hornero 576",
+        "Hornero 674",
+        "Ramón Cárcano 921",
+        "Roberto Boyle 5642",
+        "Carcano ---",
+        "Carcano 3590",
+        "Carcano S/N",
+        "AV. DEL PIAMONTE S/N",
+        "Carcano 1050",
+        "Carcano 251",
+        "Carcano 75",
+        "COLECTORA OESTE Y MAHATMA GHANDI"
+      ]
+    }
+  },
+  "paradasPrincipales": [
+    "COLECTORA Y TROPEZON",
+    "Carcano 1050",
+    "Pagliere 7008",
+    "Avenida Duarte Quirós 4298",
+    "Avenida Colón 1309",
+    "Obispo Maldonado 2058",
+    "Pasaje Sáenz Peña 4346",
+    "AGUSTIN GARZON Y LOLA MORA"
+  ],
+  "horarios": {
+    "lunesAViernes": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "sabados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "domingosYFeriados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    }
+  },
+  "tarifas": {
+    "efectivo": "Consultá la tarifa vigente en el sitio de la Municipalidad de Córdoba",
+    "redBus": "Consultá descuentos disponibles con tarjeta Red Bus"
+  },
+  "mapsEmbedUrl": "",
+  "ultimaActualizacion": "2023-03-16",
+  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
+}

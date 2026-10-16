@@ -1,0 +1,87 @@
+{
+  "numero": "73",
+  "nombre": "Línea 73",
+  "esEjemplo": false,
+  "empresa": "ERSA",
+  "descripcionCorta": "Línea 73 - ERSA",
+  "recorrido": {
+    "ida": {
+      "descripcion": "Borneo 273 - Villa Boedo",
+      "calles": [
+        "Borneo 273",
+        "Tahití 419",
+        "Bermudas 487",
+        "Esquel 4431",
+        "Avenida Armada Argentina 793",
+        "Avenida Armada Argentina 601",
+        "Capri 4099",
+        "Viña del Mar 4199-4099",
+        "Viña del Mar 4006",
+        "Honolulu 197",
+        "Viña del Mar 3721",
+        "Doctor Oscar Cocca 29",
+        "Avenida Vélez Sarsfield 3437",
+        "Pedro Antonio Inchauspe 88",
+        "Pedro Antonio Inchauspe 188"
+      ]
+    },
+    "vuelta": {
+      "descripcion": "Máximo Zamudio 63 - Viña Del Mar 4736",
+      "calles": [
+        "Máximo Zamudio 63",
+        "Máximo Zamudio S/N",
+        "Talacasto 5891",
+        "Tinogasta 5714",
+        "Tinogasta 5519",
+        "Ancastí 5399",
+        "Calingasta 5263",
+        "Fiambala 4899",
+        "Ramos Mejia 2159",
+        "Ramos Mejia 1907",
+        "Ramos Mejia 1801",
+        "Ramos Mejia 1669",
+        "Emilio Salgari 1599",
+        "Corrientes 4411",
+        "Corrientes 4267"
+      ]
+    }
+  },
+  "paradasPrincipales": [
+    "Borneo 273",
+    "Honolulu 197",
+    "Concejal Felipe Belardinelli 3032",
+    "Tucumán 199-99",
+    "Agustín Garzón 1766",
+    "Agustín Garzón 3588",
+    "Andalgalá 4799",
+    "Villa Boedo"
+  ],
+  "horarios": {
+    "lunesAViernes": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "sabados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "domingosYFeriados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    }
+  },
+  "tarifas": {
+    "efectivo": "Consultá la tarifa vigente en el sitio de la Municipalidad de Córdoba",
+    "redBus": "Consultá descuentos disponibles con tarjeta Red Bus"
+  },
+  "mapsEmbedUrl": "",
+  "ultimaActualizacion": "2023-03-16",
+  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
+}

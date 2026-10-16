@@ -1,0 +1,87 @@
+{
+  "numero": "29",
+  "nombre": "Línea 29",
+  "esEjemplo": false,
+  "empresa": "ERSA",
+  "descripcionCorta": "Línea 29 - ERSA",
+  "recorrido": {
+    "ida": {
+      "descripcion": "Avenida Libertador San Martín 136 - Ciudad De Valparaíso 8438",
+      "calles": [
+        "Avenida Libertador San Martín 136",
+        "Avenida Libertador San Martín 500",
+        "Avenida Libertador San Martín S/N",
+        "A189 S/N",
+        "Avenida Bernardo O'higgins S/N",
+        "Avenida Bernardo O'higgins 10000",
+        "Avenida Bernardo O'higgins 9932",
+        "Avenida Bernardo O'higgins 9869",
+        "Avenida Bernardo O'higgins 9770",
+        "Avenida Bernardo O'higgins 9588",
+        "Avenida Bernardo O'higgins 9281",
+        "Avenida Bernardo O'higgins 8966",
+        "Avenida Bernardo O'higgins 8682",
+        "Avenida Bernardo O'higgins 8421",
+        "Avenida Bernardo O'higgins 8035"
+      ]
+    },
+    "vuelta": {
+      "descripcion": "Amancay S/N - Avenida Libertador San Martín 29",
+      "calles": [
+        "Amancay S/N",
+        "Incayuyo S/N",
+        "Caraguatá S/N",
+        "Ciudad De Valparaíso 8500",
+        "Ciudad De Valparaíso 7938",
+        "Dirección desconocida",
+        "Córdoba S/N",
+        "Ciudad De Valparaíso S/N",
+        "Camino a San Antonio 6879",
+        "Camino a San Antonio 6517",
+        "Camino a San Antonio 6359",
+        "Camino a San Antonio 6103",
+        "Camino a San Antonio 5899",
+        "Camino a San Antonio 5577",
+        "Camino a San Antonio 5301"
+      ]
+    }
+  },
+  "paradasPrincipales": [
+    "Amancay S/N",
+    "Córdoba S/N",
+    "Avenida Ciudad de Valparaíso 4843",
+    "Avenida Rogelio Nores Martínez 2717",
+    "Avenida Colón 19",
+    "Avenida Bernardo O'Higgins 3588",
+    "Camino a San Carlos 6786",
+    "Avenida Libertador San Martín 29"
+  ],
+  "horarios": {
+    "lunesAViernes": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "sabados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "domingosYFeriados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    }
+  },
+  "tarifas": {
+    "efectivo": "Consultá la tarifa vigente en el sitio de la Municipalidad de Córdoba",
+    "redBus": "Consultá descuentos disponibles con tarjeta Red Bus"
+  },
+  "mapsEmbedUrl": "",
+  "ultimaActualizacion": "2023-03-16",
+  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
+}
