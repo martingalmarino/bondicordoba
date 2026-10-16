@@ -2,76 +2,44 @@
   "numero": "27",
   "nombre": "Línea 27",
   "esEjemplo": false,
-  "empresa": "ERSA",
-  "descripcionCorta": "Línea 27 - ERSA",
+  "empresa": "TAMSE",
+  "descripcionCorta": "Línea 27 - TAMSE",
   "recorrido": {
     "ida": {
-      "descripcion": "Avenida Rosa Ferreyra De Roca 2801 - Julio Bejanele S/N",
-      "calles": [
-        "Avenida Rosa Ferreyra De Roca 2801",
-        "Armando Sica 4385",
-        "Onofrio Palamara 2964",
-        "Martiniano Sciepaquercia 3001",
-        "Ricardo López Cabrera 3001",
-        "Celso Barrios 3002",
-        "Celso Barrios 2917",
-        "Celso Barrios 2805",
-        "Soconcho 3682",
-        "Calmayo 2542",
-        "Caminiaga 3215",
-        "Carlos Paz 3127",
-        "Caminiaga 2985",
-        "Baradero 2321",
-        "Baradero 2211"
-      ]
+      "descripcion": "Datos del scraper Tu Bondi 2026",
+      "calles": []
     },
     "vuelta": {
-      "descripcion": "Julio Bejanele 8301 - Avenida Rosa Ferreyra De Roca 2809",
-      "calles": [
-        "Julio Bejanele 8301",
-        "Julio Bejanele 8145",
-        "Osvaldo Permigiani 8102",
-        "Osvaldo Permigiani 8101",
-        "Oscar Cabalén 6222",
-        "Fermín Martín S/N",
-        "Octavio Suárez 7893",
-        "Martín Fermín 7676",
-        "Martín Fermín 7502",
-        "Juan Gálvez 7310",
-        "Junas Larguia 6201",
-        "Juan Abella 5903",
-        "Juan Masjoan 5902",
-        "Bulevar Los Alemanes 5898",
-        "Bulevar Los Alemanes 5807"
-      ]
+      "descripcion": "Datos del scraper Tu Bondi 2026",
+      "calles": []
     }
   },
   "paradasPrincipales": [
-    "Julio Bejanele 8301",
-    "Juan Abella 5903",
-    "Avenida Padre Claret 4711",
-    "Gabino Ezeiza 3901",
-    "Pasaje Benjamín Cruz 1009",
-    "Bulevar Arturo Illia S/N",
-    "Altautina 3190",
-    "Avenida Rosa Ferreyra De Roca 2809"
+    "PUNTA DE LINEA JAPONESES",
+    "Guasapampa 3814",
+    "Av. Madrid 2507",
+    "Av. Castro Barros 570",
+    "Francisco Drumond 2788",
+    "Manuel Lopez S/n",
+    "Alvarez de Toledo 6830",
+    "CALLE JOSE RAMONDA Y PUBLICA"
   ],
   "horarios": {
     "lunesAViernes": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     },
     "sabados": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     },
     "domingosYFeriados": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     }
@@ -81,7 +49,7 @@
     "redBus": "Consultá descuentos disponibles con tarjeta Red Bus"
   },
   "mapsEmbedUrl": "",
-  "ultimaActualizacion": "2023-03-16",
-  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
-  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
+  "ultimaActualizacion": "2026-08-07",
+  "fuente": "Tu Bondi (Municipalidad de Córdoba) via scraper lineas_transporte_cba (MIT) - Agosto 2026",
+  "notas": "Datos obtenidos del scraper Tu Bondi/Micronauta agosto 2026."
 }

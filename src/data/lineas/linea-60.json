@@ -6,72 +6,40 @@
   "descripcionCorta": "Línea 60 - Coniferal",
   "recorrido": {
     "ida": {
-      "descripcion": "Julio de Vedia 3865 - Pública 18 S/N",
-      "calles": [
-        "Julio de Vedia 3865",
-        "Julio de Vedia 3779",
-        "Julio de Vedia 3685",
-        "Julio de Vedia 3577",
-        "Tomás de Rocamora 2299",
-        "Celestino Vidal 3157",
-        "Celestino Vidal 3015",
-        "Celestino Vidal 2865",
-        "Celestino Vidal 2713",
-        "Avenida Capdevila 2520",
-        "Avenida Capdevila 2647",
-        "Jacinto de Altoaguirre 2525",
-        "Jacinto de Altoaguirre 2305",
-        "Jacinto de Altoaguirre 2013",
-        "Jacinto de Altoaguirre 1709"
-      ]
+      "descripcion": "Datos del scraper Tu Bondi 2026",
+      "calles": []
     },
     "vuelta": {
-      "descripcion": "Aviador Silvio Pettirossi 3431 - Julio de Vedia 3876",
-      "calles": [
-        "Aviador Silvio Pettirossi 3431",
-        "Aviador Silvio Pettirossi 3229",
-        "Aviador Silvio Pettirossi 3053",
-        "Aviador Silvio Pettirossi 2855",
-        "Aviador Silvio Pettirossi 2623",
-        "Aviador Silvio Pettirossi 2416",
-        "Aviador Silvio Pettirossi 2295",
-        "Aviador Silvio Pettirossi 2033",
-        "Avenida Fuerza Aérea 4599",
-        "Avenida Fuerza Aérea Argentina 4311",
-        "Avenida Fuerza Aérea 4017",
-        "Avenida Fuerza Aérea 3773",
-        "Avenida Fuerza Aérea 3535",
-        "Avenida Fuerza Aérea 3039",
-        "Avenida Fuerza Aérea 2817"
-      ]
+      "descripcion": "Datos del scraper Tu Bondi 2026",
+      "calles": []
     }
   },
   "paradasPrincipales": [
-    "Aviador Silvio Pettirossi 3431",
-    "Avenida Fuerza Aérea 4017",
-    "Río Negro 1377",
-    "Avenida Colón 764",
-    "Roma 636",
-    "Puerto de Palos 2700",
-    "Alsina 2578",
-    "Julio de Vedia 3876"
+    "Julio de Vedia 3837",
+    "Av Las Malvinas 1230",
+    "Pueyrredon 1392",
+    "Aviador Petirossi 3418",
+    "Aviador Petirossi 3257",
+    "Av Pueyrredon 1465",
+    "Bv Bulnes 2192",
+    "Jose Maria Lahora 2426"
   ],
   "horarios": {
     "lunesAViernes": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     },
     "sabados": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     },
     "domingosYFeriados": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     }
@@ -81,7 +49,7 @@
     "redBus": "Consultá descuentos disponibles con tarjeta Red Bus"
   },
   "mapsEmbedUrl": "",
-  "ultimaActualizacion": "2023-03-16",
-  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
-  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
+  "ultimaActualizacion": "2026-08-07",
+  "fuente": "Tu Bondi (Municipalidad de Córdoba) via scraper lineas_transporte_cba (MIT) - Agosto 2026",
+  "notas": "Datos obtenidos del scraper Tu Bondi/Micronauta agosto 2026."
 }

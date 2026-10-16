@@ -6,72 +6,40 @@
   "descripcionCorta": "Línea A - TAMSE",
   "recorrido": {
     "ida": {
-      "descripcion": "Nicolás Avellaneda 4532 - Avenida Vélez Sarsfield 1419",
-      "calles": [
-        "Nicolás Avellaneda 4532",
-        "De Los Santos 779",
-        "Mariano Fragueíro 4421",
-        "Mariano Fragueíro 4035",
-        "Mariano Fragueíro 3715",
-        "Mariano Fragueíro 3251",
-        "Urquiza 3007",
-        "Urquiza 2605",
-        "Urquiza 2329",
-        "General Justo José de Urquiza 2047",
-        "Urquiza 1529",
-        "Juan del Campillo 723",
-        "Juan del Campillo 432",
-        "Avenida Roque Sáenz Peña 1184",
-        "Bulevar Las Heras 201"
-      ]
+      "descripcion": "Datos del scraper Tu Bondi 2026",
+      "calles": []
     },
     "vuelta": {
-      "descripcion": "Belgrano 1451 - Nicolás Avellaneda 4549",
-      "calles": [
-        "Belgrano 1451",
-        "Belgrano 1168",
-        "Belgrano 874",
-        "Belgrano 724",
-        "Belgrano 551",
-        "Belgrano 305",
-        "Tucumán 34",
-        "Tucumán 329",
-        "La Tablada 377",
-        "General Lavalleja 954",
-        "General Lavalleja 1280",
-        "Bedoya 661",
-        "General Justo José de Urquiza 1875",
-        "Urquiza 2088",
-        "Urquiza 2662"
-      ]
+      "descripcion": "Datos del scraper Tu Bondi 2026",
+      "calles": []
     }
   },
   "paradasPrincipales": [
-    "Belgrano 1451",
-    "Belgrano 724",
-    "Tucumán 34",
-    "General Lavalleja 954",
-    "General Justo José de Urquiza 1875",
-    "Urquiza 3064",
-    "Mariano Fragueíro 4438",
-    "Nicolás Avellaneda 4549"
+    "Carlos de Los Santos 887",
+    "Urquiza 3015",
+    "Del Campillo 713",
+    "Patio Olmos",
+    "Belgrano 905-911",
+    "Lavalleja 950",
+    "Urquiza 3078",
+    "Juan Escolar 890"
   ],
   "horarios": {
     "lunesAViernes": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     },
     "sabados": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     },
     "domingosYFeriados": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     }
@@ -81,7 +49,7 @@
     "redBus": "Consultá descuentos disponibles con tarjeta Red Bus"
   },
   "mapsEmbedUrl": "",
-  "ultimaActualizacion": "2023-03-16",
-  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
-  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
+  "ultimaActualizacion": "2026-08-07",
+  "fuente": "Tu Bondi (Municipalidad de Córdoba) via scraper lineas_transporte_cba (MIT) - Agosto 2026",
+  "notas": "Datos obtenidos del scraper Tu Bondi/Micronauta agosto 2026."
 }

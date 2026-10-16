@@ -6,59 +6,40 @@
   "descripcionCorta": "Línea B60 - Coniferal",
   "recorrido": {
     "ida": {
-      "descripcion": "Nicolás Isasmendi 2929 - Camino Sta. Rosa",
-      "calles": [
-        "Nicolás Isasmendi 2929",
-        "Thomas Edison 2338",
-        "Avenida Doctor Arturo Capdevila 2705",
-        "Avenida Capdevila 3640",
-        "Camino Al Gateado 3081",
-        "Calle de las Cortaderas 318-320",
-        "Calle de las Cortaderas 894",
-        "IPEM RAMON IBAÑEZ",
-        "Calle de la Pulperia 296",
-        "Calle de la Pulperia 224-280",
-        "Camino Sta. Rosa"
-      ]
+      "descripcion": "Datos del scraper Tu Bondi 2026",
+      "calles": []
     },
     "vuelta": {
-      "descripcion": "Santa Rosa S/N - Chachapoyas 2145",
-      "calles": [
-        "Santa Rosa S/N",
-        "Santa Rosa 12987",
-        "Santa Rosa 12769",
-        "Santa Rosa 12599",
-        "De La Pulpería S/N",
-        "Avenida Capdevila 2893",
-        "Palencia 3099",
-        "Chachapoyas 2145"
-      ]
+      "descripcion": "Datos del scraper Tu Bondi 2026",
+      "calles": []
     }
   },
   "paradasPrincipales": [
-    "Santa Rosa S/N",
-    "Santa Rosa 12987",
-    "Santa Rosa 12769",
-    "Santa Rosa 12599",
-    "De La Pulpería S/N",
-    "Chachapoyas 2145"
+    "Adolfo Alsina 2032",
+    "Av Arturo Capdevilla 3600",
+    "Las Toscas 168",
+    "Cno Santa Rosa 544",
+    "Cno a Santa Rosa (Planta Shell",
+    "Cno a Sta Rosa",
+    "Capdevila 2761",
+    "Chachapoyas 2105"
   ],
   "horarios": {
     "lunesAViernes": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     },
     "sabados": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     },
     "domingosYFeriados": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     }
@@ -68,7 +49,7 @@
     "redBus": "Consultá descuentos disponibles con tarjeta Red Bus"
   },
   "mapsEmbedUrl": "",
-  "ultimaActualizacion": "2023-03-16",
-  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
-  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
+  "ultimaActualizacion": "2026-08-07",
+  "fuente": "Tu Bondi (Municipalidad de Córdoba) via scraper lineas_transporte_cba (MIT) - Agosto 2026",
+  "notas": "Datos obtenidos del scraper Tu Bondi/Micronauta agosto 2026."
 }

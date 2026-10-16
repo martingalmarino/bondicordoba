@@ -2,76 +2,44 @@
   "numero": "40",
   "nombre": "Línea 40",
   "esEjemplo": false,
-  "empresa": "ERSA",
-  "descripcionCorta": "Línea 40 - ERSA",
+  "empresa": "Coniferal",
+  "descripcionCorta": "Línea 40 - Coniferal",
   "recorrido": {
     "ida": {
-      "descripcion": "Doctor José A. Ceballos 404 - Alfonsina Storni 1198",
-      "calles": [
-        "Doctor José A. Ceballos 404",
-        "José Cortes Funes 6600",
-        "Cleto Aguirre 6600",
-        "Avenida Santa Ana 6269",
-        "Avenida Santa Ana 5846",
-        "Avenida Santa Ana 5600",
-        "Curunao 778",
-        "Cleto Aguirre 6022",
-        "Cleto Aguirre 5924",
-        "Alto Alegre 673",
-        "Luz Vieyra Méndez 645",
-        "Luz Vieyra Méndez 519",
-        "Luz Vieyra Méndez 368",
-        "Antonio Sobral 393",
-        "Peralta y Tejeda 171"
-      ]
+      "descripcion": "Datos del scraper Tu Bondi 2026",
+      "calles": []
     },
     "vuelta": {
-      "descripcion": "Juan L. Orrego 4379 - José Cortes Funes 6597",
-      "calles": [
-        "Juan L. Orrego 4379",
-        "Zorrilla de San Martín 1555",
-        "Dardo Cuneo 1563",
-        "Constancio C. Vigil 1219",
-        "Alfonsina Storni 1171",
-        "Alfonsina Storni 1013",
-        "Juan Montalvo 4702",
-        "Alfonsina Storni 665",
-        "Alfonsina Storni 509",
-        "Alfonsina Storni 261",
-        "Alfonsina Storni 29",
-        "Avenida Juan B. Justo 5181",
-        "Avenida Juan B. Justo 5001",
-        "Avenida Juan B. Justo 4773",
-        "Avenida Juan B. Justo 4491"
-      ]
+      "descripcion": "Datos del scraper Tu Bondi 2026",
+      "calles": []
     }
   },
   "paradasPrincipales": [
-    "Juan L. Orrego 4379",
-    "Avenida Juan B. Justo 5001",
-    "Tucumán 2045",
-    "Avenida General Paz 675",
-    "Avenida Duarte Quirós 2674",
-    "Avenida Don Bosco 4626",
-    "Francisco de Bengolea 310",
-    "José Cortes Funes 6597"
+    "PUNTA DE LINEA",
+    "Lewis 5841",
+    "AV. DUARTE QUIROS 2329",
+    "J.B.JUSTO 3860",
+    "CONSTANCIO VIGIL 1483",
+    "BAIGORRI 133",
+    "AV. DUARTE QUIROS 2620",
+    "DR. JOSE CEBALLOS 659"
   ],
   "horarios": {
     "lunesAViernes": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     },
     "sabados": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     },
     "domingosYFeriados": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     }
@@ -81,7 +49,7 @@
     "redBus": "Consultá descuentos disponibles con tarjeta Red Bus"
   },
   "mapsEmbedUrl": "",
-  "ultimaActualizacion": "2023-03-16",
-  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
-  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
+  "ultimaActualizacion": "2026-08-07",
+  "fuente": "Tu Bondi (Municipalidad de Córdoba) via scraper lineas_transporte_cba (MIT) - Agosto 2026",
+  "notas": "Datos obtenidos del scraper Tu Bondi/Micronauta agosto 2026."
 }

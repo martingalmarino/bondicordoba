@@ -2,76 +2,44 @@
   "numero": "53",
   "nombre": "Línea 53",
   "esEjemplo": false,
-  "empresa": "TAMSE",
-  "descripcionCorta": "Línea 53 - TAMSE",
+  "empresa": "SiBus",
+  "descripcionCorta": "Línea 53 - SiBus",
   "recorrido": {
     "ida": {
-      "descripcion": "Ramón Farrate S/N - Colorado 6194",
-      "calles": [
-        "Ramón Farrate S/N",
-        "Avenida Juan B. Justo S/N",
-        "Avenida Juan B. Justo 7057",
-        "Amalia Celia Figueredo de Pietra S/N",
-        "Avenida Japón km 7.5",
-        "Avenida Rancagua S/N",
-        "Germán Berdiales 1767",
-        "Germán Berdiales 1603",
-        "Belisario Roldán 1544",
-        "Dardo Cuneo 1545",
-        "Zorrilla de San Martín 1545",
-        "Juan L. Orrego 4379",
-        "Bartolomé Hidalgo 1637",
-        "Bartolomé Hidalgo 1769",
-        "Howard 1399"
-      ]
+      "descripcion": "Datos del scraper Tu Bondi 2026",
+      "calles": []
     },
     "vuelta": {
-      "descripcion": "Mascachín 2052 - Ramón Farrate S/N",
-      "calles": [
-        "Mascachín 2052",
-        "Colorado 6385",
-        "Colorado 6210",
-        "Colorado 6062",
-        "Colorado 5958",
-        "Colorado 5904",
-        "Ushuaia 1901",
-        "Alto del Tala 5771",
-        "Cajamarca 1609",
-        "Forestieri 5743",
-        "Río Negro 5620",
-        "Río Negro 5508",
-        "Caracas 5424",
-        "Bogotá 1349",
-        "Río Negro 5233"
-      ]
+      "descripcion": "Datos del scraper Tu Bondi 2026",
+      "calles": []
     }
   },
   "paradasPrincipales": [
-    "Mascachín 2052",
-    "Bogotá 1349",
-    "Avenida Vélez Sarsfield 4899",
-    "Avenida Ambrosio Olmos 657",
-    "Juan del Campillo 414",
-    "Obispo Malvar y Pinto 1988",
-    "Francisco de Alarcón 1879",
-    "Ramón Farrate S/N"
+    "Casilla Chingolo",
+    "MANUEL DE ESCALADA 3547",
+    "AV. ROQUE SAENZ PEÑA 1211",
+    "TILCARA 1288",
+    "RIO NEGRO 5303",
+    "AV. PUEYRREDON 66",
+    "AV. RANCAGUA 2900",
+    "Av Juan B Justo 7935"
   ],
   "horarios": {
     "lunesAViernes": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     },
     "sabados": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     },
     "domingosYFeriados": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     }
@@ -81,7 +49,7 @@
     "redBus": "Consultá descuentos disponibles con tarjeta Red Bus"
   },
   "mapsEmbedUrl": "",
-  "ultimaActualizacion": "2023-03-16",
-  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
-  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
+  "ultimaActualizacion": "2026-08-07",
+  "fuente": "Tu Bondi (Municipalidad de Córdoba) via scraper lineas_transporte_cba (MIT) - Agosto 2026",
+  "notas": "Datos obtenidos del scraper Tu Bondi/Micronauta agosto 2026."
 }

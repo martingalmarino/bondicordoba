@@ -2,76 +2,44 @@
   "numero": "21",
   "nombre": "Línea 21",
   "esEjemplo": false,
-  "empresa": "ERSA",
-  "descripcionCorta": "Línea 21 - ERSA",
+  "empresa": "Coniferal",
+  "descripcionCorta": "Línea 21 - Coniferal",
   "recorrido": {
     "ida": {
-      "descripcion": "UNIVERSIDAD SIGLO 21 - Av Cruz Roja 1300",
-      "calles": [
-        "UNIVERSIDAD SIGLO 21",
-        "Avenida La Voz Del Interior S/N",
-        "Av. La Voz del Interior 7661",
-        "Av. La Voz del Interior 7551",
-        "Avenida La Voz Del Interior 7061",
-        "LA VOZ DEL INTERIOR Y RIVADAVIA",
-        "Bv. Rivadavia 3052",
-        "Bv. Rivadavia 3155",
-        "Bv. Rivadavia 3424",
-        "Bv. Rivadavia 3813",
-        "Bv. Rivadavia 3848",
-        "Bv. Rivadavia 4700",
-        "De Los Italianos 6230",
-        "Bv. De los Alemanes 4057",
-        "De los Alemanes 3919"
-      ]
+      "descripcion": "Datos del scraper Tu Bondi 2026",
+      "calles": []
     },
     "vuelta": {
-      "descripcion": "Av Cruz Roja 1300 - UNIVERSIDAD SIGLO 21",
-      "calles": [
-        "Av Cruz Roja 1300",
-        "Avenida Pablo Ricchieri 2217",
-        "Avenida Concepción Arenal 1239",
-        "Av. Concepcion Arenales 991",
-        "Avenida Concepción Arenal 928",
-        "Avenida Concepción Arenal 799",
-        "Bulevar Chacabuco 646",
-        "Bv. Chacabuco 470",
-        "Bv San Juan 60",
-        "Belgrano 175",
-        "27 de Abril 529",
-        "27 de Abril 754",
-        "Mariano Moreno 15",
-        "Avenida Santa Fe 330",
-        "Avenida Santa Fe 850"
-      ]
+      "descripcion": "Datos del scraper Tu Bondi 2026",
+      "calles": []
     }
   },
   "paradasPrincipales": [
-    "Av Cruz Roja 1300",
-    "Bv. Chacabuco 470",
-    "Avenida Santa Fe 850",
-    "Avenida Monseñor Pablo Cabrera 2228",
-    "Av. Monseñor Pablo Cabrera 4564",
-    "Bv. De los Alemanes 3655-3666",
-    "Bv. Rivadavia 3075",
-    "UNIVERSIDAD SIGLO 21"
+    "UNIVERSIDAD SIGLO 21",
+    "Bv. De los Alemanes 3446",
+    "Monseñor Pablo Cabrera 2653",
+    "Av. Colon 351\t",
+    "M. LOPEZ S/N",
+    "Av. Santa Fé 852",
+    "Av.Monseñor Pablo Cabrera 4226",
+    "UES SIGLO XXI"
   ],
   "horarios": {
     "lunesAViernes": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     },
     "sabados": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     },
     "domingosYFeriados": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     }
@@ -81,7 +49,7 @@
     "redBus": "Consultá descuentos disponibles con tarjeta Red Bus"
   },
   "mapsEmbedUrl": "",
-  "ultimaActualizacion": "2023-03-16",
-  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
-  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
+  "ultimaActualizacion": "2026-08-07",
+  "fuente": "Tu Bondi (Municipalidad de Córdoba) via scraper lineas_transporte_cba (MIT) - Agosto 2026",
+  "notas": "Datos obtenidos del scraper Tu Bondi/Micronauta agosto 2026."
 }

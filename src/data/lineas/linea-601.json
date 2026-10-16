@@ -6,72 +6,40 @@
   "descripcionCorta": "Línea 601 - TAMSE",
   "recorrido": {
     "ida": {
-      "descripcion": "Bernardo O´Higgins 4725 - GONGORA Y BV LOS GRANADEROS",
-      "calles": [
-        "Bernardo O´Higgins 4725",
-        "Bernardo O´Higgins 4484",
-        "Bernardo O´Higgins 4336",
-        "Bernardo O´Higgins 4106",
-        "Av. Pablo Richieri 3790",
-        "Av. Pablo Richieri 3562",
-        "Av. Pablo Richieri 3414-3417",
-        "Av. Pablo Richieri 3350",
-        "Av. Pablo Richieri 3186",
-        "Av. Pablo Richieri 3100",
-        "Av. Pablo Richieri 2828",
-        "Av. Pablo Richieri 2681",
-        "Av. Pablo Richieri 2194",
-        "Av. Concepcion Arenales 1215",
-        "Av. Concepcion Arenales 991"
-      ]
+      "descripcion": "Datos del scraper Tu Bondi 2026",
+      "calles": []
     },
     "vuelta": {
-      "descripcion": "GONGORA Y BV LOS GRANADEROS - Av. Pablo Richieri 3950",
-      "calles": [
-        "GONGORA Y BV LOS GRANADEROS",
-        "Bv. Los Granaderos 2288",
-        "Bv. Los Granaderos 2459",
-        "BV. LOS GRANADEROS 2686",
-        "CONCEPCION DEL BERMEJO 3156",
-        "CONCEPCION DEL BERMEJO 3300",
-        "Concepción Bermejo 3882",
-        "Bento Quinquela Martín 2918",
-        "Benito Quinquela Martín 3168",
-        "Quinquela Martín 3297",
-        "RODRIGUEZ DEL BUSTOS 3627",
-        "Rodriguez del Busto 3219",
-        "RODRIGUEZ DEL BUSTO Y LOS GRANADEROS",
-        "RODRIIGUEZ DEL BUSTOS 3068",
-        "RODRIGUEZ DEL BUSTOS 2900"
-      ]
+      "descripcion": "Datos del scraper Tu Bondi 2026",
+      "calles": []
     }
   },
   "paradasPrincipales": [
-    "GONGORA Y BV LOS GRANADEROS",
-    "RODRIGUEZ DEL BUSTOS 2900",
-    "DR. JUAN CAFFERATA 11",
-    "FOURNIER 2018",
-    "Lagunilla 2648",
+    "Cno. San Carlos 5805",
+    "AV. CJAL. FELIPE BERNARDINELLI 3000",
+    " JOSE GARIBALDI 88",
+    "GONGORA 550-565",
+    "Octavio Pinto 3135",
+    "AV. ANTARTIDA ARGENTINA 4079",
     "PASTOR TABOADA 726",
-    "Av Enrique Barros (FUC)",
-    "Av. Pablo Richieri 3950"
+    "Cno. San Carlos 5635"
   ],
   "horarios": {
     "lunesAViernes": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     },
     "sabados": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     },
     "domingosYFeriados": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     }
@@ -81,7 +49,7 @@
     "redBus": "Consultá descuentos disponibles con tarjeta Red Bus"
   },
   "mapsEmbedUrl": "",
-  "ultimaActualizacion": "2023-03-16",
-  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
-  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
+  "ultimaActualizacion": "2026-08-07",
+  "fuente": "Tu Bondi (Municipalidad de Córdoba) via scraper lineas_transporte_cba (MIT) - Agosto 2026",
+  "notas": "Datos obtenidos del scraper Tu Bondi/Micronauta agosto 2026."
 }

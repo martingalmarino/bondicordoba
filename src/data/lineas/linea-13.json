@@ -6,72 +6,40 @@
   "descripcionCorta": "Línea 13 - Coniferal",
   "recorrido": {
     "ida": {
-      "descripcion": "De la Industria 896 - Ausonia 9258",
-      "calles": [
-        "De la Industria 896",
-        "Cruz Roja Argentina 763",
-        "Avenida Cruz Roja Argentina 518",
-        "Bv. Enrique Barros S/N",
-        "Avenida Ciudad De Valparaíso S/N",
-        "Avenida Concepción Arenal 799",
-        "Bulevar Chacabuco 560",
-        "Bulevar Arturo Illia 23",
-        "Bulevar San Juan 436",
-        "Corro 79",
-        "Mariano Fragueíro 239",
-        "Humberto Primo 733",
-        "Avenida Castro Barros 26",
-        "Avenida Castro Barros 481",
-        "Avenida Castro Barros 958"
-      ]
+      "descripcion": "Datos del scraper Tu Bondi 2026",
+      "calles": []
     },
     "vuelta": {
-      "descripcion": "Arroyito 8723 - Avenida Cruz Roja Argentina 658",
-      "calles": [
-        "Arroyito 8723",
-        "Monte de los Gauchos 9641",
-        "Aguaribay S/N",
-        "San Marcos Sierra 8100",
-        "Ausonia 9278",
-        "Laguna Larga 7708",
-        "Ricardo Rojas 9143",
-        "Manuel de Falla 7177",
-        "Manuel de Falla 6905",
-        "Avenida Recta Martinoli 8929",
-        "Avenida Recta Martinoli 8819",
-        "Avenida Recta Martinoli 8541",
-        "Avenida Recta Martinoli 8181",
-        "Avenida Recta Martinoli 8107",
-        "Avenida Recta Martinoli 7937"
-      ]
+      "descripcion": "Datos del scraper Tu Bondi 2026",
+      "calles": []
     }
   },
   "paradasPrincipales": [
-    "Arroyito 8723",
-    "Avenida Recta Martinoli 8929",
-    "Avenida Recta Martinoli 6676",
-    "Avenida Rafael Núñez 4685",
-    "Democracia 1800",
-    "Avenida Castro Barros 471",
-    "Avenida Hipólito Yrigoyen 686",
-    "Avenida Cruz Roja Argentina 658"
+    "Predio Valparaiso",
+    "Hospital Pediátrico",
+    "Rafael Nuñez 4640",
+    "Av Recta Martinolli 8754",
+    "Ricardo Rojas 9653",
+    "Av Gauss 5824",
+    "Av. Castro Barros 1224",
+    "Cruz Roja y Av Valparaiso"
   ],
   "horarios": {
     "lunesAViernes": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     },
     "sabados": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     },
     "domingosYFeriados": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     }
@@ -81,7 +49,7 @@
     "redBus": "Consultá descuentos disponibles con tarjeta Red Bus"
   },
   "mapsEmbedUrl": "",
-  "ultimaActualizacion": "2023-03-16",
-  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
-  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
+  "ultimaActualizacion": "2026-08-07",
+  "fuente": "Tu Bondi (Municipalidad de Córdoba) via scraper lineas_transporte_cba (MIT) - Agosto 2026",
+  "notas": "Datos obtenidos del scraper Tu Bondi/Micronauta agosto 2026."
 }

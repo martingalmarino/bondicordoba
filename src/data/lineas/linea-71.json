@@ -2,76 +2,44 @@
   "numero": "71",
   "nombre": "Línea 71",
   "esEjemplo": false,
-  "empresa": "ERSA",
-  "descripcionCorta": "Línea 71 - ERSA",
+  "empresa": "SolBus",
+  "descripcionCorta": "Línea 71 - SolBus",
   "recorrido": {
     "ida": {
-      "descripcion": "Avenida Circunvalación 4833 - Blas Pascal 5854",
-      "calles": [
-        "Avenida Circunvalación 4833",
-        "Avenida Cjal. Felipe Belardinelli 4316",
-        "Concejal Felipe Belardinelli 3842",
-        "Concejal Felipe Belardinelli 3627",
-        "Av. Cjal. Felipe Belardinelli 3277",
-        "Concejal Felipe Belardinelli 3109",
-        "Concejal Felipe Belardinelli 3032",
-        "Concejal Felipe Belardinelli 2814",
-        "Maestro Marcelo López 3451",
-        "Maestro Marcelo López 3543",
-        "Avenida Ingeniero Medina Allende S/N",
-        "Bv. Enrique Barros S/N",
-        "Avenida Enrique Barros S/N",
-        "Avenida Concepción Arenal 799",
-        "Bulevar Chacabuco 528"
-      ]
+      "descripcion": "Datos del scraper Tu Bondi 2026",
+      "calles": []
     },
     "vuelta": {
-      "descripcion": "Avenida Carlos Federico Gauss 5739 - Avenida Circunvalación 4821",
-      "calles": [
-        "Avenida Carlos Federico Gauss 5739",
-        "Avenida Carlos Federico Gauss 5545",
-        "Avenida Carlos Federico Gauss 5345",
-        "Avenida Carlos Federico Gauss 5073",
-        "Avenida Carlos Federico Gauss 4909",
-        "Avenida Revolución Libertadora S/N",
-        "72 Chateau Reserva",
-        "Carcano S/N",
-        "Parque Chateau Carreras S/N",
-        "Acceso Feriar S/N",
-        "Dirección desconocida",
-        "Colectora S/N",
-        "Hornero S/N",
-        "Hornero 576",
-        "La Tablada 6348"
-      ]
+      "descripcion": "Datos del scraper Tu Bondi 2026",
+      "calles": []
     }
   },
   "paradasPrincipales": [
-    "Avenida Carlos Federico Gauss 5739",
-    "Dirección desconocida",
-    "Chancay 283",
-    "Avenida Don Bosco 4741",
-    "Avenida Duarte Quirós 3141",
-    "Avenida Colón 1027",
-    "Avenida Haya De La Torre S/N",
-    "Avenida Circunvalación 4821"
+    "PL Sol Bus",
+    "Maestro Lopez (Inst H Keller)",
+    "AV. DUARTE QUIROS 2620",
+    "Rio Bamba 311",
+    "Carcano Este",
+    "ARRECIFES 355",
+    "Av. Velez Sarsfield 64",
+    "Colectora S/N"
   ],
   "horarios": {
     "lunesAViernes": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     },
     "sabados": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     },
     "domingosYFeriados": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     }
@@ -81,7 +49,7 @@
     "redBus": "Consultá descuentos disponibles con tarjeta Red Bus"
   },
   "mapsEmbedUrl": "",
-  "ultimaActualizacion": "2023-03-16",
-  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
-  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
+  "ultimaActualizacion": "2026-08-07",
+  "fuente": "Tu Bondi (Municipalidad de Córdoba) via scraper lineas_transporte_cba (MIT) - Agosto 2026",
+  "notas": "Datos obtenidos del scraper Tu Bondi/Micronauta agosto 2026."
 }

@@ -6,72 +6,40 @@
   "descripcionCorta": "Línea 17 - Coniferal",
   "recorrido": {
     "ida": {
-      "descripcion": "Av. Vucetich 8010 - Onofre Marimón 6850",
-      "calles": [
-        "Av. Vucetich 8010",
-        "Av. Vucetich 7706-7764",
-        "James Franck 5311",
-        "Alberto Michelson 7450",
-        "William Bragg 5166",
-        "William Bragg 5102",
-        "A Capilla De Los Remedios 6979",
-        "A Capilla De Los Remedios 6825",
-        "A Capilla De Los Remedios 6713",
-        "A Capilla De Los Remedios 6495",
-        "A Capilla De Los Remedios 6235",
-        "Avenida Torcuato Wermuth 4908",
-        "Avenida Torcuato Wermuth 4702",
-        "Eduardo Baravalle 6068",
-        "Augusto Fernando Marzano 4632"
-      ]
+      "descripcion": "Datos del scraper Tu Bondi 2026",
+      "calles": []
     },
     "vuelta": {
-      "descripcion": "Onofre Marimón 6856 - Juan Vucetich 7899",
-      "calles": [
-        "Onofre Marimón 6856",
-        "Eugenio Pizzolatto 6829",
-        "Eugenio Pizzolatto 6600",
-        "Julio Tristany 8370",
-        "Julio Tristany 8216",
-        "Julio Tristany 8150",
-        "Oscar Cabalén 6423",
-        "Oscar Cabalén 6306",
-        "Martín Fermín 7900",
-        "Martín Fermín 7692",
-        "Martín Fermín 7479",
-        "Jonas Larguía S/N",
-        "Francisco Tamburini S/N",
-        "Adolfo Doering S/N",
-        "Bulevar Los Alemanes 5817"
-      ]
+      "descripcion": "Datos del scraper Tu Bondi 2026",
+      "calles": []
     }
   },
   "paradasPrincipales": [
-    "Onofre Marimón 6856",
-    "Francisco Tamburini S/N",
-    "Avenida Rafael Núñez 4013",
-    "Avenida Castro Barros 1289",
-    "Bulevar Arturo Illia 452",
-    "Av. Sabattini 4850",
-    "Avenida Torcuato Wermuth 4796",
-    "Juan Vucetich 7899"
+    "Vucetich 7880",
+    "Martin Zapata 4644",
+    "Humberto Primo 754-756",
+    "Potel Junot 6184",
+    "Cauque esquina hospital",
+    "Miguel Potel Junot 6883",
+    "Av Colon 457",
+    "Franck 5462"
   ],
   "horarios": {
     "lunesAViernes": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     },
     "sabados": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     },
     "domingosYFeriados": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     }
@@ -81,7 +49,7 @@
     "redBus": "Consultá descuentos disponibles con tarjeta Red Bus"
   },
   "mapsEmbedUrl": "",
-  "ultimaActualizacion": "2023-03-16",
-  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
-  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
+  "ultimaActualizacion": "2026-08-07",
+  "fuente": "Tu Bondi (Municipalidad de Córdoba) via scraper lineas_transporte_cba (MIT) - Agosto 2026",
+  "notas": "Datos obtenidos del scraper Tu Bondi/Micronauta agosto 2026."
 }

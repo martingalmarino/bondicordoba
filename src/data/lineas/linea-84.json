@@ -2,76 +2,44 @@
   "numero": "84",
   "nombre": "Línea 84",
   "esEjemplo": false,
-  "empresa": "TAMSE",
-  "descripcionCorta": "Línea 84 - TAMSE",
+  "empresa": "SiBus",
+  "descripcionCorta": "Línea 84 - SiBus",
   "recorrido": {
     "ida": {
-      "descripcion": "Avenida General Manuel Savio 5277 - Rodriguez Peña 74",
-      "calles": [
-        "Avenida General Manuel Savio 5277",
-        "Juan del Risco y Alvarado 3915",
-        "Juan del Risco y Alvarado 3843",
-        "Juan del Risco y Alvarado 3685",
-        "Juan del Risco y Alvarado 3511",
-        "Chirinos de Posadas 5042",
-        "Chirinos de Posadas 4799",
-        "Chirinos de Posadas 4785",
-        "Gabriel de Cepeda 4084",
-        "Alonso de Miranda 4105",
-        "Ramón Videla 4100",
-        "Eduardo Secchi 4102",
-        "Morales de Albornoz 4251",
-        "Alonso de Reynoso 4219",
-        "Alonso de Reynoso 4115"
-      ]
+      "descripcion": "Datos del scraper Tu Bondi 2026",
+      "calles": []
     },
     "vuelta": {
-      "descripcion": "Avenida Colón 878 - General Manuel Savio S/N",
-      "calles": [
-        "Avenida Colón 878",
-        "Avenida Colón 529",
-        "Avenida Colón 153",
-        "Avenida Emilio Olmos 84",
-        "Avenida Emilio Olmos 448",
-        "Bulevar Juan Domingo Perón 60",
-        "Bulevar Juan Domingo Perón 360",
-        "Boulevard Juan Domingo Perón 450",
-        "Bulevar Juan Domingo Perón 712",
-        "Esposos Curie S/N",
-        "Asunción 1700",
-        "Avenida Morcillo S/N",
-        "Ferroviarios S/N",
-        "Ferroviarios 2021",
-        "Ferroviarios 2145"
-      ]
+      "descripcion": "Datos del scraper Tu Bondi 2026",
+      "calles": []
     }
   },
   "paradasPrincipales": [
-    "Avenida Colón 878",
-    "Bulevar Juan Domingo Perón 360",
-    "Ferroviarios S/N",
-    "Samuel Morse 1988",
-    "Estanislao Learte 2186",
-    "Avenida Los Sauces 3986",
-    "Alonso de Miranda 4077",
-    "General Manuel Savio S/N"
+    "Gral.Savio S/N",
+    "Averboch 4077-4080",
+    "Learte 2475",
+    "Samuel Morse 1867",
+    "Bv Juan Domingo Peron 347",
+    "Av Olmos 20-34",
+    "Samuel Morse 1998",
+    "Gral. Savio 4203"
   ],
   "horarios": {
     "lunesAViernes": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     },
     "sabados": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     },
     "domingosYFeriados": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     }
@@ -81,7 +49,7 @@
     "redBus": "Consultá descuentos disponibles con tarjeta Red Bus"
   },
   "mapsEmbedUrl": "",
-  "ultimaActualizacion": "2023-03-16",
-  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
-  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
+  "ultimaActualizacion": "2026-08-07",
+  "fuente": "Tu Bondi (Municipalidad de Córdoba) via scraper lineas_transporte_cba (MIT) - Agosto 2026",
+  "notas": "Datos obtenidos del scraper Tu Bondi/Micronauta agosto 2026."
 }

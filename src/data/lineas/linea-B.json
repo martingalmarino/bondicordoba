@@ -6,72 +6,40 @@
   "descripcionCorta": "Línea B - TAMSE",
   "recorrido": {
     "ida": {
-      "descripcion": "Avenida Colón 3337 - Avenida Patria 1356",
-      "calles": [
-        "Avenida Colón 3337",
-        "Avenida Colón 3069",
-        "Avenida Colón 2715",
-        "Avenida Colón 2215",
-        "Avenida Colón 1935",
-        "Avenida Colón 1663",
-        "Avenida Colón 1363",
-        "Avenida Colón 1027",
-        "Avenida Colón 785",
-        "Avenida Colón 247",
-        "Avenida Emilio Olmos 126",
-        "Avenida Emilio Olmos 434",
-        "Avenida 24 de Septiembre 828",
-        "Avenida 24 de Septiembre 1068",
-        "Avenida 24 de Septiembre 1236"
-      ]
+      "descripcion": "Datos del scraper Tu Bondi 2026",
+      "calles": []
     },
     "vuelta": {
-      "descripcion": "Avenida Patria 1325 - Domingo Zípoli 233",
-      "calles": [
-        "Avenida Patria 1325",
-        "Avenida Patria 923",
-        "Avenida Patria 737",
-        "Sarmiento 1541",
-        "Sarmiento 819",
-        "Santiago del Estero 344",
-        "Santa Rosa 42",
-        "Santa Rosa 252",
-        "Santa Rosa 557",
-        "Santa Rosa 788",
-        "Avellaneda 253",
-        "Avenida Colón 1482",
-        "Avenida Colón 1900",
-        "Avenida Colón 2152",
-        "Avenida Colón 2742"
-      ]
+      "descripcion": "Datos del scraper Tu Bondi 2026",
+      "calles": []
     }
   },
   "paradasPrincipales": [
-    "Avenida Colón 3337",
-    "Avenida Colón 2215",
-    "Avenida Colón 1363",
-    "Avenida Colón 247",
-    "Avenida 24 de Septiembre 828",
-    "Avenida 24 de Septiembre 1488",
-    "Avenida Patria 428",
-    "Avenida Patria 1356"
+    "Av Colon y Domingo Zipoli",
+    "Av Colon 1649",
+    "Av Olmos 450-458",
+    "Av Patria 438",
+    "Av Patria 933",
+    "Sarmiento 829",
+    "Avellaneda 250-253",
+    "Av Colon 3268"
   ],
   "horarios": {
     "lunesAViernes": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     },
     "sabados": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     },
     "domingosYFeriados": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     }
@@ -81,7 +49,7 @@
     "redBus": "Consultá descuentos disponibles con tarjeta Red Bus"
   },
   "mapsEmbedUrl": "",
-  "ultimaActualizacion": "2023-03-16",
-  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
-  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
+  "ultimaActualizacion": "2026-08-07",
+  "fuente": "Tu Bondi (Municipalidad de Córdoba) via scraper lineas_transporte_cba (MIT) - Agosto 2026",
+  "notas": "Datos obtenidos del scraper Tu Bondi/Micronauta agosto 2026."
 }

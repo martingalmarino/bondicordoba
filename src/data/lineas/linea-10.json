@@ -6,72 +6,40 @@
   "descripcionCorta": "Línea 10 - Coniferal",
   "recorrido": {
     "ida": {
-      "descripcion": "Av. Vucetich 8010 - Viracocha 6601",
-      "calles": [
-        "Av. Vucetich 8010",
-        "Av. Vucetich 7706-7764",
-        "Av. Vucetich 7677-7601",
-        "Vucetich 7450-7455",
-        "Av. Vucetich 7331-7311",
-        "Av. Vucetich 7194-7248",
-        "Av. Vucetich 7123",
-        "Av. Vucetich 6900-7038",
-        "Av. Vucetich 6743-6659",
-        "Av. Vucetich 6504-6542",
-        "Av. Vucetich 6300-6348",
-        "Avenida Amadeo Sabattini 6119",
-        "Avenida Amadeo Sabattini 5993",
-        "Avenida Amadeo Sabattini 5811",
-        "Sánchez De Loria 5082"
-      ]
+      "descripcion": "Datos del scraper Tu Bondi 2026",
+      "calles": []
     },
     "vuelta": {
-      "descripcion": "Viracocha 6530 - Juan Vucetich 7899",
-      "calles": [
-        "Viracocha 6530",
-        "Viracocha 6799",
-        "Viracocha 6962",
-        "Bartolomé Salom 6971",
-        "Manuel Montt 7802",
-        "José María Morelos 7599",
-        "José María Morelos 7487",
-        "Heriberto Martínez 6791",
-        "Heriberto Martínez 7046",
-        "Heriberto Martínez 7272",
-        "Francisco Vidal 7299",
-        "Avenida Ricardo Rojas 7009",
-        "Avenida Ricardo Rojas 6819",
-        "Avenida Rafael Núñez 6305",
-        "Avenida Rafael Núñez 6015"
-      ]
+      "descripcion": "Datos del scraper Tu Bondi 2026",
+      "calles": []
     }
   },
   "paradasPrincipales": [
-    "Av. Vucetich 8010",
-    "Avenida Amadeo Sabattini 5993",
-    "Avenida Amadeo Sabattini 4319",
-    "Bulevar Arturo Illia 23",
-    "Avenida Caraffa 2064",
-    "Avenida Rafael Núñez 4072",
-    "Avenida Ricardo Rojas 6698",
-    "Viracocha 6601"
+    "Vucetich 7880",
+    "Av Sabattini 5025",
+    "Av Castro Barros 443",
+    "Rafael Nuñez 4640",
+    "Divino Maestro 8108",
+    "Av Rafael Nuñez 4699-4700",
+    "Nicolas Avellaneda 347-365",
+    "Vucetich 7588"
   ],
   "horarios": {
     "lunesAViernes": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     },
     "sabados": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     },
     "domingosYFeriados": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     }
@@ -81,7 +49,7 @@
     "redBus": "Consultá descuentos disponibles con tarjeta Red Bus"
   },
   "mapsEmbedUrl": "",
-  "ultimaActualizacion": "2023-03-16",
-  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
-  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
+  "ultimaActualizacion": "2026-08-07",
+  "fuente": "Tu Bondi (Municipalidad de Córdoba) via scraper lineas_transporte_cba (MIT) - Agosto 2026",
+  "notas": "Datos obtenidos del scraper Tu Bondi/Micronauta agosto 2026."
 }

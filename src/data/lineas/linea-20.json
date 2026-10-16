@@ -2,76 +2,44 @@
   "numero": "20",
   "nombre": "Línea 20",
   "esEjemplo": false,
-  "empresa": "ERSA",
-  "descripcionCorta": "Línea 20 - ERSA",
+  "empresa": "TAMSE",
+  "descripcionCorta": "Línea 20 - TAMSE",
   "recorrido": {
     "ida": {
-      "descripcion": "Avenida Rosa Ferreyra De Roca 2801 - Enrique Borla 4058",
-      "calles": [
-        "Avenida Rosa Ferreyra De Roca 2801",
-        "Soconcho 4158",
-        "Ernesto Fariña 4101",
-        "Jorge Horacio Córdoba 4102",
-        "Avenida Pablo Ricchieri 4119",
-        "Avenida Tte. Gral. Pablo Ricchieri 3968",
-        "Avenida Pablo Ricchieri 3809",
-        "Av. Pablo Richieri 3533",
-        "Avenida Pablo Ricchieri 3305",
-        "Avenida Pablo Ricchieri 3167",
-        "Avenida Pablo Ricchieri 3025",
-        "Coronel José Javier Diaz 1291",
-        "Jose Javier Diaz 1087",
-        "Jose Javier Diaz 927",
-        "Avenida Rogelio Nores Martínez 2857"
-      ]
+      "descripcion": "Datos del scraper Tu Bondi 2026",
+      "calles": []
     },
     "vuelta": {
-      "descripcion": "Lino E. Spilimbergo 4791 - Armando Sica S/N",
-      "calles": [
-        "Lino E. Spilimbergo 4791",
-        "Roberto Cayol 3817",
-        "Miguel Andrés Camino 4599",
-        "Roberto Cayol 3399",
-        "Roberto Cayol 3303",
-        "Roberto Cayol 3107",
-        "Roberto Cayol 3101",
-        "Santiago Baravino 4399",
-        "Santiago Baravino 4294",
-        "Fray Luis Beltrán 2879",
-        "Fray Luis Beltrán 2677",
-        "Fray Luis Beltrán 2575",
-        "Monseñor Pablo Cabrera 4175",
-        "Monseñor Pablo Cabrera 3903",
-        "Cristóbal Hicken 2499"
-      ]
+      "descripcion": "Datos del scraper Tu Bondi 2026",
+      "calles": []
     }
   },
   "paradasPrincipales": [
-    "Avenida Rosa Ferreyra De Roca 2801",
-    "Avenida Pablo Ricchieri 3305",
-    "Cruz Roja Argentina 741",
-    "Avenida Hipólito Yrigoyen 671",
-    "Avenida Castro Barros 560",
-    "Avenida Monseñor Pablo Cabrera 2648",
-    "Fray Luis Beltrán 2924",
-    "Enrique Borla 4058"
+    "Manuel Gutierrez 4850",
+    "Santiago Baravino 4400",
+    "Monseñor Pablo Cabrera 2653",
+    "Santa Fé 883",
+    "Obispo Salguero 680",
+    "Cruz Roja Argentina 526",
+    "Av. Pablo Richieri 3562",
+    "PUNTA DE LINEA JAPONESES"
   ],
   "horarios": {
     "lunesAViernes": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     },
     "sabados": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     },
     "domingosYFeriados": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     }
@@ -81,7 +49,7 @@
     "redBus": "Consultá descuentos disponibles con tarjeta Red Bus"
   },
   "mapsEmbedUrl": "",
-  "ultimaActualizacion": "2023-03-16",
-  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
-  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
+  "ultimaActualizacion": "2026-08-07",
+  "fuente": "Tu Bondi (Municipalidad de Córdoba) via scraper lineas_transporte_cba (MIT) - Agosto 2026",
+  "notas": "Datos obtenidos del scraper Tu Bondi/Micronauta agosto 2026."
 }

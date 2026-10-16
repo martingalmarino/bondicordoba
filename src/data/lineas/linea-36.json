@@ -2,76 +2,44 @@
   "numero": "36",
   "nombre": "Línea 36",
   "esEjemplo": false,
-  "empresa": "TAMSE",
-  "descripcionCorta": "Línea 36 - TAMSE",
+  "empresa": "SiBus",
+  "descripcionCorta": "Línea 36 - SiBus",
   "recorrido": {
     "ida": {
-      "descripcion": "Avenida Juan B. Justo S/N - De Mauro 99",
-      "calles": [
-        "Avenida Juan B. Justo S/N",
-        "Avenida Juan B. Justo 6996",
-        "Córdoba S/N",
-        "Avenida Juan B. Justo 6381",
-        "Avenida Juan B. Justo 6309",
-        "Avenida Juan B. Justo 6118",
-        "Aarón de Anchorena 5523",
-        "Jorge Eduardo Newbery 123",
-        "Jorge Eduardo Newbery 559",
-        "Jorge Eduardo Newbery 784",
-        "Felipe Beltrame 5412",
-        "Carola Lorenzini 850",
-        "Urquiza 4999",
-        "Mariano Fragueíro 4840",
-        "Mariano Fragueíro 4670"
-      ]
+      "descripcion": "Datos del scraper Tu Bondi 2026",
+      "calles": []
     },
     "vuelta": {
-      "descripcion": "Icho Cruz 100 - Avenida Juan B. Justo S/N",
-      "calles": [
-        "Icho Cruz 100",
-        "Las Peñas 5869",
-        "Laboulaye 199",
-        "Laboulaye 323",
-        "Laboulaye 452",
-        "Laboulaye 580",
-        "La Falda 5813",
-        "La Falda 5529",
-        "Gobernación 774",
-        "Gobernación 982",
-        "Gobernación 1172",
-        "Gobernación 1332",
-        "Río Negro 5220",
-        "Río Negro 5108",
-        "Río Negro 4979"
-      ]
+      "descripcion": "Datos del scraper Tu Bondi 2026",
+      "calles": []
     }
   },
   "paradasPrincipales": [
-    "Icho Cruz 100",
-    "Río Negro 5220",
-    "Avenida Vélez Sarsfield 3077",
-    "27 de Abril 754",
-    "Isabel la Católica 600",
-    "Mariano Fragueíro 4208",
-    "Horacio Anasagasti 125",
-    "Avenida Juan B. Justo S/N"
+    "Casilla Chingolo",
+    "Mariano Fragueiro 4900",
+    "Av. Santa Fé 852",
+    "Ar.Argentina S/N",
+    "Las Peñas 5728",
+    "V.SARSFIELD 1923",
+    "Juan Antonio Lavalleja 3070",
+    "Av Juan B Justo 7935"
   ],
   "horarios": {
     "lunesAViernes": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     },
     "sabados": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     },
     "domingosYFeriados": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     }
@@ -81,7 +49,7 @@
     "redBus": "Consultá descuentos disponibles con tarjeta Red Bus"
   },
   "mapsEmbedUrl": "",
-  "ultimaActualizacion": "2023-03-16",
-  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
-  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
+  "ultimaActualizacion": "2026-08-07",
+  "fuente": "Tu Bondi (Municipalidad de Córdoba) via scraper lineas_transporte_cba (MIT) - Agosto 2026",
+  "notas": "Datos obtenidos del scraper Tu Bondi/Micronauta agosto 2026."
 }

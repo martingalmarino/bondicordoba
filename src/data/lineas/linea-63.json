@@ -6,72 +6,40 @@
   "descripcionCorta": "Línea 63 - Coniferal",
   "recorrido": {
     "ida": {
-      "descripcion": "Julio de Vedia 3865 - Alexander Fleming 3316",
-      "calles": [
-        "Julio de Vedia 3865",
-        "Julio de Vedia 3779",
-        "Julio de Vedia 3685",
-        "José Villegas 2305",
-        "José Villegas 2163",
-        "José Villegas 2020",
-        "Díaz Colodrero 3420",
-        "Díaz Colodrero 3260",
-        "Díaz Colodrero 3134",
-        "Díaz Colodrero 2912",
-        "Díaz Colodrero 2750",
-        "Avenida Capdevila 2052",
-        "Avenida Capdevila 2232",
-        "Avenida Capdevila 2300",
-        "Ramón García De León Y Pizarro 2331"
-      ]
+      "descripcion": "Datos del scraper Tu Bondi 2026",
+      "calles": []
     },
     "vuelta": {
-      "descripcion": "Alexander Fleming 3499 - Julio de Vedia 3876",
-      "calles": [
-        "Alexander Fleming 3499",
-        "Rufino Varela Ortiz 3301",
-        "Frontera 3833",
-        "Luis Pasteur 3169",
-        "Luis Pasteur 3019",
-        "Los Pinos 3757",
-        "Díaz de La Fuente 2413",
-        "Díaz de La Fuente 2315",
-        "Díaz de La Fuente 2007",
-        "Avenida Fuerza Aérea 3535",
-        "Maestro Vidal 1787",
-        "Maestro Vidal 1647",
-        "Maestro Vidal 1405",
-        "José Verdi 3079",
-        "Enrique Granados 1203"
-      ]
+      "descripcion": "Datos del scraper Tu Bondi 2026",
+      "calles": []
     }
   },
   "paradasPrincipales": [
-    "Alexander Fleming 3499",
-    "Avenida Fuerza Aérea 3535",
-    "Avenida Pueyrredón 1449",
-    "Avenida Colón 72",
-    "Pringles 1260",
-    "Tarija 2362",
-    "Avenida Capdevila 2007",
-    "Julio de Vedia 3876"
+    "Julio de Vedia 3837",
+    "Ocampis 2200",
+    "Sarmiento 174",
+    "Maestro Vidal 1842",
+    "Diaz de la Fuente 2215",
+    "Tucuman 34",
+    "Calabalumba 1892",
+    "Jose Maria Lahora 2426"
   ],
   "horarios": {
     "lunesAViernes": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     },
     "sabados": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     },
     "domingosYFeriados": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     }
@@ -81,7 +49,7 @@
     "redBus": "Consultá descuentos disponibles con tarjeta Red Bus"
   },
   "mapsEmbedUrl": "",
-  "ultimaActualizacion": "2023-03-16",
-  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
-  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
+  "ultimaActualizacion": "2026-08-07",
+  "fuente": "Tu Bondi (Municipalidad de Córdoba) via scraper lineas_transporte_cba (MIT) - Agosto 2026",
+  "notas": "Datos obtenidos del scraper Tu Bondi/Micronauta agosto 2026."
 }

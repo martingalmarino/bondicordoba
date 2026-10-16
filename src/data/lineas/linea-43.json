@@ -1,77 +1,45 @@
 {
   "numero": "43",
-  "nombre": "43 por Maipu",
+  "nombre": "Línea 43",
   "esEjemplo": false,
-  "empresa": "ERSA",
-  "descripcionCorta": "Línea 43 - ERSA",
+  "empresa": "Coniferal",
+  "descripcionCorta": "Línea 43 - Coniferal",
   "recorrido": {
     "ida": {
-      "descripcion": "Doctor José A. Ceballos 404 - Av Sabattini 1350",
-      "calles": [
-        "Doctor José A. Ceballos 404",
-        "DR. JOSE CEBALLOS 505",
-        "José Cortes Funes 6600",
-        "Cleto Aguirre 6600",
-        "Cleto Aguirre 6315",
-        "Cleto Aguirre 6035",
-        "Alto Alegre 850",
-        "Alto Alegre 922",
-        "Alto Alegre 1048",
-        "ALTO ALEGRE Y MANUEL NAMUNCURA",
-        "MANUEL NAMUNCURA 5870",
-        "Coronel Manuel Namuncurá 5528",
-        "Paine 5365",
-        "Paine 5236",
-        "Avenida Santa Ana 5068"
-      ]
+      "descripcion": "Datos del scraper Tu Bondi 2026",
+      "calles": []
     },
     "vuelta": {
-      "descripcion": "Av Sabattini 1350 - Doctor José A. Ceballos 404",
-      "calles": [
-        "Av Sabattini 1350",
-        "Bajada del Pucará S/N",
-        "Avenida Gobernador Amadeo Sabattini S/N",
-        "Av. Amadeo Sabattini 645-359",
-        "Bulevar Arturo Illia 437",
-        "Bulevar San Juan 15",
-        "Bv San Juan y M T de Alvear",
-        "Belgrano 175",
-        "27 de Abril 529",
-        "27 de Abril 754",
-        "Monte Carmelo 1101",
-        "Bulevar San Juan 1251",
-        "Bulevar San Juan 1488",
-        "RIO NEGRO Y SANTA ANA",
-        "Avenida Santa Ana 1700"
-      ]
+      "descripcion": "Datos del scraper Tu Bondi 2026",
+      "calles": []
     }
   },
   "paradasPrincipales": [
-    "Av Sabattini 1350",
-    "Bv San Juan y M T de Alvear",
-    "Bulevar San Juan 1488",
-    "AV. SANATA ANA Y ATTE GUILLERMO BROWN",
-    "Avenida Santa Ana 4064",
-    "AV. SANTA ANA 5072",
-    "ALTO ALEGRE Y MANUEL NAMUNCURA",
-    "Doctor José A. Ceballos 404"
+    "PUNTA DE LINEA",
+    "PAINE 5350",
+    "AV. SANTA ANA 2777",
+    "V. SARSF. 30/34",
+    "Bv Illia 654-676",
+    "27 de Abril N° 1016",
+    "AV. SANTA ANA 4082",
+    "Bv. Arturo Umberto Illia 429"
   ],
   "horarios": {
     "lunesAViernes": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     },
     "sabados": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     },
     "domingosYFeriados": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     }
@@ -81,7 +49,7 @@
     "redBus": "Consultá descuentos disponibles con tarjeta Red Bus"
   },
   "mapsEmbedUrl": "",
-  "ultimaActualizacion": "2023-03-16",
-  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
-  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
+  "ultimaActualizacion": "2026-08-07",
+  "fuente": "Tu Bondi (Municipalidad de Córdoba) via scraper lineas_transporte_cba (MIT) - Agosto 2026",
+  "notas": "Datos obtenidos del scraper Tu Bondi/Micronauta agosto 2026."
 }

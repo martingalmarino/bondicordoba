@@ -2,76 +2,44 @@
   "numero": "45",
   "nombre": "Línea 45",
   "esEjemplo": false,
-  "empresa": "ERSA",
-  "descripcionCorta": "Línea 45 - ERSA",
+  "empresa": "Coniferal",
+  "descripcionCorta": "Línea 45 - Coniferal",
   "recorrido": {
     "ida": {
-      "descripcion": "Doctor José A. Ceballos 404 - Maestro Marcelo López 3442",
-      "calles": [
-        "Doctor José A. Ceballos 404",
-        "José Cortes Funes 6600",
-        "Cleto Aguirre 6600",
-        "Avenida Santa Ana 6269",
-        "Avenida Santa Ana 6003",
-        "Avenida Santa Ana 5801",
-        "Avenida Santa Ana 5601",
-        "Curunao 802",
-        "Cleto Aguirre 5600",
-        "Cleto Aguirre 5798",
-        "Cleto Aguirre 5994",
-        "Alto Alegre 673",
-        "Luz Vieyra Méndez 645",
-        "Luz Vieyra Méndez 519",
-        "Luz Vieyra Méndez 368"
-      ]
+      "descripcion": "Datos del scraper Tu Bondi 2026",
+      "calles": []
     },
     "vuelta": {
-      "descripcion": "Avenida Cruz Roja Argentina 321 - Doctor José A. Ceballos 405",
-      "calles": [
-        "Avenida Cruz Roja Argentina 321",
-        "Maestro Marcelo López 3520",
-        "Avenida Ingeniero Medina Allende S/N",
-        "Bv. Enrique Barros S/N",
-        "Avenida Enrique Barros S/N",
-        "Avenida Los Nogales S/N",
-        "Bulevar Chacabuco 518",
-        "Bulevar San Juan 33",
-        "Bulevar San Juan 540",
-        "Rodriguez Peña 124",
-        "Avenida Colón 1184",
-        "Avenida Colón 1390",
-        "Avenida Colón 1590",
-        "Avenida Colón 1886",
-        "Avenida Colón 2042"
-      ]
+      "descripcion": "Datos del scraper Tu Bondi 2026",
+      "calles": []
     }
   },
   "paradasPrincipales": [
-    "Avenida Cruz Roja Argentina 321",
-    "Bulevar San Juan 33",
-    "Avenida Colón 2042",
-    "Avenida Colón 4340",
-    "Pasco 219",
-    "Alto Alegre 744",
-    "Avenida Santa Ana 5999",
-    "Doctor José A. Ceballos 405"
+    "PUNTA DE LINEA",
+    "L. MENDEZ 651",
+    "Colón 4537",
+    "Av Colon 1037",
+    "M. LOPEZ S/N",
+    "COLON 1379/80",
+    "CPC COLON",
+    "DR. JOSE CEBALLOS 659"
   ],
   "horarios": {
     "lunesAViernes": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     },
     "sabados": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     },
     "domingosYFeriados": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     }
@@ -81,7 +49,7 @@
     "redBus": "Consultá descuentos disponibles con tarjeta Red Bus"
   },
   "mapsEmbedUrl": "",
-  "ultimaActualizacion": "2023-03-16",
-  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
-  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
+  "ultimaActualizacion": "2026-08-07",
+  "fuente": "Tu Bondi (Municipalidad de Córdoba) via scraper lineas_transporte_cba (MIT) - Agosto 2026",
+  "notas": "Datos obtenidos del scraper Tu Bondi/Micronauta agosto 2026."
 }

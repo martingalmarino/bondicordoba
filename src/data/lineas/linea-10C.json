@@ -1,0 +1,55 @@
+{
+  "numero": "10C",
+  "nombre": "Línea 10C",
+  "esEjemplo": false,
+  "empresa": "Coniferal",
+  "descripcionCorta": "Línea 10C - Coniferal",
+  "recorrido": {
+    "ida": {
+      "descripcion": "Datos del scraper Tu Bondi 2026",
+      "calles": []
+    },
+    "vuelta": {
+      "descripcion": "Datos del scraper Tu Bondi 2026",
+      "calles": []
+    }
+  },
+  "paradasPrincipales": [
+    "Vucetich 7880",
+    "Sabattini 5421",
+    "San Jeronimo 2467-2491",
+    "Av Velez Sarsfield 664",
+    "Av Fuerza Aerea 3376",
+    "Fuerza Aerea 2433",
+    "Viamonte 111",
+    "Vucetich y Franck"
+  ],
+  "horarios": {
+    "lunesAViernes": {
+      "tipo": "frecuencia",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "sabados": {
+      "tipo": "frecuencia",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "domingosYFeriados": {
+      "tipo": "frecuencia",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
+      "horarioInicio": "",
+      "horarioFin": ""
+    }
+  },
+  "tarifas": {
+    "efectivo": "Consultá la tarifa vigente en el sitio de la Municipalidad de Córdoba",
+    "redBus": "Consultá descuentos disponibles con tarjeta Red Bus"
+  },
+  "mapsEmbedUrl": "",
+  "ultimaActualizacion": "2026-08-07",
+  "fuente": "Tu Bondi (Municipalidad de Córdoba) via scraper lineas_transporte_cba (MIT) - Agosto 2026",
+  "notas": "Datos obtenidos del scraper Tu Bondi/Micronauta agosto 2026. Renombrada de C1 a 10C"
+}

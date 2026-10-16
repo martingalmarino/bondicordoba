@@ -2,76 +2,44 @@
   "numero": "54",
   "nombre": "Línea 54",
   "esEjemplo": false,
-  "empresa": "TAMSE",
-  "descripcionCorta": "Línea 54 - TAMSE",
+  "empresa": "SiBus",
+  "descripcionCorta": "Línea 54 - SiBus",
   "recorrido": {
     "ida": {
-      "descripcion": "Ramón Farrate S/N - Avenida Gobernador Amadeo Sabattini S/N",
-      "calles": [
-        "Ramón Farrate S/N",
-        "Avenida Juan B. Justo S/N",
-        "Avenida Juan B. Justo 7057",
-        "Amalia Celia Figueredo de Pietra S/N",
-        "Avenida Japón km 7.5",
-        "Avenida Rancagua S/N",
-        "Rancagua S/N",
-        "Calle 6 S/N",
-        "Avenida Rancagua 4394",
-        "Rancagua 4783",
-        "Gustavo A. Marambio 861",
-        "La Cabaña S/N",
-        "Manzana 42 lote 1",
-        "Tucumán 198",
-        "Chachapoyas S/N"
-      ]
+      "descripcion": "Datos del scraper Tu Bondi 2026",
+      "calles": []
     },
     "vuelta": {
-      "descripcion": "Bajada del Pucará S/N - Ramón Farrate S/N",
-      "calles": [
-        "Bajada del Pucará S/N",
-        "Avenida Gobernador Amadeo Sabattini S/N",
-        "Bulevar Arturo Illia 532",
-        "Illia 323",
-        "Bulevar San Juan 15",
-        "Belgrano 51",
-        "Tucumán 199-99",
-        "Tucumán 323",
-        "La Rioja 143",
-        "Catamarca 110",
-        "Avenida Maipú 434",
-        "Avenida Maipú 668",
-        "Fray Mamerto Esquiú 1194",
-        "Avenida Juan B. Justo 2238",
-        "Avenida Juan B. Justo 2378"
-      ]
+      "descripcion": "Datos del scraper Tu Bondi 2026",
+      "calles": []
     }
   },
   "paradasPrincipales": [
-    "Bajada del Pucará S/N",
-    "Tucumán 323",
-    "República de Siria 334",
-    "Cayena 601",
-    "Gustavo A. Marambio 897",
-    "Gustavo A. Marambio 861",
-    "Avenida Rancagua 4394",
-    "Ramón Farrate S/N"
+    "Casilla Chingolo",
+    "COLECTORA S/N",
+    "MARCO DEL PONT 2613",
+    "FELIX FRIAS 1525",
+    "Av. Gdor Amadeo Sabattini 500",
+    "AV. JUAN B. JUSTO 2260",
+    "GUSTAVO MARAMBIO 1075",
+    "Av Juan B Justo 7935"
   ],
   "horarios": {
     "lunesAViernes": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     },
     "sabados": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     },
     "domingosYFeriados": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     }
@@ -81,7 +49,7 @@
     "redBus": "Consultá descuentos disponibles con tarjeta Red Bus"
   },
   "mapsEmbedUrl": "",
-  "ultimaActualizacion": "2023-03-16",
-  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
-  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
+  "ultimaActualizacion": "2026-08-07",
+  "fuente": "Tu Bondi (Municipalidad de Córdoba) via scraper lineas_transporte_cba (MIT) - Agosto 2026",
+  "notas": "Datos obtenidos del scraper Tu Bondi/Micronauta agosto 2026."
 }

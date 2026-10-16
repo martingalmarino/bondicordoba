@@ -6,72 +6,40 @@
   "descripcionCorta": "Línea 16 - Coniferal",
   "recorrido": {
     "ida": {
-      "descripcion": "Lisardo Novillo Saravia 692 - Cumbres de Gaspar",
-      "calles": [
-        "Lisardo Novillo Saravia 692",
-        "De la Industria 896",
-        "Avenida Cruz Roja Argentina 518",
-        "Avenida Cruz Roja Argentina 337",
-        "Maestro Marcelo López S/N",
-        "Maestro Marcelo López 3512",
-        "Avenida Ingeniero Medina Allende S/N",
-        "Bv. Enrique Barros S/N",
-        "Buenos Aires 1415",
-        "Avenida Ambrosio Olmos 1040",
-        "Belgrano 1415",
-        "Belgrano 1168",
-        "Belgrano 655",
-        "Belgrano 471",
-        "Belgrano 170"
-      ]
+      "descripcion": "Datos del scraper Tu Bondi 2026",
+      "calles": []
     },
     "vuelta": {
-      "descripcion": "Córdoba S/N - Avenida Cruz Roja Argentina 522",
-      "calles": [
-        "Córdoba S/N",
-        "Avenida Gdor. Amadeo Sabattini S/N",
-        "Ruta Nacional 1V09 S/N",
-        "Dirección desconocida",
-        "Ciudad De Mis Suenos S/N",
-        "Avenida Amadeo Sabattini 6963",
-        "Avenida Amadeo Sabattini 6122",
-        "Avenida Amadeo Sabattini 5993",
-        "Avenida Amadeo Sabattini 5827",
-        "Avenida Amadeo Sabattini 5351",
-        "Avenida Amadeo Sabattini 5195",
-        "Avenida Amadeo Sabattini 5068",
-        "Avenida Gobernador Amadeo Sabattini 4818",
-        "Carnerillo 2199",
-        "Avenida Amadeo Sabattini 4289"
-      ]
+      "descripcion": "Datos del scraper Tu Bondi 2026",
+      "calles": []
     }
   },
   "paradasPrincipales": [
-    "Córdoba S/N",
-    "Ruta Nacional 1V09 S/N",
-    "Avenida Amadeo Sabattini 6963",
-    "Avenida Amadeo Sabattini 5195",
-    "Avenida Amadeo Sabattini S/N",
-    "Avenida Sabattini 2193",
-    "Bulevar Arturo Illia 23",
-    "Avenida Cruz Roja Argentina 522"
+    "Predio Valparaiso",
+    "Belgrano 145",
+    "Estacion Punilla",
+    "Vucetich 6436",
+    "Ruta 9 Fte. UOM",
+    "Trasporte Rigars",
+    "Vucetich 7192",
+    "Cruz Roja y Av Valparaiso"
   ],
   "horarios": {
     "lunesAViernes": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     },
     "sabados": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     },
     "domingosYFeriados": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     }
@@ -81,7 +49,7 @@
     "redBus": "Consultá descuentos disponibles con tarjeta Red Bus"
   },
   "mapsEmbedUrl": "",
-  "ultimaActualizacion": "2023-03-16",
-  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
-  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
+  "ultimaActualizacion": "2026-08-07",
+  "fuente": "Tu Bondi (Municipalidad de Córdoba) via scraper lineas_transporte_cba (MIT) - Agosto 2026",
+  "notas": "Datos obtenidos del scraper Tu Bondi/Micronauta agosto 2026."
 }

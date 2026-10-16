@@ -6,72 +6,40 @@
   "descripcionCorta": "Línea 66 - Coniferal",
   "recorrido": {
     "ida": {
-      "descripcion": "Avenida Cruz Roja Argentina 664 - Avenida Las Malvinas 9599",
-      "calles": [
-        "Avenida Cruz Roja Argentina 664",
-        "De la Industria 896",
-        "Avenida Cruz Roja Argentina 518",
-        "Avenida Cruz Roja Argentina 337",
-        "Maestro Marcelo López 3512",
-        "Avenida Ingeniero Medina Allende S/N",
-        "Bv. Enrique Barros S/N",
-        "Buenos Aires 1415",
-        "Avenida Ambrosio Olmos 1040",
-        "Belgrano 1451",
-        "Belgrano 1168",
-        "Belgrano 655",
-        "Belgrano 471",
-        "Belgrano 170",
-        "Tucumán 34"
-      ]
+      "descripcion": "Datos del scraper Tu Bondi 2026",
+      "calles": []
     },
     "vuelta": {
-      "descripcion": "El Cardenal 3988 - Avenida Cruz Roja Argentina 658",
-      "calles": [
-        "El Cardenal 3988",
-        "El Pardal 9705",
-        "El Benteveo 3838",
-        "El Benteveo 3702",
-        "Avenida Las Malvinas 9474",
-        "Avenida Las Malvinas 9328",
-        "Avenida Las Malvinas 7772",
-        "Avenida Las Malvinas 6966",
-        "Avenida Las Malvinas 6516",
-        "Avenida Las Malvinas 6234",
-        "Avenida Las Malvinas 5744",
-        "Avenida Malvinas Argentinas 5825",
-        "Avenida Malvinas Argentinas 5443",
-        "Avenida Malvinas Argentinas 4809",
-        "Avenida Malvinas Argentinas 4199"
-      ]
+      "descripcion": "Datos del scraper Tu Bondi 2026",
+      "calles": []
     }
   },
   "paradasPrincipales": [
-    "El Cardenal 3988",
-    "Avenida Las Malvinas 6516",
-    "Avenida Malvinas Argentinas 3405",
-    "Avenida Malvinas Argentinas 1995",
-    "Avenida Patria 527",
-    "Sarmiento 111",
-    "Bulevar Chacabuco 1469",
-    "Avenida Cruz Roja Argentina 658"
+    "Predio Valparaiso",
+    "Belgrano 145",
+    "AV. PATRIA 1590",
+    "Echauri 3132",
+    "Camino Montecristo Km 8",
+    "Isasmendi 2600",
+    "Hospital Italiano",
+    "Cruz Roja y Av Valparaiso"
   ],
   "horarios": {
     "lunesAViernes": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     },
     "sabados": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     },
     "domingosYFeriados": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     }
@@ -81,7 +49,7 @@
     "redBus": "Consultá descuentos disponibles con tarjeta Red Bus"
   },
   "mapsEmbedUrl": "",
-  "ultimaActualizacion": "2023-03-16",
-  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
-  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
+  "ultimaActualizacion": "2026-08-07",
+  "fuente": "Tu Bondi (Municipalidad de Córdoba) via scraper lineas_transporte_cba (MIT) - Agosto 2026",
+  "notas": "Datos obtenidos del scraper Tu Bondi/Micronauta agosto 2026."
 }

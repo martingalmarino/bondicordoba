@@ -1,0 +1,55 @@
+{
+  "numero": "81B",
+  "nombre": "Línea 81B",
+  "esEjemplo": false,
+  "empresa": "SiBus",
+  "descripcionCorta": "Línea 81B - SiBus",
+  "recorrido": {
+    "ida": {
+      "descripcion": "Datos del scraper Tu Bondi 2026",
+      "calles": []
+    },
+    "vuelta": {
+      "descripcion": "Datos del scraper Tu Bondi 2026",
+      "calles": []
+    }
+  },
+  "paradasPrincipales": [
+    "Chango Más",
+    "Sarmiento 1385",
+    "Av Colon 2738 (Plaza J del Barco)",
+    "Av Rafael Nunez 4840",
+    "Oscar Cabalén 6887",
+    "Fernando Fader 3481",
+    "Av Colon 259-273 (Correo Arg)",
+    "Juan C. Tissera S/N"
+  ],
+  "horarios": {
+    "lunesAViernes": {
+      "tipo": "frecuencia",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "sabados": {
+      "tipo": "frecuencia",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "domingosYFeriados": {
+      "tipo": "frecuencia",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
+      "horarioInicio": "",
+      "horarioFin": ""
+    }
+  },
+  "tarifas": {
+    "efectivo": "Consultá la tarifa vigente en el sitio de la Municipalidad de Córdoba",
+    "redBus": "Consultá descuentos disponibles con tarjeta Red Bus"
+  },
+  "mapsEmbedUrl": "",
+  "ultimaActualizacion": "2026-08-07",
+  "fuente": "Tu Bondi (Municipalidad de Córdoba) via scraper lineas_transporte_cba (MIT) - Agosto 2026",
+  "notas": "Datos obtenidos del scraper Tu Bondi/Micronauta agosto 2026. Renombrada de B1 a 81B"
+}

@@ -2,76 +2,44 @@
   "numero": "34",
   "nombre": "Línea 34",
   "esEjemplo": false,
-  "empresa": "Coniferal",
-  "descripcionCorta": "Línea 34 - Coniferal",
+  "empresa": "SiBus",
+  "descripcionCorta": "Línea 34 - SiBus",
   "recorrido": {
     "ida": {
-      "descripcion": "Dirección desconocida - Tucumán 633",
-      "calles": [
-        "Dirección desconocida",
-        "Avenida Armada Argentina S/N",
-        "Avenida Armada Argentina 3391",
-        "Avenida Armada Argentina 3043",
-        "Avenida Armada Argentina 2911",
-        "Avenida Armada Argentina 2731",
-        "Avenida Armada Argentina 2379",
-        "Avenida Armada Argentina 2111",
-        "Avenida Armada Argentina 1979",
-        "Avenida Armada Argentina 1837",
-        "Avenida Armada Argentina 1585",
-        "Avenida Armada Argentina 1100",
-        "Barda Del Medio 1038",
-        "Hipólito Bernardino Cejas S/N",
-        "Avenida Circunvalación 4311"
-      ]
+      "descripcion": "Datos del scraper Tu Bondi 2026",
+      "calles": []
     },
     "vuelta": {
-      "descripcion": "La Tablada 201 - Dirección desconocida",
-      "calles": [
-        "La Tablada 201",
-        "Avenida General Paz 205",
-        "Avenida Vélez Sarsfield 155",
-        "Avenida Hipólito Yrigoyen 30",
-        "Buenos Aires 724",
-        "Avenida Ambrosio Olmos 657",
-        "Avenida Ambrosio Olmos 1048",
-        "Avenida Vélez Sarsfield 1954",
-        "Avenida Vélez Sarsfield 2340",
-        "Avenida Vélez Sarsfield 3008",
-        "Avenida Vélez Sarsfield 3386",
-        "Avenida Vélez Sarsfield 3650",
-        "Viña del Mar 3792",
-        "El Tirol 202",
-        "Viña del Mar 4100"
-      ]
+      "descripcion": "Datos del scraper Tu Bondi 2026",
+      "calles": []
     }
   },
   "paradasPrincipales": [
-    "Dirección desconocida",
-    "Avenida Armada Argentina 3043",
-    "Avenida Armada Argentina 1979",
-    "Hipólito Bernardino Cejas S/N",
-    "Bermudas 238",
-    "Viña del Mar 3721",
-    "Avenida Vélez Sarsfield 2619",
-    "Tucumán 633"
+    "C. Publica J S/N",
+    "UCC ida",
+    "Barda del Medio s/n ",
+    "Vina del Mar 3625",
+    "Av Hipolito Irigoyen 660",
+    "Av Hipolito Irigoyen 386",
+    "Cejas S/N ",
+    "Publica G S/N"
   ],
   "horarios": {
     "lunesAViernes": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     },
     "sabados": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     },
     "domingosYFeriados": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     }
@@ -81,7 +49,7 @@
     "redBus": "Consultá descuentos disponibles con tarjeta Red Bus"
   },
   "mapsEmbedUrl": "",
-  "ultimaActualizacion": "2023-03-16",
-  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
-  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
+  "ultimaActualizacion": "2026-08-07",
+  "fuente": "Tu Bondi (Municipalidad de Córdoba) via scraper lineas_transporte_cba (MIT) - Agosto 2026",
+  "notas": "Datos obtenidos del scraper Tu Bondi/Micronauta agosto 2026."
 }

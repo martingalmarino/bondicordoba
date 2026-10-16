@@ -1,0 +1,55 @@
+{
+  "numero": "36A",
+  "nombre": "Línea 36A",
+  "esEjemplo": false,
+  "empresa": "SiBus",
+  "descripcionCorta": "Línea 36A - SiBus",
+  "recorrido": {
+    "ida": {
+      "descripcion": "Datos del scraper Tu Bondi 2026",
+      "calles": []
+    },
+    "vuelta": {
+      "descripcion": "Datos del scraper Tu Bondi 2026",
+      "calles": []
+    }
+  },
+  "paradasPrincipales": [
+    "Av Renault Argentina S/N",
+    "Congreso 5088",
+    "Av Armada Argentina 1071-1097",
+    "Belgrano 305",
+    "Urquiza 3078",
+    "Urquiza 2707",
+    "Av Velez Sarsfield 1160-1184",
+    "Av. Renault Argentina 2290"
+  ],
+  "horarios": {
+    "lunesAViernes": {
+      "tipo": "frecuencia",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "sabados": {
+      "tipo": "frecuencia",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "domingosYFeriados": {
+      "tipo": "frecuencia",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
+      "horarioInicio": "",
+      "horarioFin": ""
+    }
+  },
+  "tarifas": {
+    "efectivo": "Consultá la tarifa vigente en el sitio de la Municipalidad de Córdoba",
+    "redBus": "Consultá descuentos disponibles con tarjeta Red Bus"
+  },
+  "mapsEmbedUrl": "",
+  "ultimaActualizacion": "2026-08-07",
+  "fuente": "Tu Bondi (Municipalidad de Córdoba) via scraper lineas_transporte_cba (MIT) - Agosto 2026",
+  "notas": "Datos obtenidos del scraper Tu Bondi/Micronauta agosto 2026. Renombrada de A1 a 36A"
+}

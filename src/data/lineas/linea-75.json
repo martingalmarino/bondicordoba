@@ -2,76 +2,44 @@
   "numero": "75",
   "nombre": "Línea 75",
   "esEjemplo": false,
-  "empresa": "ERSA",
-  "descripcionCorta": "Línea 75 - ERSA",
+  "empresa": "SolBus",
+  "descripcionCorta": "Línea 75 - SolBus",
   "recorrido": {
     "ida": {
-      "descripcion": "Martín Cartechini 152 - Calandria 452",
-      "calles": [
-        "Martín Cartechini 152",
-        "Martín Cartechini 340",
-        "Blas Parera 3923",
-        "Blas Parera 3631",
-        "Estanislao Learte 241",
-        "Estanislao Learte 129",
-        "Obispo Castellano 230",
-        "Obispo Castellano 404",
-        "Obispo Castellano 624",
-        "López y Planes 3357",
-        "López y Planes 3147",
-        "López y Planes 2931",
-        "López y Planes 2723",
-        "López y Planes 2485",
-        "López y Planes 2159"
-      ]
+      "descripcion": "Datos del scraper Tu Bondi 2026",
+      "calles": []
     },
     "vuelta": {
-      "descripcion": "Zorzal 505 - Martín Cartechini 120",
-      "calles": [
-        "Zorzal 505",
-        "La Tablada 6348",
-        "La Tablada 6089",
-        "Nazca 683",
-        "Nazca 838",
-        "Juan Hauling 5717",
-        "Juncalillo 749",
-        "José Figueroa 607",
-        "José Figueroa 460",
-        "José Figueroa 301",
-        "José Figueroa 207",
-        "José Figueroa 11",
-        "Antonio Rosillo 84",
-        "Avenida Colón 5170",
-        "Avenida Colón 5063"
-      ]
+      "descripcion": "Datos del scraper Tu Bondi 2026",
+      "calles": []
     }
   },
   "paradasPrincipales": [
-    "Zorzal 505",
-    "José Figueroa 607",
-    "Avenida Colón 5063",
-    "Avenida Colón 3059",
-    "Avenida Colón 672",
-    "Leticia 1509",
-    "Argandoña 3184",
-    "Martín Cartechini 120"
+    "Pl Balcones del Chateau",
+    "Colón 4747",
+    "Av. Colón 375",
+    "Obispo Castellanos 931",
+    "Cartechini 284",
+    "Entre Ríos 1901",
+    "COLON 2656",
+    "La Rioja 6543"
   ],
   "horarios": {
     "lunesAViernes": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     },
     "sabados": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     },
     "domingosYFeriados": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     }
@@ -81,7 +49,7 @@
     "redBus": "Consultá descuentos disponibles con tarjeta Red Bus"
   },
   "mapsEmbedUrl": "",
-  "ultimaActualizacion": "2023-03-16",
-  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
-  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
+  "ultimaActualizacion": "2026-08-07",
+  "fuente": "Tu Bondi (Municipalidad de Córdoba) via scraper lineas_transporte_cba (MIT) - Agosto 2026",
+  "notas": "Datos obtenidos del scraper Tu Bondi/Micronauta agosto 2026."
 }

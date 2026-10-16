@@ -2,76 +2,44 @@
   "numero": "81",
   "nombre": "Línea 81",
   "esEjemplo": false,
-  "empresa": "TAMSE",
-  "descripcionCorta": "Línea 81 - TAMSE",
+  "empresa": "SiBus",
+  "descripcionCorta": "Línea 81 - SiBus",
   "recorrido": {
     "ida": {
-      "descripcion": "Avenida Idelfonso Muñecas 3826 - La Rioja 6429",
-      "calles": [
-        "Avenida Idelfonso Muñecas 3826",
-        "Avenida Idelfonso Muñecas 3980",
-        "Avenida Idelfonso Muñecas 4130",
-        "Avenida Idelfonso Muñecas 4364",
-        "Avenida Idelfonso Muñecas 4594",
-        "Hermanos Warnes 4525",
-        "Ángel A. Salvedores 5507",
-        "Avenida El Quebracho 4385",
-        "Avenida El Quebracho 4275",
-        "Avenida El Quebracho 4013",
-        "Avenida El Quebracho 3975",
-        "Avenida El Quebracho 3811",
-        "Avenida 11 de Septiembre 5223",
-        "Prudencio Murguiondo 4611",
-        "Jerónimo Helguera 4478"
-      ]
+      "descripcion": "Datos del scraper Tu Bondi 2026",
+      "calles": []
     },
     "vuelta": {
-      "descripcion": "Zorzal 505 - Avenida Idelfonso Muñecas 3821",
-      "calles": [
-        "Zorzal 505",
-        "La Tablada 6089",
-        "Nazca 683",
-        "Nazca 838",
-        "Juan Hauling 5717",
-        "Juan Hauling 5601",
-        "Chancay 815",
-        "Chancay 479",
-        "Chancay 283",
-        "Chancay 99",
-        "27 de Abril 5411",
-        "27 De Abril 5313",
-        "Antonio Rosillo 13",
-        "José Figueroa 200",
-        "José Figueroa 292"
-      ]
+      "descripcion": "Datos del scraper Tu Bondi 2026",
+      "calles": []
     }
   },
   "paradasPrincipales": [
-    "Zorzal 505",
-    "José Figueroa 480",
-    "Avenida Sagrada Familia 350",
-    "Avenida Vélez Sarsfield 286",
-    "Coronel José Javier Diaz 736",
-    "Carlos Paz 3790",
-    "Dirección desconocida",
-    "Avenida Idelfonso Muñecas 3821"
+    "AV 11 DE SEPTIEMBRE KM 4",
+    "Celso Barrios 3065",
+    "Maestro Lopez (UTN)",
+    "Av Menendez Pidal 3700",
+    "Tablada 5843",
+    "Av Colon 4225",
+    "Javier Diaz 322",
+    "Munecas 4305"
   ],
   "horarios": {
     "lunesAViernes": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     },
     "sabados": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     },
     "domingosYFeriados": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     }
@@ -81,7 +49,7 @@
     "redBus": "Consultá descuentos disponibles con tarjeta Red Bus"
   },
   "mapsEmbedUrl": "",
-  "ultimaActualizacion": "2023-03-16",
-  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
-  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
+  "ultimaActualizacion": "2026-08-07",
+  "fuente": "Tu Bondi (Municipalidad de Córdoba) via scraper lineas_transporte_cba (MIT) - Agosto 2026",
+  "notas": "Datos obtenidos del scraper Tu Bondi/Micronauta agosto 2026."
 }
