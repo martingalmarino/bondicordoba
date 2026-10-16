@@ -1,0 +1,151 @@
+---
+import { Icon } from 'astro-icon/components';
+
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3 class="footer-title">Bondi Córdoba</h3>
+        <p class="footer-description">
+          Información actualizada sobre líneas de transporte público de Córdoba Capital.
+        </p>
+      </div>
+
+      <div class="footer-section">
+        <h4 class="footer-subtitle">Navegación</h4>
+        <ul class="footer-links">
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/lineas">Todas las líneas</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4 class="footer-subtitle">Información</h4>
+        <ul class="footer-links">
+          <li><a href="/about">Acerca de</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-copyright">
+        © {currentYear} Bondi Córdoba. Todos los derechos reservados.
+      </p>
+      <p class="footer-disclaimer">
+        <Icon name="lucide:info" class="disclaimer-icon" />
+        Los horarios y recorridos son referenciales. Verificá siempre con la empresa de transporte.
+      </p>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    background-color: var(--color-gray-100);
+    border-top: 1px solid var(--color-gray-200);
+    margin-top: var(--space-16);
+    padding-top: var(--space-12);
+    padding-bottom: var(--space-8);
+  }
+
+  .footer-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+    margin-bottom: var(--space-8);
+  }
+
+  .footer-section {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+
+  .footer-title {
+    font-size: var(--font-size-h4);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-primary);
+    margin-bottom: var(--space-2);
+  }
+
+  .footer-description {
+    color: var(--color-gray-600);
+    font-size: var(--font-size-small);
+    margin-bottom: 0;
+  }
+
+  .footer-subtitle {
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-gray-800);
+    margin-bottom: var(--space-2);
+  }
+
+  .footer-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer-links a {
+    color: var(--color-gray-600);
+    font-size: var(--font-size-small);
+    transition: color var(--transition-fast);
+  }
+
+  .footer-links a:hover {
+    color: var(--color-primary);
+  }
+
+  .footer-bottom {
+    padding-top: var(--space-6);
+    border-top: 1px solid var(--color-gray-200);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+
+  .footer-copyright {
+    font-size: var(--font-size-small);
+    color: var(--color-gray-600);
+    margin-bottom: 0;
+  }
+
+  .footer-disclaimer {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-2);
+    font-size: var(--font-size-xsmall);
+    color: var(--color-gray-600);
+    margin-bottom: 0;
+  }
+
+  .disclaimer-icon {
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  @media (min-width: 768px) {
+    .footer-content {
+      grid-template-columns: 2fr 1fr 1fr;
+    }
+
+    .footer-bottom {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .footer-disclaimer {
+      text-align: right;
+    }
+  }
+</style>

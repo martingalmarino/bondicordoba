@@ -1,10 +1,11 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
+import { default as icon } from 'astro-icon';
 
 // https://astro.build/config
 export default defineConfig({
   site: 'https://bondicordoba.com.ar',
-  integrations: [],
+  integrations: [icon()],
   build: {
     inlineStylesheets: 'auto',
   },

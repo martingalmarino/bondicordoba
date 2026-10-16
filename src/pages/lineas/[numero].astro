@@ -1,19 +1,27 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
-import AdSense from '../../components/AdSense.astro';
-import { getAllLineas, getLineaByNumero } from '../../utils/lineas';
-import type { GetStaticPaths } from 'astro';
+import Badge from '../../components/Badge.astro';
+import Alert from '../../components/Alert.astro';
+import Table from '../../components/Table.astro';
+import AdSlot from '../../components/AdSlot.astro';
+import { Icon } from 'astro-icon/components';
+import { getLineas, getLineaByNumero, hasValidSchedule } from '../../data/lineas';
 
-export const getStaticPaths = (() => {
-  const lineas = getAllLineas();
-  return lineas.map(linea => ({
+export async function getStaticPaths() {
+  const lineas = await getLineas();
+  return lineas.map((linea) => ({
     params: { numero: linea.numero },
-    props: { linea }
+    props: { linea },
   }));
-}) satisfies GetStaticPaths;
+}
 
-const { linea } = Astro.props;
+const { numero } = Astro.params;
+const linea = await getLineaByNumero(numero);
+
+if (!linea) {
+  return Astro.redirect('/404');
+}
 
 const breadcrumbs = [
   { label: 'Inicio', href: '/' },
@@ -21,344 +29,478 @@ const breadcrumbs = [
   { label: `Línea ${linea.numero}` }
 ];
 
-const structuredData = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": `Línea ${linea.numero} - ${linea.nombre}`,
-  "description": linea.descripcionCorta,
-  "datePublished": linea.ultimaActualizacion,
-  "dateModified": linea.ultimaActualizacion,
-  "author": {
-    "@type": "Organization",
-    "name": "BondiCórdoba"
-  }
-};
+const hasIda = linea.recorrido?.ida?.calles && linea.recorrido.ida.calles.length > 0;
+const hasVuelta = linea.recorrido?.vuelta?.calles && linea.recorrido.vuelta.calles.length > 0;
+const hasRouteData = hasIda || hasVuelta;
+const hasSchedule = hasValidSchedule(linea);
 ---
 
 <BaseLayout 
-  title={`Línea ${linea.numero} Córdoba: recorrido y horarios 2026 - BondiCórdoba`}
-  description={`Línea ${linea.numero} de colectivos en Córdoba Capital. ${linea.descripcionCorta}. Consulta recorridos, horarios, paradas y tarifas actualizadas.`}
-  structuredData={structuredData}
+  title={`Línea ${linea.numero}${linea.nombre ? ` - ${linea.nombre}` : ''}`}
+  description={`Información completa sobre la línea ${linea.numero} de Córdoba Capital. ${linea.recorrido?.ida?.descripcion || linea.recorrido?.vuelta?.descripcion || ''}`}
 >
-  <div class="container">
+  <div class="container page-container">
     <Breadcrumbs items={breadcrumbs} />
-    
-    {linea.esEjemplo && (
-      <div class="alert alert-warning">
-        <strong>⚠️ DATOS DE EJEMPLO:</strong> Esta información es ficticia y solo para demostración. 
-        No utilice estos datos para planificar viajes reales.
-      </div>
-    )}
-    
-    <div class="line-header">
-      <div class="line-number-large">{linea.numero}</div>
-      <div>
-        <h1>{linea.nombre}</h1>
-        <p class="line-description">{linea.descripcionCorta}</p>
-        <div class="meta">
-          <span><strong>Empresa:</strong> {linea.empresa}</span>
-          <span><strong>Última actualización:</strong> {new Date(linea.ultimaActualizacion).toLocaleDateString('es-AR')}</span>
+
+    <header class="line-header">
+      <div class="line-header-top">
+        <div class="line-number-badge">
+          <Icon name="lucide:bus" class="line-icon" />
+          <span class="line-number-text">{linea.numero}</span>
+        </div>
+        <div class="line-header-info">
+          <h1 class="line-name">{linea.nombre || `Línea ${linea.numero}`}</h1>
+          {linea.empresa && (
+            <p class="line-company">
+              <Icon name="lucide:building-2" class="company-icon" />
+              {linea.empresa}
+            </p>
+          )}
         </div>
       </div>
+
+      {(linea.recorrido?.ida?.descripcion || linea.recorrido?.vuelta?.descripcion) && (
+        <div class="line-route-summary">
+          <Icon name="lucide:route" class="route-icon" />
+          <div>
+            {linea.recorrido.ida?.descripcion && <p>{linea.recorrido.ida.descripcion}</p>}
+            {linea.recorrido.vuelta?.descripcion && !linea.recorrido.ida?.descripcion && (
+              <p>{linea.recorrido.vuelta.descripcion}</p>
+            )}
+          </div>
+        </div>
+      )}
+    </header>
+
+    <div class="line-content">
+      <div class="line-main">
+        {hasRouteData ? (
+          <section class="section">
+            <h2 class="section-title">
+              <Icon name="lucide:map" />
+              Recorridos
+            </h2>
+
+            {hasIda && linea.recorrido?.ida && (
+              <div class="route-section">
+                <h3 class="route-title">
+                  <Badge variant="info">Ida</Badge>
+                  {linea.recorrido.ida.descripcion && (
+                    <span class="route-subtitle">{linea.recorrido.ida.descripcion}</span>
+                  )}
+                </h3>
+                <ul class="route-streets">
+                  {linea.recorrido.ida.calles.map((calle: string) => (
+                    <li>
+                      <Icon name="lucide:corner-down-right" class="street-icon" />
+                      {calle}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            {hasVuelta && linea.recorrido?.vuelta && (
+              <div class="route-section">
+                <h3 class="route-title">
+                  <Badge variant="success">Vuelta</Badge>
+                  {linea.recorrido.vuelta.descripcion && (
+                    <span class="route-subtitle">{linea.recorrido.vuelta.descripcion}</span>
+                  )}
+                </h3>
+                <ul class="route-streets">
+                  {linea.recorrido.vuelta.calles.map((calle: string) => (
+                    <li>
+                      <Icon name="lucide:corner-down-right" class="street-icon" />
+                      {calle}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </section>
+        ) : (
+          <Alert variant="warning" title="Recorridos pendientes">
+            La información detallada de recorridos para esta línea estará disponible próximamente.
+          </Alert>
+        )}
+
+        {linea.paradasPrincipales && linea.paradasPrincipales.length > 0 && (
+          <section class="section">
+            <h2 class="section-title">
+              <Icon name="lucide:map-pin" />
+              Paradas principales
+            </h2>
+            <ul class="stops-list">
+              {linea.paradasPrincipales.map((parada: string) => (
+                <li>
+                  <Icon name="lucide:circle-dot" class="stop-icon" />
+                  {parada}
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
+
+        <AdSlot slot="content-middle" format="horizontal" />
+
+        <section class="section">
+          <h2 class="section-title">
+            <Icon name="lucide:clock" />
+            Horarios
+          </h2>
+          {hasSchedule && linea.horarios ? (
+            <Table striped>
+              <thead>
+                <tr>
+                  <th>Período</th>
+                  <th>Descripción</th>
+                </tr>
+              </thead>
+              <tbody>
+                {linea.horarios.lunesAViernes && (
+                  <tr>
+                    <td>Lunes a Viernes</td>
+                    <td>
+                      {linea.horarios.lunesAViernes.descripcion}
+                      {linea.horarios.lunesAViernes.horarioInicio && linea.horarios.lunesAViernes.horarioFin && (
+                        <span class="schedule-time">
+                          {` (${linea.horarios.lunesAViernes.horarioInicio} - ${linea.horarios.lunesAViernes.horarioFin})`}
+                        </span>
+                      )}
+                    </td>
+                  </tr>
+                )}
+                {linea.horarios.sabados && (
+                  <tr>
+                    <td>Sábados</td>
+                    <td>
+                      {linea.horarios.sabados.descripcion}
+                      {linea.horarios.sabados.horarioInicio && linea.horarios.sabados.horarioFin && (
+                        <span class="schedule-time">
+                          {` (${linea.horarios.sabados.horarioInicio} - ${linea.horarios.sabados.horarioFin})`}
+                        </span>
+                      )}
+                    </td>
+                  </tr>
+                )}
+                {linea.horarios.domingosYFeriados && (
+                  <tr>
+                    <td>Domingos y Feriados</td>
+                    <td>
+                      {linea.horarios.domingosYFeriados.descripcion}
+                      {linea.horarios.domingosYFeriados.horarioInicio && linea.horarios.domingosYFeriados.horarioFin && (
+                        <span class="schedule-time">
+                          {` (${linea.horarios.domingosYFeriados.horarioInicio} - ${linea.horarios.domingosYFeriados.horarioFin})`}
+                        </span>
+                      )}
+                    </td>
+                  </tr>
+                )}
+              </tbody>
+            </Table>
+          ) : (
+            <Alert variant="warning" title="Horarios pendientes">
+              Los horarios detallados para esta línea estarán disponibles próximamente.
+            </Alert>
+          )}
+        </section>
+
+        {linea.tarifas && (linea.tarifas.efectivo || linea.tarifas.redBus) && (
+          <section class="section">
+            <h2 class="section-title">
+              <Icon name="lucide:credit-card" />
+              Tarifas
+            </h2>
+            <div class="tarifas-content">
+              {linea.tarifas.efectivo && (
+                <div class="tarifa-item">
+                  <strong>Efectivo:</strong> {linea.tarifas.efectivo}
+                </div>
+              )}
+              {linea.tarifas.redBus && (
+                <div class="tarifa-item">
+                  <strong>Red Bus:</strong> {linea.tarifas.redBus}
+                </div>
+              )}
+            </div>
+          </section>
+        )}
+
+        {linea.notas && (
+          <Alert variant="info">
+            <p>{linea.notas}</p>
+          </Alert>
+        )}
+
+        <div class="line-meta">
+          {linea.ultimaActualizacion && (
+            <p class="meta-item">
+              <Icon name="lucide:calendar" class="meta-icon" />
+              <strong>Última actualización:</strong> {new Date(linea.ultimaActualizacion).toLocaleDateString('es-AR')}
+            </p>
+          )}
+          {linea.fuente && (
+            <p class="meta-item">
+              <Icon name="lucide:link" class="meta-icon" />
+              <strong>Fuente:</strong> <a href={linea.fuente} target="_blank" rel="noopener noreferrer">Datos oficiales</a>
+            </p>
+          )}
+        </div>
+      </div>
+
+      <aside class="line-sidebar">
+        <AdSlot slot="sidebar-top" format="square" />
+      </aside>
     </div>
-    
-    {linea.notas && (
-      <div class="alert alert-warning">
-        {linea.notas}
-      </div>
-    )}
-    
-    <AdSense />
-    
-    <section class="section">
-      <h2>📍 Recorrido</h2>
-      
-      <div class="route-grid">
-        {linea.recorrido.ida.descripcion && (
-          <div class="route-card">
-            <h3>Ida</h3>
-            <p class="route-description">{linea.recorrido.ida.descripcion}</p>
-            {linea.recorrido.ida.calles.length > 0 && (
-              <ol class="route-list">
-                {linea.recorrido.ida.calles.map(calle => (
-                  <li>{calle}</li>
-                ))}
-              </ol>
-            )}
-          </div>
-        )}
-        
-        {linea.recorrido.vuelta.descripcion && (
-          <div class="route-card">
-            <h3>Vuelta</h3>
-            <p class="route-description">{linea.recorrido.vuelta.descripcion}</p>
-            {linea.recorrido.vuelta.calles.length > 0 && (
-              <ol class="route-list">
-                {linea.recorrido.vuelta.calles.map(calle => (
-                  <li>{calle}</li>
-                ))}
-              </ol>
-            )}
-          </div>
-        )}
-      </div>
-    </section>
-    
-    <section class="section">
-      <h2>🚏 Paradas principales</h2>
-      <ul class="stops-list">
-        {linea.paradasPrincipales.map(parada => (
-          <li>{parada}</li>
-        ))}
-      </ul>
-    </section>
-    
-    <AdSense />
-    
-    <section class="section">
-      <h2>🕐 Horarios</h2>
-      
-      <div class="schedule-grid">
-        <div class="schedule-card">
-          <h3>Lunes a Viernes</h3>
-          <p class="schedule-freq">{linea.horarios.lunesAViernes.descripcion}</p>
-          {linea.horarios.lunesAViernes.horarioInicio && linea.horarios.lunesAViernes.horarioFin && (
-            <p class="schedule-hours">
-              De {linea.horarios.lunesAViernes.horarioInicio} a {linea.horarios.lunesAViernes.horarioFin}
-            </p>
-          )}
-        </div>
-        
-        <div class="schedule-card">
-          <h3>Sábados</h3>
-          <p class="schedule-freq">{linea.horarios.sabados.descripcion}</p>
-          {linea.horarios.sabados.horarioInicio && linea.horarios.sabados.horarioFin && (
-            <p class="schedule-hours">
-              De {linea.horarios.sabados.horarioInicio} a {linea.horarios.sabados.horarioFin}
-            </p>
-          )}
-        </div>
-        
-        <div class="schedule-card">
-          <h3>Domingos y Feriados</h3>
-          <p class="schedule-freq">{linea.horarios.domingosYFeriados.descripcion}</p>
-          {linea.horarios.domingosYFeriados.horarioInicio && linea.horarios.domingosYFeriados.horarioFin && (
-            <p class="schedule-hours">
-              De {linea.horarios.domingosYFeriados.horarioInicio} a {linea.horarios.domingosYFeriados.horarioFin}
-            </p>
-          )}
-        </div>
-      </div>
-      
-      <div class="alert alert-info">
-        <strong>Nota:</strong> Los horarios pueden variar según condiciones climáticas, tráfico o eventos especiales. 
-        Consultá los horarios en la app Tu Bondi o en las paradas.
-      </div>
-    </section>
-    
-    <section class="section">
-      <h2>💰 Tarifas</h2>
-      <div class="tariffs">
-        <p><strong>Efectivo:</strong> {linea.tarifas.efectivo}</p>
-        <p><strong>Tarjeta Red Bus:</strong> {linea.tarifas.redBus}</p>
-        <p><a href="/guias/tarifas" class="btn">Ver tarifas actualizadas</a></p>
-      </div>
-    </section>
-    
-    {linea.mapsEmbedUrl && (
-      <section class="section">
-        <h2>🗺️ Mapa del recorrido</h2>
-        <div class="map-container">
-          <iframe 
-            src={linea.mapsEmbedUrl}
-            width="100%" 
-            height="450" 
-            style="border:0;" 
-            allowfullscreen="" 
-            loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
-      </section>
-    )}
-    
-    <section class="section">
-      <h2>ℹ️ Información adicional</h2>
-      <div class="info-box">
-        <p><strong>Fuente:</strong> {linea.fuente}</p>
-        <p class="info-disclaimer">
-          Esta información es recopilada de fuentes públicas. Para información oficial y actualizada, 
-          consulte <a href="https://www.cordoba.gob.ar" target="_blank" rel="noopener">Municipalidad de Córdoba</a> 
-          o <a href="https://tamse.gob.ar" target="_blank" rel="noopener">TAMSE</a>.
-        </p>
-      </div>
-    </section>
-    
-    <AdSense />
-    
-    <section class="section">
-      <h2>Líneas relacionadas</h2>
-      <p>Ver otras líneas que pasan por zonas similares:</p>
-      <p><a href="/lineas" class="btn">Ver todas las líneas</a></p>
-    </section>
   </div>
 </BaseLayout>
 
 <style>
-  .line-header {
-    display: flex;
-    gap: 2rem;
-    align-items: start;
-    margin-bottom: 2rem;
-    padding-bottom: 2rem;
-    border-bottom: 2px solid var(--color-border);
+  .page-container {
+    padding-top: var(--space-8);
+    padding-bottom: var(--space-12);
   }
-  
-  .line-number-large {
-    flex-shrink: 0;
-    width: 6rem;
-    height: 6rem;
+
+  .line-header {
+    margin-bottom: var(--space-8);
+    padding: var(--space-8);
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+    color: var(--color-white);
+    border-radius: var(--radius-lg);
+  }
+
+  .line-header-top {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-6);
+    margin-bottom: var(--space-6);
+  }
+
+  .line-number-badge {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--color-primary);
-    color: white;
-    border-radius: 1rem;
-    font-size: 3rem;
-    font-weight: 700;
-  }
-  
-  .line-description {
-    font-size: 1.25rem;
-    color: var(--color-text-light);
-    margin-bottom: 1rem;
-  }
-  
-  .meta {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    font-size: 0.875rem;
-    color: var(--color-text-light);
-  }
-  
-  .section {
-    margin: 3rem 0;
-  }
-  
-  .route-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 1.5rem;
-  }
-  
-  .route-card {
-    background: var(--color-bg-light);
-    border-radius: 0.5rem;
-    padding: 1.5rem;
-  }
-  
-  .route-description {
-    color: var(--color-text-light);
-    margin-bottom: 1rem;
-  }
-  
-  .route-list {
-    list-style-position: inside;
-    color: var(--color-text);
-  }
-  
-  .route-list li {
-    padding: 0.5rem 0;
-    border-bottom: 1px solid var(--color-border);
-  }
-  
-  .route-list li:last-child {
-    border-bottom: none;
-  }
-  
-  .stops-list {
-    list-style-position: inside;
-    margin-top: 1rem;
-  }
-  
-  .stops-list li {
-    padding: 0.75rem;
-    background: var(--color-bg-light);
-    margin-bottom: 0.5rem;
-    border-radius: 0.375rem;
-  }
-  
-  .schedule-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
-    margin-top: 1.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  .schedule-card {
-    background: white;
-    border: 2px solid var(--color-primary);
-    border-radius: 0.5rem;
-    padding: 1.5rem;
-  }
-  
-  .schedule-freq {
-    font-size: 1.25rem;
-    font-weight: 600;
+    gap: var(--space-2);
+    padding: var(--space-4) var(--space-6);
+    background-color: var(--color-white);
     color: var(--color-primary);
-    margin: 0.5rem 0;
+    border-radius: var(--radius-lg);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-h2);
+    flex-shrink: 0;
+    box-shadow: var(--shadow-md);
   }
-  
-  .schedule-hours {
-    color: var(--color-text-light);
+
+  .line-icon {
+    width: 32px;
+    height: 32px;
   }
-  
-  .tariffs {
-    background: var(--color-bg-light);
-    padding: 1.5rem;
-    border-radius: 0.5rem;
-    margin-top: 1rem;
+
+  .line-number-text {
+    line-height: 1;
   }
-  
-  .tariffs p {
-    margin-bottom: 1rem;
+
+  .line-header-info {
+    flex: 1;
   }
-  
-  .info-box {
-    background: var(--color-bg-light);
-    padding: 1.5rem;
-    border-radius: 0.5rem;
-    margin-top: 1rem;
+
+  .line-name {
+    font-size: var(--font-size-h1);
+    color: var(--color-white);
+    margin-bottom: var(--space-2);
   }
-  
-  .info-disclaimer {
-    font-size: 0.875rem;
-    color: var(--color-text-light);
-    margin-top: 1rem;
+
+  .line-company {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-size: var(--font-size-base);
+    color: var(--color-white);
+    opacity: 0.9;
+    margin: 0;
   }
-  
-  .map-container {
-    margin-top: 1rem;
-    border-radius: 0.5rem;
-    overflow: hidden;
+
+  .company-icon {
+    width: 18px;
+    height: 18px;
   }
-  
-  @media (max-width: 640px) {
-    .line-header {
-      flex-direction: column;
+
+  .line-route-summary {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-3);
+    padding: var(--space-4);
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: var(--radius-md);
+  }
+
+  .route-icon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .line-route-summary p {
+    margin: 0;
+    line-height: var(--line-height-normal);
+  }
+
+  .line-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+
+  .section {
+    margin-bottom: var(--space-8);
+  }
+
+  .section-title {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    font-size: var(--font-size-h3);
+    margin-bottom: var(--space-6);
+    padding-bottom: var(--space-4);
+    border-bottom: 2px solid var(--color-gray-200);
+  }
+
+  .section-title :global(svg) {
+    width: 28px;
+    height: 28px;
+    color: var(--color-primary);
+  }
+
+  .route-section {
+    margin-bottom: var(--space-8);
+  }
+
+  .route-section:last-child {
+    margin-bottom: 0;
+  }
+
+  .route-title {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    font-size: var(--font-size-h4);
+    margin-bottom: var(--space-4);
+  }
+
+  .route-subtitle {
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-regular);
+    color: var(--color-gray-600);
+  }
+
+  .route-streets {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: var(--space-2);
+  }
+
+  .route-streets li {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-2);
+    padding: var(--space-2);
+    background-color: var(--color-gray-50);
+    border-radius: var(--radius-sm);
+    font-size: var(--font-size-small);
+    color: var(--color-gray-700);
+  }
+
+  .street-icon {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    margin-top: 2px;
+    color: var(--color-gray-500);
+  }
+
+  .stops-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: var(--space-3);
+  }
+
+  .stops-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-3);
+    padding: var(--space-3);
+    background-color: var(--color-gray-50);
+    border-radius: var(--radius-md);
+    font-size: var(--font-size-base);
+    color: var(--color-gray-700);
+  }
+
+  .stop-icon {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    margin-top: 2px;
+    color: var(--color-primary);
+  }
+
+  .tarifas-content {
+    display: grid;
+    gap: var(--space-4);
+  }
+
+  .tarifa-item {
+    padding: var(--space-4);
+    background-color: var(--color-gray-50);
+    border-radius: var(--radius-md);
+    font-size: var(--font-size-base);
+    color: var(--color-gray-700);
+  }
+
+  .line-meta {
+    margin-top: var(--space-8);
+    padding: var(--space-6);
+    background-color: var(--color-gray-50);
+    border-radius: var(--radius-md);
+  }
+
+  .meta-item {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-2);
+    font-size: var(--font-size-small);
+    color: var(--color-gray-700);
+    margin-bottom: var(--space-3);
+  }
+
+  .meta-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .meta-icon {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    margin-top: 2px;
+    color: var(--color-gray-500);
+  }
+
+  .line-sidebar {
+    display: none;
+  }
+
+  @media (min-width: 1024px) {
+    .line-content {
+      grid-template-columns: 1fr 300px;
     }
-    
-    .line-number-large {
-      width: 4rem;
-      height: 4rem;
-      font-size: 2rem;
-    }
-    
-    .route-grid {
-      grid-template-columns: 1fr;
+
+    .line-sidebar {
+      display: block;
     }
   }
 </style>

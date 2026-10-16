@@ -1,77 +1,85 @@
 ---
-interface BreadcrumbItem {
+import { Icon } from 'astro-icon/components';
+
+interface Breadcrumb {
   label: string;
   href?: string;
 }
 
 interface Props {
-  items: BreadcrumbItem[];
+  items: Breadcrumb[];
+  class?: string;
 }
 
-const { items } = Astro.props;
-
-const structuredData = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": items.map((item, index) => ({
-    "@type": "ListItem",
-    "position": index + 1,
-    "name": item.label,
-    ...(item.href && { "item": `https://bondicordoba.com.ar${item.href}` })
-  }))
-};
+const { items, class: className = '' } = Astro.props;
 ---
 
-<nav aria-label="Breadcrumb" class="breadcrumb">
-  <ol>
-    {items.map((item, index) => (
-      <li>
-        {item.href ? (
-          <a href={item.href}>{item.label}</a>
-        ) : (
-          <span>{item.label}</span>
-        )}
-        {index < items.length - 1 && <span class="separator">/</span>}
-      </li>
-    ))}
+<nav class:list={['breadcrumbs', className]} aria-label="Navegación de migas de pan">
+  <ol class="breadcrumbs-list">
+    {items.map((item, index) => {
+      const isLast = index === items.length - 1;
+      return (
+        <li class="breadcrumbs-item">
+          {!isLast && item.href ? (
+            <a href={item.href} class="breadcrumbs-link">
+              {item.label}
+            </a>
+          ) : (
+            <span class="breadcrumbs-current" aria-current="page">
+              {item.label}
+            </span>
+          )}
+          {!isLast && (
+            <Icon name="lucide:chevron-right" class="breadcrumbs-separator" aria-hidden="true" />
+          )}
+        </li>
+      );
+    })}
   </ol>
 </nav>
 
-<script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
-
 <style>
-  .breadcrumb {
-    margin-bottom: 1.5rem;
-    padding: 0.75rem 0;
+  .breadcrumbs {
+    margin-bottom: var(--space-6);
   }
-  
-  .breadcrumb ol {
+
+  .breadcrumbs-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
+    align-items: center;
+    gap: var(--space-2);
     list-style: none;
-    font-size: 0.875rem;
+    margin: 0;
+    padding: 0;
   }
-  
-  .breadcrumb li {
+
+  .breadcrumbs-item {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: var(--space-2);
   }
-  
-  .breadcrumb a {
+
+  .breadcrumbs-link {
+    font-size: var(--font-size-small);
+    color: var(--color-gray-600);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+  }
+
+  .breadcrumbs-link:hover {
     color: var(--color-primary);
-  }
-  
-  .breadcrumb a:hover {
     text-decoration: underline;
   }
-  
-  .breadcrumb span:not(.separator) {
-    color: var(--color-text-light);
+
+  .breadcrumbs-current {
+    font-size: var(--font-size-small);
+    color: var(--color-gray-900);
+    font-weight: var(--font-weight-medium);
   }
-  
-  .separator {
-    color: var(--color-text-light);
+
+  .breadcrumbs-separator {
+    width: 14px;
+    height: 14px;
+    color: var(--color-gray-400);
   }
 </style>

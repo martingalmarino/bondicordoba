@@ -1,129 +1,154 @@
 ---
-import type { LineaColectivo } from '../types';
+import { Icon } from 'astro-icon/components';
 
 interface Props {
-  linea: LineaColectivo;
+  numero: string;
+  nombre?: string;
+  recorrido?: string;
+  empresa?: string;
+  href: string;
 }
 
-const { linea } = Astro.props;
+const { numero, nombre, recorrido, empresa, href } = Astro.props;
 ---
 
-<article class="line-card">
-  {linea.esEjemplo && (
-    <div class="example-badge">EJEMPLO</div>
-  )}
-  <div class="line-number">
-    <span>{linea.numero}</span>
-  </div>
-  <div class="line-info">
-    <h3 class="line-name">
-      <a href={`/lineas/${linea.numero}`}>{linea.nombre}</a>
-    </h3>
-    <p class="line-description">{linea.descripcionCorta}</p>
-    <div class="line-meta">
-      <span class="company">{linea.empresa}</span>
+<a href={href} class="line-card">
+  <div class="line-card-header">
+    <div class="line-number">
+      <Icon name="lucide:bus" class="line-icon" />
+      <span class="line-number-text">{numero}</span>
     </div>
-    {linea.recorrido.ida.calles.length > 0 && (
-      <div class="line-route">
-        <div class="route-section">
-          <strong>Ida:</strong> {linea.recorrido.ida.calles[0]} → {linea.recorrido.ida.calles[linea.recorrido.ida.calles.length - 1]}
-        </div>
-      </div>
+    {nombre && <h3 class="line-name">{nombre}</h3>}
+  </div>
+
+  <div class="line-card-body">
+    {recorrido && (
+      <p class="line-route">
+        <Icon name="lucide:route" class="route-icon" />
+        <span>{recorrido}</span>
+      </p>
+    )}
+    {empresa && (
+      <p class="line-company">
+        <Icon name="lucide:building-2" class="company-icon" />
+        <span>{empresa}</span>
+      </p>
     )}
   </div>
-</article>
+
+  <div class="line-card-footer">
+    <span class="line-card-link">
+      Ver detalles
+      <Icon name="lucide:chevron-right" class="chevron-icon" />
+    </span>
+  </div>
+</a>
 
 <style>
   .line-card {
-    position: relative;
     display: flex;
-    gap: 1rem;
-    background: white;
-    border: 1px solid var(--color-border);
-    border-radius: 0.5rem;
-    padding: 1.5rem;
-    transition: box-shadow 0.2s;
+    flex-direction: column;
+    gap: var(--space-3);
+    padding: var(--space-5);
+    background-color: var(--color-white);
+    border: 1px solid var(--color-gray-200);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-fast);
+    text-decoration: none;
+    color: inherit;
   }
-  
+
   .line-card:hover {
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--shadow-md);
+    border-color: var(--color-primary);
+    transform: translateY(-2px);
+    text-decoration: none;
   }
-  
-  .example-badge {
-    position: absolute;
-    top: 0.5rem;
-    right: 0.5rem;
-    background: #f59e0b;
-    color: white;
-    padding: 0.25rem 0.5rem;
-    border-radius: 0.25rem;
-    font-size: 0.75rem;
-    font-weight: 700;
+
+  .line-card-header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
   }
-  
+
   .line-number {
-    flex-shrink: 0;
-    width: 4rem;
-    height: 4rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--color-primary);
-    color: white;
-    border-radius: 0.5rem;
-    font-size: 1.5rem;
-    font-weight: 700;
+    gap: var(--space-2);
+    padding: var(--space-2) var(--space-4);
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border-radius: var(--radius-md);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-h4);
+    flex-shrink: 0;
   }
-  
-  .line-info {
-    flex: 1;
-    min-width: 0;
+
+  .line-icon {
+    width: 20px;
+    height: 20px;
   }
-  
+
+  .line-number-text {
+    line-height: 1;
+  }
+
   .line-name {
-    margin-bottom: 0.25rem;
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-gray-800);
+    margin: 0;
   }
-  
-  .line-name a {
-    color: var(--color-text);
+
+  .line-card-body {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
   }
-  
-  .line-name a:hover {
+
+  .line-route,
+  .line-company {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-2);
+    font-size: var(--font-size-small);
+    color: var(--color-gray-600);
+    margin: 0;
+  }
+
+  .route-icon,
+  .company-icon {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .line-card-footer {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: var(--space-2);
+    border-top: 1px solid var(--color-gray-200);
+  }
+
+  .line-card-link {
+    display: flex;
+    align-items: center;
+    gap: var(--space-1);
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-medium);
     color: var(--color-primary);
   }
-  
-  .line-description {
-    color: var(--color-text-light);
-    font-size: 0.875rem;
-    margin-bottom: 0.5rem;
+
+  .chevron-icon {
+    width: 16px;
+    height: 16px;
+    transition: transform var(--transition-fast);
   }
-  
-  .line-meta {
-    font-size: 0.875rem;
-    color: var(--color-text-light);
-    margin-bottom: 0.5rem;
-  }
-  
-  .line-route {
-    font-size: 0.875rem;
-    color: var(--color-text);
-  }
-  
-  .route-section {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.25rem;
-  }
-  
-  @media (max-width: 640px) {
-    .line-card {
-      flex-direction: column;
-    }
-    
-    .line-number {
-      width: 3rem;
-      height: 3rem;
-      font-size: 1.25rem;
-    }
+
+  .line-card:hover .chevron-icon {
+    transform: translateX(4px);
   }
 </style>

@@ -1,0 +1,94 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import Alert from '../components/Alert.astro';
+
+const breadcrumbs = [
+  { label: 'Inicio', href: '/' },
+  { label: 'Acerca de' }
+];
+---
+
+<BaseLayout title="Acerca de" description="Información sobre Bondi Córdoba, tu sitio de referencia para el transporte público en Córdoba Capital.">
+  <div class="container page-container">
+    <Breadcrumbs items={breadcrumbs} />
+
+    <article class="content">
+      <h1>Acerca de Bondi Córdoba</h1>
+
+      <p>
+        Bondi Córdoba es un sitio web dedicado a proporcionar información actualizada y confiable 
+        sobre las líneas de transporte público de Córdoba Capital, Argentina.
+      </p>
+
+      <h2>Nuestra misión</h2>
+      <p>
+        Facilitar el acceso a la información de transporte público para que los cordobeses y visitantes 
+        puedan moverse por la ciudad de manera más eficiente.
+      </p>
+
+      <h2>¿Qué encontrás en este sitio?</h2>
+      <ul>
+        <li>Listado completo de líneas de colectivo</li>
+        <li>Recorridos detallados de ida y vuelta</li>
+        <li>Horarios y frecuencias</li>
+        <li>Información sobre paradas principales</li>
+        <li>Datos de contacto de las empresas</li>
+      </ul>
+
+      <Alert variant="info">
+        <p>
+          Los horarios y recorridos publicados son referenciales. Te recomendamos siempre verificar 
+          esta información directamente con la empresa de transporte correspondiente.
+        </p>
+      </Alert>
+
+      <h2>Contacto</h2>
+      <p>
+        Si tenés sugerencias, correcciones o querés reportar información desactualizada, 
+        podés contactarnos a través de nuestros canales de comunicación.
+      </p>
+    </article>
+  </div>
+</BaseLayout>
+
+<style>
+  .page-container {
+    padding-top: var(--space-8);
+    padding-bottom: var(--space-12);
+  }
+
+  .content {
+    max-width: 800px;
+  }
+
+  .content h1 {
+    font-size: var(--font-size-h1);
+    margin-bottom: var(--space-6);
+  }
+
+  .content h2 {
+    font-size: var(--font-size-h2);
+    margin-top: var(--space-8);
+    margin-bottom: var(--space-4);
+  }
+
+  .content p {
+    color: var(--color-gray-700);
+    line-height: var(--line-height-relaxed);
+    margin-bottom: var(--space-4);
+  }
+
+  .content ul {
+    margin-bottom: var(--space-4);
+    padding-left: var(--space-6);
+    list-style-type: disc;
+    list-style-position: outside;
+  }
+
+  .content li {
+    color: var(--color-gray-700);
+    line-height: var(--line-height-relaxed);
+    margin-bottom: var(--space-2);
+  }
+</style>
