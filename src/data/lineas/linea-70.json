@@ -1,29 +1,10 @@
 {
   "numero": "70",
   "nombre": "Línea 70",
+  "esEjemplo": false,
   "empresa": "ERSA",
   "descripcionCorta": "Línea 70 - ERSA",
   "recorrido": {
-    "vuelta": {
-      "descripcion": "República Popular China S/N - Lola Mora 1586",
-      "calles": [
-        "República Popular China S/N",
-        "Av. República de China",
-        "Soldado Ramón A. Cabrera 7070",
-        "Soldado Ramón A. Cabrera 6925",
-        "Avenida Mahatma Ghandi 865",
-        "Avenida Mahatma Ghandi 603",
-        "Avenida Mahatma Ghandi 405",
-        "Avenida Mahatma Ghandi 321",
-        "Avenida Santiago Costamagna 6896",
-        "Avenida Santiago Costamagna 6998",
-        "Nicolás Mascardi 253",
-        "Esteban Pagliere 6925",
-        "Avenida Mahatma Ghandi 67",
-        "Avenida Ejército Argentino 6871",
-        "Avenida Colón 6325"
-      ]
-    },
     "ida": {
       "descripcion": "Lola Mora 1605 - República Popular China S/N",
       "calles": [
@@ -43,6 +24,26 @@
         "López y Planes 3901",
         "López y Planes 3747"
       ]
+    },
+    "vuelta": {
+      "descripcion": "República Popular China S/N - Lola Mora 1586",
+      "calles": [
+        "República Popular China S/N",
+        "Av. República de China",
+        "Soldado Ramón A. Cabrera 7070",
+        "Soldado Ramón A. Cabrera 6925",
+        "Avenida Mahatma Ghandi 865",
+        "Avenida Mahatma Ghandi 603",
+        "Avenida Mahatma Ghandi 405",
+        "Avenida Mahatma Ghandi 321",
+        "Avenida Santiago Costamagna 6896",
+        "Avenida Santiago Costamagna 6998",
+        "Nicolás Mascardi 253",
+        "Esteban Pagliere 6925",
+        "Avenida Mahatma Ghandi 67",
+        "Avenida Ejército Argentino 6871",
+        "Avenida Colón 6325"
+      ]
     }
   },
   "paradasPrincipales": [
@@ -55,11 +56,32 @@
     "José M. Solares 1363",
     "Lola Mora 1586"
   ],
-  "horarios": [],
-  "tarifas": [],
-  "mapsEmbedUrl": "https://www.google.com/maps/embed/v1/directions?key=YOUR_API_KEY&origin=-31.362899,-64.28151&destination=-31.427162,-64.11473&waypoints=-31.393356,-64.271296|-31.405879,-64.209868|-31.425555,-64.148864&mode=transit",
+  "horarios": {
+    "lunesAViernes": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "sabados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "domingosYFeriados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    }
+  },
+  "tarifas": {
+    "efectivo": "Consultá las tarifas vigentes con tu tarjeta SUBE",
+    "redBus": "Consultá descuentos disponibles con Red Bus"
+  },
+  "mapsEmbedUrl": "",
   "ultimaActualizacion": "2023-03-16",
   "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
-  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023); el recorrido puede haber cambiado. Verificá en la app Tu Bondi.",
-  "esEjemplo": false
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
 }

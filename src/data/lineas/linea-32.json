@@ -1,6 +1,7 @@
 {
   "numero": "32",
   "nombre": "Línea 32",
+  "esEjemplo": false,
   "empresa": "TAMSE",
   "descripcionCorta": "Línea 32 - TAMSE",
   "recorrido": {
@@ -55,11 +56,32 @@
     "Avenida Juan B. Justo 7970",
     "De La Huella 301"
   ],
-  "horarios": [],
-  "tarifas": [],
-  "mapsEmbedUrl": "https://www.google.com/maps/embed/v1/directions?key=YOUR_API_KEY&origin=-31.472733,-64.238069&destination=-31.309125965113683,-64.18292284011842&waypoints=-31.433647778360847,-64.18872177600862|-31.383162,-64.182354|-31.351254758362188,-64.17607784271242&mode=transit",
+  "horarios": {
+    "lunesAViernes": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "sabados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "domingosYFeriados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    }
+  },
+  "tarifas": {
+    "efectivo": "Consultá las tarifas vigentes con tu tarjeta SUBE",
+    "redBus": "Consultá descuentos disponibles con Red Bus"
+  },
+  "mapsEmbedUrl": "",
   "ultimaActualizacion": "2023-03-16",
   "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
-  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023); el recorrido puede haber cambiado. Verificá en la app Tu Bondi.",
-  "esEjemplo": false
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
 }

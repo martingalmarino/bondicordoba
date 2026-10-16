@@ -1,29 +1,10 @@
 {
   "numero": "75",
   "nombre": "Línea 75",
+  "esEjemplo": false,
   "empresa": "ERSA",
   "descripcionCorta": "Línea 75 - ERSA",
   "recorrido": {
-    "vuelta": {
-      "descripcion": "Zorzal 505 - Martín Cartechini 120",
-      "calles": [
-        "Zorzal 505",
-        "La Tablada 6348",
-        "La Tablada 6089",
-        "Nazca 683",
-        "Nazca 838",
-        "Juan Hauling 5717",
-        "Juncalillo 749",
-        "José Figueroa 607",
-        "José Figueroa 460",
-        "José Figueroa 301",
-        "José Figueroa 207",
-        "José Figueroa 11",
-        "Antonio Rosillo 84",
-        "Avenida Colón 5170",
-        "Avenida Colón 5063"
-      ]
-    },
     "ida": {
       "descripcion": "Martín Cartechini 152 - Calandria 452",
       "calles": [
@@ -43,6 +24,26 @@
         "López y Planes 2485",
         "López y Planes 2159"
       ]
+    },
+    "vuelta": {
+      "descripcion": "Zorzal 505 - Martín Cartechini 120",
+      "calles": [
+        "Zorzal 505",
+        "La Tablada 6348",
+        "La Tablada 6089",
+        "Nazca 683",
+        "Nazca 838",
+        "Juan Hauling 5717",
+        "Juncalillo 749",
+        "José Figueroa 607",
+        "José Figueroa 460",
+        "José Figueroa 301",
+        "José Figueroa 207",
+        "José Figueroa 11",
+        "Antonio Rosillo 84",
+        "Avenida Colón 5170",
+        "Avenida Colón 5063"
+      ]
     }
   },
   "paradasPrincipales": [
@@ -55,11 +56,32 @@
     "Argandoña 3184",
     "Martín Cartechini 120"
   ],
-  "horarios": [],
-  "tarifas": [],
-  "mapsEmbedUrl": "https://www.google.com/maps/embed/v1/directions?key=YOUR_API_KEY&origin=-31.385149374867805,-64.25987005233766&destination=-31.412105,-64.130078&waypoints=-31.39635,-64.250724|-31.40953677110481,-64.19708490371706|-31.420323,-64.145286&mode=transit",
+  "horarios": {
+    "lunesAViernes": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "sabados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "domingosYFeriados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    }
+  },
+  "tarifas": {
+    "efectivo": "Consultá las tarifas vigentes con tu tarjeta SUBE",
+    "redBus": "Consultá descuentos disponibles con Red Bus"
+  },
+  "mapsEmbedUrl": "",
   "ultimaActualizacion": "2023-03-16",
   "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
-  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023); el recorrido puede haber cambiado. Verificá en la app Tu Bondi.",
-  "esEjemplo": false
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
 }

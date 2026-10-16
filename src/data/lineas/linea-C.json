@@ -1,29 +1,10 @@
 {
   "numero": "C",
   "nombre": "Línea C",
+  "esEjemplo": false,
   "empresa": "TAMSE",
   "descripcionCorta": "Línea C - TAMSE",
   "recorrido": {
-    "vuelta": {
-      "descripcion": "San Jerónimo 3209 - Avenida Fuerza Aérea 3684",
-      "calles": [
-        "San Jerónimo 3209",
-        "San Jeronimo 2716-2724",
-        "Carlos Tejedor 1299",
-        "Bernardo de Irigoyen 1277",
-        "Bernardo de Irigoyen 1257",
-        "Obispo Maldonado 2111",
-        "Alejandro Carbó 1853",
-        "Juan Larrea 1527",
-        "Roma 388",
-        "Sarmiento 1323",
-        "Sarmiento 819",
-        "Santiago del Estero 344",
-        "Lima 13",
-        "Avenida General Paz 185",
-        "Avenida Vélez Sarsfield 352"
-      ]
-    },
     "ida": {
       "descripcion": "Avenida Fuerza Aérea 3039 - Entre Ríos 3320",
       "calles": [
@@ -43,6 +24,26 @@
         "Belgrano 305",
         "Belgrano 67"
       ]
+    },
+    "vuelta": {
+      "descripcion": "San Jerónimo 3209 - Avenida Fuerza Aérea 3684",
+      "calles": [
+        "San Jerónimo 3209",
+        "San Jeronimo 2716-2724",
+        "Carlos Tejedor 1299",
+        "Bernardo de Irigoyen 1277",
+        "Bernardo de Irigoyen 1257",
+        "Obispo Maldonado 2111",
+        "Alejandro Carbó 1853",
+        "Juan Larrea 1527",
+        "Roma 388",
+        "Sarmiento 1323",
+        "Sarmiento 819",
+        "Santiago del Estero 344",
+        "Lima 13",
+        "Avenida General Paz 185",
+        "Avenida Vélez Sarsfield 352"
+      ]
     }
   },
   "paradasPrincipales": [
@@ -55,11 +56,32 @@
     "Avenida Fuerza Aérea 2950",
     "Avenida Fuerza Aérea 3684"
   ],
-  "horarios": [],
-  "tarifas": [],
-  "mapsEmbedUrl": "https://www.google.com/maps/embed/v1/directions?key=YOUR_API_KEY&origin=-31.423837,-64.142792&destination=-31.431888,-64.236799&waypoints=-31.415774,-64.162535|-31.419434615762544,-64.18865203857423|-31.43038,-64.21456&mode=transit",
+  "horarios": {
+    "lunesAViernes": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "sabados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "domingosYFeriados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    }
+  },
+  "tarifas": {
+    "efectivo": "Consultá las tarifas vigentes con tu tarjeta SUBE",
+    "redBus": "Consultá descuentos disponibles con Red Bus"
+  },
+  "mapsEmbedUrl": "",
   "ultimaActualizacion": "2023-03-16",
   "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
-  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023); el recorrido puede haber cambiado. Verificá en la app Tu Bondi.",
-  "esEjemplo": false
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
 }

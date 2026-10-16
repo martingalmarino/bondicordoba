@@ -1,29 +1,10 @@
 {
   "numero": "71",
   "nombre": "Línea 71",
+  "esEjemplo": false,
   "empresa": "ERSA",
   "descripcionCorta": "Línea 71 - ERSA",
   "recorrido": {
-    "vuelta": {
-      "descripcion": "Avenida Carlos Federico Gauss 5739 - Avenida Circunvalación 4821",
-      "calles": [
-        "Avenida Carlos Federico Gauss 5739",
-        "Avenida Carlos Federico Gauss 5545",
-        "Avenida Carlos Federico Gauss 5345",
-        "Avenida Carlos Federico Gauss 5073",
-        "Avenida Carlos Federico Gauss 4909",
-        "Avenida Revolución Libertadora S/N",
-        "72 Chateau Reserva",
-        "Carcano S/N",
-        "Parque Chateau Carreras S/N",
-        "Acceso Feriar S/N",
-        "Dirección desconocida",
-        "Colectora S/N",
-        "Hornero S/N",
-        "Hornero 576",
-        "La Tablada 6348"
-      ]
-    },
     "ida": {
       "descripcion": "Avenida Circunvalación 4833 - Blas Pascal 5854",
       "calles": [
@@ -43,6 +24,26 @@
         "Avenida Concepción Arenal 799",
         "Bulevar Chacabuco 528"
       ]
+    },
+    "vuelta": {
+      "descripcion": "Avenida Carlos Federico Gauss 5739 - Avenida Circunvalación 4821",
+      "calles": [
+        "Avenida Carlos Federico Gauss 5739",
+        "Avenida Carlos Federico Gauss 5545",
+        "Avenida Carlos Federico Gauss 5345",
+        "Avenida Carlos Federico Gauss 5073",
+        "Avenida Carlos Federico Gauss 4909",
+        "Avenida Revolución Libertadora S/N",
+        "72 Chateau Reserva",
+        "Carcano S/N",
+        "Parque Chateau Carreras S/N",
+        "Acceso Feriar S/N",
+        "Dirección desconocida",
+        "Colectora S/N",
+        "Hornero S/N",
+        "Hornero 576",
+        "La Tablada 6348"
+      ]
     }
   },
   "paradasPrincipales": [
@@ -55,11 +56,32 @@
     "Avenida Haya De La Torre S/N",
     "Avenida Circunvalación 4821"
   ],
-  "horarios": [],
-  "tarifas": [],
-  "mapsEmbedUrl": "https://www.google.com/maps/embed/v1/directions?key=YOUR_API_KEY&origin=-31.355923,-64.250713&destination=-31.464286862535303,-64.20426249504091&waypoints=-31.386472849005422,-64.25170540809633|-31.405045,-64.232383|-31.42971,-64.18456&mode=transit",
+  "horarios": {
+    "lunesAViernes": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "sabados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "domingosYFeriados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    }
+  },
+  "tarifas": {
+    "efectivo": "Consultá las tarifas vigentes con tu tarjeta SUBE",
+    "redBus": "Consultá descuentos disponibles con Red Bus"
+  },
+  "mapsEmbedUrl": "",
   "ultimaActualizacion": "2023-03-16",
   "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
-  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023); el recorrido puede haber cambiado. Verificá en la app Tu Bondi.",
-  "esEjemplo": false
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
 }

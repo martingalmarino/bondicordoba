@@ -1,29 +1,10 @@
 {
   "numero": "61",
   "nombre": "Línea 61",
+  "esEjemplo": false,
   "empresa": "Coniferal",
   "descripcionCorta": "Línea 61 - Coniferal",
   "recorrido": {
-    "vuelta": {
-      "descripcion": "San Antonio 1543 - Panamá 2877",
-      "calles": [
-        "San Antonio 1543",
-        "Río Negro 3413",
-        "Doctor Horacio Martinez 3522",
-        "Doctor Horacio Martinez 3615",
-        "Doctor Horacio Martinez 3711",
-        "Cacheuta 4010",
-        "Dirk Henry Kloosterman 1351",
-        "Dirk Henry Kloosterman 1531",
-        "Miguel Ángel Palacio 1783",
-        "Huiliches 1193",
-        "Cacheuta 3991",
-        "Tafí 1120",
-        "Tronador 2985",
-        "Río Negro 2801",
-        "Carlos Luna 2806"
-      ]
-    },
     "ida": {
       "descripcion": "Costa Rica 2964 - Blvd. Renault S/N",
       "calles": [
@@ -43,6 +24,26 @@
         "Américo Vespucio 1667",
         "Américo Vespucio 1469"
       ]
+    },
+    "vuelta": {
+      "descripcion": "San Antonio 1543 - Panamá 2877",
+      "calles": [
+        "San Antonio 1543",
+        "Río Negro 3413",
+        "Doctor Horacio Martinez 3522",
+        "Doctor Horacio Martinez 3615",
+        "Doctor Horacio Martinez 3711",
+        "Cacheuta 4010",
+        "Dirk Henry Kloosterman 1351",
+        "Dirk Henry Kloosterman 1531",
+        "Miguel Ángel Palacio 1783",
+        "Huiliches 1193",
+        "Cacheuta 3991",
+        "Tafí 1120",
+        "Tronador 2985",
+        "Río Negro 2801",
+        "Carlos Luna 2806"
+      ]
     }
   },
   "paradasPrincipales": [
@@ -55,11 +56,32 @@
     "Copiapó 57",
     "Panamá 2877"
   ],
-  "horarios": [],
-  "tarifas": [],
-  "mapsEmbedUrl": "https://www.google.com/maps/embed/v1/directions?key=YOUR_API_KEY&origin=-31.446641438118025,-64.21819925308229&destination=-31.412891,-64.14763&waypoints=-31.443118,-64.215257|-31.42877,-64.19921|-31.42008999999999,-64.16918&mode=transit",
+  "horarios": {
+    "lunesAViernes": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "sabados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "domingosYFeriados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    }
+  },
+  "tarifas": {
+    "efectivo": "Consultá las tarifas vigentes con tu tarjeta SUBE",
+    "redBus": "Consultá descuentos disponibles con Red Bus"
+  },
+  "mapsEmbedUrl": "",
   "ultimaActualizacion": "2023-03-16",
   "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
-  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023); el recorrido puede haber cambiado. Verificá en la app Tu Bondi.",
-  "esEjemplo": false
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
 }

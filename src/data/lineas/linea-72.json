@@ -1,9 +1,14 @@
 {
-  "numero": "",
+  "numero": "72",
   "nombre": "72 por La Reserva",
+  "esEjemplo": false,
   "empresa": "ERSA",
-  "descripcionCorta": "Línea  - ERSA",
+  "descripcionCorta": "Línea 72 - ERSA",
   "recorrido": {
+    "ida": {
+      "descripcion": "",
+      "calles": []
+    },
     "vuelta": {
       "descripcion": "COLECTORA Y TROPEZON - AGUSTIN GARZON Y LOLA MORA",
       "calles": [
@@ -23,10 +28,6 @@
         "Carcano 75",
         "COLECTORA OESTE Y MAHATMA GHANDI"
       ]
-    },
-    "ida": {
-      "descripcion": "",
-      "calles": []
     }
   },
   "paradasPrincipales": [
@@ -39,11 +40,32 @@
     "Pasaje Sáenz Peña 4346",
     "AGUSTIN GARZON Y LOLA MORA"
   ],
-  "horarios": [],
-  "tarifas": [],
-  "mapsEmbedUrl": "https://www.google.com/maps/embed/v1/directions?key=YOUR_API_KEY&origin=-31.394553,-64.262592&destination=-31.427358,-64.114605&waypoints=-31.386432,-64.275607|-31.405273096964176,-64.21175792813301|-31.423559,-64.134166&mode=transit",
+  "horarios": {
+    "lunesAViernes": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "sabados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "domingosYFeriados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    }
+  },
+  "tarifas": {
+    "efectivo": "Consultá las tarifas vigentes con tu tarjeta SUBE",
+    "redBus": "Consultá descuentos disponibles con Red Bus"
+  },
+  "mapsEmbedUrl": "",
   "ultimaActualizacion": "2023-03-16",
   "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
-  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023); el recorrido puede haber cambiado. Verificá en la app Tu Bondi.",
-  "esEjemplo": false
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
 }

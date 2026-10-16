@@ -1,29 +1,10 @@
 {
   "numero": "A",
   "nombre": "Línea A",
+  "esEjemplo": false,
   "empresa": "TAMSE",
   "descripcionCorta": "Línea A - TAMSE",
   "recorrido": {
-    "vuelta": {
-      "descripcion": "Belgrano 1451 - Nicolás Avellaneda 4549",
-      "calles": [
-        "Belgrano 1451",
-        "Belgrano 1168",
-        "Belgrano 874",
-        "Belgrano 724",
-        "Belgrano 551",
-        "Belgrano 305",
-        "Tucumán 34",
-        "Tucumán 329",
-        "La Tablada 377",
-        "General Lavalleja 954",
-        "General Lavalleja 1280",
-        "Bedoya 661",
-        "General Justo José de Urquiza 1875",
-        "Urquiza 2088",
-        "Urquiza 2662"
-      ]
-    },
     "ida": {
       "descripcion": "Nicolás Avellaneda 4532 - Avenida Vélez Sarsfield 1419",
       "calles": [
@@ -43,6 +24,26 @@
         "Avenida Roque Sáenz Peña 1184",
         "Bulevar Las Heras 201"
       ]
+    },
+    "vuelta": {
+      "descripcion": "Belgrano 1451 - Nicolás Avellaneda 4549",
+      "calles": [
+        "Belgrano 1451",
+        "Belgrano 1168",
+        "Belgrano 874",
+        "Belgrano 724",
+        "Belgrano 551",
+        "Belgrano 305",
+        "Tucumán 34",
+        "Tucumán 329",
+        "La Tablada 377",
+        "General Lavalleja 954",
+        "General Lavalleja 1280",
+        "Bedoya 661",
+        "General Justo José de Urquiza 1875",
+        "Urquiza 2088",
+        "Urquiza 2662"
+      ]
     }
   },
   "paradasPrincipales": [
@@ -55,11 +56,32 @@
     "Mariano Fragueíro 4438",
     "Nicolás Avellaneda 4549"
   ],
-  "horarios": [],
-  "tarifas": [],
-  "mapsEmbedUrl": "https://www.google.com/maps/embed/v1/directions?key=YOUR_API_KEY&origin=-31.431648,-64.195225&destination=-31.36442014637081,-64.18694078922273&waypoints=-31.418357383073392,-64.18965619057417|-31.398127,-64.18626|-31.377465371077754,-64.1838098930359&mode=transit",
+  "horarios": {
+    "lunesAViernes": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "sabados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "domingosYFeriados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    }
+  },
+  "tarifas": {
+    "efectivo": "Consultá las tarifas vigentes con tu tarjeta SUBE",
+    "redBus": "Consultá descuentos disponibles con Red Bus"
+  },
+  "mapsEmbedUrl": "",
   "ultimaActualizacion": "2023-03-16",
   "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
-  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023); el recorrido puede haber cambiado. Verificá en la app Tu Bondi.",
-  "esEjemplo": false
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
 }

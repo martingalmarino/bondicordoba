@@ -1,0 +1,109 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import LineCard from '../../components/LineCard.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import AdSense from '../../components/AdSense.astro';
+import { getAllLineas } from '../../utils/lineas';
+
+const lineas = getAllLineas();
+
+const breadcrumbs = [
+  { label: 'Inicio', href: '/' },
+  { label: 'Líneas' }
+];
+---
+
+<BaseLayout 
+  title="Todas las líneas de colectivos de Córdoba Capital - BondiCórdoba"
+  description="Listado completo de todas las líneas de colectivos en Córdoba Capital. Consulta recorridos, horarios y paradas de cada línea."
+>
+  <div class="container">
+    <Breadcrumbs items={breadcrumbs} />
+    
+    <h1>Líneas de colectivos</h1>
+    <p class="subtitle">Listado completo de líneas disponibles en Córdoba Capital</p>
+    
+    <div class="alert alert-warning">
+      <strong>⚠️ Atención:</strong> Los datos mostrados actualmente son ejemplos para demostración. 
+      No los utilice para planificar viajes reales.
+    </div>
+    
+    <div class="search-box">
+      <input 
+        type="text" 
+        id="search-input"
+        placeholder="Buscar línea..."
+        class="search-input"
+      >
+    </div>
+    
+    <AdSense />
+    
+    <div id="lines-container" class="lines-grid">
+      {lineas.map(linea => (
+        <LineCard linea={linea} />
+      ))}
+    </div>
+    
+    {lineas.length === 0 && (
+      <div class="alert alert-info">
+        <p>No hay líneas disponibles en este momento. Estamos trabajando en agregar más información.</p>
+      </div>
+    )}
+  </div>
+</BaseLayout>
+
+<style>
+  .subtitle {
+    color: var(--color-text-light);
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+  }
+  
+  .search-box {
+    max-width: 600px;
+    margin: 2rem 0;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    border: 2px solid var(--color-border);
+    border-radius: 0.5rem;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  
+  .search-input:focus {
+    border-color: var(--color-primary);
+  }
+  
+  .lines-grid {
+    display: grid;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+</style>
+
+<script>
+  const searchInput = document.getElementById('search-input') as HTMLInputElement;
+  const linesContainer = document.getElementById('lines-container');
+  
+  if (searchInput && linesContainer) {
+    const lineCards = Array.from(linesContainer.children);
+    
+    searchInput.addEventListener('input', (e) => {
+      const query = (e.target as HTMLInputElement).value.toLowerCase();
+      
+      lineCards.forEach(card => {
+        const text = card.textContent?.toLowerCase() || '';
+        if (text.includes(query)) {
+          (card as HTMLElement).style.display = '';
+        } else {
+          (card as HTMLElement).style.display = 'none';
+        }
+      });
+    });
+  }
+</script>

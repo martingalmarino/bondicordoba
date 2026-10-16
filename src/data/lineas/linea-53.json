@@ -1,29 +1,10 @@
 {
   "numero": "53",
   "nombre": "Línea 53",
+  "esEjemplo": false,
   "empresa": "TAMSE",
   "descripcionCorta": "Línea 53 - TAMSE",
   "recorrido": {
-    "vuelta": {
-      "descripcion": "Mascachín 2052 - Ramón Farrate S/N",
-      "calles": [
-        "Mascachín 2052",
-        "Colorado 6385",
-        "Colorado 6210",
-        "Colorado 6062",
-        "Colorado 5958",
-        "Colorado 5904",
-        "Ushuaia 1901",
-        "Alto del Tala 5771",
-        "Cajamarca 1609",
-        "Forestieri 5743",
-        "Río Negro 5620",
-        "Río Negro 5508",
-        "Caracas 5424",
-        "Bogotá 1349",
-        "Río Negro 5233"
-      ]
-    },
     "ida": {
       "descripcion": "Ramón Farrate S/N - Colorado 6194",
       "calles": [
@@ -43,6 +24,26 @@
         "Bartolomé Hidalgo 1769",
         "Howard 1399"
       ]
+    },
+    "vuelta": {
+      "descripcion": "Mascachín 2052 - Ramón Farrate S/N",
+      "calles": [
+        "Mascachín 2052",
+        "Colorado 6385",
+        "Colorado 6210",
+        "Colorado 6062",
+        "Colorado 5958",
+        "Colorado 5904",
+        "Ushuaia 1901",
+        "Alto del Tala 5771",
+        "Cajamarca 1609",
+        "Forestieri 5743",
+        "Río Negro 5620",
+        "Río Negro 5508",
+        "Caracas 5424",
+        "Bogotá 1349",
+        "Río Negro 5233"
+      ]
     }
   },
   "paradasPrincipales": [
@@ -55,11 +56,32 @@
     "Francisco de Alarcón 1879",
     "Ramón Farrate S/N"
   ],
-  "horarios": [],
-  "tarifas": [],
-  "mapsEmbedUrl": "https://www.google.com/maps/embed/v1/directions?key=YOUR_API_KEY&origin=-31.489065381157054,-64.23386871814729&destination=-31.32464350483718,-64.17607784271242&waypoints=-31.469663113911647,-64.21325862407686|-31.411061345277684,-64.18655455112459|-31.374469309485992,-64.14655745029451&mode=transit",
+  "horarios": {
+    "lunesAViernes": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "sabados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "domingosYFeriados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    }
+  },
+  "tarifas": {
+    "efectivo": "Consultá las tarifas vigentes con tu tarjeta SUBE",
+    "redBus": "Consultá descuentos disponibles con Red Bus"
+  },
+  "mapsEmbedUrl": "",
   "ultimaActualizacion": "2023-03-16",
   "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
-  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023); el recorrido puede haber cambiado. Verificá en la app Tu Bondi.",
-  "esEjemplo": false
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
 }

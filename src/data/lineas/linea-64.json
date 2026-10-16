@@ -1,29 +1,10 @@
 {
   "numero": "64",
   "nombre": "Línea 64",
+  "esEjemplo": false,
   "empresa": "Coniferal",
   "descripcionCorta": "Línea 64 - Coniferal",
   "recorrido": {
-    "vuelta": {
-      "descripcion": "Costa Rica 2964 - Berna 3523",
-      "calles": [
-        "Costa Rica 2964",
-        "Los Mártires 23",
-        "24 de Septiembre 2701",
-        "Bajada de Piedra 2603",
-        "Sarmiento 2599",
-        "Libertad 2328",
-        "Sarmiento 2095",
-        "Eufrasio Loza 223",
-        "25 de Mayo 2031",
-        "25 de Mayo 1803",
-        "25 de Mayo 1516",
-        "25 de Mayo 1317",
-        "David Luque 278",
-        "Sarmiento 973",
-        "Sarmiento 333"
-      ]
-    },
     "ida": {
       "descripcion": "San Marino 4678 - Panamá 2999",
       "calles": [
@@ -43,6 +24,26 @@
         "Padre Lozano 2465",
         "Lagunilla 2508"
       ]
+    },
+    "vuelta": {
+      "descripcion": "Costa Rica 2964 - Berna 3523",
+      "calles": [
+        "Costa Rica 2964",
+        "Los Mártires 23",
+        "24 de Septiembre 2701",
+        "Bajada de Piedra 2603",
+        "Sarmiento 2599",
+        "Libertad 2328",
+        "Sarmiento 2095",
+        "Eufrasio Loza 223",
+        "25 de Mayo 2031",
+        "25 de Mayo 1803",
+        "25 de Mayo 1516",
+        "25 de Mayo 1317",
+        "David Luque 278",
+        "Sarmiento 973",
+        "Sarmiento 333"
+      ]
     }
   },
   "paradasPrincipales": [
@@ -55,11 +56,32 @@
     "Lagunilla 3338",
     "Berna 3523"
   ],
-  "horarios": [],
-  "tarifas": [],
-  "mapsEmbedUrl": "https://www.google.com/maps/embed/v1/directions?key=YOUR_API_KEY&origin=-31.413268,-64.146269&destination=-31.44887475647075,-64.24677014350893&waypoints=-31.41165000000001,-64.17105|-31.42646,-64.213|-31.43756,-64.2287&mode=transit",
+  "horarios": {
+    "lunesAViernes": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "sabados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "domingosYFeriados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    }
+  },
+  "tarifas": {
+    "efectivo": "Consultá las tarifas vigentes con tu tarjeta SUBE",
+    "redBus": "Consultá descuentos disponibles con Red Bus"
+  },
+  "mapsEmbedUrl": "",
   "ultimaActualizacion": "2023-03-16",
   "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
-  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023); el recorrido puede haber cambiado. Verificá en la app Tu Bondi.",
-  "esEjemplo": false
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
 }

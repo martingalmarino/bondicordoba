@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """
-Script para parsear el GTFS de Córdoba y generar archivos JSON de líneas de transporte.
+Script para parsear el GTFS de Córdoba y generar archivos JSON de líneas de transporte
+siguiendo el esquema de Astro del proyecto bondicordoba.
 """
 import csv
 import json
@@ -79,43 +80,33 @@ def get_street_names_from_stops(stops: List[Dict]) -> List[str]:
     streets = []
     for stop in stops:
         name = stop['stop_name']
-        # Muchas paradas en GTFS tienen formato "Calle1 y Calle2" o similar
-        # Tomamos el nombre de la parada como referencia de ubicación
         if name and name not in streets:
             streets.append(name)
     return streets[:15]  # Limitar a 15 para no tener listas muy largas
 
-def create_maps_embed_url(stops: List[Dict]) -> str:
-    """Crea una URL de Google Maps con las paradas."""
-    if not stops:
-        return ""
-    
-    # Usar la primera y última parada para crear una ruta
-    first = stops[0]
-    last = stops[-1]
-    
-    origin = f"{first['stop_lat']},{first['stop_lon']}"
-    destination = f"{last['stop_lat']},{last['stop_lon']}"
-    
-    # Agregar algunos waypoints intermedios si hay
-    waypoints = ""
-    if len(stops) > 2:
-        # Tomar hasta 3 paradas intermedias
-        middle_indices = [len(stops) // 4, len(stops) // 2, 3 * len(stops) // 4]
-        middle_stops = [stops[i] for i in middle_indices if i < len(stops)]
-        waypoint_coords = [f"{s['stop_lat']},{s['stop_lon']}" for s in middle_stops]
-        if waypoint_coords:
-            waypoints = "&waypoints=" + "|".join(waypoint_coords)
-    
-    return f"https://www.google.com/maps/embed/v1/directions?key=YOUR_API_KEY&origin={origin}&destination={destination}{waypoints}&mode=transit"
-
 def parse_route(route: Dict, agencies: List[Dict], trips: List[Dict], 
                 stop_times: List[Dict], stops: List[Dict]) -> Dict[str, Any]:
-    """Parsea una ruta del GTFS y la convierte al formato JSON requerido."""
+    """Parsea una ruta del GTFS y la convierte al formato JSON requerido (esquema Astro)."""
     
     route_id = route['route_id']
     route_number = route['route_short_name'].strip()
-    route_name = route['route_long_name'].strip() or f"Línea {route_number}"
+    route_long_name = route['route_long_name'].strip()
+    
+    # Si no hay número, usar el ID de la ruta
+    if not route_number:
+        if route_long_name:
+            # Intentar extraer número del nombre
+            import re
+            match = re.search(r'\d+', route_long_name)
+            if match:
+                route_number = match.group()
+            else:
+                # Si es texto (como "AEROBUS"), usar el texto
+                route_number = route_long_name.split()[0] if route_long_name else route_id
+        else:
+            route_number = route_id
+    
+    route_name = route_long_name or f"Línea {route_number}"
     
     # Obtener empresa
     agency_name = get_agency_name(route['agency_id'], agencies)
@@ -130,7 +121,8 @@ def parse_route(route: Dict, agencies: List[Dict], trips: List[Dict],
         trips_by_direction[direction].append(trip)
     
     # Procesar recorridos (ida y vuelta)
-    recorridos = {}
+    recorrido_ida = {"descripcion": "", "calles": []}
+    recorrido_vuelta = {"descripcion": "", "calles": []}
     
     for direction, dir_trips in trips_by_direction.items():
         if not dir_trips:
@@ -143,9 +135,6 @@ def parse_route(route: Dict, agencies: List[Dict], trips: List[Dict],
         if not trip_stops:
             continue
         
-        # Determinar si es ida o vuelta
-        direction_key = "vuelta" if direction == "1" else "ida"
-        
         # Descripción del recorrido
         if len(trip_stops) >= 2:
             descripcion = f"{trip_stops[0]['stop_name']} - {trip_stops[-1]['stop_name']}"
@@ -155,52 +144,59 @@ def parse_route(route: Dict, agencies: List[Dict], trips: List[Dict],
         # Calles (nombres de paradas como referencia)
         calles = get_street_names_from_stops(trip_stops)
         
-        recorridos[direction_key] = {
-            "descripcion": descripcion,
-            "calles": calles
-        }
+        # Determinar si es ida o vuelta
+        if direction == "0":
+            recorrido_ida = {"descripcion": descripcion, "calles": calles}
+        else:
+            recorrido_vuelta = {"descripcion": descripcion, "calles": calles}
     
-    # Si no hay vuelta, dejar el objeto vacío
-    if "ida" not in recorridos:
-        recorridos["ida"] = {
-            "descripcion": "",
-            "calles": []
-        }
-    if "vuelta" not in recorridos:
-        recorridos["vuelta"] = {
-            "descripcion": "",
-            "calles": []
-        }
-    
-    # Paradas principales (usar las de ida)
+    # Paradas principales (usar las de ida o el primer viaje disponible)
     paradas_principales = []
     if route_trips:
         sample_trip = route_trips[0]
         trip_stops = get_trip_stops(sample_trip['trip_id'], stop_times, stops)
         paradas_principales = extract_main_stops(trip_stops)
     
-    # Crear URL de Google Maps
-    maps_url = ""
-    if route_trips:
-        sample_trip = route_trips[0]
-        trip_stops = get_trip_stops(sample_trip['trip_id'], stop_times, stops)
-        maps_url = create_maps_embed_url(trip_stops)
-    
-    # Crear objeto JSON
+    # Crear objeto JSON con el esquema de Astro
     linea_data = {
         "numero": route_number,
         "nombre": route_name,
+        "esEjemplo": False,
         "empresa": agency_name,
         "descripcionCorta": f"Línea {route_number} - {agency_name}",
-        "recorrido": recorridos,
+        "recorrido": {
+            "ida": recorrido_ida,
+            "vuelta": recorrido_vuelta
+        },
         "paradasPrincipales": paradas_principales,
-        "horarios": [],
-        "tarifas": [],
-        "mapsEmbedUrl": maps_url,
+        "horarios": {
+            "lunesAViernes": {
+                "tipo": "frecuencia",
+                "descripcion": "Información de horarios pendiente de confirmación",
+                "horarioInicio": "",
+                "horarioFin": ""
+            },
+            "sabados": {
+                "tipo": "frecuencia",
+                "descripcion": "Información de horarios pendiente de confirmación",
+                "horarioInicio": "",
+                "horarioFin": ""
+            },
+            "domingosYFeriados": {
+                "tipo": "frecuencia",
+                "descripcion": "Información de horarios pendiente de confirmación",
+                "horarioInicio": "",
+                "horarioFin": ""
+            }
+        },
+        "tarifas": {
+            "efectivo": "Consultá las tarifas vigentes con tu tarjeta SUBE",
+            "redBus": "Consultá descuentos disponibles con Red Bus"
+        },
+        "mapsEmbedUrl": "",
         "ultimaActualizacion": "2023-03-16",
         "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
-        "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023); el recorrido puede haber cambiado. Verificá en la app Tu Bondi.",
-        "esEjemplo": False
+        "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
     }
     
     return linea_data
@@ -215,7 +211,7 @@ def main():
     trips = load_csv('trips.txt')
     stops = load_csv('stops.txt')
     
-    print(f"Encontradas {len(routes)} rutas")
+    print(f"Encontradas {len(routes)} rutas en el GTFS")
     print("Cargando stop_times... (puede tomar un momento)")
     stop_times = load_csv('stop_times.txt')
     print(f"Cargados {len(stop_times)} registros de stop_times")
@@ -223,24 +219,34 @@ def main():
     # Crear directorio de salida si no existe
     os.makedirs(OUTPUT_DIR, exist_ok=True)
     
+    # Eliminar archivos de ejemplo
+    for ejemplo in ['linea-ejemplo-1.json', 'linea-ejemplo-2.json', 'linea-ejemplo-3.json']:
+        ejemplo_path = os.path.join(OUTPUT_DIR, ejemplo)
+        if os.path.exists(ejemplo_path):
+            os.remove(ejemplo_path)
+            print(f"✓ Eliminado {ejemplo}")
+    
     # Procesar cada ruta
     print("\nProcesando rutas...")
     processed = 0
+    lineas_generadas = []
     
     for route in routes:
         try:
             route_number = route['route_short_name'].strip()
+            route_long_name = route['route_long_name'].strip()
+            
             if not route_number:
                 # Usar parte del nombre largo si no hay número
-                route_long = route['route_long_name'].strip()
-                if route_long:
+                if route_long_name:
                     # Intentar extraer un número del nombre
                     import re
-                    match = re.search(r'\d+', route_long)
+                    match = re.search(r'\d+', route_long_name)
                     if match:
                         route_number = match.group()
                     else:
-                        route_number = route['route_id']
+                        # Si no hay número, usar el texto (ej: AEROBUS)
+                        route_number = route_long_name.split()[0] if route_long_name else route['route_id']
                 else:
                     route_number = route['route_id']
             
@@ -255,6 +261,13 @@ def main():
             with open(filepath, 'w', encoding='utf-8') as f:
                 json.dump(linea_data, f, ensure_ascii=False, indent=2)
             
+            lineas_generadas.append({
+                "numero": linea_data['numero'],
+                "nombre": linea_data['nombre'],
+                "empresa": linea_data['empresa'],
+                "archivo": filename
+            })
+            
             processed += 1
             
         except Exception as e:
@@ -264,33 +277,21 @@ def main():
     print(f"\n✓ Procesadas {processed} líneas exitosamente")
     print(f"✓ Archivos guardados en {OUTPUT_DIR}")
     
-    # Crear índice de líneas
-    index_data = {
-        "totalLineas": processed,
-        "ultimaActualizacion": "2023-03-16",
-        "fuente": "GTFS oficial Municipalidad de Córdoba",
-        "lineas": []
-    }
+    # Listar líneas generadas por empresa
+    empresas = {}
+    for linea in lineas_generadas:
+        emp = linea['empresa']
+        if emp not in empresas:
+            empresas[emp] = []
+        empresas[emp].append(linea['numero'])
     
-    # Listar todas las líneas generadas
-    for filename in sorted(os.listdir(OUTPUT_DIR)):
-        if filename.endswith('.json') and filename.startswith('linea-'):
-            filepath = os.path.join(OUTPUT_DIR, filename)
-            with open(filepath, 'r', encoding='utf-8') as f:
-                data = json.load(f)
-                index_data['lineas'].append({
-                    "numero": data['numero'],
-                    "nombre": data['nombre'],
-                    "empresa": data['empresa'],
-                    "archivo": filename
-                })
+    print("\n=== RESUMEN ===")
+    for empresa in sorted(empresas.keys()):
+        lineas = sorted(empresas[empresa], key=lambda x: (int(x) if x.isdigit() else 999, x))
+        print(f"{empresa}: {len(lineas)} líneas")
+        print(f"  {', '.join(lineas)}")
     
-    # Guardar índice
-    index_path = os.path.join(OUTPUT_DIR, 'index.json')
-    with open(index_path, 'w', encoding='utf-8') as f:
-        json.dump(index_data, f, ensure_ascii=False, indent=2)
-    
-    print(f"✓ Índice creado en {index_path}")
+    print(f"\nTotal: {processed} líneas")
 
 if __name__ == '__main__':
     main()

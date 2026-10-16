@@ -1,29 +1,10 @@
 {
   "numero": "12",
   "nombre": "Línea 12",
+  "esEjemplo": false,
   "empresa": "Coniferal",
   "descripcionCorta": "Línea 12 - Coniferal",
   "recorrido": {
-    "vuelta": {
-      "descripcion": "José María Rosa S/N - Juan Vucetich 7899",
-      "calles": [
-        "José María Rosa S/N",
-        "Onofre Marimón 6850",
-        "Gabriel Ortega 8589",
-        "Eugenio Pizzolatto 7006",
-        "Eugenio Pizzolatto 7120",
-        "Eugenio Pizzolatto 7199",
-        "Malalco 7146",
-        "Malalco 7317",
-        "Malalco 7459",
-        "Malalco 7501",
-        "Valerio Beta 7421",
-        "Valerio Beta 7135",
-        "Italo Bizio 7252",
-        "José Massetti 8164",
-        "José Massetti 8065"
-      ]
-    },
     "ida": {
       "descripcion": "Av. Vucetich 8010 - Guillermo Furlong 8772",
       "calles": [
@@ -43,6 +24,26 @@
         "Sánchez De Loria 5082",
         "Avenida Amadeo Sabattini 5514"
       ]
+    },
+    "vuelta": {
+      "descripcion": "José María Rosa S/N - Juan Vucetich 7899",
+      "calles": [
+        "José María Rosa S/N",
+        "Onofre Marimón 6850",
+        "Gabriel Ortega 8589",
+        "Eugenio Pizzolatto 7006",
+        "Eugenio Pizzolatto 7120",
+        "Eugenio Pizzolatto 7199",
+        "Malalco 7146",
+        "Malalco 7317",
+        "Malalco 7459",
+        "Malalco 7501",
+        "Valerio Beta 7421",
+        "Valerio Beta 7135",
+        "Italo Bizio 7252",
+        "José Massetti 8164",
+        "José Massetti 8065"
+      ]
     }
   },
   "paradasPrincipales": [
@@ -55,11 +56,32 @@
     "Avenida Amadeo Sabattini 5642",
     "Juan Vucetich 7899"
   ],
-  "horarios": [],
-  "tarifas": [],
-  "mapsEmbedUrl": "https://www.google.com/maps/embed/v1/directions?key=YOUR_API_KEY&origin=-31.318126999526896,-64.25775647163393&destination=-31.465078,-64.078563&waypoints=-31.34412,-64.25191|-31.39541,-64.2014|-31.43834,-64.12874&mode=transit",
+  "horarios": {
+    "lunesAViernes": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "sabados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "domingosYFeriados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    }
+  },
+  "tarifas": {
+    "efectivo": "Consultá las tarifas vigentes con tu tarjeta SUBE",
+    "redBus": "Consultá descuentos disponibles con Red Bus"
+  },
+  "mapsEmbedUrl": "",
   "ultimaActualizacion": "2023-03-16",
   "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
-  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023); el recorrido puede haber cambiado. Verificá en la app Tu Bondi.",
-  "esEjemplo": false
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
 }

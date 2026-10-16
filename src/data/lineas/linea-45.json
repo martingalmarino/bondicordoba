@@ -1,29 +1,10 @@
 {
   "numero": "45",
   "nombre": "Línea 45",
+  "esEjemplo": false,
   "empresa": "ERSA",
   "descripcionCorta": "Línea 45 - ERSA",
   "recorrido": {
-    "vuelta": {
-      "descripcion": "Avenida Cruz Roja Argentina 321 - Doctor José A. Ceballos 405",
-      "calles": [
-        "Avenida Cruz Roja Argentina 321",
-        "Maestro Marcelo López 3520",
-        "Avenida Ingeniero Medina Allende S/N",
-        "Bv. Enrique Barros S/N",
-        "Avenida Enrique Barros S/N",
-        "Avenida Los Nogales S/N",
-        "Bulevar Chacabuco 518",
-        "Bulevar San Juan 33",
-        "Bulevar San Juan 540",
-        "Rodriguez Peña 124",
-        "Avenida Colón 1184",
-        "Avenida Colón 1390",
-        "Avenida Colón 1590",
-        "Avenida Colón 1886",
-        "Avenida Colón 2042"
-      ]
-    },
     "ida": {
       "descripcion": "Doctor José A. Ceballos 404 - Maestro Marcelo López 3442",
       "calles": [
@@ -43,6 +24,26 @@
         "Luz Vieyra Méndez 519",
         "Luz Vieyra Méndez 368"
       ]
+    },
+    "vuelta": {
+      "descripcion": "Avenida Cruz Roja Argentina 321 - Doctor José A. Ceballos 405",
+      "calles": [
+        "Avenida Cruz Roja Argentina 321",
+        "Maestro Marcelo López 3520",
+        "Avenida Ingeniero Medina Allende S/N",
+        "Bv. Enrique Barros S/N",
+        "Avenida Enrique Barros S/N",
+        "Avenida Los Nogales S/N",
+        "Bulevar Chacabuco 518",
+        "Bulevar San Juan 33",
+        "Bulevar San Juan 540",
+        "Rodriguez Peña 124",
+        "Avenida Colón 1184",
+        "Avenida Colón 1390",
+        "Avenida Colón 1590",
+        "Avenida Colón 1886",
+        "Avenida Colón 2042"
+      ]
     }
   },
   "paradasPrincipales": [
@@ -55,11 +56,32 @@
     "Avenida Santa Ana 5999",
     "Doctor José A. Ceballos 405"
   ],
-  "horarios": [],
-  "tarifas": [],
-  "mapsEmbedUrl": "https://www.google.com/maps/embed/v1/directions?key=YOUR_API_KEY&origin=-31.442239,-64.193764&destination=-31.404093,-64.269082&waypoints=-31.407269,-64.204406|-31.396066,-64.246995|-31.409175,-64.263014&mode=transit",
+  "horarios": {
+    "lunesAViernes": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "sabados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "domingosYFeriados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    }
+  },
+  "tarifas": {
+    "efectivo": "Consultá las tarifas vigentes con tu tarjeta SUBE",
+    "redBus": "Consultá descuentos disponibles con Red Bus"
+  },
+  "mapsEmbedUrl": "",
   "ultimaActualizacion": "2023-03-16",
   "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
-  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023); el recorrido puede haber cambiado. Verificá en la app Tu Bondi.",
-  "esEjemplo": false
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
 }

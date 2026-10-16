@@ -1,29 +1,10 @@
 {
-  "numero": "",
+  "numero": "43",
   "nombre": "43 por Maipu",
+  "esEjemplo": false,
   "empresa": "ERSA",
-  "descripcionCorta": "Línea  - ERSA",
+  "descripcionCorta": "Línea 43 - ERSA",
   "recorrido": {
-    "vuelta": {
-      "descripcion": "Av Sabattini 1350 - Doctor José A. Ceballos 404",
-      "calles": [
-        "Av Sabattini 1350",
-        "Bajada del Pucará S/N",
-        "Avenida Gobernador Amadeo Sabattini S/N",
-        "Av. Amadeo Sabattini 645-359",
-        "Bulevar Arturo Illia 437",
-        "Bulevar San Juan 15",
-        "Bv San Juan y M T de Alvear",
-        "Belgrano 175",
-        "27 de Abril 529",
-        "27 de Abril 754",
-        "Monte Carmelo 1101",
-        "Bulevar San Juan 1251",
-        "Bulevar San Juan 1488",
-        "RIO NEGRO Y SANTA ANA",
-        "Avenida Santa Ana 1700"
-      ]
-    },
     "ida": {
       "descripcion": "Doctor José A. Ceballos 404 - Av Sabattini 1350",
       "calles": [
@@ -43,6 +24,26 @@
         "Paine 5236",
         "Avenida Santa Ana 5068"
       ]
+    },
+    "vuelta": {
+      "descripcion": "Av Sabattini 1350 - Doctor José A. Ceballos 404",
+      "calles": [
+        "Av Sabattini 1350",
+        "Bajada del Pucará S/N",
+        "Avenida Gobernador Amadeo Sabattini S/N",
+        "Av. Amadeo Sabattini 645-359",
+        "Bulevar Arturo Illia 437",
+        "Bulevar San Juan 15",
+        "Bv San Juan y M T de Alvear",
+        "Belgrano 175",
+        "27 de Abril 529",
+        "27 de Abril 754",
+        "Monte Carmelo 1101",
+        "Bulevar San Juan 1251",
+        "Bulevar San Juan 1488",
+        "RIO NEGRO Y SANTA ANA",
+        "Avenida Santa Ana 1700"
+      ]
     }
   },
   "paradasPrincipales": [
@@ -55,11 +56,32 @@
     "ALTO ALEGRE Y MANUEL NAMUNCURA",
     "Doctor José A. Ceballos 404"
   ],
-  "horarios": [],
-  "tarifas": [],
-  "mapsEmbedUrl": "https://www.google.com/maps/embed/v1/directions?key=YOUR_API_KEY&origin=-31.429692,-64.169673&destination=-31.404043,-64.269193&waypoints=-31.416665,-64.203082|-31.412247108063173,-64.2313638702035|-31.415447,-64.258502&mode=transit",
+  "horarios": {
+    "lunesAViernes": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "sabados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "domingosYFeriados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    }
+  },
+  "tarifas": {
+    "efectivo": "Consultá las tarifas vigentes con tu tarjeta SUBE",
+    "redBus": "Consultá descuentos disponibles con Red Bus"
+  },
+  "mapsEmbedUrl": "",
   "ultimaActualizacion": "2023-03-16",
   "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
-  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023); el recorrido puede haber cambiado. Verificá en la app Tu Bondi.",
-  "esEjemplo": false
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
 }

@@ -1,29 +1,10 @@
 {
   "numero": "84",
   "nombre": "Línea 84",
+  "esEjemplo": false,
   "empresa": "TAMSE",
   "descripcionCorta": "Línea 84 - TAMSE",
   "recorrido": {
-    "vuelta": {
-      "descripcion": "Avenida Colón 878 - General Manuel Savio S/N",
-      "calles": [
-        "Avenida Colón 878",
-        "Avenida Colón 529",
-        "Avenida Colón 153",
-        "Avenida Emilio Olmos 84",
-        "Avenida Emilio Olmos 448",
-        "Bulevar Juan Domingo Perón 60",
-        "Bulevar Juan Domingo Perón 360",
-        "Boulevard Juan Domingo Perón 450",
-        "Bulevar Juan Domingo Perón 712",
-        "Esposos Curie S/N",
-        "Asunción 1700",
-        "Avenida Morcillo S/N",
-        "Ferroviarios S/N",
-        "Ferroviarios 2021",
-        "Ferroviarios 2145"
-      ]
-    },
     "ida": {
       "descripcion": "Avenida General Manuel Savio 5277 - Rodriguez Peña 74",
       "calles": [
@@ -43,6 +24,26 @@
         "Alonso de Reynoso 4219",
         "Alonso de Reynoso 4115"
       ]
+    },
+    "vuelta": {
+      "descripcion": "Avenida Colón 878 - General Manuel Savio S/N",
+      "calles": [
+        "Avenida Colón 878",
+        "Avenida Colón 529",
+        "Avenida Colón 153",
+        "Avenida Emilio Olmos 84",
+        "Avenida Emilio Olmos 448",
+        "Bulevar Juan Domingo Perón 60",
+        "Bulevar Juan Domingo Perón 360",
+        "Boulevard Juan Domingo Perón 450",
+        "Bulevar Juan Domingo Perón 712",
+        "Esposos Curie S/N",
+        "Asunción 1700",
+        "Avenida Morcillo S/N",
+        "Ferroviarios S/N",
+        "Ferroviarios 2021",
+        "Ferroviarios 2145"
+      ]
     }
   },
   "paradasPrincipales": [
@@ -55,11 +56,32 @@
     "Alonso de Miranda 4077",
     "General Manuel Savio S/N"
   ],
-  "horarios": [],
-  "tarifas": [],
-  "mapsEmbedUrl": "https://www.google.com/maps/embed/v1/directions?key=YOUR_API_KEY&origin=-31.41014568808497,-64.19491231441499&destination=-31.46177936483405,-64.12747621536256&waypoints=-31.427820871145183,-64.16165828704835|-31.433062,-64.143704|-31.444239,-64.135201&mode=transit",
+  "horarios": {
+    "lunesAViernes": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "sabados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "domingosYFeriados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    }
+  },
+  "tarifas": {
+    "efectivo": "Consultá las tarifas vigentes con tu tarjeta SUBE",
+    "redBus": "Consultá descuentos disponibles con Red Bus"
+  },
+  "mapsEmbedUrl": "",
   "ultimaActualizacion": "2023-03-16",
   "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
-  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023); el recorrido puede haber cambiado. Verificá en la app Tu Bondi.",
-  "esEjemplo": false
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
 }

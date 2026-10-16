@@ -1,29 +1,10 @@
 {
   "numero": "82",
   "nombre": "Línea 82",
+  "esEjemplo": false,
   "empresa": "TAMSE",
   "descripcionCorta": "Línea 82 - TAMSE",
   "recorrido": {
-    "vuelta": {
-      "descripcion": "Viracocha 6788 - General Manuel Savio 5615",
-      "calles": [
-        "Viracocha 6788",
-        "Pablo Buitrago 7042",
-        "Pablo Buitrago 7184",
-        "Pablo Buitrago 7372",
-        "Avenida Ricardo Rojas 8238",
-        "Avenida Ricardo Rojas 8358",
-        "Avenida Ricardo Rojas 8536",
-        "Avenida Ricardo Rojas 8782",
-        "Avenida Ricardo Rojas 8952",
-        "Manuel de Falla 7349",
-        "Manuel de Falla 7003",
-        "Avenida Recta Martinoli 8945",
-        "Avenida Recta Martinoli 8855",
-        "Avenida Recta Martinoli 8778",
-        "Avenida Recta Martinoli 8580"
-      ]
-    },
     "ida": {
       "descripcion": "Avenida General Manuel Savio 5570 - Avenida Recta Martinoli 7900",
       "calles": [
@@ -43,6 +24,26 @@
         "Chirinos de Posadas 5042",
         "Chirinos de Posadas 4799"
       ]
+    },
+    "vuelta": {
+      "descripcion": "Viracocha 6788 - General Manuel Savio 5615",
+      "calles": [
+        "Viracocha 6788",
+        "Pablo Buitrago 7042",
+        "Pablo Buitrago 7184",
+        "Pablo Buitrago 7372",
+        "Avenida Ricardo Rojas 8238",
+        "Avenida Ricardo Rojas 8358",
+        "Avenida Ricardo Rojas 8536",
+        "Avenida Ricardo Rojas 8782",
+        "Avenida Ricardo Rojas 8952",
+        "Manuel de Falla 7349",
+        "Manuel de Falla 7003",
+        "Avenida Recta Martinoli 8945",
+        "Avenida Recta Martinoli 8855",
+        "Avenida Recta Martinoli 8778",
+        "Avenida Recta Martinoli 8580"
+      ]
     }
   },
   "paradasPrincipales": [
@@ -55,11 +56,32 @@
     "Francisco de la Retana 4991",
     "General Manuel Savio 5615"
   ],
-  "horarios": [],
-  "tarifas": [],
-  "mapsEmbedUrl": "https://www.google.com/maps/embed/v1/directions?key=YOUR_API_KEY&origin=-31.34221107537277,-64.27339911460878&destination=-31.460187,-64.123743&waypoints=-31.35588,-64.24259|-31.40645092054237,-64.20790493488313|-31.439108172558107,-64.14911627769472&mode=transit",
+  "horarios": {
+    "lunesAViernes": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "sabados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "domingosYFeriados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    }
+  },
+  "tarifas": {
+    "efectivo": "Consultá las tarifas vigentes con tu tarjeta SUBE",
+    "redBus": "Consultá descuentos disponibles con Red Bus"
+  },
+  "mapsEmbedUrl": "",
   "ultimaActualizacion": "2023-03-16",
   "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
-  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023); el recorrido puede haber cambiado. Verificá en la app Tu Bondi.",
-  "esEjemplo": false
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
 }

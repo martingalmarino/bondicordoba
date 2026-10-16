@@ -1,29 +1,10 @@
 {
-  "numero": "",
+  "numero": "25",
   "nombre": "25 por pq Empresarial",
+  "esEjemplo": false,
   "empresa": "ERSA",
-  "descripcionCorta": "Línea  - ERSA",
+  "descripcionCorta": "Línea 25 - ERSA",
   "recorrido": {
-    "vuelta": {
-      "descripcion": "AV. GRAL. OHGGINS Y 2° ROTONDA - UNIVERSIDAD SIGLO 21",
-      "calles": [
-        "AV. GRAL. OHGGINS Y 2° ROTONDA",
-        "Mauricio Revigliono S/N",
-        "Calle Publica 5 S/n",
-        "Calle Principal Quintas de Flores S/N",
-        "Camino a San Carlos 6167",
-        "Mauricio Revigliono 1902",
-        "Camino a San Carlos 5807",
-        "Camino a San Carlos 5593",
-        "Camino a San Carlos 5361",
-        "Cno. San Carlos 4500-4501",
-        "Bernardo O´Higgins 4725",
-        "Avenida Bernardo O'Higgins 4362",
-        "Bernardo O´Higgins 4336",
-        "Avenida Bernardo O'Higgins 3923",
-        "BERNARDO O´HIGGINS Y CELSO BARRIOS"
-      ]
-    },
     "ida": {
       "descripcion": "UNIVERSIDAD SIGLO 21 - AV. GRAL. OHGGINS Y 2° ROTONDA",
       "calles": [
@@ -43,6 +24,26 @@
         "Avenida Monseñor Pablo Cabrera 4676",
         "Av. Monseñor Pablo Cabrera 4407"
       ]
+    },
+    "vuelta": {
+      "descripcion": "AV. GRAL. OHGGINS Y 2° ROTONDA - UNIVERSIDAD SIGLO 21",
+      "calles": [
+        "AV. GRAL. OHGGINS Y 2° ROTONDA",
+        "Mauricio Revigliono S/N",
+        "Calle Publica 5 S/n",
+        "Calle Principal Quintas de Flores S/N",
+        "Camino a San Carlos 6167",
+        "Mauricio Revigliono 1902",
+        "Camino a San Carlos 5807",
+        "Camino a San Carlos 5593",
+        "Camino a San Carlos 5361",
+        "Cno. San Carlos 4500-4501",
+        "Bernardo O´Higgins 4725",
+        "Avenida Bernardo O'Higgins 4362",
+        "Bernardo O´Higgins 4336",
+        "Avenida Bernardo O'Higgins 3923",
+        "BERNARDO O´HIGGINS Y CELSO BARRIOS"
+      ]
     }
   },
   "paradasPrincipales": [
@@ -55,11 +56,32 @@
     "Avenida La Voz del Interior 5602",
     "UNIVERSIDAD SIGLO 21"
   ],
-  "horarios": [],
-  "tarifas": [],
-  "mapsEmbedUrl": "https://www.google.com/maps/embed/v1/directions?key=YOUR_API_KEY&origin=-31.481592,-64.168602&destination=-31.323177,-64.222872&waypoints=-31.454874,-64.1689|-31.402023,-64.1979|-31.374996,-64.206371&mode=transit",
+  "horarios": {
+    "lunesAViernes": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "sabados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "domingosYFeriados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    }
+  },
+  "tarifas": {
+    "efectivo": "Consultá las tarifas vigentes con tu tarjeta SUBE",
+    "redBus": "Consultá descuentos disponibles con Red Bus"
+  },
+  "mapsEmbedUrl": "",
   "ultimaActualizacion": "2023-03-16",
   "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
-  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023); el recorrido puede haber cambiado. Verificá en la app Tu Bondi.",
-  "esEjemplo": false
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
 }

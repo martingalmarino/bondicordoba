@@ -1,29 +1,10 @@
 {
   "numero": "36",
   "nombre": "Línea 36",
+  "esEjemplo": false,
   "empresa": "TAMSE",
   "descripcionCorta": "Línea 36 - TAMSE",
   "recorrido": {
-    "vuelta": {
-      "descripcion": "Icho Cruz 100 - Avenida Juan B. Justo S/N",
-      "calles": [
-        "Icho Cruz 100",
-        "Las Peñas 5869",
-        "Laboulaye 199",
-        "Laboulaye 323",
-        "Laboulaye 452",
-        "Laboulaye 580",
-        "La Falda 5813",
-        "La Falda 5529",
-        "Gobernación 774",
-        "Gobernación 982",
-        "Gobernación 1172",
-        "Gobernación 1332",
-        "Río Negro 5220",
-        "Río Negro 5108",
-        "Río Negro 4979"
-      ]
-    },
     "ida": {
       "descripcion": "Avenida Juan B. Justo S/N - De Mauro 99",
       "calles": [
@@ -43,6 +24,26 @@
         "Mariano Fragueíro 4840",
         "Mariano Fragueíro 4670"
       ]
+    },
+    "vuelta": {
+      "descripcion": "Icho Cruz 100 - Avenida Juan B. Justo S/N",
+      "calles": [
+        "Icho Cruz 100",
+        "Las Peñas 5869",
+        "Laboulaye 199",
+        "Laboulaye 323",
+        "Laboulaye 452",
+        "Laboulaye 580",
+        "La Falda 5813",
+        "La Falda 5529",
+        "Gobernación 774",
+        "Gobernación 982",
+        "Gobernación 1172",
+        "Gobernación 1332",
+        "Río Negro 5220",
+        "Río Negro 5108",
+        "Río Negro 4979"
+      ]
     }
   },
   "paradasPrincipales": [
@@ -55,11 +56,32 @@
     "Horacio Anasagasti 125",
     "Avenida Juan B. Justo S/N"
   ],
-  "horarios": [],
-  "tarifas": [],
-  "mapsEmbedUrl": "https://www.google.com/maps/embed/v1/directions?key=YOUR_API_KEY&origin=-31.481119,-64.205443&destination=-31.325376698021792,-64.17556285858156&waypoints=-31.450966,-64.201226|-31.399304,-64.194102|-31.359629,-64.183781&mode=transit",
+  "horarios": {
+    "lunesAViernes": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "sabados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "domingosYFeriados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    }
+  },
+  "tarifas": {
+    "efectivo": "Consultá las tarifas vigentes con tu tarjeta SUBE",
+    "redBus": "Consultá descuentos disponibles con Red Bus"
+  },
+  "mapsEmbedUrl": "",
   "ultimaActualizacion": "2023-03-16",
   "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
-  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023); el recorrido puede haber cambiado. Verificá en la app Tu Bondi.",
-  "esEjemplo": false
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
 }

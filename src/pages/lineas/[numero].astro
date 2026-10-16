@@ -1,0 +1,364 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import AdSense from '../../components/AdSense.astro';
+import { getAllLineas, getLineaByNumero } from '../../utils/lineas';
+import type { GetStaticPaths } from 'astro';
+
+export const getStaticPaths = (() => {
+  const lineas = getAllLineas();
+  return lineas.map(linea => ({
+    params: { numero: linea.numero },
+    props: { linea }
+  }));
+}) satisfies GetStaticPaths;
+
+const { linea } = Astro.props;
+
+const breadcrumbs = [
+  { label: 'Inicio', href: '/' },
+  { label: 'Líneas', href: '/lineas' },
+  { label: `Línea ${linea.numero}` }
+];
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": `Línea ${linea.numero} - ${linea.nombre}`,
+  "description": linea.descripcionCorta,
+  "datePublished": linea.ultimaActualizacion,
+  "dateModified": linea.ultimaActualizacion,
+  "author": {
+    "@type": "Organization",
+    "name": "BondiCórdoba"
+  }
+};
+---
+
+<BaseLayout 
+  title={`Línea ${linea.numero} Córdoba: recorrido y horarios 2026 - BondiCórdoba`}
+  description={`Línea ${linea.numero} de colectivos en Córdoba Capital. ${linea.descripcionCorta}. Consulta recorridos, horarios, paradas y tarifas actualizadas.`}
+  structuredData={structuredData}
+>
+  <div class="container">
+    <Breadcrumbs items={breadcrumbs} />
+    
+    {linea.esEjemplo && (
+      <div class="alert alert-warning">
+        <strong>⚠️ DATOS DE EJEMPLO:</strong> Esta información es ficticia y solo para demostración. 
+        No utilice estos datos para planificar viajes reales.
+      </div>
+    )}
+    
+    <div class="line-header">
+      <div class="line-number-large">{linea.numero}</div>
+      <div>
+        <h1>{linea.nombre}</h1>
+        <p class="line-description">{linea.descripcionCorta}</p>
+        <div class="meta">
+          <span><strong>Empresa:</strong> {linea.empresa}</span>
+          <span><strong>Última actualización:</strong> {new Date(linea.ultimaActualizacion).toLocaleDateString('es-AR')}</span>
+        </div>
+      </div>
+    </div>
+    
+    {linea.notas && (
+      <div class="alert alert-warning">
+        {linea.notas}
+      </div>
+    )}
+    
+    <AdSense />
+    
+    <section class="section">
+      <h2>📍 Recorrido</h2>
+      
+      <div class="route-grid">
+        {linea.recorrido.ida.descripcion && (
+          <div class="route-card">
+            <h3>Ida</h3>
+            <p class="route-description">{linea.recorrido.ida.descripcion}</p>
+            {linea.recorrido.ida.calles.length > 0 && (
+              <ol class="route-list">
+                {linea.recorrido.ida.calles.map(calle => (
+                  <li>{calle}</li>
+                ))}
+              </ol>
+            )}
+          </div>
+        )}
+        
+        {linea.recorrido.vuelta.descripcion && (
+          <div class="route-card">
+            <h3>Vuelta</h3>
+            <p class="route-description">{linea.recorrido.vuelta.descripcion}</p>
+            {linea.recorrido.vuelta.calles.length > 0 && (
+              <ol class="route-list">
+                {linea.recorrido.vuelta.calles.map(calle => (
+                  <li>{calle}</li>
+                ))}
+              </ol>
+            )}
+          </div>
+        )}
+      </div>
+    </section>
+    
+    <section class="section">
+      <h2>🚏 Paradas principales</h2>
+      <ul class="stops-list">
+        {linea.paradasPrincipales.map(parada => (
+          <li>{parada}</li>
+        ))}
+      </ul>
+    </section>
+    
+    <AdSense />
+    
+    <section class="section">
+      <h2>🕐 Horarios</h2>
+      
+      <div class="schedule-grid">
+        <div class="schedule-card">
+          <h3>Lunes a Viernes</h3>
+          <p class="schedule-freq">{linea.horarios.lunesAViernes.descripcion}</p>
+          {linea.horarios.lunesAViernes.horarioInicio && linea.horarios.lunesAViernes.horarioFin && (
+            <p class="schedule-hours">
+              De {linea.horarios.lunesAViernes.horarioInicio} a {linea.horarios.lunesAViernes.horarioFin}
+            </p>
+          )}
+        </div>
+        
+        <div class="schedule-card">
+          <h3>Sábados</h3>
+          <p class="schedule-freq">{linea.horarios.sabados.descripcion}</p>
+          {linea.horarios.sabados.horarioInicio && linea.horarios.sabados.horarioFin && (
+            <p class="schedule-hours">
+              De {linea.horarios.sabados.horarioInicio} a {linea.horarios.sabados.horarioFin}
+            </p>
+          )}
+        </div>
+        
+        <div class="schedule-card">
+          <h3>Domingos y Feriados</h3>
+          <p class="schedule-freq">{linea.horarios.domingosYFeriados.descripcion}</p>
+          {linea.horarios.domingosYFeriados.horarioInicio && linea.horarios.domingosYFeriados.horarioFin && (
+            <p class="schedule-hours">
+              De {linea.horarios.domingosYFeriados.horarioInicio} a {linea.horarios.domingosYFeriados.horarioFin}
+            </p>
+          )}
+        </div>
+      </div>
+      
+      <div class="alert alert-info">
+        <strong>Nota:</strong> Los horarios pueden variar según condiciones climáticas, tráfico o eventos especiales. 
+        Consultá los horarios en la app Tu Bondi o en las paradas.
+      </div>
+    </section>
+    
+    <section class="section">
+      <h2>💰 Tarifas</h2>
+      <div class="tariffs">
+        <p><strong>Efectivo:</strong> {linea.tarifas.efectivo}</p>
+        <p><strong>Tarjeta Red Bus:</strong> {linea.tarifas.redBus}</p>
+        <p><a href="/guias/tarifas" class="btn">Ver tarifas actualizadas</a></p>
+      </div>
+    </section>
+    
+    {linea.mapsEmbedUrl && (
+      <section class="section">
+        <h2>🗺️ Mapa del recorrido</h2>
+        <div class="map-container">
+          <iframe 
+            src={linea.mapsEmbedUrl}
+            width="100%" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+    )}
+    
+    <section class="section">
+      <h2>ℹ️ Información adicional</h2>
+      <div class="info-box">
+        <p><strong>Fuente:</strong> {linea.fuente}</p>
+        <p class="info-disclaimer">
+          Esta información es recopilada de fuentes públicas. Para información oficial y actualizada, 
+          consulte <a href="https://www.cordoba.gob.ar" target="_blank" rel="noopener">Municipalidad de Córdoba</a> 
+          o <a href="https://tamse.gob.ar" target="_blank" rel="noopener">TAMSE</a>.
+        </p>
+      </div>
+    </section>
+    
+    <AdSense />
+    
+    <section class="section">
+      <h2>Líneas relacionadas</h2>
+      <p>Ver otras líneas que pasan por zonas similares:</p>
+      <p><a href="/lineas" class="btn">Ver todas las líneas</a></p>
+    </section>
+  </div>
+</BaseLayout>
+
+<style>
+  .line-header {
+    display: flex;
+    gap: 2rem;
+    align-items: start;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid var(--color-border);
+  }
+  
+  .line-number-large {
+    flex-shrink: 0;
+    width: 6rem;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-primary);
+    color: white;
+    border-radius: 1rem;
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  
+  .line-description {
+    font-size: 1.25rem;
+    color: var(--color-text-light);
+    margin-bottom: 1rem;
+  }
+  
+  .meta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    color: var(--color-text-light);
+  }
+  
+  .section {
+    margin: 3rem 0;
+  }
+  
+  .route-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 1.5rem;
+  }
+  
+  .route-card {
+    background: var(--color-bg-light);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+  }
+  
+  .route-description {
+    color: var(--color-text-light);
+    margin-bottom: 1rem;
+  }
+  
+  .route-list {
+    list-style-position: inside;
+    color: var(--color-text);
+  }
+  
+  .route-list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--color-border);
+  }
+  
+  .route-list li:last-child {
+    border-bottom: none;
+  }
+  
+  .stops-list {
+    list-style-position: inside;
+    margin-top: 1rem;
+  }
+  
+  .stops-list li {
+    padding: 0.75rem;
+    background: var(--color-bg-light);
+    margin-bottom: 0.5rem;
+    border-radius: 0.375rem;
+  }
+  
+  .schedule-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .schedule-card {
+    background: white;
+    border: 2px solid var(--color-primary);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+  }
+  
+  .schedule-freq {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin: 0.5rem 0;
+  }
+  
+  .schedule-hours {
+    color: var(--color-text-light);
+  }
+  
+  .tariffs {
+    background: var(--color-bg-light);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .tariffs p {
+    margin-bottom: 1rem;
+  }
+  
+  .info-box {
+    background: var(--color-bg-light);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .info-disclaimer {
+    font-size: 0.875rem;
+    color: var(--color-text-light);
+    margin-top: 1rem;
+  }
+  
+  .map-container {
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
+  
+  @media (max-width: 640px) {
+    .line-header {
+      flex-direction: column;
+    }
+    
+    .line-number-large {
+      width: 4rem;
+      height: 4rem;
+      font-size: 2rem;
+    }
+    
+    .route-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

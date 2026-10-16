@@ -1,29 +1,10 @@
 {
   "numero": "54",
   "nombre": "Línea 54",
+  "esEjemplo": false,
   "empresa": "TAMSE",
   "descripcionCorta": "Línea 54 - TAMSE",
   "recorrido": {
-    "vuelta": {
-      "descripcion": "Bajada del Pucará S/N - Ramón Farrate S/N",
-      "calles": [
-        "Bajada del Pucará S/N",
-        "Avenida Gobernador Amadeo Sabattini S/N",
-        "Bulevar Arturo Illia 532",
-        "Illia 323",
-        "Bulevar San Juan 15",
-        "Belgrano 51",
-        "Tucumán 199-99",
-        "Tucumán 323",
-        "La Rioja 143",
-        "Catamarca 110",
-        "Avenida Maipú 434",
-        "Avenida Maipú 668",
-        "Fray Mamerto Esquiú 1194",
-        "Avenida Juan B. Justo 2238",
-        "Avenida Juan B. Justo 2378"
-      ]
-    },
     "ida": {
       "descripcion": "Ramón Farrate S/N - Avenida Gobernador Amadeo Sabattini S/N",
       "calles": [
@@ -43,6 +24,26 @@
         "Tucumán 198",
         "Chachapoyas S/N"
       ]
+    },
+    "vuelta": {
+      "descripcion": "Bajada del Pucará S/N - Ramón Farrate S/N",
+      "calles": [
+        "Bajada del Pucará S/N",
+        "Avenida Gobernador Amadeo Sabattini S/N",
+        "Bulevar Arturo Illia 532",
+        "Illia 323",
+        "Bulevar San Juan 15",
+        "Belgrano 51",
+        "Tucumán 199-99",
+        "Tucumán 323",
+        "La Rioja 143",
+        "Catamarca 110",
+        "Avenida Maipú 434",
+        "Avenida Maipú 668",
+        "Fray Mamerto Esquiú 1194",
+        "Avenida Juan B. Justo 2238",
+        "Avenida Juan B. Justo 2378"
+      ]
     }
   },
   "paradasPrincipales": [
@@ -55,11 +56,32 @@
     "Avenida Rancagua 4394",
     "Ramón Farrate S/N"
   ],
-  "horarios": [],
-  "tarifas": [],
-  "mapsEmbedUrl": "https://www.google.com/maps/embed/v1/directions?key=YOUR_API_KEY&origin=-31.429249023305704,-64.16998386383058&destination=-31.32464350483718,-64.17607784271242&waypoints=-31.397935,-64.175756|-31.374620450956034,-64.15722191333772|-31.362102,-64.133098&mode=transit",
+  "horarios": {
+    "lunesAViernes": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "sabados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "domingosYFeriados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    }
+  },
+  "tarifas": {
+    "efectivo": "Consultá las tarifas vigentes con tu tarjeta SUBE",
+    "redBus": "Consultá descuentos disponibles con Red Bus"
+  },
+  "mapsEmbedUrl": "",
   "ultimaActualizacion": "2023-03-16",
   "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
-  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023); el recorrido puede haber cambiado. Verificá en la app Tu Bondi.",
-  "esEjemplo": false
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
 }

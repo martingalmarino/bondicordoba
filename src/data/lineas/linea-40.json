@@ -1,29 +1,10 @@
 {
   "numero": "40",
   "nombre": "Línea 40",
+  "esEjemplo": false,
   "empresa": "ERSA",
   "descripcionCorta": "Línea 40 - ERSA",
   "recorrido": {
-    "vuelta": {
-      "descripcion": "Juan L. Orrego 4379 - José Cortes Funes 6597",
-      "calles": [
-        "Juan L. Orrego 4379",
-        "Zorrilla de San Martín 1555",
-        "Dardo Cuneo 1563",
-        "Constancio C. Vigil 1219",
-        "Alfonsina Storni 1171",
-        "Alfonsina Storni 1013",
-        "Juan Montalvo 4702",
-        "Alfonsina Storni 665",
-        "Alfonsina Storni 509",
-        "Alfonsina Storni 261",
-        "Alfonsina Storni 29",
-        "Avenida Juan B. Justo 5181",
-        "Avenida Juan B. Justo 5001",
-        "Avenida Juan B. Justo 4773",
-        "Avenida Juan B. Justo 4491"
-      ]
-    },
     "ida": {
       "descripcion": "Doctor José A. Ceballos 404 - Alfonsina Storni 1198",
       "calles": [
@@ -43,6 +24,26 @@
         "Antonio Sobral 393",
         "Peralta y Tejeda 171"
       ]
+    },
+    "vuelta": {
+      "descripcion": "Juan L. Orrego 4379 - José Cortes Funes 6597",
+      "calles": [
+        "Juan L. Orrego 4379",
+        "Zorrilla de San Martín 1555",
+        "Dardo Cuneo 1563",
+        "Constancio C. Vigil 1219",
+        "Alfonsina Storni 1171",
+        "Alfonsina Storni 1013",
+        "Juan Montalvo 4702",
+        "Alfonsina Storni 665",
+        "Alfonsina Storni 509",
+        "Alfonsina Storni 261",
+        "Alfonsina Storni 29",
+        "Avenida Juan B. Justo 5181",
+        "Avenida Juan B. Justo 5001",
+        "Avenida Juan B. Justo 4773",
+        "Avenida Juan B. Justo 4491"
+      ]
     }
   },
   "paradasPrincipales": [
@@ -55,11 +56,32 @@
     "Francisco de Bengolea 310",
     "José Cortes Funes 6597"
   ],
-  "horarios": [],
-  "tarifas": [],
-  "mapsEmbedUrl": "https://www.google.com/maps/embed/v1/directions?key=YOUR_API_KEY&origin=-31.360046,-64.152206&destination=-31.407096,-64.269049&waypoints=-31.387293,-64.178438|-31.413025,-64.204611|-31.399166,-64.257129&mode=transit",
+  "horarios": {
+    "lunesAViernes": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "sabados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "domingosYFeriados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    }
+  },
+  "tarifas": {
+    "efectivo": "Consultá las tarifas vigentes con tu tarjeta SUBE",
+    "redBus": "Consultá descuentos disponibles con Red Bus"
+  },
+  "mapsEmbedUrl": "",
   "ultimaActualizacion": "2023-03-16",
   "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
-  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023); el recorrido puede haber cambiado. Verificá en la app Tu Bondi.",
-  "esEjemplo": false
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
 }

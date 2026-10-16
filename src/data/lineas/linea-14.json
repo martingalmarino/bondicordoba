@@ -1,29 +1,10 @@
 {
   "numero": "14",
   "nombre": "Línea 14",
+  "esEjemplo": false,
   "empresa": "Coniferal",
   "descripcionCorta": "Línea 14 - Coniferal",
   "recorrido": {
-    "vuelta": {
-      "descripcion": "José Ignacio De La Roza S/N - Guillermo Furlong 8772",
-      "calles": [
-        "José Ignacio De La Roza S/N",
-        "Calingasta 5812",
-        "Calingasta 5619",
-        "Calingasta 5307",
-        "Avenida Cangallo 2896",
-        "Avenida Cangallo 3040",
-        "Avenida Cangallo 3118",
-        "Antonio Sáenz 5201",
-        "Avenida Amadeo Sabattini 5077",
-        "Avenida Amadeo Sabattini 5023",
-        "Avenida Gobernador Amadeo Sabattini 4818",
-        "Carnerillo 2199",
-        "Avenida Amadeo Sabattini 4319",
-        "Avenida Amadeo Sabattini 4289",
-        "Centeno 3852"
-      ]
-    },
     "ida": {
       "descripcion": "Torre Revello S/N - Tulumba S/N",
       "calles": [
@@ -43,6 +24,26 @@
         "Julio Tristany 8339",
         "Julio Tristany 8216"
       ]
+    },
+    "vuelta": {
+      "descripcion": "José Ignacio De La Roza S/N - Guillermo Furlong 8772",
+      "calles": [
+        "José Ignacio De La Roza S/N",
+        "Calingasta 5812",
+        "Calingasta 5619",
+        "Calingasta 5307",
+        "Avenida Cangallo 2896",
+        "Avenida Cangallo 3040",
+        "Avenida Cangallo 3118",
+        "Antonio Sáenz 5201",
+        "Avenida Amadeo Sabattini 5077",
+        "Avenida Amadeo Sabattini 5023",
+        "Avenida Gobernador Amadeo Sabattini 4818",
+        "Carnerillo 2199",
+        "Avenida Amadeo Sabattini 4319",
+        "Avenida Amadeo Sabattini 4289",
+        "Centeno 3852"
+      ]
     }
   },
   "paradasPrincipales": [
@@ -55,11 +56,32 @@
     "Octavio Suárez 7893",
     "Guillermo Furlong 8772"
   ],
-  "horarios": [],
-  "tarifas": [],
-  "mapsEmbedUrl": "https://www.google.com/maps/embed/v1/directions?key=YOUR_API_KEY&origin=-31.446568213664136,-64.10931229591371&destination=-31.317476240755934,-64.25894737243654&waypoints=-31.43304816833342,-64.15686249732973|-31.38472,-64.22039|-31.34328,-64.24523&mode=transit",
+  "horarios": {
+    "lunesAViernes": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "sabados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "domingosYFeriados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    }
+  },
+  "tarifas": {
+    "efectivo": "Consultá las tarifas vigentes con tu tarjeta SUBE",
+    "redBus": "Consultá descuentos disponibles con Red Bus"
+  },
+  "mapsEmbedUrl": "",
   "ultimaActualizacion": "2023-03-16",
   "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
-  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023); el recorrido puede haber cambiado. Verificá en la app Tu Bondi.",
-  "esEjemplo": false
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
 }

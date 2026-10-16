@@ -1,29 +1,10 @@
 {
   "numero": "19",
   "nombre": "Línea 19",
+  "esEjemplo": false,
   "empresa": "Coniferal",
   "descripcionCorta": "Línea 19 - Coniferal",
   "recorrido": {
-    "vuelta": {
-      "descripcion": "Ricardo Santos 10498 - Avenida Cruz Roja Argentina 658",
-      "calles": [
-        "Ricardo Santos 10498",
-        "Ricardo Santos 10330",
-        "Avenida Zanon Eguia 10159",
-        "Avenida Zanon Eguia 9915",
-        "Avenida Zanon Eguia 9703",
-        "Avenida Zanon Eguia 9513",
-        "Bulevar Chacabuco 590",
-        "Avenida Zanon Eguia 9163",
-        "Manuel de Falla 6801",
-        "Avenida Recta Martinoli 8929",
-        "Avenida Recta Martinoli 8819",
-        "Avenida Recta Martinoli 8709",
-        "Avenida Recta Martinoli 8541",
-        "Avenida Recta Martinoli 8333",
-        "Avenida Recta Martinoli 8181"
-      ]
-    },
     "ida": {
       "descripcion": "De la Industria 896 - Los Álamos 7919",
       "calles": [
@@ -43,6 +24,26 @@
         "Avenida Castro Barros 481",
         "Avenida Castro Barros 664"
       ]
+    },
+    "vuelta": {
+      "descripcion": "Ricardo Santos 10498 - Avenida Cruz Roja Argentina 658",
+      "calles": [
+        "Ricardo Santos 10498",
+        "Ricardo Santos 10330",
+        "Avenida Zanon Eguia 10159",
+        "Avenida Zanon Eguia 9915",
+        "Avenida Zanon Eguia 9703",
+        "Avenida Zanon Eguia 9513",
+        "Bulevar Chacabuco 590",
+        "Avenida Zanon Eguia 9163",
+        "Manuel de Falla 6801",
+        "Avenida Recta Martinoli 8929",
+        "Avenida Recta Martinoli 8819",
+        "Avenida Recta Martinoli 8709",
+        "Avenida Recta Martinoli 8541",
+        "Avenida Recta Martinoli 8333",
+        "Avenida Recta Martinoli 8181"
+      ]
     }
   },
   "paradasPrincipales": [
@@ -55,11 +56,32 @@
     "Avenida Vélez Sarsfield 209",
     "Avenida Cruz Roja Argentina 658"
   ],
-  "horarios": [],
-  "tarifas": [],
-  "mapsEmbedUrl": "https://www.google.com/maps/embed/v1/directions?key=YOUR_API_KEY&origin=-31.33461,-64.3098&destination=-31.44265,-64.18759&waypoints=-31.34767,-64.26595|-31.368105975776768,-64.23354484140873|-31.404399735242688,-64.19463336467744&mode=transit",
+  "horarios": {
+    "lunesAViernes": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "sabados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "domingosYFeriados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    }
+  },
+  "tarifas": {
+    "efectivo": "Consultá las tarifas vigentes con tu tarjeta SUBE",
+    "redBus": "Consultá descuentos disponibles con Red Bus"
+  },
+  "mapsEmbedUrl": "",
   "ultimaActualizacion": "2023-03-16",
   "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
-  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023); el recorrido puede haber cambiado. Verificá en la app Tu Bondi.",
-  "esEjemplo": false
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
 }

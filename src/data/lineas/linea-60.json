@@ -1,29 +1,10 @@
 {
   "numero": "60",
   "nombre": "Línea 60",
+  "esEjemplo": false,
   "empresa": "Coniferal",
   "descripcionCorta": "Línea 60 - Coniferal",
   "recorrido": {
-    "vuelta": {
-      "descripcion": "Aviador Silvio Pettirossi 3431 - Julio de Vedia 3876",
-      "calles": [
-        "Aviador Silvio Pettirossi 3431",
-        "Aviador Silvio Pettirossi 3229",
-        "Aviador Silvio Pettirossi 3053",
-        "Aviador Silvio Pettirossi 2855",
-        "Aviador Silvio Pettirossi 2623",
-        "Aviador Silvio Pettirossi 2416",
-        "Aviador Silvio Pettirossi 2295",
-        "Aviador Silvio Pettirossi 2033",
-        "Avenida Fuerza Aérea 4599",
-        "Avenida Fuerza Aérea Argentina 4311",
-        "Avenida Fuerza Aérea 4017",
-        "Avenida Fuerza Aérea 3773",
-        "Avenida Fuerza Aérea 3535",
-        "Avenida Fuerza Aérea 3039",
-        "Avenida Fuerza Aérea 2817"
-      ]
-    },
     "ida": {
       "descripcion": "Julio de Vedia 3865 - Pública 18 S/N",
       "calles": [
@@ -43,6 +24,26 @@
         "Jacinto de Altoaguirre 2013",
         "Jacinto de Altoaguirre 1709"
       ]
+    },
+    "vuelta": {
+      "descripcion": "Aviador Silvio Pettirossi 3431 - Julio de Vedia 3876",
+      "calles": [
+        "Aviador Silvio Pettirossi 3431",
+        "Aviador Silvio Pettirossi 3229",
+        "Aviador Silvio Pettirossi 3053",
+        "Aviador Silvio Pettirossi 2855",
+        "Aviador Silvio Pettirossi 2623",
+        "Aviador Silvio Pettirossi 2416",
+        "Aviador Silvio Pettirossi 2295",
+        "Aviador Silvio Pettirossi 2033",
+        "Avenida Fuerza Aérea 4599",
+        "Avenida Fuerza Aérea Argentina 4311",
+        "Avenida Fuerza Aérea 4017",
+        "Avenida Fuerza Aérea 3773",
+        "Avenida Fuerza Aérea 3535",
+        "Avenida Fuerza Aérea 3039",
+        "Avenida Fuerza Aérea 2817"
+      ]
     }
   },
   "paradasPrincipales": [
@@ -55,11 +56,32 @@
     "Alsina 2578",
     "Julio de Vedia 3876"
   ],
-  "horarios": [],
-  "tarifas": [],
-  "mapsEmbedUrl": "https://www.google.com/maps/embed/v1/directions?key=YOUR_API_KEY&origin=-31.44771,-64.24811&destination=-31.36488,-64.13815&waypoints=-31.43075,-64.21739|-31.415462097972014,-64.17270999401808|-31.39033999999999,-64.13997&mode=transit",
+  "horarios": {
+    "lunesAViernes": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "sabados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "domingosYFeriados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    }
+  },
+  "tarifas": {
+    "efectivo": "Consultá las tarifas vigentes con tu tarjeta SUBE",
+    "redBus": "Consultá descuentos disponibles con Red Bus"
+  },
+  "mapsEmbedUrl": "",
   "ultimaActualizacion": "2023-03-16",
   "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
-  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023); el recorrido puede haber cambiado. Verificá en la app Tu Bondi.",
-  "esEjemplo": false
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
 }

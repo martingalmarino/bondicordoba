@@ -1,29 +1,10 @@
 {
   "numero": "15",
   "nombre": "Línea 15",
+  "esEjemplo": false,
   "empresa": "Coniferal",
   "descripcionCorta": "Línea 15 - Coniferal",
   "recorrido": {
-    "vuelta": {
-      "descripcion": "Juan Ramón Rojas 5301 - Presidente Perón 8598",
-      "calles": [
-        "Juan Ramón Rojas 5301",
-        "Cipriano Perelló 5114",
-        "Cipriano Perelló 4930",
-        "Cipriano Perelló 4706",
-        "Agustín Gamarra 5729",
-        "Avenida General Manuel Savio 6338",
-        "Avenida General Manuel Savio 6402",
-        "Sánchez De Loria 5082",
-        "Avenida Amadeo Sabattini 5514",
-        "Avenida Amadeo Sabattini 5427",
-        "Avenida Amadeo Sabattini 5377",
-        "Avenida Amadeo Sabattini 5351",
-        "Avenida Amadeo Sabattini 5319",
-        "Avenida Amadeo Sabattini 5195",
-        "Avenida Amadeo Sabattini 5023"
-      ]
-    },
     "ida": {
       "descripcion": "Antucura 10090 - Cipriano Perelló 5316",
       "calles": [
@@ -43,6 +24,26 @@
         "Piedra Labrada 8400",
         "Piedra Labrada 8353"
       ]
+    },
+    "vuelta": {
+      "descripcion": "Juan Ramón Rojas 5301 - Presidente Perón 8598",
+      "calles": [
+        "Juan Ramón Rojas 5301",
+        "Cipriano Perelló 5114",
+        "Cipriano Perelló 4930",
+        "Cipriano Perelló 4706",
+        "Agustín Gamarra 5729",
+        "Avenida General Manuel Savio 6338",
+        "Avenida General Manuel Savio 6402",
+        "Sánchez De Loria 5082",
+        "Avenida Amadeo Sabattini 5514",
+        "Avenida Amadeo Sabattini 5427",
+        "Avenida Amadeo Sabattini 5377",
+        "Avenida Amadeo Sabattini 5351",
+        "Avenida Amadeo Sabattini 5319",
+        "Avenida Amadeo Sabattini 5195",
+        "Avenida Amadeo Sabattini 5023"
+      ]
     }
   },
   "paradasPrincipales": [
@@ -55,11 +56,32 @@
     "Piedra Labrada 7779",
     "Presidente Perón 8598"
   ],
-  "horarios": [],
-  "tarifas": [],
-  "mapsEmbedUrl": "https://www.google.com/maps/embed/v1/directions?key=YOUR_API_KEY&origin=-31.469206,-64.11519&destination=-31.306632654780604,-64.28617715835573&waypoints=-31.433075631471933,-64.1516697406769|-31.38626,-64.21765|-31.33638,-64.2607&mode=transit",
+  "horarios": {
+    "lunesAViernes": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "sabados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "domingosYFeriados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    }
+  },
+  "tarifas": {
+    "efectivo": "Consultá las tarifas vigentes con tu tarjeta SUBE",
+    "redBus": "Consultá descuentos disponibles con Red Bus"
+  },
+  "mapsEmbedUrl": "",
   "ultimaActualizacion": "2023-03-16",
   "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
-  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023); el recorrido puede haber cambiado. Verificá en la app Tu Bondi.",
-  "esEjemplo": false
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
 }

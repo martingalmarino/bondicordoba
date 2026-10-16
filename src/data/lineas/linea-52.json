@@ -1,29 +1,10 @@
 {
   "numero": "52",
   "nombre": "Línea 52",
+  "esEjemplo": false,
   "empresa": "ERSA",
   "descripcionCorta": "Línea 52 - ERSA",
   "recorrido": {
-    "vuelta": {
-      "descripcion": "Mascachín 2193 - Dirección desconocida",
-      "calles": [
-        "Mascachín 2193",
-        "Colorado 6385",
-        "Colorado 6225",
-        "Colorado 6062",
-        "Colorado 5958",
-        "Colorado 5904",
-        "Colorado 5809",
-        "Cajamarca 2079",
-        "Alto del Tala 5771",
-        "Cajamarca 1617",
-        "Cajamarca 1405",
-        "Forestieri 5743",
-        "Río Negro 5508",
-        "Bogotá 1349",
-        "Río Negro 5233"
-      ]
-    },
     "ida": {
       "descripcion": "Dirección desconocida - Colorado 6194",
       "calles": [
@@ -43,6 +24,26 @@
         "Carlos Giménez 199",
         "Carlos Giménez 116"
       ]
+    },
+    "vuelta": {
+      "descripcion": "Mascachín 2193 - Dirección desconocida",
+      "calles": [
+        "Mascachín 2193",
+        "Colorado 6385",
+        "Colorado 6225",
+        "Colorado 6062",
+        "Colorado 5958",
+        "Colorado 5904",
+        "Colorado 5809",
+        "Cajamarca 2079",
+        "Alto del Tala 5771",
+        "Cajamarca 1617",
+        "Cajamarca 1405",
+        "Forestieri 5743",
+        "Río Negro 5508",
+        "Bogotá 1349",
+        "Río Negro 5233"
+      ]
     }
   },
   "paradasPrincipales": [
@@ -55,11 +56,32 @@
     "Amalia Sánchez Ariño 3481",
     "Dirección desconocida"
   ],
-  "horarios": [],
-  "tarifas": [],
-  "mapsEmbedUrl": "https://www.google.com/maps/embed/v1/directions?key=YOUR_API_KEY&origin=-31.48909282787169,-64.2360144853592&destination=-31.349234019895384,-64.14888997528844&waypoints=-31.471342271276725,-64.20464873313905|-31.42304075170638,-64.1824933513999|-31.374648,-64.166996&mode=transit",
+  "horarios": {
+    "lunesAViernes": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "sabados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "domingosYFeriados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    }
+  },
+  "tarifas": {
+    "efectivo": "Consultá las tarifas vigentes con tu tarjeta SUBE",
+    "redBus": "Consultá descuentos disponibles con Red Bus"
+  },
+  "mapsEmbedUrl": "",
   "ultimaActualizacion": "2023-03-16",
   "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
-  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023); el recorrido puede haber cambiado. Verificá en la app Tu Bondi.",
-  "esEjemplo": false
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
 }

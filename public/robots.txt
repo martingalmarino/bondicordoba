@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bondicordoba.com.ar/sitemap.xml

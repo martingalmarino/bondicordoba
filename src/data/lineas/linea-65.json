@@ -1,29 +1,10 @@
 {
   "numero": "65",
   "nombre": "Línea 65",
+  "esEjemplo": false,
   "empresa": "Coniferal",
   "descripcionCorta": "Línea 65 - Coniferal",
   "recorrido": {
-    "vuelta": {
-      "descripcion": "Aviador Kingsley 1450 - Julio de Vedia 3876",
-      "calles": [
-        "Aviador Kingsley 1450",
-        "Aviador Kingsley 1495",
-        "Aviador Kingsley 1599",
-        "Aviador Kingsley 1750",
-        "Avenida Fuerza Aérea 4599",
-        "Avenida Fuerza Aérea Argentina 4311",
-        "Avenida Fuerza Aérea 4017",
-        "Avenida Fuerza Aérea 3773",
-        "Avenida Fuerza Aérea 3535",
-        "Avenida Fuerza Aérea 3039",
-        "Avenida Fuerza Aérea 2817",
-        "Avenida Fuerza Aérea 2703",
-        "Avenida Fuerza Aérea 2449",
-        "Avenida Fuerza Aérea 2097",
-        "Avenida Fuerza Aérea 1781"
-      ]
-    },
     "ida": {
       "descripcion": "Julio de Vedia 3865 - Aviador Abel 1429",
       "calles": [
@@ -43,6 +24,26 @@
         "Chachapoyas 2141",
         "Nicolás Isasmendi 2929"
       ]
+    },
+    "vuelta": {
+      "descripcion": "Aviador Kingsley 1450 - Julio de Vedia 3876",
+      "calles": [
+        "Aviador Kingsley 1450",
+        "Aviador Kingsley 1495",
+        "Aviador Kingsley 1599",
+        "Aviador Kingsley 1750",
+        "Avenida Fuerza Aérea 4599",
+        "Avenida Fuerza Aérea Argentina 4311",
+        "Avenida Fuerza Aérea 4017",
+        "Avenida Fuerza Aérea 3773",
+        "Avenida Fuerza Aérea 3535",
+        "Avenida Fuerza Aérea 3039",
+        "Avenida Fuerza Aérea 2817",
+        "Avenida Fuerza Aérea 2703",
+        "Avenida Fuerza Aérea 2449",
+        "Avenida Fuerza Aérea 2097",
+        "Avenida Fuerza Aérea 1781"
+      ]
     }
   },
   "paradasPrincipales": [
@@ -55,11 +56,32 @@
     "Avenida Doctor Arturo Capdevila 2776",
     "Julio de Vedia 3876"
   ],
-  "horarios": [],
-  "tarifas": [],
-  "mapsEmbedUrl": "https://www.google.com/maps/embed/v1/directions?key=YOUR_API_KEY&origin=-31.42324,-64.247&destination=-31.36488,-64.13815&waypoints=-31.42871,-64.20221|-31.40641,-64.15887|-31.383867098399953,-64.13172483444215&mode=transit",
+  "horarios": {
+    "lunesAViernes": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "sabados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "domingosYFeriados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    }
+  },
+  "tarifas": {
+    "efectivo": "Consultá las tarifas vigentes con tu tarjeta SUBE",
+    "redBus": "Consultá descuentos disponibles con Red Bus"
+  },
+  "mapsEmbedUrl": "",
   "ultimaActualizacion": "2023-03-16",
   "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
-  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023); el recorrido puede haber cambiado. Verificá en la app Tu Bondi.",
-  "esEjemplo": false
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
 }

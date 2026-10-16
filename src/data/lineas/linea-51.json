@@ -1,29 +1,10 @@
 {
   "numero": "51",
   "nombre": "Línea 51",
+  "esEjemplo": false,
   "empresa": "ERSA",
   "descripcionCorta": "Línea 51 - ERSA",
   "recorrido": {
-    "vuelta": {
-      "descripcion": "Avenida General Paz 601 - Camino a San Antonio 6892",
-      "calles": [
-        "Avenida General Paz 601",
-        "Avenida General Paz 385",
-        "Avenida Vélez Sarsfield 114",
-        "Avenida Vélez Sarsfield 662",
-        "Avenida Vélez Sarsfield 1040",
-        "Avenida Vélez Sarsfield 1198",
-        "Avenida Vélez Sarsfield 1498",
-        "Avenida Vélez Sarsfield 1944",
-        "Avenida Vélez Sarsfield 2368",
-        "Avenida Vélez Sarsfield 3178",
-        "Avenida Vélez Sarsfield 3354",
-        "Avenida Vélez Sarsfield 3650",
-        "Avenida Vélez Sarsfield 3738",
-        "Avenida Vélez Sarsfield 3890",
-        "Avenida Vélez Sarsfield 4026"
-      ]
-    },
     "ida": {
       "descripcion": "Calle Barrio Obispo Angelelli - Avenida General Paz 549",
       "calles": [
@@ -43,6 +24,26 @@
         "Avenida Vélez Sarsfield 4033",
         "Avenida Vélez Sarsfield 3769"
       ]
+    },
+    "vuelta": {
+      "descripcion": "Avenida General Paz 601 - Camino a San Antonio 6892",
+      "calles": [
+        "Avenida General Paz 601",
+        "Avenida General Paz 385",
+        "Avenida Vélez Sarsfield 114",
+        "Avenida Vélez Sarsfield 662",
+        "Avenida Vélez Sarsfield 1040",
+        "Avenida Vélez Sarsfield 1198",
+        "Avenida Vélez Sarsfield 1498",
+        "Avenida Vélez Sarsfield 1944",
+        "Avenida Vélez Sarsfield 2368",
+        "Avenida Vélez Sarsfield 3178",
+        "Avenida Vélez Sarsfield 3354",
+        "Avenida Vélez Sarsfield 3650",
+        "Avenida Vélez Sarsfield 3738",
+        "Avenida Vélez Sarsfield 3890",
+        "Avenida Vélez Sarsfield 4026"
+      ]
     }
   },
   "paradasPrincipales": [
@@ -55,11 +56,32 @@
     "Camino a San Antonio 6890",
     "Camino a San Antonio 6892"
   ],
-  "horarios": [],
-  "tarifas": [],
-  "mapsEmbedUrl": "https://www.google.com/maps/embed/v1/directions?key=YOUR_API_KEY&origin=-31.408264,-64.183996&destination=-31.504845,-64.194162&waypoints=-31.446907,-64.198952|-31.477441,-64.202728|-31.499514,-64.203353&mode=transit",
+  "horarios": {
+    "lunesAViernes": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "sabados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "domingosYFeriados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    }
+  },
+  "tarifas": {
+    "efectivo": "Consultá las tarifas vigentes con tu tarjeta SUBE",
+    "redBus": "Consultá descuentos disponibles con Red Bus"
+  },
+  "mapsEmbedUrl": "",
   "ultimaActualizacion": "2023-03-16",
   "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
-  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023); el recorrido puede haber cambiado. Verificá en la app Tu Bondi.",
-  "esEjemplo": false
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
 }

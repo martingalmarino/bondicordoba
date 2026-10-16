@@ -1,29 +1,10 @@
 {
   "numero": "18",
   "nombre": "Línea 18",
+  "esEjemplo": false,
   "empresa": "Coniferal",
   "descripcionCorta": "Línea 18 - Coniferal",
   "recorrido": {
-    "vuelta": {
-      "descripcion": "Vélez Sársfield 355 - Avenida Cruz Roja Argentina 658",
-      "calles": [
-        "Vélez Sársfield 355",
-        "San Lorenzo",
-        "San Jerónimo 259-223",
-        "San Jerónimo 541",
-        "Eva Perón 9677",
-        "Eva Perón 9401",
-        "Eva Perón 9055",
-        "Eva Perón 8733",
-        "Avenida Enrique Bodereau 9205",
-        "Avenida Enrique Bodereau 8867",
-        "Avenida Enrique Bodereau 8637",
-        "Avenida Enrique Bodereau 8301",
-        "Agrimensor Enrique Bodereau 8081",
-        "Avenida Enrique Bodereau S/N",
-        "Avenida Ricardo Rojas 8753"
-      ]
-    },
     "ida": {
       "descripcion": "Avenida Rogelio Nores Martínez 2709 - San Lorenzo 2",
       "calles": [
@@ -43,6 +24,26 @@
         "Jujuy 40",
         "Jujuy 386"
       ]
+    },
+    "vuelta": {
+      "descripcion": "Vélez Sársfield 355 - Avenida Cruz Roja Argentina 658",
+      "calles": [
+        "Vélez Sársfield 355",
+        "San Lorenzo",
+        "San Jerónimo 259-223",
+        "San Jerónimo 541",
+        "Eva Perón 9677",
+        "Eva Perón 9401",
+        "Eva Perón 9055",
+        "Eva Perón 8733",
+        "Avenida Enrique Bodereau 9205",
+        "Avenida Enrique Bodereau 8867",
+        "Avenida Enrique Bodereau 8637",
+        "Avenida Enrique Bodereau 8301",
+        "Agrimensor Enrique Bodereau 8081",
+        "Avenida Enrique Bodereau S/N",
+        "Avenida Ricardo Rojas 8753"
+      ]
     }
   },
   "paradasPrincipales": [
@@ -55,11 +56,32 @@
     "Avenida General Paz 311",
     "Avenida Cruz Roja Argentina 658"
   ],
-  "horarios": [],
-  "tarifas": [],
-  "mapsEmbedUrl": "https://www.google.com/maps/embed/v1/directions?key=YOUR_API_KEY&origin=-31.316156378171428,-64.30891156196596&destination=-31.44265,-64.18759&waypoints=-31.336227289471953,-64.27625298500062|-31.37697,-64.22586|-31.405516904224264,-64.18826580047609&mode=transit",
+  "horarios": {
+    "lunesAViernes": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "sabados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "domingosYFeriados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    }
+  },
+  "tarifas": {
+    "efectivo": "Consultá las tarifas vigentes con tu tarjeta SUBE",
+    "redBus": "Consultá descuentos disponibles con Red Bus"
+  },
+  "mapsEmbedUrl": "",
   "ultimaActualizacion": "2023-03-16",
   "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
-  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023); el recorrido puede haber cambiado. Verificá en la app Tu Bondi.",
-  "esEjemplo": false
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
 }

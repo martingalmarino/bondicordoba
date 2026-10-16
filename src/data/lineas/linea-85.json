@@ -1,29 +1,10 @@
 {
   "numero": "85",
   "nombre": "Línea 85",
+  "esEjemplo": false,
   "empresa": "TAMSE",
   "descripcionCorta": "Línea 85 - TAMSE",
   "recorrido": {
-    "vuelta": {
-      "descripcion": "Avenida Colón 878 - Avenida Idelfonso Muñecas 3821",
-      "calles": [
-        "Avenida Colón 878",
-        "Avenida Colón 529",
-        "Avenida Colón 153",
-        "Avenida Emilio Olmos 84",
-        "Salta 117",
-        "Obispo Salguero 66",
-        "Obispo Salguero 296",
-        "Bulevar Arturo Illia S/N",
-        "Avenida Amadeo Sabattini 161",
-        "Avenida Gobernador Amadeo Sabattini S/N",
-        "Avenida Madrid 2192",
-        "Avenida Revolución de Mayo 1415",
-        "Avenida Revolución de Mayo 1578",
-        "Málaga 1625",
-        "Avenida Revolución de Mayo 1765"
-      ]
-    },
     "ida": {
       "descripcion": "Avenida Idelfonso Muñecas 3826 - Avellaneda 387",
       "calles": [
@@ -43,6 +24,26 @@
         "De Las Exposiciones 4156",
         "Prudencio Murguiondo 4611"
       ]
+    },
+    "vuelta": {
+      "descripcion": "Avenida Colón 878 - Avenida Idelfonso Muñecas 3821",
+      "calles": [
+        "Avenida Colón 878",
+        "Avenida Colón 529",
+        "Avenida Colón 153",
+        "Avenida Emilio Olmos 84",
+        "Salta 117",
+        "Obispo Salguero 66",
+        "Obispo Salguero 296",
+        "Bulevar Arturo Illia S/N",
+        "Avenida Amadeo Sabattini 161",
+        "Avenida Gobernador Amadeo Sabattini S/N",
+        "Avenida Madrid 2192",
+        "Avenida Revolución de Mayo 1415",
+        "Avenida Revolución de Mayo 1578",
+        "Málaga 1625",
+        "Avenida Revolución de Mayo 1765"
+      ]
     }
   },
   "paradasPrincipales": [
@@ -55,11 +56,32 @@
     "Dirección desconocida",
     "Avenida Idelfonso Muñecas 3821"
   ],
-  "horarios": [],
-  "tarifas": [],
-  "mapsEmbedUrl": "https://www.google.com/maps/embed/v1/directions?key=YOUR_API_KEY&origin=-31.41014568808497,-64.19491231441499&destination=-31.480680032806866,-64.14735674858095&waypoints=-31.43801,-64.164121|-31.447451,-64.14844|-31.46677599091518,-64.14364457130434&mode=transit",
+  "horarios": {
+    "lunesAViernes": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "sabados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "domingosYFeriados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    }
+  },
+  "tarifas": {
+    "efectivo": "Consultá las tarifas vigentes con tu tarjeta SUBE",
+    "redBus": "Consultá descuentos disponibles con Red Bus"
+  },
+  "mapsEmbedUrl": "",
   "ultimaActualizacion": "2023-03-16",
   "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
-  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023); el recorrido puede haber cambiado. Verificá en la app Tu Bondi.",
-  "esEjemplo": false
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
 }

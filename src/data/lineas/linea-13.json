@@ -1,29 +1,10 @@
 {
   "numero": "13",
   "nombre": "Línea 13",
+  "esEjemplo": false,
   "empresa": "Coniferal",
   "descripcionCorta": "Línea 13 - Coniferal",
   "recorrido": {
-    "vuelta": {
-      "descripcion": "Arroyito 8723 - Avenida Cruz Roja Argentina 658",
-      "calles": [
-        "Arroyito 8723",
-        "Monte de los Gauchos 9641",
-        "Aguaribay S/N",
-        "San Marcos Sierra 8100",
-        "Ausonia 9278",
-        "Laguna Larga 7708",
-        "Ricardo Rojas 9143",
-        "Manuel de Falla 7177",
-        "Manuel de Falla 6905",
-        "Avenida Recta Martinoli 8929",
-        "Avenida Recta Martinoli 8819",
-        "Avenida Recta Martinoli 8541",
-        "Avenida Recta Martinoli 8181",
-        "Avenida Recta Martinoli 8107",
-        "Avenida Recta Martinoli 7937"
-      ]
-    },
     "ida": {
       "descripcion": "De la Industria 896 - Ausonia 9258",
       "calles": [
@@ -43,6 +24,26 @@
         "Avenida Castro Barros 481",
         "Avenida Castro Barros 958"
       ]
+    },
+    "vuelta": {
+      "descripcion": "Arroyito 8723 - Avenida Cruz Roja Argentina 658",
+      "calles": [
+        "Arroyito 8723",
+        "Monte de los Gauchos 9641",
+        "Aguaribay S/N",
+        "San Marcos Sierra 8100",
+        "Ausonia 9278",
+        "Laguna Larga 7708",
+        "Ricardo Rojas 9143",
+        "Manuel de Falla 7177",
+        "Manuel de Falla 6905",
+        "Avenida Recta Martinoli 8929",
+        "Avenida Recta Martinoli 8819",
+        "Avenida Recta Martinoli 8541",
+        "Avenida Recta Martinoli 8181",
+        "Avenida Recta Martinoli 8107",
+        "Avenida Recta Martinoli 7937"
+      ]
     }
   },
   "paradasPrincipales": [
@@ -55,11 +56,32 @@
     "Avenida Hipólito Yrigoyen 686",
     "Avenida Cruz Roja Argentina 658"
   ],
-  "horarios": [],
-  "tarifas": [],
-  "mapsEmbedUrl": "https://www.google.com/maps/embed/v1/directions?key=YOUR_API_KEY&origin=-31.321765666397773,-64.2957901954651&destination=-31.44265,-64.18759&waypoints=-31.34767,-64.26595|-31.37483,-64.22772|-31.41183,-64.18932&mode=transit",
+  "horarios": {
+    "lunesAViernes": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "sabados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "domingosYFeriados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    }
+  },
+  "tarifas": {
+    "efectivo": "Consultá las tarifas vigentes con tu tarjeta SUBE",
+    "redBus": "Consultá descuentos disponibles con Red Bus"
+  },
+  "mapsEmbedUrl": "",
   "ultimaActualizacion": "2023-03-16",
   "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
-  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023); el recorrido puede haber cambiado. Verificá en la app Tu Bondi.",
-  "esEjemplo": false
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
 }

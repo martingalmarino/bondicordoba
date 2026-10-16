@@ -1,29 +1,10 @@
 {
   "numero": "44",
   "nombre": "Línea 44",
+  "esEjemplo": false,
   "empresa": "ERSA",
   "descripcionCorta": "Línea 44 - ERSA",
   "recorrido": {
-    "vuelta": {
-      "descripcion": "Atilio Esteban Cattaneo 6186 - Martiniano Chilavert 3891",
-      "calles": [
-        "Atilio Esteban Cattaneo 6186",
-        "Atilio Esteban Cattaneo 6464",
-        "Río Yuspe 1496",
-        "Río Yuspe 1576",
-        "Viedma Recalde 6399",
-        "Viedma Recalde 6013",
-        "Alto Alegre 1511",
-        "Alto Alegre 1395",
-        "Sargento Gómez 5617",
-        "Sargento Gómez 5301",
-        "Sargento Gómez 5117",
-        "Aviador Locatelli 1277",
-        "Aviador Locatelli 1161",
-        "Aviador Locatelli 1057",
-        "Aviador Locatelli 945"
-      ]
-    },
     "ida": {
       "descripcion": "Granadero Toba 3900 - Alto Alegre 1342",
       "calles": [
@@ -43,6 +24,26 @@
         "Maracaibo 532",
         "República del Libano 1403"
       ]
+    },
+    "vuelta": {
+      "descripcion": "Atilio Esteban Cattaneo 6186 - Martiniano Chilavert 3891",
+      "calles": [
+        "Atilio Esteban Cattaneo 6186",
+        "Atilio Esteban Cattaneo 6464",
+        "Río Yuspe 1496",
+        "Río Yuspe 1576",
+        "Viedma Recalde 6399",
+        "Viedma Recalde 6013",
+        "Alto Alegre 1511",
+        "Alto Alegre 1395",
+        "Sargento Gómez 5617",
+        "Sargento Gómez 5301",
+        "Sargento Gómez 5117",
+        "Aviador Locatelli 1277",
+        "Aviador Locatelli 1161",
+        "Aviador Locatelli 1057",
+        "Aviador Locatelli 945"
+      ]
     }
   },
   "paradasPrincipales": [
@@ -55,11 +56,32 @@
     "Obispo Carranza 2182",
     "Martiniano Chilavert 3891"
   ],
-  "horarios": [],
-  "tarifas": [],
-  "mapsEmbedUrl": "https://www.google.com/maps/embed/v1/directions?key=YOUR_API_KEY&origin=-31.421605,-64.26554&destination=-31.364585045594318,-64.14658427238466&waypoints=-31.411657,-64.244699|-31.415456,-64.206617|-31.386839,-64.169286&mode=transit",
+  "horarios": {
+    "lunesAViernes": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "sabados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "domingosYFeriados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    }
+  },
+  "tarifas": {
+    "efectivo": "Consultá las tarifas vigentes con tu tarjeta SUBE",
+    "redBus": "Consultá descuentos disponibles con Red Bus"
+  },
+  "mapsEmbedUrl": "",
   "ultimaActualizacion": "2023-03-16",
   "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
-  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023); el recorrido puede haber cambiado. Verificá en la app Tu Bondi.",
-  "esEjemplo": false
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
 }

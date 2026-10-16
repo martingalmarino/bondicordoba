@@ -1,29 +1,10 @@
 {
   "numero": "601",
   "nombre": "Línea 601",
+  "esEjemplo": false,
   "empresa": "TAMSE",
   "descripcionCorta": "Línea 601 - TAMSE",
   "recorrido": {
-    "vuelta": {
-      "descripcion": "GONGORA Y BV LOS GRANADEROS - Av. Pablo Richieri 3950",
-      "calles": [
-        "GONGORA Y BV LOS GRANADEROS",
-        "Bv. Los Granaderos 2288",
-        "Bv. Los Granaderos 2459",
-        "BV. LOS GRANADEROS 2686",
-        "CONCEPCION DEL BERMEJO 3156",
-        "CONCEPCION DEL BERMEJO 3300",
-        "Concepción Bermejo 3882",
-        "Bento Quinquela Martín 2918",
-        "Benito Quinquela Martín 3168",
-        "Quinquela Martín 3297",
-        "RODRIGUEZ DEL BUSTOS 3627",
-        "Rodriguez del Busto 3219",
-        "RODRIGUEZ DEL BUSTO Y LOS GRANADEROS",
-        "RODRIIGUEZ DEL BUSTOS 3068",
-        "RODRIGUEZ DEL BUSTOS 2900"
-      ]
-    },
     "ida": {
       "descripcion": "Bernardo O´Higgins 4725 - GONGORA Y BV LOS GRANADEROS",
       "calles": [
@@ -43,6 +24,26 @@
         "Av. Concepcion Arenales 1215",
         "Av. Concepcion Arenales 991"
       ]
+    },
+    "vuelta": {
+      "descripcion": "GONGORA Y BV LOS GRANADEROS - Av. Pablo Richieri 3950",
+      "calles": [
+        "GONGORA Y BV LOS GRANADEROS",
+        "Bv. Los Granaderos 2288",
+        "Bv. Los Granaderos 2459",
+        "BV. LOS GRANADEROS 2686",
+        "CONCEPCION DEL BERMEJO 3156",
+        "CONCEPCION DEL BERMEJO 3300",
+        "Concepción Bermejo 3882",
+        "Bento Quinquela Martín 2918",
+        "Benito Quinquela Martín 3168",
+        "Quinquela Martín 3297",
+        "RODRIGUEZ DEL BUSTOS 3627",
+        "Rodriguez del Busto 3219",
+        "RODRIGUEZ DEL BUSTO Y LOS GRANADEROS",
+        "RODRIIGUEZ DEL BUSTOS 3068",
+        "RODRIGUEZ DEL BUSTOS 2900"
+      ]
     }
   },
   "paradasPrincipales": [
@@ -55,11 +56,32 @@
     "Av Enrique Barros (FUC)",
     "Av. Pablo Richieri 3950"
   ],
-  "horarios": [],
-  "tarifas": [],
-  "mapsEmbedUrl": "https://www.google.com/maps/embed/v1/directions?key=YOUR_API_KEY&origin=-31.380538,-64.201472&destination=-31.458077,-64.169168&waypoints=-31.399822,-64.221218|-31.442738,-64.233437|-31.450713,-64.194488&mode=transit",
+  "horarios": {
+    "lunesAViernes": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "sabados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "domingosYFeriados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    }
+  },
+  "tarifas": {
+    "efectivo": "Consultá las tarifas vigentes con tu tarjeta SUBE",
+    "redBus": "Consultá descuentos disponibles con Red Bus"
+  },
+  "mapsEmbedUrl": "",
   "ultimaActualizacion": "2023-03-16",
   "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
-  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023); el recorrido puede haber cambiado. Verificá en la app Tu Bondi.",
-  "esEjemplo": false
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
 }

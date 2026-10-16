@@ -1,29 +1,10 @@
 {
   "numero": "68",
   "nombre": "Línea 68",
+  "esEjemplo": false,
   "empresa": "Coniferal",
   "descripcionCorta": "Línea 68 - Coniferal",
   "recorrido": {
-    "vuelta": {
-      "descripcion": "Avenida Colón 165 - Av. San Martín 1400-1498",
-      "calles": [
-        "Avenida Colón 165",
-        "Avenida Emilio Olmos 241",
-        "Avenida Emilio Olmos 471",
-        "Avenida 24 de Septiembre 743",
-        "Avenida 24 de Septiembre 956",
-        "Avenida 24 de Septiembre 1118",
-        "25 de Mayo 1359",
-        "Avenida 24 de Septiembre 1560",
-        "Avenida 24 de Septiembre 1762",
-        "Avenida 24 de Septiembre 2084",
-        "Camacuá 199",
-        "Gavilán 615",
-        "Bajada de Piedra 3402",
-        "Bajada de Piedra 3596",
-        "Bajada de Piedra 3817"
-      ]
-    },
     "ida": {
       "descripcion": "Avenida San Martín S/N - Humberto Primo 286",
       "calles": [
@@ -43,6 +24,26 @@
         "Gavilán 382",
         "Bajada de Piedra 2667"
       ]
+    },
+    "vuelta": {
+      "descripcion": "Avenida Colón 165 - Av. San Martín 1400-1498",
+      "calles": [
+        "Avenida Colón 165",
+        "Avenida Emilio Olmos 241",
+        "Avenida Emilio Olmos 471",
+        "Avenida 24 de Septiembre 743",
+        "Avenida 24 de Septiembre 956",
+        "Avenida 24 de Septiembre 1118",
+        "25 de Mayo 1359",
+        "Avenida 24 de Septiembre 1560",
+        "Avenida 24 de Septiembre 1762",
+        "Avenida 24 de Septiembre 2084",
+        "Camacuá 199",
+        "Gavilán 615",
+        "Bajada de Piedra 3402",
+        "Bajada de Piedra 3596",
+        "Bajada de Piedra 3817"
+      ]
     }
   },
   "paradasPrincipales": [
@@ -55,11 +56,32 @@
     "Av. San Martín 2200-2298",
     "Av. San Martín 1400-1498"
   ],
-  "horarios": [],
-  "tarifas": [],
-  "mapsEmbedUrl": "https://www.google.com/maps/embed/v1/directions?key=YOUR_API_KEY&origin=-31.41321,-64.18497&destination=-31.39061910108295,-64.05792185957208&waypoints=-31.41294,-64.16294|-31.403131101082952,-64.1379258511561|-31.418682,-64.05942&mode=transit",
+  "horarios": {
+    "lunesAViernes": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "sabados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "domingosYFeriados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    }
+  },
+  "tarifas": {
+    "efectivo": "Consultá las tarifas vigentes con tu tarjeta SUBE",
+    "redBus": "Consultá descuentos disponibles con Red Bus"
+  },
+  "mapsEmbedUrl": "",
   "ultimaActualizacion": "2023-03-16",
   "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
-  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023); el recorrido puede haber cambiado. Verificá en la app Tu Bondi.",
-  "esEjemplo": false
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
 }

@@ -1,5 +1,5 @@
 {
-  "numero": "",
+  "numero": "AEROBUS",
   "nombre": "AEROBUS",
   "empresa": "TAMSE",
   "descripcionCorta": "Línea  - TAMSE",
@@ -51,8 +51,30 @@
     "Avenida Santa Fe 317",
     "Avenida Amadeo Sabattini 359"
   ],
-  "horarios": [],
-  "tarifas": [],
+  "horarios": {
+    "lunesAViernes": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "sabados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "domingosYFeriados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    }
+  },
+  "tarifas": {
+    "efectivo": "Consultá las tarifas vigentes con tu tarjeta SUBE",
+    "redBus": "Consultá descuentos disponibles con Red Bus"
+  },
   "mapsEmbedUrl": "https://www.google.com/maps/embed/v1/directions?key=YOUR_API_KEY&origin=-31.31494648788554,-64.21397209167482&destination=-31.425678602117298,-64.17129278182985&waypoints=-31.36136,-64.204161|-31.407046,-64.200277|-31.422277420630266,-64.18094873428346&mode=transit",
   "ultimaActualizacion": "2023-03-16",
   "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",

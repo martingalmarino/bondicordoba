@@ -1,29 +1,10 @@
 {
   "numero": "74",
   "nombre": "Línea 74",
+  "esEjemplo": false,
   "empresa": "ERSA",
   "descripcionCorta": "Línea 74 - ERSA",
   "recorrido": {
-    "vuelta": {
-      "descripcion": "Domingo Iros 329 - Agustín Garzón 5521",
-      "calles": [
-        "Domingo Iros 329",
-        "Domingo Iros 173",
-        "Avenida Colón 4864",
-        "La Rioja 4999",
-        "Bulogne Sur Mer 496",
-        "Bulogne Sur Mer 600",
-        "Igualdad 4980",
-        "Igualdad 4807",
-        "Igualdad 4611",
-        "Igualdad 4435",
-        "Igualdad 4272",
-        "Igualdad 4107",
-        "Igualdad 3973",
-        "Igualdad S/N",
-        "Igualdad 3534-3546"
-      ]
-    },
     "ida": {
       "descripcion": "Agustín Garzón 5423 - Igualdad 4787",
       "calles": [
@@ -43,6 +24,26 @@
         "Corrientes 4117",
         "Corrientes 3841"
       ]
+    },
+    "vuelta": {
+      "descripcion": "Domingo Iros 329 - Agustín Garzón 5521",
+      "calles": [
+        "Domingo Iros 329",
+        "Domingo Iros 173",
+        "Avenida Colón 4864",
+        "La Rioja 4999",
+        "Bulogne Sur Mer 496",
+        "Bulogne Sur Mer 600",
+        "Igualdad 4980",
+        "Igualdad 4807",
+        "Igualdad 4611",
+        "Igualdad 4435",
+        "Igualdad 4272",
+        "Igualdad 4107",
+        "Igualdad 3973",
+        "Igualdad S/N",
+        "Igualdad 3534-3546"
+      ]
     }
   },
   "paradasPrincipales": [
@@ -55,11 +56,32 @@
     "Emilio Salgari 1724",
     "Agustín Garzón 5521"
   ],
-  "horarios": [],
-  "tarifas": [],
-  "mapsEmbedUrl": "https://www.google.com/maps/embed/v1/directions?key=YOUR_API_KEY&origin=-31.394069870845353,-64.24100875854494&destination=-31.42735397052823,-64.11532044410707&waypoints=-31.395379482176736,-64.22581672668458|-31.415662,-64.176845|-31.423884,-64.143527&mode=transit",
+  "horarios": {
+    "lunesAViernes": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "sabados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "domingosYFeriados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    }
+  },
+  "tarifas": {
+    "efectivo": "Consultá las tarifas vigentes con tu tarjeta SUBE",
+    "redBus": "Consultá descuentos disponibles con Red Bus"
+  },
+  "mapsEmbedUrl": "",
   "ultimaActualizacion": "2023-03-16",
   "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
-  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023); el recorrido puede haber cambiado. Verificá en la app Tu Bondi.",
-  "esEjemplo": false
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
 }

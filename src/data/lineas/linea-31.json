@@ -1,29 +1,10 @@
 {
   "numero": "31",
   "nombre": "Línea 31",
+  "esEjemplo": false,
   "empresa": "TAMSE",
   "descripcionCorta": "Línea 31 - TAMSE",
   "recorrido": {
-    "vuelta": {
-      "descripcion": "Bajada del Pucará S/N - Dirección desconocida",
-      "calles": [
-        "Bajada del Pucará S/N",
-        "Corrientes S/N",
-        "Agustín Garzón S/N",
-        "Bulevar Juan Domingo Perón 653",
-        "Bulevar Juan Domingo Perón 339",
-        "Bulevar Juan Domingo Perón 34",
-        "Santiago del Estero 226",
-        "Lima 333",
-        "Sarmiento 151",
-        "Avenida General Paz 241",
-        "Avenida Vélez Sarsfield 85",
-        "Avenida Vélez Sarsfield 209",
-        "Avenida Vélez Sarsfield 401",
-        "Avenida Vélez Sarsfield 866",
-        "Avenida Vélez Sarsfield 1198"
-      ]
-    },
     "ida": {
       "descripcion": "Pública 4 S/N - Dirección desconocida",
       "calles": [
@@ -43,6 +24,26 @@
         "Piamonte 1358",
         "Piamonte 1454"
       ]
+    },
+    "vuelta": {
+      "descripcion": "Bajada del Pucará S/N - Dirección desconocida",
+      "calles": [
+        "Bajada del Pucará S/N",
+        "Corrientes S/N",
+        "Agustín Garzón S/N",
+        "Bulevar Juan Domingo Perón 653",
+        "Bulevar Juan Domingo Perón 339",
+        "Bulevar Juan Domingo Perón 34",
+        "Santiago del Estero 226",
+        "Lima 333",
+        "Sarmiento 151",
+        "Avenida General Paz 241",
+        "Avenida Vélez Sarsfield 85",
+        "Avenida Vélez Sarsfield 209",
+        "Avenida Vélez Sarsfield 401",
+        "Avenida Vélez Sarsfield 866",
+        "Avenida Vélez Sarsfield 1198"
+      ]
     }
   },
   "paradasPrincipales": [
@@ -55,11 +56,32 @@
     "Rosario Del Dorado 2259",
     "Dirección desconocida"
   ],
-  "horarios": [],
-  "tarifas": [],
-  "mapsEmbedUrl": "https://www.google.com/maps/embed/v1/directions?key=YOUR_API_KEY&origin=-31.428022278536663,-64.16949033737184&destination=-31.462831789929787,-64.25976276397706&waypoints=-31.42536732818619,-64.1910767555237|-31.455537783366967,-64.21257734298707|-31.468112,-64.230945&mode=transit",
+  "horarios": {
+    "lunesAViernes": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "sabados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "domingosYFeriados": {
+      "tipo": "frecuencia",
+      "descripcion": "Información de horarios pendiente de confirmación",
+      "horarioInicio": "",
+      "horarioFin": ""
+    }
+  },
+  "tarifas": {
+    "efectivo": "Consultá las tarifas vigentes con tu tarjeta SUBE",
+    "redBus": "Consultá descuentos disponibles con Red Bus"
+  },
+  "mapsEmbedUrl": "",
   "ultimaActualizacion": "2023-03-16",
   "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
-  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023); el recorrido puede haber cambiado. Verificá en la app Tu Bondi.",
-  "esEjemplo": false
+  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
 }
