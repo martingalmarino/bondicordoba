@@ -213,7 +213,7 @@ def integrate_data():
             "mapsEmbedUrl": "",
             "ultimaActualizacion": "2026-08-07",
             "fuente": "Tu Bondi (Municipalidad de Córdoba) via scraper lineas_transporte_cba (MIT) - Agosto 2026",
-            "notas": f"Datos obtenidos del scraper Tu Bondi/Micronauta agosto 2026. {nota_renombre}".strip()
+            "notas": nota_renombre
         }
         
         filename = f"linea-{numero_final}.json"
