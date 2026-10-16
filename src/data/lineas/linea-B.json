@@ -6,72 +6,68 @@
   "descripcionCorta": "Línea B - TAMSE",
   "recorrido": {
     "ida": {
-      "descripcion": "Avenida Colón 3337 - Avenida Patria 1356",
+      "descripcion": "Por Av Colon y Domingo Zipoli, Av Colon, COLON, Av Colon, COLON...",
       "calles": [
-        "Avenida Colón 3337",
-        "Avenida Colón 3069",
-        "Avenida Colón 2715",
-        "Avenida Colón 2215",
-        "Avenida Colón 1935",
-        "Avenida Colón 1663",
-        "Avenida Colón 1363",
-        "Avenida Colón 1027",
-        "Avenida Colón 785",
-        "Avenida Colón 247",
-        "Avenida Emilio Olmos 126",
-        "Avenida Emilio Olmos 434",
-        "Avenida 24 de Septiembre 828",
-        "Avenida 24 de Septiembre 1068",
-        "Avenida 24 de Septiembre 1236"
+        "Av Colon y Domingo Zipoli",
+        "Av Colon",
+        "COLON",
+        "Av Colon",
+        "COLON",
+        "Av Colon",
+        "Av Olmos",
+        "Av",
+        "24 de Setiembre",
+        "Av",
+        "Av Patria y Lima",
+        "Av Patria",
+        "AV. PATRIA",
+        "Av Patria",
+        "Av Patria y Padre Luis Monti"
       ]
     },
     "vuelta": {
-      "descripcion": "Avenida Patria 1325 - Domingo Zípoli 233",
+      "descripcion": "Por Av Patria y Padre Luis Monti, Av Patria, Av Sarmiento, Hospital Italiano, Sarmiento...",
       "calles": [
-        "Avenida Patria 1325",
-        "Avenida Patria 923",
-        "Avenida Patria 737",
-        "Sarmiento 1541",
-        "Sarmiento 819",
-        "Santiago del Estero 344",
-        "Santa Rosa 42",
-        "Santa Rosa 252",
-        "Santa Rosa 557",
-        "Santa Rosa 788",
-        "Avellaneda 253",
-        "Avenida Colón 1482",
-        "Avenida Colón 1900",
-        "Avenida Colón 2152",
-        "Avenida Colón 2742"
+        "Av Patria y Padre Luis Monti",
+        "Av Patria",
+        "Av Sarmiento",
+        "Hospital Italiano",
+        "Sarmiento",
+        "Bv Guzman",
+        "Lima",
+        "Santa Rosa",
+        "Avellaneda",
+        "Av Colon",
+        "Av Colon y Domingo Zipoli"
       ]
     }
   },
   "paradasPrincipales": [
-    "Avenida Colón 3337",
-    "Avenida Colón 2215",
-    "Avenida Colón 1363",
-    "Avenida Colón 247",
-    "Avenida 24 de Septiembre 828",
-    "Avenida 24 de Septiembre 1488",
-    "Avenida Patria 428",
-    "Avenida Patria 1356"
+    "Av Colon y Domingo Zipoli",
+    "Av Patria y Padre Luis Monti",
+    "Av Colon 2738 (Plaza J del Barco)",
+    "Av Patria 933",
+    "Av Colon 1955",
+    "Av Sarmiento 1757",
+    "Av Colon 1037",
+    "Sarmiento 1175"
   ],
   "horarios": {
     "lunesAViernes": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     },
     "sabados": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     },
     "domingosYFeriados": {
       "tipo": "frecuencia",
-      "descripcion": "Información de horarios pendiente de confirmación",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
       "horarioInicio": "",
       "horarioFin": ""
     }
@@ -81,7 +77,7 @@
     "redBus": "Consultá descuentos disponibles con tarjeta Red Bus"
   },
   "mapsEmbedUrl": "",
-  "ultimaActualizacion": "2023-03-16",
-  "fuente": "https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/transporte-urbano/gtfs-de-la-ciudada-de-cordoba/3319",
-  "notas": "Datos del GTFS oficial de la Municipalidad de Córdoba (2023). Los recorridos pueden haber cambiado. Verificá la información actualizada en la app Tu Bondi o en los sitios oficiales de las empresas operadoras."
+  "ultimaActualizacion": "2026-08-07",
+  "fuente": "Tu Bondi (Municipalidad de Córdoba) via scraper lineas_transporte_cba (MIT) - Agosto 2026",
+  "notas": "Datos obtenidos del scraper Tu Bondi/Micronauta agosto 2026."
 }

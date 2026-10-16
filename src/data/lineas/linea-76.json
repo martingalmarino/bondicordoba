@@ -1,0 +1,116 @@
+{
+  "numero": "76",
+  "nombre": "Línea 76",
+  "esEjemplo": false,
+  "empresa": "SolBus",
+  "descripcionCorta": "Línea 76 - SolBus",
+  "recorrido": {
+    "ida": {
+      "descripcion": "Por Pl Balcones del Chateau, Carcano, Mahatma Ghandi, Av. Ghandi, Republica China...",
+      "calles": [
+        "Pl Balcones del Chateau",
+        "Carcano",
+        "Mahatma Ghandi",
+        "Av. Ghandi",
+        "Republica China",
+        "Rep de China",
+        "Ejército Argentino",
+        "Colón",
+        "Duarte Quiros",
+        "AV. DUARTE QUIROS",
+        "D. QUIROS",
+        "AV. DUARTE QUIROS",
+        "Duarte Quirós",
+        "AV. DUARTE QUIROS",
+        "Duarte Quirós",
+        "Bv. San Juan",
+        "Bv San Juan",
+        "Av. Hipolito Yrigoyen",
+        "Av Hipolito Irigoyen",
+        "Los Nogales S/N",
+        "Bv. De la Reforma S/N",
+        "HAYA DE LA TORRE S/N",
+        "Haya de la Torre S/N",
+        "Maestro Lopez (Inst H Keller)",
+        "M. LOPEZ S/N"
+      ]
+    },
+    "vuelta": {
+      "descripcion": "Por M. LOPEZ S/N, Maestro Lopez (UTN), Maestro Lopez (Inst H Keller), Av M Allende y Av H de la Torr, DE LA REFORMA...",
+      "calles": [
+        "M. LOPEZ S/N",
+        "Maestro Lopez (UTN)",
+        "Maestro Lopez (Inst H Keller)",
+        "Av M Allende y Av H de la Torr",
+        "DE LA REFORMA",
+        "Av. Enrique Barros S/N",
+        "Los Nogales",
+        "H Irigoyen (Parque Las Tejas)",
+        "Bv Chacabuco",
+        "Bv. Arturo Umberto Illia",
+        "Bv. San Juan",
+        "Av. Duarte Quiros",
+        "Av. Duarte Quirós",
+        "AV. DUARTE QUIROS",
+        "Av. Duarte Quiros",
+        "AV. DUARTE QUIROS",
+        "D. QUIROS",
+        "AV. DUARTE QUIROS",
+        "D. QUIROS",
+        "AV. DUARTE QUIROS",
+        "Duarte Quiros",
+        "CPC COLON",
+        "Colón",
+        "Carcano esq Calandria",
+        "Colón",
+        "Ejercito Argentino",
+        "Rep de China",
+        "Republica China",
+        "Av. Ghandi",
+        "Av. Mahatma Ghandi",
+        "Mahatma Ghandi",
+        "Av. Ghandi",
+        "Ramon Carcano",
+        "Pl Balcones del Chateau"
+      ]
+    }
+  },
+  "paradasPrincipales": [
+    "Pl Balcones del Chateau",
+    "M. LOPEZ S/N",
+    "Mahatma Ghandi 290",
+    "Los Nogales 9999",
+    "Republica China 1151",
+    "Av. Duarte Quirós 1400",
+    "Duarte Quiros 5255",
+    "D. QUIROS 3040"
+  ],
+  "horarios": {
+    "lunesAViernes": {
+      "tipo": "frecuencia",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "sabados": {
+      "tipo": "frecuencia",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "domingosYFeriados": {
+      "tipo": "frecuencia",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
+      "horarioInicio": "",
+      "horarioFin": ""
+    }
+  },
+  "tarifas": {
+    "efectivo": "Consultá la tarifa vigente en el sitio de la Municipalidad de Córdoba",
+    "redBus": "Consultá descuentos disponibles con tarjeta Red Bus"
+  },
+  "mapsEmbedUrl": "",
+  "ultimaActualizacion": "2026-08-07",
+  "fuente": "Tu Bondi (Municipalidad de Córdoba) via scraper lineas_transporte_cba (MIT) - Agosto 2026",
+  "notas": "Datos obtenidos del scraper Tu Bondi/Micronauta agosto 2026."
+}

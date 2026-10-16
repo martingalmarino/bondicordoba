@@ -1,0 +1,98 @@
+{
+  "numero": "B10",
+  "nombre": "Línea B10",
+  "esEjemplo": false,
+  "empresa": "Coniferal",
+  "descripcionCorta": "Línea B10 - Coniferal",
+  "recorrido": {
+    "ida": {
+      "descripcion": "Por Antonio Soto s/n, A. Soto y Cap. de los Remedios, Schrodinger s/n, Schrodinger y Vucetich, Av Vucetich...",
+      "calles": [
+        "Antonio Soto s/n",
+        "A. Soto y Cap. de los Remedios",
+        "Schrodinger s/n",
+        "Schrodinger y Vucetich",
+        "Av Vucetich",
+        "Vucetich",
+        "Av Vucetich y Gutemberg",
+        "Vucetich",
+        "vucetich",
+        "Vucetich",
+        "vucetich",
+        "Av Sabattini",
+        "Sabattini",
+        "Av Sabattini",
+        "Sabattini",
+        "Av Sabattini y Cargo",
+        "Av Sabattini",
+        "Fiambala",
+        "Calingasta",
+        "Calingasta s/n",
+        "Calle Pública s/n"
+      ]
+    },
+    "vuelta": {
+      "descripcion": "Por Calle Pública s/n, Calingasta s/n, Calingasta, Ramos Mejia, Tinogasta...",
+      "calles": [
+        "Calle Pública s/n",
+        "Calingasta s/n",
+        "Calingasta",
+        "Ramos Mejia",
+        "Tinogasta",
+        "Av. Sabattini",
+        "Av Sabattini",
+        "Av. Sabattini y Huergo",
+        "Av Sabattini",
+        "Av Vucetich",
+        "Vucetich",
+        "Av Vucetich",
+        "Vucetich",
+        "Av Vucetich",
+        "Vucetich",
+        "Av Vucetich",
+        "Vucetich",
+        "Schrodinger s/n",
+        "Antonio Soto y C. Capilla de los Remedios",
+        "Antonio Soto s/n"
+      ]
+    }
+  },
+  "paradasPrincipales": [
+    "Antonio Soto s/n 1",
+    "Calle Pública s/n 6",
+    "Schrodinger y Vucetich",
+    "Calingasta s/n 4",
+    "Vucetich 6900",
+    "Tinogasta 4577",
+    "Vucetich 6011",
+    "Av Sabattini 5311 (Fiat Chrysl"
+  ],
+  "horarios": {
+    "lunesAViernes": {
+      "tipo": "frecuencia",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "sabados": {
+      "tipo": "frecuencia",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "domingosYFeriados": {
+      "tipo": "frecuencia",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
+      "horarioInicio": "",
+      "horarioFin": ""
+    }
+  },
+  "tarifas": {
+    "efectivo": "Consultá la tarifa vigente en el sitio de la Municipalidad de Córdoba",
+    "redBus": "Consultá descuentos disponibles con tarjeta Red Bus"
+  },
+  "mapsEmbedUrl": "",
+  "ultimaActualizacion": "2026-08-07",
+  "fuente": "Tu Bondi (Municipalidad de Córdoba) via scraper lineas_transporte_cba (MIT) - Agosto 2026",
+  "notas": "Datos obtenidos del scraper Tu Bondi/Micronauta agosto 2026. Renombrada de C2 a B10"
+}

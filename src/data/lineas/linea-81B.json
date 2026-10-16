@@ -1,0 +1,125 @@
+{
+  "numero": "81B",
+  "nombre": "Línea 81B",
+  "esEjemplo": false,
+  "empresa": "SiBus",
+  "descripcionCorta": "Línea 81B - SiBus",
+  "recorrido": {
+    "ida": {
+      "descripcion": "Por Chango Más, Publica S/N, Muricio Yadarola Nº, Colomprea Nº, Julián de Cortázar Nº...",
+      "calles": [
+        "Chango Más",
+        "Publica S/N",
+        "Muricio Yadarola Nº",
+        "Colomprea Nº",
+        "Julián de Cortázar Nº",
+        "Cura Brochero Nº",
+        "Av. Patria S/N",
+        "AV. PATRIA",
+        "Av. Patria Nº",
+        "Av Patria",
+        "Av Sarmiento",
+        "Hospital Italiano",
+        "Sarmiento",
+        "Bv Guzman",
+        "Lima",
+        "Santa Rosa",
+        "Avellaneda",
+        "Av Colon",
+        "Sagrada Familia",
+        "Av Sagrada Familia",
+        "Av Rafael Nunez",
+        "Rafael Nuñez",
+        "R. NUÑEZ",
+        "Av Rafael Nunez",
+        "Rafael Nuñez",
+        "Av Rafael Nunez",
+        "Rafael Nuñez",
+        "Av Rafael Nunez",
+        "Rafael Nunez (CPC Arguello) E-",
+        "Donato Alvarez",
+        "Av Donato Alvarez y G Vagni"
+      ]
+    },
+    "vuelta": {
+      "descripcion": "Por Av Donato Alvarez y G Vagni, Juan M. Fangio, Massetti, Oscar Cabalén N°, Oscar Cabalén...",
+      "calles": [
+        "Av Donato Alvarez y G Vagni",
+        "Juan M. Fangio",
+        "Massetti",
+        "Oscar Cabalén N°",
+        "Oscar Cabalén",
+        "Manuel Calviño",
+        "Julio Bejanelle",
+        "David Cetra",
+        "GERMAN VAGNI (FRENTE",
+        "Ingreso UBP",
+        "Ricardo Rojas (CPC Arguello)",
+        "Av Rafael Nunez",
+        "Av Rafael nuñez",
+        "Luis de Tejeda",
+        "Fernando Fader",
+        "Av Sagrada Familia",
+        "Sagrada Familia",
+        "Av Colon",
+        "COLON",
+        "Av Colon",
+        "COLON",
+        "Av Colon",
+        "Av Olmos",
+        "Av",
+        "24 de Setiembre",
+        "Av",
+        "Av Patria y Lima",
+        "Av Patria",
+        "AV. PATRIA",
+        "Av Patria",
+        "AV. PATRIA",
+        "Av. Patria S/N",
+        "AV. LEANDRO N. ALEM",
+        "MAURICIO YADAROLA",
+        "COLOMPREA",
+        "Juan C. Tissera S/N",
+        "Chango Más"
+      ]
+    }
+  },
+  "paradasPrincipales": [
+    "Chango Más",
+    "Av Donato Alvarez y G Vagni",
+    "AV. PATRIA 1515",
+    "Manuel Calviño 7935",
+    "Hospital Italiano",
+    "Av Rafael Nunez 5919",
+    "Santa Rosa 248",
+    "Fernando Fader 3803"
+  ],
+  "horarios": {
+    "lunesAViernes": {
+      "tipo": "frecuencia",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "sabados": {
+      "tipo": "frecuencia",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
+      "horarioInicio": "",
+      "horarioFin": ""
+    },
+    "domingosYFeriados": {
+      "tipo": "frecuencia",
+      "descripcion": "Consultá horarios en la app Tu Bondi",
+      "horarioInicio": "",
+      "horarioFin": ""
+    }
+  },
+  "tarifas": {
+    "efectivo": "Consultá la tarifa vigente en el sitio de la Municipalidad de Córdoba",
+    "redBus": "Consultá descuentos disponibles con tarjeta Red Bus"
+  },
+  "mapsEmbedUrl": "",
+  "ultimaActualizacion": "2026-08-07",
+  "fuente": "Tu Bondi (Municipalidad de Córdoba) via scraper lineas_transporte_cba (MIT) - Agosto 2026",
+  "notas": "Datos obtenidos del scraper Tu Bondi/Micronauta agosto 2026. Renombrada de B1 a 81B"
+}
