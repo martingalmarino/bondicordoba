@@ -1,0 +1,194 @@
+---
+import { Icon } from 'astro-icon/components';
+
+const currentPath = Astro.url.pathname;
+---
+
+<a href="#main-content" class="skip-link">Ir al contenido principal</a>
+
+<header class="header">
+  <div class="container header-container">
+    <a href="/" class="logo">
+      <Icon name="lucide:bus" class="logo-icon" />
+      <span class="logo-text">Bondi Córdoba</span>
+    </a>
+
+    <nav class="nav" aria-label="Navegación principal">
+      <ul class="nav-list">
+        <li>
+          <a 
+            href="/" 
+            class="nav-link"
+            aria-current={currentPath === '/' ? 'page' : undefined}
+          >
+            Inicio
+          </a>
+        </li>
+        <li>
+          <a 
+            href="/lineas" 
+            class="nav-link"
+            aria-current={currentPath === '/lineas' ? 'page' : undefined}
+          >
+            Líneas
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="header-search">
+      <form action="/lineas" method="get" role="search">
+        <label for="search-header" class="sr-only">Buscar línea</label>
+        <div class="search-input-wrapper">
+          <Icon name="lucide:search" class="search-icon" />
+          <input
+            type="search"
+            id="search-header"
+            name="q"
+            placeholder="Buscar línea..."
+            class="search-input"
+            autocomplete="off"
+          />
+        </div>
+      </form>
+    </div>
+  </div>
+</header>
+
+<style>
+  .header {
+    background-color: var(--color-white);
+    border-bottom: 1px solid var(--color-gray-200);
+    position: sticky;
+    top: 0;
+    z-index: var(--z-sticky);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .header-container {
+    display: flex;
+    align-items: center;
+    gap: var(--space-6);
+    padding-top: var(--space-4);
+    padding-bottom: var(--space-4);
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-family: var(--font-heading);
+    font-size: var(--font-size-h4);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-primary);
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  .logo:hover {
+    text-decoration: none;
+    color: var(--color-primary-dark);
+  }
+
+  .logo-icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .logo-text {
+    display: none;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .nav-list {
+    display: flex;
+    gap: var(--space-4);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-link {
+    font-weight: var(--font-weight-medium);
+    color: var(--color-gray-700);
+    padding: var(--space-2) var(--space-3);
+    border-radius: var(--radius-md);
+    transition: all var(--transition-fast);
+  }
+
+  .nav-link:hover {
+    color: var(--color-primary);
+    background-color: var(--color-primary-light);
+    text-decoration: none;
+  }
+
+  .nav-link[aria-current="page"] {
+    color: var(--color-primary);
+    background-color: var(--color-primary-light);
+  }
+
+  .header-search {
+    margin-left: auto;
+    flex: 1;
+    max-width: 400px;
+  }
+
+  .search-input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .search-icon {
+    position: absolute;
+    left: var(--space-3);
+    width: 18px;
+    height: 18px;
+    color: var(--color-gray-500);
+    pointer-events: none;
+  }
+
+  .search-input {
+    width: 100%;
+    padding: var(--space-2) var(--space-3) var(--space-2) var(--space-10);
+    border: 1px solid var(--color-gray-300);
+    border-radius: var(--radius-md);
+    font-size: var(--font-size-small);
+    transition: all var(--transition-fast);
+  }
+
+  .search-input:hover {
+    border-color: var(--color-gray-400);
+  }
+
+  .search-input:focus {
+    border-color: var(--color-primary);
+    outline: none;
+    box-shadow: 0 0 0 3px var(--color-primary-light);
+  }
+
+  @media (min-width: 640px) {
+    .logo-text {
+      display: inline;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .nav {
+      display: block;
+    }
+
+    .header-search {
+      flex: 0 1 300px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .header-search {
+      flex: 0 1 400px;
+    }
+  }
+</style>

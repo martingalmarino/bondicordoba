@@ -1,0 +1,56 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+  ogImage?: string;
+}
+
+const { 
+  title = 'Bondi Córdoba', 
+  description = 'Información actualizada sobre líneas de transporte público de Córdoba Capital. Horarios, recorridos y paradas de colectivos.',
+  ogImage = '/og-image.jpg'
+} = Astro.props;
+
+const fullTitle = title === 'Bondi Córdoba' ? title : `${title} | Bondi Córdoba`;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+---
+
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="canonical" href={canonicalURL} />
+  <meta name="generator" content={Astro.generator} />
+  
+  <title>{fullTitle}</title>
+  <meta name="description" content={description} />
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content={canonicalURL} />
+  <meta property="og:title" content={fullTitle} />
+  <meta property="og:description" content={description} />
+  <meta property="og:image" content={new URL(ogImage, Astro.site)} />
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={fullTitle} />
+  <meta name="twitter:description" content={description} />
+  <meta name="twitter:image" content={new URL(ogImage, Astro.site)} />
+</head>
+<body>
+  <Header />
+  
+  <main id="main-content">
+    <slot />
+  </main>
+  
+  <Footer />
+</body>
+</html>

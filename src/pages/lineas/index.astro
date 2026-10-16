@@ -1,0 +1,210 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import LineCard from '../../components/LineCard.astro';
+import EmptyState from '../../components/EmptyState.astro';
+import Button from '../../components/Button.astro';
+import { Icon } from 'astro-icon/components';
+import { getLineas } from '../../data/lineas';
+
+const searchQuery = Astro.url.searchParams.get('q')?.toLowerCase() || '';
+const lineas = await getLineas();
+
+const lineasFiltradas = searchQuery
+  ? lineas.filter((linea) => {
+      const searchIn = `${linea.numero} ${linea.nombre || ''} ${linea.recorrido || ''}`.toLowerCase();
+      return searchIn.includes(searchQuery);
+    })
+  : lineas;
+
+const breadcrumbs = [
+  { label: 'Inicio', href: '/' },
+  { label: 'Líneas' }
+];
+---
+
+<BaseLayout title="Líneas de transporte" description="Listado completo de líneas de colectivo de Córdoba Capital con sus recorridos y horarios.">
+  <div class="container page-container">
+    <Breadcrumbs items={breadcrumbs} />
+
+    <header class="page-header">
+      <h1>Líneas de transporte</h1>
+      <p class="page-description">
+        Encontrá la línea que necesitás con su recorrido, horarios y paradas.
+      </p>
+    </header>
+
+    <div class="search-section">
+      <form action="/lineas" method="get" role="search">
+        <label for="search-lines" class="sr-only">Buscar líneas</label>
+        <div class="search-wrapper">
+          <Icon name="lucide:search" class="search-icon" />
+          <input
+            type="search"
+            id="search-lines"
+            name="q"
+            value={searchQuery}
+            placeholder="Buscar por número, nombre o recorrido..."
+            class="search-input"
+            autocomplete="off"
+          />
+          {searchQuery && (
+            <a href="/lineas" class="search-clear" aria-label="Limpiar búsqueda">
+              <Icon name="lucide:x" />
+            </a>
+          )}
+        </div>
+      </form>
+    </div>
+
+    {searchQuery && (
+      <div class="search-results-info">
+        <p>
+          Se encontraron <strong>{lineasFiltradas.length}</strong> línea{lineasFiltradas.length !== 1 ? 's' : ''} 
+          para <strong>"{searchQuery}"</strong>
+        </p>
+      </div>
+    )}
+
+    {lineasFiltradas.length > 0 ? (
+      <div class="lines-grid">
+        {lineasFiltradas.map((linea) => (
+          <LineCard
+            numero={linea.numero}
+            nombre={linea.nombre}
+            recorrido={linea.recorrido}
+            empresa={linea.empresa}
+            href={`/lineas/${linea.numero}`}
+          />
+        ))}
+      </div>
+    ) : (
+      <EmptyState
+        icon="lucide:search-x"
+        title={searchQuery ? 'No se encontraron líneas' : 'No hay líneas disponibles'}
+        description={searchQuery 
+          ? 'Probá con otro número o recorrido.' 
+          : 'Próximamente se cargarán las líneas de transporte.'
+        }
+      >
+        {searchQuery && (
+          <Button href="/lineas" variant="outline">
+            Ver todas las líneas
+          </Button>
+        )}
+      </EmptyState>
+    )}
+  </div>
+</BaseLayout>
+
+<style>
+  .page-container {
+    padding-top: var(--space-8);
+    padding-bottom: var(--space-12);
+  }
+
+  .page-header {
+    margin-bottom: var(--space-8);
+  }
+
+  .page-header h1 {
+    font-size: var(--font-size-h1);
+    margin-bottom: var(--space-3);
+  }
+
+  .page-description {
+    font-size: var(--font-size-h4);
+    color: var(--color-gray-600);
+    margin-bottom: 0;
+  }
+
+  .search-section {
+    margin-bottom: var(--space-8);
+  }
+
+  .search-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+  }
+
+  .search-icon {
+    position: absolute;
+    left: var(--space-4);
+    width: 20px;
+    height: 20px;
+    color: var(--color-gray-500);
+    pointer-events: none;
+  }
+
+  .search-input {
+    width: 100%;
+    padding: var(--space-4) var(--space-12) var(--space-4) var(--space-12);
+    border: 2px solid var(--color-gray-300);
+    border-radius: var(--radius-md);
+    font-size: var(--font-size-base);
+    transition: all var(--transition-fast);
+  }
+
+  .search-input:hover {
+    border-color: var(--color-gray-400);
+  }
+
+  .search-input:focus {
+    border-color: var(--color-primary);
+    outline: none;
+    box-shadow: 0 0 0 3px var(--color-primary-light);
+  }
+
+  .search-clear {
+    position: absolute;
+    right: var(--space-4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    color: var(--color-gray-500);
+    transition: color var(--transition-fast);
+  }
+
+  .search-clear:hover {
+    color: var(--color-gray-700);
+  }
+
+  .search-clear :global(svg) {
+    width: 20px;
+    height: 20px;
+  }
+
+  .search-results-info {
+    margin-bottom: var(--space-6);
+    padding: var(--space-4);
+    background-color: var(--color-primary-light);
+    border-radius: var(--radius-md);
+  }
+
+  .search-results-info p {
+    margin: 0;
+    color: var(--color-gray-700);
+  }
+
+  .lines-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+
+  @media (min-width: 768px) {
+    .lines-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .lines-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+</style>

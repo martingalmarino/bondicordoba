@@ -1,0 +1,63 @@
+---
+import { Icon } from 'astro-icon/components';
+
+interface Props {
+  icon?: string;
+  title: string;
+  description?: string;
+  class?: string;
+}
+
+const { 
+  icon = 'lucide:inbox', 
+  title, 
+  description,
+  class: className = '' 
+} = Astro.props;
+---
+
+<div class:list={['empty-state', className]}>
+  <Icon name={icon} class="empty-state-icon" />
+  <h3 class="empty-state-title">{title}</h3>
+  {description && <p class="empty-state-description">{description}</p>}
+  {Astro.slots.has('default') && (
+    <div class="empty-state-actions">
+      <slot />
+    </div>
+  )}
+</div>
+
+<style>
+  .empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: var(--space-12) var(--space-6);
+    gap: var(--space-3);
+  }
+
+  .empty-state-icon {
+    width: 64px;
+    height: 64px;
+    color: var(--color-gray-400);
+  }
+
+  .empty-state-title {
+    font-size: var(--font-size-h3);
+    color: var(--color-gray-700);
+    margin: 0;
+  }
+
+  .empty-state-description {
+    font-size: var(--font-size-base);
+    color: var(--color-gray-600);
+    max-width: 48ch;
+    margin: 0;
+  }
+
+  .empty-state-actions {
+    margin-top: var(--space-4);
+  }
+</style>

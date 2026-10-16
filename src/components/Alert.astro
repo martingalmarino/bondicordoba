@@ -1,0 +1,119 @@
+---
+import { Icon } from 'astro-icon/components';
+
+interface Props {
+  variant?: 'info' | 'success' | 'warning' | 'error';
+  title?: string;
+  class?: string;
+}
+
+const { variant = 'info', title, class: className = '' } = Astro.props;
+
+const icons = {
+  info: 'lucide:info',
+  success: 'lucide:check-circle-2',
+  warning: 'lucide:alert-triangle',
+  error: 'lucide:alert-circle'
+};
+---
+
+<div class:list={['alert', `alert-${variant}`, className]} role="alert">
+  <Icon name={icons[variant]} class="alert-icon" />
+  <div class="alert-content">
+    {title && <h4 class="alert-title">{title}</h4>}
+    <div class="alert-body">
+      <slot />
+    </div>
+  </div>
+</div>
+
+<style>
+  .alert {
+    display: flex;
+    gap: var(--space-3);
+    padding: var(--space-4);
+    border-radius: var(--radius-md);
+    border-left: 4px solid;
+  }
+
+  .alert-icon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .alert-content {
+    flex: 1;
+  }
+
+  .alert-title {
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+    margin-bottom: var(--space-2);
+  }
+
+  .alert-body {
+    font-size: var(--font-size-small);
+  }
+
+  .alert-body :last-child {
+    margin-bottom: 0;
+  }
+
+  .alert-info {
+    background-color: var(--color-info-light);
+    border-color: var(--color-info);
+    color: var(--color-info);
+  }
+
+  .alert-info .alert-icon {
+    color: var(--color-info);
+  }
+
+  .alert-info .alert-body {
+    color: var(--color-gray-700);
+  }
+
+  .alert-success {
+    background-color: var(--color-success-light);
+    border-color: var(--color-success);
+    color: var(--color-success);
+  }
+
+  .alert-success .alert-icon {
+    color: var(--color-success);
+  }
+
+  .alert-success .alert-body {
+    color: var(--color-gray-700);
+  }
+
+  .alert-warning {
+    background-color: var(--color-warning-light);
+    border-color: var(--color-warning);
+    color: var(--color-warning);
+  }
+
+  .alert-warning .alert-icon {
+    color: var(--color-warning);
+  }
+
+  .alert-warning .alert-body {
+    color: var(--color-gray-700);
+  }
+
+  .alert-error {
+    background-color: var(--color-error-light);
+    border-color: var(--color-error);
+    color: var(--color-error);
+  }
+
+  .alert-error .alert-icon {
+    color: var(--color-error);
+  }
+
+  .alert-error .alert-body {
+    color: var(--color-gray-700);
+  }
+</style>

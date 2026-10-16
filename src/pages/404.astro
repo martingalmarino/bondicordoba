@@ -1,0 +1,49 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import EmptyState from '../components/EmptyState.astro';
+import Button from '../components/Button.astro';
+import { Icon } from 'astro-icon/components';
+---
+
+<BaseLayout title="Página no encontrada">
+  <div class="container error-container">
+    <EmptyState
+      icon="lucide:file-question"
+      title="Esta página no existe"
+      description="La página que estás buscando no fue encontrada. Puede que haya sido movida o eliminada."
+    >
+      <div class="error-actions">
+        <Button href="/" variant="primary">
+          <Icon name="lucide:home" />
+          Volver al inicio
+        </Button>
+        <Button href="/lineas" variant="outline">
+          <Icon name="lucide:search" />
+          Buscar líneas
+        </Button>
+      </div>
+    </EmptyState>
+  </div>
+</BaseLayout>
+
+<style>
+  .error-container {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .error-actions {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    align-items: center;
+  }
+
+  @media (min-width: 640px) {
+    .error-actions {
+      flex-direction: row;
+    }
+  }
+</style>

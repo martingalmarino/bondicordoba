@@ -1,0 +1,234 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Button from '../components/Button.astro';
+import LineCard from '../components/LineCard.astro';
+import { Icon } from 'astro-icon/components';
+import { getLineas } from '../data/lineas';
+
+const lineas = await getLineas();
+const lineasDestacadas = lineas.slice(0, 6);
+---
+
+<BaseLayout>
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">
+          <Icon name="lucide:bus" class="hero-icon" />
+          Bondi Córdoba
+        </h1>
+        <p class="hero-description">
+          Encontrá toda la información sobre líneas de transporte público de Córdoba Capital.
+          Horarios, recorridos, paradas y más.
+        </p>
+        <div class="hero-actions">
+          <Button href="/lineas" variant="primary" size="lg">
+            <Icon name="lucide:search" />
+            Ver todas las líneas
+          </Button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="featured-section">
+    <div class="container">
+      <h2 class="section-title">Líneas destacadas</h2>
+      
+      {lineasDestacadas.length > 0 ? (
+        <div class="lines-grid">
+          {lineasDestacadas.map((linea) => (
+            <LineCard
+              numero={linea.numero}
+              nombre={linea.nombre}
+              recorrido={linea.recorrido}
+              empresa={linea.empresa}
+              href={`/lineas/${linea.numero}`}
+            />
+          ))}
+        </div>
+      ) : (
+        <p class="no-lines">No hay líneas disponibles en este momento.</p>
+      )}
+
+      <div class="section-cta">
+        <Button href="/lineas" variant="outline">
+          Ver todas las líneas
+          <Icon name="lucide:arrow-right" />
+        </Button>
+      </div>
+    </div>
+  </section>
+
+  <section class="features-section">
+    <div class="container">
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <Icon name="lucide:map" />
+          </div>
+          <h3 class="feature-title">Recorridos completos</h3>
+          <p class="feature-description">
+            Consultá los recorridos detallados de ida y vuelta de cada línea.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <Icon name="lucide:clock" />
+          </div>
+          <h3 class="feature-title">Horarios actualizados</h3>
+          <p class="feature-description">
+            Información sobre horarios y frecuencias de las líneas de colectivo.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <Icon name="lucide:map-pin" />
+          </div>
+          <h3 class="feature-title">Paradas y puntos</h3>
+          <p class="feature-description">
+            Encontrá las paradas principales en el recorrido de cada línea.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .hero {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+    color: var(--color-white);
+    padding: var(--space-16) 0 var(--space-12);
+  }
+
+  .hero-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .hero-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-4);
+    font-size: var(--font-size-display);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-white);
+    margin-bottom: var(--space-6);
+  }
+
+  .hero-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .hero-description {
+    font-size: var(--font-size-h4);
+    line-height: var(--line-height-relaxed);
+    margin-bottom: var(--space-8);
+    opacity: 0.95;
+  }
+
+  .hero-actions {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-4);
+  }
+
+  .featured-section {
+    padding: var(--space-16) 0;
+  }
+
+  .section-title {
+    font-size: var(--font-size-h2);
+    text-align: center;
+    margin-bottom: var(--space-8);
+  }
+
+  .lines-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+    margin-bottom: var(--space-8);
+  }
+
+  .no-lines {
+    text-align: center;
+    color: var(--color-gray-600);
+    padding: var(--space-12) 0;
+  }
+
+  .section-cta {
+    display: flex;
+    justify-content: center;
+  }
+
+  .features-section {
+    background-color: var(--color-gray-50);
+    padding: var(--space-16) 0;
+  }
+
+  .features-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+
+  .feature-card {
+    text-align: center;
+    padding: var(--space-6);
+  }
+
+  .feature-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    background-color: var(--color-primary-light);
+    color: var(--color-primary);
+    border-radius: var(--radius-lg);
+    margin-bottom: var(--space-4);
+  }
+
+  .feature-icon :global(svg) {
+    width: 32px;
+    height: 32px;
+  }
+
+  .feature-title {
+    font-size: var(--font-size-h4);
+    margin-bottom: var(--space-3);
+  }
+
+  .feature-description {
+    color: var(--color-gray-600);
+    margin-bottom: 0;
+  }
+
+  @media (min-width: 640px) {
+    .hero-title {
+      font-size: 3.5rem;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .lines-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .features-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .lines-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+</style>

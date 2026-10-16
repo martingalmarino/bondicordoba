@@ -1,0 +1,349 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import Badge from '../../components/Badge.astro';
+import Alert from '../../components/Alert.astro';
+import Table from '../../components/Table.astro';
+import AdSlot from '../../components/AdSlot.astro';
+import { Icon } from 'astro-icon/components';
+import { getLineas, getLineaByNumero } from '../../data/lineas';
+
+export async function getStaticPaths() {
+  const lineas = await getLineas();
+  return lineas.map((linea) => ({
+    params: { numero: linea.numero },
+    props: { linea },
+  }));
+}
+
+const { numero } = Astro.params;
+const linea = await getLineaByNumero(numero);
+
+if (!linea) {
+  return Astro.redirect('/404');
+}
+
+const breadcrumbs = [
+  { label: 'Inicio', href: '/' },
+  { label: 'Líneas', href: '/lineas' },
+  { label: `Línea ${linea.numero}` }
+];
+
+const hasRouteData = linea.ida || linea.vuelta;
+const hasSchedule = linea.horarios && linea.horarios.length > 0;
+---
+
+<BaseLayout 
+  title={`Línea ${linea.numero}${linea.nombre ? ` - ${linea.nombre}` : ''}`}
+  description={`Información completa sobre la línea ${linea.numero} de Córdoba Capital. ${linea.recorrido || ''}`}
+>
+  <div class="container page-container">
+    <Breadcrumbs items={breadcrumbs} />
+
+    <header class="line-header">
+      <div class="line-header-top">
+        <div class="line-number-badge">
+          <Icon name="lucide:bus" class="line-icon" />
+          <span class="line-number-text">{linea.numero}</span>
+        </div>
+        <div class="line-header-info">
+          {linea.nombre && <h1 class="line-name">{linea.nombre}</h1>}
+          {!linea.nombre && <h1 class="line-name">Línea {linea.numero}</h1>}
+          {linea.empresa && (
+            <p class="line-company">
+              <Icon name="lucide:building-2" class="company-icon" />
+              {linea.empresa}
+            </p>
+          )}
+        </div>
+      </div>
+
+      {linea.recorrido && (
+        <div class="line-route-summary">
+          <Icon name="lucide:route" class="route-icon" />
+          <p>{linea.recorrido}</p>
+        </div>
+      )}
+    </header>
+
+    <div class="line-content">
+      <div class="line-main">
+        {hasRouteData ? (
+          <section class="section">
+            <h2 class="section-title">
+              <Icon name="lucide:map" />
+              Recorridos
+            </h2>
+
+            {linea.ida && (
+              <div class="route-section">
+                <h3 class="route-title">
+                  <Badge variant="info">Ida</Badge>
+                </h3>
+                <p class="route-description">{linea.ida}</p>
+              </div>
+            )}
+
+            {linea.vuelta && (
+              <div class="route-section">
+                <h3 class="route-title">
+                  <Badge variant="success">Vuelta</Badge>
+                </h3>
+                <p class="route-description">{linea.vuelta}</p>
+              </div>
+            )}
+          </section>
+        ) : (
+          <Alert variant="warning" title="Recorridos pendientes">
+            La información detallada de recorridos para esta línea estará disponible próximamente.
+          </Alert>
+        )}
+
+        <AdSlot slot="content-middle" format="horizontal" />
+
+        {hasSchedule && linea.horarios ? (
+          <section class="section">
+            <h2 class="section-title">
+              <Icon name="lucide:clock" />
+              Horarios
+            </h2>
+            <Table striped>
+              <thead>
+                <tr>
+                  <th>Día</th>
+                  <th>Horario</th>
+                  <th>Frecuencia</th>
+                </tr>
+              </thead>
+              <tbody>
+                {linea.horarios.map((horario: any) => (
+                  <tr>
+                    <td>{horario.dia}</td>
+                    <td>{horario.horario}</td>
+                    <td>{horario.frecuencia}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </Table>
+          </section>
+        ) : (
+          <section class="section">
+            <h2 class="section-title">
+              <Icon name="lucide:clock" />
+              Horarios
+            </h2>
+            <Alert variant="warning" title="Horarios pendientes">
+              Los horarios detallados para esta línea estarán disponibles próximamente.
+            </Alert>
+          </section>
+        )}
+
+        {linea.tarifas && linea.tarifas.length > 0 ? (
+          <section class="section">
+            <h2 class="section-title">
+              <Icon name="lucide:credit-card" />
+              Tarifas
+            </h2>
+            <Table>
+              <thead>
+                <tr>
+                  <th>Tipo</th>
+                  <th>Precio</th>
+                </tr>
+              </thead>
+              <tbody>
+                {linea.tarifas.map((tarifa: any) => (
+                  <tr>
+                    <td>{tarifa.tipo}</td>
+                    <td>${tarifa.precio}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </Table>
+          </section>
+        ) : null}
+
+        {linea.notas && linea.notas.length > 0 && (
+          <section class="section">
+            <h2 class="section-title">
+              <Icon name="lucide:info" />
+              Información adicional
+            </h2>
+            {linea.notas.map((nota: string) => (
+              <Alert variant="info">
+                <p>{nota}</p>
+              </Alert>
+            ))}
+          </section>
+        )}
+
+        <Alert variant="info">
+          <p>
+            <strong>Fuente:</strong> {linea.fuente || 'Datos oficiales de la empresa de transporte'}
+          </p>
+          <p style="margin-bottom: 0; margin-top: var(--space-2);">
+            Los horarios y recorridos son referenciales. Te recomendamos verificar esta información directamente con la empresa de transporte.
+          </p>
+        </Alert>
+      </div>
+
+      <aside class="line-sidebar">
+        <AdSlot slot="sidebar-top" format="square" />
+      </aside>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .page-container {
+    padding-top: var(--space-8);
+    padding-bottom: var(--space-12);
+  }
+
+  .line-header {
+    margin-bottom: var(--space-8);
+    padding: var(--space-8);
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+    color: var(--color-white);
+    border-radius: var(--radius-lg);
+  }
+
+  .line-header-top {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-6);
+    margin-bottom: var(--space-6);
+  }
+
+  .line-number-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+    padding: var(--space-4) var(--space-6);
+    background-color: var(--color-white);
+    color: var(--color-primary);
+    border-radius: var(--radius-lg);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-h2);
+    flex-shrink: 0;
+    box-shadow: var(--shadow-md);
+  }
+
+  .line-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .line-number-text {
+    line-height: 1;
+  }
+
+  .line-header-info {
+    flex: 1;
+  }
+
+  .line-name {
+    font-size: var(--font-size-h1);
+    color: var(--color-white);
+    margin-bottom: var(--space-2);
+  }
+
+  .line-company {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-size: var(--font-size-base);
+    color: var(--color-white);
+    opacity: 0.9;
+    margin: 0;
+  }
+
+  .company-icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .line-route-summary {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-3);
+    padding: var(--space-4);
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: var(--radius-md);
+  }
+
+  .route-icon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .line-route-summary p {
+    margin: 0;
+    line-height: var(--line-height-normal);
+  }
+
+  .line-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+
+  .section {
+    margin-bottom: var(--space-8);
+  }
+
+  .section-title {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    font-size: var(--font-size-h3);
+    margin-bottom: var(--space-6);
+    padding-bottom: var(--space-4);
+    border-bottom: 2px solid var(--color-gray-200);
+  }
+
+  .section-title :global(svg) {
+    width: 28px;
+    height: 28px;
+    color: var(--color-primary);
+  }
+
+  .route-section {
+    margin-bottom: var(--space-6);
+  }
+
+  .route-section:last-child {
+    margin-bottom: 0;
+  }
+
+  .route-title {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    font-size: var(--font-size-h4);
+    margin-bottom: var(--space-3);
+  }
+
+  .route-description {
+    color: var(--color-gray-700);
+    line-height: var(--line-height-relaxed);
+    margin-bottom: 0;
+  }
+
+  .line-sidebar {
+    display: none;
+  }
+
+  @media (min-width: 1024px) {
+    .line-content {
+      grid-template-columns: 1fr 300px;
+    }
+
+    .line-sidebar {
+      display: block;
+    }
+  }
+</style>

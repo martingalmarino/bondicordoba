@@ -1,0 +1,113 @@
+---
+interface Props {
+  variant?: 'primary' | 'secondary' | 'outline' | 'ghost';
+  size?: 'sm' | 'md' | 'lg';
+  type?: 'button' | 'submit' | 'reset';
+  href?: string;
+  disabled?: boolean;
+  class?: string;
+}
+
+const { 
+  variant = 'primary', 
+  size = 'md', 
+  type = 'button',
+  href,
+  disabled = false,
+  class: className = ''
+} = Astro.props;
+
+const Element = href ? 'a' : 'button';
+const elementProps = href 
+  ? { href } 
+  : { type, disabled };
+---
+
+<Element 
+  class:list={['button', `button-${variant}`, `button-${size}`, className]}
+  {...elementProps}
+>
+  <slot />
+</Element>
+
+<style>
+  .button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+    font-family: var(--font-body);
+    font-weight: var(--font-weight-semibold);
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    white-space: nowrap;
+  }
+
+  .button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+
+  /* Variantes */
+  .button-primary {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+  }
+
+  .button-primary:hover {
+    background-color: var(--color-primary-dark);
+    text-decoration: none;
+  }
+
+  .button-secondary {
+    background-color: var(--color-gray-200);
+    color: var(--color-gray-800);
+  }
+
+  .button-secondary:hover {
+    background-color: var(--color-gray-300);
+    text-decoration: none;
+  }
+
+  .button-outline {
+    background-color: transparent;
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+  }
+
+  .button-outline:hover {
+    background-color: var(--color-primary-light);
+    text-decoration: none;
+  }
+
+  .button-ghost {
+    background-color: transparent;
+    color: var(--color-gray-700);
+  }
+
+  .button-ghost:hover {
+    background-color: var(--color-gray-100);
+    text-decoration: none;
+  }
+
+  /* Tamaños */
+  .button-sm {
+    padding: var(--space-2) var(--space-3);
+    font-size: var(--font-size-small);
+  }
+
+  .button-md {
+    padding: var(--space-3) var(--space-5);
+    font-size: var(--font-size-base);
+  }
+
+  .button-lg {
+    padding: var(--space-4) var(--space-6);
+    font-size: var(--font-size-h4);
+  }
+</style>
